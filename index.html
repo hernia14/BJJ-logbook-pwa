@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ブラジリアン柔術 練習日記</title>
+    
+    <link rel="manifest" href="manifest.json">
+    
+    <meta name="theme-color" content="#3b82f6">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="BJJ日記">
+    <link rel="apple-touch-icon" href="icons/icon-192x192.png"> <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Tailwind gray-100 */
+        }
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 100; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: 10% auto; /* 10% from the top and centered */
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%; /* Could be more or less, depending on screen size */
+            max-width: 600px;
+            border-radius: 0.5rem;
+            position: relative;
+        }
+        .close-button {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .close-button:hover,
+        .close-button:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .star-rating input[type="radio"] {
+            display: none;
+        }
+        .star-rating label {
+            font-size: 1.5rem;
+            color: #cbd5e1; /* Tailwind gray-300 */
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+        .star-rating input[type="radio"]:checked ~ label,
+        .star-rating label:hover,
+        .star-rating label:hover ~ label {
+            color: #f59e0b; /* Tailwind amber-500 */
+        }
+        .remove-tech-btn {
+            background-color: #ef4444; /* Tailwind red-500 */
+            color: white;
+            padding: 0.25rem 0.5rem;
+            border-radius: 0.25rem;
+            font-size: 0.875rem;
+            line-height: 1.25rem;
+        }
+        .remove-tech-btn:hover {
+            background-color: #dc2626; /* Tailwind red-600 */
+        }
+        .tab-button {
+            padding: 0.75rem 1.5rem;
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+            color: #6b7280; /* Tailwind gray-500 */
+        }
+        .tab-button.active {
+            border-bottom-color: #3b82f6; /* Tailwind blue-500 */
+            color: #3b82f6; /* Tailwind blue-500 */
+            font-weight: 600;
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        #practiceLogList::-webkit-scrollbar {
+            width: 8px;
+        }
+        #practiceLogList::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+        #practiceLogList::-webkit-scrollbar-thumb {
+            background: #cbd5e1; /* Tailwind gray-300 */
+            border-radius: 10px;
+        }
+        #practiceLogList::-webkit-scrollbar-thumb:hover {
+            background: #9ca3af; /* Tailwind gray-400 */
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800 p-4 md:p-8">
+
+    <div class="container mx-auto max-w-4xl">
+        <header class="mb-8 text-center">
+            <h1 class="text-4xl font-bold text-blue-600">ブラジリアン柔術 練習日記</h1>
+            <p class="text-gray-600 mt-2">日々の練習を記録し、成長を実感しましょう。</p>
+            <p id="userIdDisplay" class="mt-1 text-sm text-gray-500"></p>
+        </header>
+
+        <div class="mb-6 border-b border-gray-300">
+            <nav class="flex space-x-4" aria-label="Tabs">
+                <button id="tabButtonForm" class="tab-button active" onclick="showTab('formTab')">記録入力</button>
+                <button id="tabButtonList" class="tab-button" onclick="showTab('listTab')">記録一覧</button>
+            </nav>
+        </div>
+
+        <div id="formTab" class="tab-content active bg-white p-6 rounded-lg shadow-lg">
+            <form id="practiceLogForm" class="space-y-6">
+                <fieldset class="border p-4 rounded-md">
+                    <legend class="text-lg font-semibold text-blue-600 px-2">基本情報</legend>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2">
+                        <div>
+                            <label for="date" class="block text-sm font-medium text-gray-700">日付:</label>
+                            <input type="date" id="date" name="date" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                        </div>
+                        <div>
+                            <label for="duration" class="block text-sm font-medium text-gray-700">練習時間:</label>
+                            <input type="text" id="duration" name="duration" placeholder="例: 2時間, 90分" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset class="border p-4 rounded-md">
+                    <legend class="text-lg font-semibold text-blue-600 px-2">コンディション</legend>
+                    <div class="grid grid-cols-1 md:grid-cols-1 gap-4 mt-2">
+                        <div>
+                            <label for="condition" class="block text-sm font-medium text-gray-700">体調:</label>
+                            <input type="text" id="condition" name="condition" placeholder="例: 良好, 少し疲労感あり" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset class="border p-4 rounded-md">
+                    <legend class="text-lg font-semibold text-blue-600 px-2">練習した技</legend>
+                    <div id="trainedTechniquesContainer" class="space-y-4 mt-2">
+                        </div>
+                    <button type="button" id="addTechniqueButton" class="mt-4 inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
+                        <i class="fas fa-plus mr-2"></i>技を追加
+                    </button>
+                </fieldset>
+
+                <fieldset class="border p-4 rounded-md">
+                    <legend class="text-lg font-semibold text-blue-600 px-2">スパーリング</legend>
+                    <div class="space-y-4 mt-2">
+                        <div>
+                            <label for="sparring_didWell" class="block text-sm font-medium text-gray-700">できたこと:</label>
+                            <textarea id="sparring_didWell" name="sparring_didWell" rows="3" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"></textarea>
+                        </div>
+                        <div>
+                            <label for="sparring_challenges" class="block text-sm font-medium text-gray-700">できなかったこと (課題):</label>
+                            <textarea id="sparring_challenges" name="sparring_challenges" rows="3" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"></textarea>
+                        </div>
+                        <div>
+                            <label for="sparring_improvements" class="block text-sm font-medium text-gray-700">課題に対する改善策:</label>
+                            <textarea id="sparring_improvements" name="sparring_improvements" rows="3" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"></textarea>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label for="sparring_rounds" class="block text-sm font-medium text-gray-700">ラウンド数・時間:</label>
+                                <input type="text" id="sparring_rounds" name="sparring_rounds" placeholder="例: 5分x3本" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                            </div>
+                            <div>
+                                <label for="sparring_partnerNotes" class="block text-sm font-medium text-gray-700">相手のメモ (任意):</label>
+                                <input type="text" id="sparring_partnerNotes" name="sparring_partnerNotes" placeholder="例: Aさん(ガードが固い)" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset class="border p-4 rounded-md">
+                    <legend class="text-lg font-semibold text-blue-600 px-2">振り返りと目標</legend>
+                    <div class="space-y-4 mt-2">
+                        <div>
+                            <label for="overallFeeling" class="block text-sm font-medium text-gray-700">全体的な所感・気づき:</label>
+                            <textarea id="overallFeeling" name="overallFeeling" rows="3" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"></textarea>
+                        </div>
+                        <div>
+                            <label for="nextGoal" class="block text-sm font-medium text-gray-700">次回の練習への目標・テーマ:</label>
+                            <textarea id="nextGoal" name="nextGoal" rows="3" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"></textarea>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <div class="flex justify-end space-x-3">
+                    <button type="submit" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                        <i class="fas fa-save mr-2"></i>記録を保存
+                    </button>
+                    <button type="button" id="clearFormButton" class="inline-flex items-center px-6 py-3 border border-gray-300 text-base font-medium rounded-md shadow-sm text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                        <i class="fas fa-eraser mr-2"></i>フォームをクリア
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <div id="listTab" class="tab-content bg-white p-6 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-semibold text-blue-600 mb-4">練習記録一覧</h2>
+            <div id="practiceLogList" class="space-y-4 max-h-[600px] overflow-y-auto pr-2">
+                <p class="text-gray-500">記録はまだありません。</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="logDetailModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal('logDetailModal')">&times;</span>
+            <h3 id="modalTitle" class="text-xl font-semibold mb-4">練習記録詳細</h3>
+            <div id="modalBody" class="space-y-3 text-sm"></div>
+            <div class="mt-6 flex justify-end space-x-3">
+                 <button id="editLogButton" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-yellow-500 hover:bg-yellow-600">
+                    <i class="fas fa-edit mr-2"></i>編集
+                </button>
+                <button id="deleteLogButton" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-red-600 hover:bg-red-700">
+                    <i class="fas fa-trash-alt mr-2"></i>削除
+                </button>
+                <button onclick="closeModal('logDetailModal')" class="inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md shadow-sm text-gray-700 bg-white hover:bg-gray-50">
+                    閉じる
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="messageModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal('messageModal')">&times;</span>
+            <p id="messageText" class="text-lg"></p>
+            <div class="mt-4 text-right">
+                <button onclick="closeModal('messageModal')" class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">OK</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+        import { 
+            getAuth, signInAnonymously, onAuthStateChanged, signInWithCustomToken 
+        } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+        import { 
+            getFirestore, collection, addDoc, query, orderBy, 
+            doc, getDoc, updateDoc, deleteDoc, Timestamp, onSnapshot, setLogLevel
+        } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
+
+        const firebaseConfig = typeof __firebase_config !== 'undefined' ? JSON.parse(__firebase_config) : null;
+        const initialAuthToken = typeof __initial_auth_token !== 'undefined' ? __initial_auth_token : null;
+        const appId = typeof __app_id !== 'undefined' ? __app_id : 'bjj-log-pwa-01';
+
+        let app;
+        let auth;
+        let db;
+        let userId;
+        let practiceLogCollection;
+        let unsubscribeLogs = null; 
+
+        const practiceLogForm = document.getElementById('practiceLogForm');
+        const addTechniqueButton = document.getElementById('addTechniqueButton');
+        const trainedTechniquesContainer = document.getElementById('trainedTechniquesContainer');
+        const practiceLogList = document.getElementById('practiceLogList');
+        const userIdDisplay = document.getElementById('userIdDisplay');
+        const logDetailModal = document.getElementById('logDetailModal');
+        const modalTitle = document.getElementById('modalTitle');
+        const modalBody = document.getElementById('modalBody');
+        const editLogButton = document.getElementById('editLogButton');
+        const deleteLogButton = document.getElementById('deleteLogButton');
+        const clearFormButton = document.getElementById('clearFormButton');
+        const messageModal = document.getElementById('messageModal');
+        const messageText = document.getElementById('messageText');
+        
+        let currentEditingLogId = null; 
+
+        async function initializeFirebase() {
+            if (!firebaseConfig) {
+                console.error("Firebase configuration is missing.");
+                showMessage("アプリの初期化に失敗しました。設定を確認してください。");
+                return;
+            }
+            try {
+                app = initializeApp(firebaseConfig);
+                auth = getAuth(app);
+                db = getFirestore(app);
+                setLogLevel('debug'); 
+
+                onAuthStateChanged(auth, async (user) => {
+                    if (user) {
+                        userId = user.uid;
+                        userIdDisplay.textContent = `ユーザーID: ${userId.substring(0,8)}...`;
+                        practiceLogCollection = collection(db, `artifacts/${appId}/users/${userId}/practice_logs`);
+                        loadPracticeLogs(); 
+                        console.log("User is signed in with UID:", userId);
+                    } else {
+                        userId = null;
+                        userIdDisplay.textContent = "ログインしていません";
+                        if (unsubscribeLogs) unsubscribeLogs(); 
+                        practiceLogList.innerHTML = '<p class="text-gray-500">ログインして記録をロードしてください。</p>';
+                        console.log("User is signed out.");
+                    }
+                });
+
+                if (initialAuthToken) {
+                    await signInWithCustomToken(auth, initialAuthToken);
+                } else {
+                    await signInAnonymously(auth);
+                }
+            } catch (error) {
+                console.error("Firebase initialization error:", error);
+                showMessage(`Firebase初期化エラー: ${error.message}`);
+            }
+        }
+
+        window.showTab = (tabId) => {
+            document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
+            document.querySelectorAll('.tab-button').forEach(button => button.classList.remove('active'));
+            document.getElementById(tabId).classList.add('active');
+            document.getElementById(tabId === 'formTab' ? 'tabButtonForm' : 'tabButtonList').classList.add('active');
+        }
+        
+        function addTechniqueField(data = {}) {
+            const techId = `techGroup-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`;
+            const div = document.createElement('div');
+            div.id = techId;
+            div.classList.add('p-3', 'border', 'rounded-md', 'space-y-2', 'bg-gray-50', 'technique-entry');
+            div.innerHTML = `
+                <div class="flex justify-between items-center">
+                    <h4 class="text-md font-semibold text-gray-800">技 <span class="technique-number"></span></h4>
+                    <button type="button" class="remove-tech-btn" onclick="removeTechniqueEntry('${techId}')">
+                        <i class="fas fa-trash-alt"></i> 削除
+                    </button>
+                </div>
+                <div>
+                    <label for="techName-${techId}" class="block text-xs font-medium text-gray-600">技名:</label>
+                    <input type="text" id="techName-${techId}" name="techName" value="${data.name || ''}" class="mt-1 block w-full px-2 py-1 border border-gray-300 rounded-md shadow-sm sm:text-sm" placeholder="例: 腕十字固め">
+                </div>
+                <div>
+                    <label for="techPoints-${techId}" class="block text-xs font-medium text-gray-600">ポイント:</label>
+                    <textarea id="techPoints-${techId}" name="techPoints" rows="2" class="mt-1 block w-full px-2 py-1 border border-gray-300 rounded-md shadow-sm sm:text-sm">${data.points || ''}</textarea>
+                </div>
+                <div>
+                    <label for="techFlow-${techId}" class="block text-xs font-medium text-gray-600">流れ:</label>
+                    <textarea id="techFlow-${techId}" name="techFlow" rows="2" class="mt-1 block w-full px-2 py-1 border border-gray-300 rounded-md shadow-sm sm:text-sm">${data.flow || ''}</textarea>
+                </div>
+                <div>
+                    <label class="block text-xs font-medium text-gray-600">習熟度:</label>
+                    <div class="star-rating flex flex-row-reverse justify-end mt-1">
+                        ${[5,4,3,2,1].map(star => `
+                            <input type="radio" id="techProficiency-${techId}-${star}" name="techProficiency-${techId}" value="${star}" ${data.proficiency == star ? 'checked' : ''}>
+                            <label for="techProficiency-${techId}-${star}" title="${star} stars"><i class="fas fa-star"></i></label>
+                        `).join('')}
+                    </div>
+                </div>
+            `;
+            trainedTechniquesContainer.appendChild(div);
+            updateTechniqueNumbers();
+        }
+        
+        window.removeTechniqueEntry = (elementId) => {
+            document.getElementById(elementId)?.remove();
+            updateTechniqueNumbers();
+        }
+
+        function updateTechniqueNumbers() {
+            trainedTechniquesContainer.querySelectorAll('.technique-entry').forEach((entry, index) => {
+                entry.querySelector('.technique-number').textContent = index + 1;
+            });
+        }
+        addTechniqueButton.addEventListener('click', () => addTechniqueField());
+
+        practiceLogForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            if (!userId) { showMessage("ユーザーが認証されていません。"); return; }
+
+            const formData = new FormData(practiceLogForm);
+            const logData = {
+                date: Timestamp.fromDate(new Date(formData.get('date'))),
+                duration: formData.get('duration'),
+                condition: formData.get('condition'),
+                sparring_didWell: formData.get('sparring_didWell'),
+                sparring_challenges: formData.get('sparring_challenges'),
+                sparring_improvements: formData.get('sparring_improvements'),
+                sparring_rounds: formData.get('sparring_rounds'),
+                sparring_partnerNotes: formData.get('sparring_partnerNotes'),
+                overallFeeling: formData.get('overallFeeling'),
+                nextGoal: formData.get('nextGoal'),
+                trainedTechniques: []
+            };
+
+            trainedTechniquesContainer.querySelectorAll('.technique-entry').forEach(entry => {
+                const nameInput = entry.querySelector('input[name="techName"]');
+                if (nameInput && nameInput.value) {
+                    logData.trainedTechniques.push({
+                        name: nameInput.value,
+                        points: entry.querySelector('textarea[name="techPoints"]')?.value || '',
+                        flow: entry.querySelector('textarea[name="techFlow"]')?.value || '',
+                        proficiency: parseInt(entry.querySelector(`input[name="techProficiency-${entry.id}"]:checked`)?.value || 0)
+                    });
+                }
+            });
+            
+            try {
+                if (currentEditingLogId) {
+                    const logRef = doc(db, `artifacts/${appId}/users/${userId}/practice_logs`, currentEditingLogId);
+                    logData.updatedAt = Timestamp.now();
+                    await updateDoc(logRef, logData);
+                    showMessage("記録を更新しました！");
+                } else {
+                    logData.createdAt = Timestamp.now();
+                    logData.updatedAt = Timestamp.now();
+                    await addDoc(practiceLogCollection, logData);
+                    showMessage("記録を保存しました！");
+                }
+                practiceLogForm.reset();
+                trainedTechniquesContainer.innerHTML = ''; 
+                currentEditingLogId = null; 
+                addTechniqueField(); 
+                showTab('listTab'); 
+            } catch (error) {
+                console.error("Error saving log:", error);
+                showMessage(`エラーが発生しました: ${error.message}`);
+            }
+        });
+        
+        clearFormButton.addEventListener('click', () => {
+            practiceLogForm.reset();
+            trainedTechniquesContainer.innerHTML = '';
+            currentEditingLogId = null;
+            addTechniqueField(); 
+            document.getElementById('date').valueAsDate = new Date(); 
+            showMessage("フォームをクリアしました。");
+        });
+
+        function loadPracticeLogs() {
+            if (!userId || !practiceLogCollection) { return; }
+            if (unsubscribeLogs) unsubscribeLogs(); 
+
+            const q = query(practiceLogCollection, orderBy("date", "desc"));
+            unsubscribeLogs = onSnapshot(q, (querySnapshot) => {
+                practiceLogList.innerHTML = querySnapshot.empty ? 
+                    '<p class="text-gray-500">記録はまだありません。</p>' : '';
+                querySnapshot.forEach((doc) => renderLogEntry(doc.id, doc.data()));
+            }, (error) => {
+                console.error("Error loading logs: ", error);
+                practiceLogList.innerHTML = `<p class="text-red-500">記録の読み込みエラー: ${error.message}</p>`;
+            });
+        }
+
+        function renderLogEntry(logId, data) {
+            const div = document.createElement('div');
+            div.className = 'bg-white p-4 rounded-md shadow-sm border border-gray-200 hover:shadow-md transition-shadow';
+            const date = data.date.toDate(); 
+            const formattedDate = `${date.getFullYear()}年${date.getMonth() + 1}月${date.getDate()}日`;
+            let techniquesSummary = data.trainedTechniques?.map(t => t.name).join(', ') || '記録なし';
+            if (techniquesSummary.length > 50) techniquesSummary = techniquesSummary.substring(0, 50) + "...";
+
+            div.innerHTML = `
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h3 class="text-lg font-semibold text-blue-700">${formattedDate}</h3>
+                        <p class="text-sm text-gray-600">練習時間: ${data.duration || '未記入'}</p>
+                        <p class="text-sm text-gray-600 truncate">練習した技: ${techniquesSummary}</p>
+                    </div>
+                    <button class="text-sm text-blue-500 hover:text-blue-700 font-medium py-1 px-2 rounded" onclick="viewLogDetails('${logId}')">詳細を見る</button>
+                </div>`;
+            practiceLogList.appendChild(div);
+        }
+        
+        window.viewLogDetails = async (logId) => {
+            if (!userId) return;
+            try {
+                const docSnap = await getDoc(doc(db, `artifacts/${appId}/users/${userId}/practice_logs`, logId));
+                if (docSnap.exists()) {
+                    currentEditingLogId = logId; 
+                    displayLogDetails(docSnap.data());
+                } else { showMessage("記録が見つかりません。"); }
+            } catch (error) { showMessage(`詳細の読み込みエラー: ${error.message}`); }
+        };
+
+        function displayLogDetails(data) {
+            const date = data.date.toDate();
+            modalTitle.textContent = `${date.getFullYear()}年${date.getMonth() + 1}月${date.getDate()}日 の練習記録`;
+            let techniquesHtml = '<p><strong>練習した技:</strong></p>';
+            if (data.trainedTechniques && data.trainedTechniques.length > 0) {
+                techniquesHtml += '<ul class="list-disc list-inside ml-4 space-y-2">';
+                data.trainedTechniques.forEach(tech => {
+                    techniquesHtml += `<li><strong>${escapeHtml(tech.name) || 'N/A'}</strong> (習熟度: ${renderStars(tech.proficiency)})
+                        <ul class="list-circle list-inside ml-6 text-xs text-gray-600">
+                        ${tech.points ? `<li>ポイント: ${escapeHtml(tech.points)}</li>` : ''}
+                        ${tech.flow ? `<li>流れ: ${escapeHtml(tech.flow)}</li>` : ''}</ul></li>`;
+                });
+                techniquesHtml += '</ul>';
+            } else { techniquesHtml += '<p class="text-gray-500">記録なし</p>'; }
+
+            modalBody.innerHTML = `
+                <p><strong>練習時間:</strong> ${escapeHtml(data.duration) || 'N/A'}</p>
+                <p><strong>体調:</strong> ${escapeHtml(data.condition) || 'N/A'}</p><hr class="my-2">${techniquesHtml}<hr class="my-2">
+                <p><strong>スパーリング - できたこと:</strong></p><p class="pl-4 whitespace-pre-wrap">${escapeHtml(data.sparring_didWell) || 'N/A'}</p>
+                <p><strong>スパーリング - できなかったこと:</strong></p><p class="pl-4 whitespace-pre-wrap">${escapeHtml(data.sparring_challenges) || 'N/A'}</p>
+                <p><strong>スパーリング - 改善策:</strong></p><p class="pl-4 whitespace-pre-wrap">${escapeHtml(data.sparring_improvements) || 'N/A'}</p>
+                <p><strong>スパーリング - ラウンド:</strong> ${escapeHtml(data.sparring_rounds) || 'N/A'}</p>
+                <p><strong>スパーリング - 相手メモ:</strong> ${escapeHtml(data.sparring_partnerNotes) || 'N/A'}</p><hr class="my-2">
+                <p><strong>全体的所感:</strong></p><p class="pl-4 whitespace-pre-wrap">${escapeHtml(data.overallFeeling) || 'N/A'}</p>
+                <p><strong>次回目標:</strong></p><p class="pl-4 whitespace-pre-wrap">${escapeHtml(data.nextGoal) || 'N/A'}</p>
+                <p class="text-xs text-gray-400 mt-3">記録作成: ${data.createdAt?.toDate().toLocaleString('ja-JP') || 'N/A'}</p>
+                <p class="text-xs text-gray-400">最終更新: ${data.updatedAt?.toDate().toLocaleString('ja-JP') || 'N/A'}</p>`;
+            logDetailModal.style.display = "block";
+        }
+        
+        function renderStars(proficiency=0) {
+            let stars = '';
+            for (let i = 1; i <= 5; i++) stars += `<i class="fas fa-star ${i <= proficiency ? 'text-yellow-400' : 'text-gray-300'}"></i>`;
+            return stars;
+        }
+
+        function escapeHtml(unsafe) {
+            if (typeof unsafe !== 'string') return unsafe === undefined || unsafe === null ? '' : unsafe;
+            return unsafe.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
+        }
+        
+        editLogButton.addEventListener('click', async () => {
+            if (!currentEditingLogId || !userId) return;
+            try {
+                const docSnap = await getDoc(doc(db, `artifacts/${appId}/users/${userId}/practice_logs`, currentEditingLogId));
+                if (docSnap.exists()) {
+                    populateFormForEditing(docSnap.data());
+                    closeModal('logDetailModal');
+                    showTab('formTab');
+                } else { showMessage("編集対象の記録が見つかりません。"); currentEditingLogId = null; }
+            } catch (error) { showMessage(`編集用データ読み込みエラー: ${error.message}`); }
+        });
+
+        function populateFormForEditing(data) {
+            practiceLogForm.reset(); 
+            trainedTechniquesContainer.innerHTML = ''; 
+            
+            practiceLogForm.date.valueAsDate = data.date.toDate();
+            ['duration', 'condition', 'sparring_didWell', 'sparring_challenges', 'sparring_improvements', 
+             'sparring_rounds', 'sparring_partnerNotes', 'overallFeeling', 'nextGoal'].forEach(key => {
+                if (practiceLogForm[key]) practiceLogForm[key].value = data[key] || '';
+            });
+            
+            data.trainedTechniques?.forEach(techData => addTechniqueField(techData));
+            if (!data.trainedTechniques || data.trainedTechniques.length === 0) addTechniqueField();
+        }
+
+        deleteLogButton.addEventListener('click', async () => {
+            if (!currentEditingLogId || !userId) return;
+            showConfirmationModal(`本当にこの記録を削除しますか？この操作は元に戻せません。`, async () => {
+                try {
+                    await deleteDoc(doc(db, `artifacts/${appId}/users/${userId}/practice_logs`, currentEditingLogId));
+                    showMessage("記録を削除しました。"); closeModal('logDetailModal'); currentEditingLogId = null;
+                } catch (error) { showMessage(`削除エラー: ${error.message}`); }
+            });
+        });
+        
+        window.closeModal = (modalId) => {
+            document.getElementById(modalId).style.display = "none";
+            if (modalId === 'logDetailModal') currentEditingLogId = null; 
+        }
+        
+        window.showMessage = (message) => { messageText.textContent = message; messageModal.style.display = "block"; }
+
+        function showConfirmationModal(message, onConfirm) {
+            messageText.innerHTML = `${message}<div class="mt-4 flex justify-end space-x-2">
+                <button id="confirmOkButton" class="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600">はい</button>
+                <button id="confirmCancelButton" class="px-4 py-2 bg-gray-300 rounded hover:bg-gray-400">キャンセル</button>
+            </div>`;
+            messageModal.style.display = "block";
+            document.getElementById('confirmOkButton').onclick = () => { closeModal('messageModal'); onConfirm(); };
+            document.getElementById('confirmCancelButton').onclick = () => closeModal('messageModal');
+        }
+        
+        window.onclick = (event) => {
+            if (event.target == logDetailModal) closeModal('logDetailModal');
+            if (event.target == messageModal && !document.getElementById('confirmOkButton')) closeModal('messageModal');
+        }
+
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./sw.js')
+                    .then(reg => console.log('ServiceWorker registration successful: ', reg.scope))
+                    .catch(err => console.log('ServiceWorker registration failed: ', err));
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            initializeFirebase();
+            addTechniqueField(); 
+            document.getElementById('date').valueAsDate = new Date(); 
+        });
+    </script>
+</body>
+</html>
