@@ -262,8 +262,16 @@
             doc, getDoc, updateDoc, deleteDoc, Timestamp, onSnapshot, setLogLevel
         } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
 
-        const firebaseConfig = typeof __firebase_config !== 'undefined' ? JSON.parse(__firebase_config) : null;
-        const initialAuthToken = typeof __initial_auth_token !== 'undefined' ? __initial_auth_token : null;
+        const firebaseConfig = {
+              apiKey: "AIzaSyAjM5hAZNdrcj63Qh5wgiY2eMzSn6pcfG4",
+              authDomain: "motate-a71cf.firebaseapp.com",
+              projectId: "motate-a71cf",
+              storageBucket: "motate-a71cf.firebasestorage.app",
+              messagingSenderId: "401937123154",
+              appId: "1:401937123154:web:8f4e2345dcc340a7c1dc8b",
+              measurementId: "G-6M9QZ91BVZ"
+            };
+        
         const appId = typeof __app_id !== 'undefined' ? __app_id : 'bjj-log-pwa-01';
 
         let app;
