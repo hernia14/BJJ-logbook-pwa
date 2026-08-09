@@ -1,0 +1,73 @@
+id: de-la-riva-guard
+name_ja: デラヒーバガード
+name_en: De La Riva Guard
+aliases: [デラヒーバ, DLR, デラ]
+category: positions
+tags:
+  positions: [de-la-riva-guard, open-guard]
+  concepts: [angle, grip-fighting, base]
+
+status: draft
+source_type: ai_research
+sources:
+  - https://evolve-mma.com/blog/10-types-of-bjj-guards-grapplers-should-know/
+  - http://www.grapplearts.com/A-Glossary-Of-Guards.pdf
+reviewed_by: null
+reviewed_date: null
+safety_level: none
+
+created: 2026-08-09
+updated: 2026-08-09
+
+cards:
+  - id: de-la-riva-guard-def-01
+    axis: definition
+    type: free_recall
+    front: デラヒーバガードとはどのような状態を指すか
+    back: |
+      下の者が片脚を相手の前脚の外側から巻き込むようにフックし、
+      もう一方の脚と手のグリップで相手のバランスを制する状態。
+      名称は考案者の名に由来する。
+
+  - id: de-la-riva-guard-req-01
+    axis: requirement
+    type: free_recall
+    front: デラヒーバガードでフック以外に必要なコントロールは何か
+    back: |
+      手によるグリップ。相手の遠い側の脚（またはそで・襟）を制することで、
+      フックした脚と合わせて相手を挟み込み、逃げ道を塞ぐ。
+      フックだけでは相手が体を捌いて外せる。
+
+  - id: de-la-riva-guard-prin-01
+    axis: principle
+    type: free_recall
+    front: デラヒーバのフックがバランスを崩せる原理を説明せよ
+    back: |
+      相手の支持脚に外側から絡むことで、その脚を後方や外側へ引き出せる。
+      支持脚が体の重心から離れる方向へ動かされると、
+      相手は立位のバランスを保てなくなり、前後どちらの方向へも崩されうる。
+
+  - id: de-la-riva-guard-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: de-la-riva-guard-causal-01
+    front: デラヒーバガードでよくある失敗を1つ挙げよ
+    back: |
+      フックを掛けることだけに意識が向き、手のグリップが疎かになること。
+
+  - id: de-la-riva-guard-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: de-la-riva-guard-causal-01
+    front: デラヒーバガードで手のグリップが疎かだと、結果として何が起きるか
+    back: |
+      相手はフックされていない側へ自由に体重を移せるため、
+      フックを外して回り込まれ、レッグドラッグなどのパスへ移行されやすくなる。
+
+  - id: de-la-riva-guard-fol-01
+    axis: followup
+    type: free_recall
+    front: デラヒーバガードからの代表的な展開を挙げよ
+    back: |
+      相手を後方へ崩すスイープ、背後を取る動き（ベリンボロ等の回転系を含む）、
+      あるいは別のオープンガードへの移行。

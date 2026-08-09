@@ -1,0 +1,84 @@
+id: single-leg-x
+name_ja: シングルレッグX
+name_en: Single Leg X-Guard
+aliases: [SLX, シングルレッグXガード, アシガラミ系]
+category: positions
+tags:
+  positions: [single-leg-x, x-guard, open-guard]
+  concepts: [base, angle, frame]
+
+status: draft
+source_type: ai_research
+sources:
+  - http://www.grapplearts.com/A-Glossary-Of-Guards.pdf
+  - https://www.infighting.ca/bjj-basics-the-guard-glossary/
+reviewed_by: null
+reviewed_date: null
+safety_level: caution
+
+created: 2026-08-09
+updated: 2026-08-09
+
+cards:
+  - id: single-leg-x-def-01
+    axis: definition
+    type: free_recall
+    front: シングルレッグX（SLX）とはどのような状態を指すか
+    back: |
+      下の者が相手の片脚に自分の両脚を絡めて制している状態。
+      Xガードが相手の重心の下に潜って支えるのに対し、
+      SLXは相手の片脚そのものを支点として拘束する。
+
+  - id: single-leg-x-def-02
+    axis: definition
+    type: free_recall
+    front: シングルレッグXとXガードの違いを述べよ
+    back: |
+      Xガードは相手の重心の下に潜り込んで持ち上げる構造なのに対し、
+      SLXは相手の片脚に絡みつく構造で、より脚の関節への攻撃に繋がりやすい。
+
+  - id: single-leg-x-req-01
+    axis: requirement
+    type: free_recall
+    front: シングルレッグXを維持するための要件は何か
+    back: |
+      絡めた相手の脚を自分の体から離さず、
+      相手が脚を引き抜く方向に対して継続的に拘束を保つこと。
+
+  - id: single-leg-x-prin-01
+    axis: principle
+    type: free_recall
+    front: シングルレッグXが崩しに有効な原理を説明せよ
+    back: |
+      相手の片脚を拘束することで、その脚を床に着けて支えることを妨げる。
+      支持脚が使えない相手は前後方向のバランスを失いやすく、
+      少ない力で倒すことができる。
+
+  - id: single-leg-x-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: single-leg-x-causal-01
+    front: シングルレッグXでよくある失敗を1つ挙げよ
+    back: |
+      拘束が緩み、相手との間に空間ができて脚を引き抜かれること。
+
+  - id: single-leg-x-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: single-leg-x-causal-01
+    front: シングルレッグXで拘束が緩むと、結果として何が起きるか
+    back: |
+      相手は脚を引き抜いて自由になり、こちらは仰向けで脚を伸ばした
+      無防備な状態に取り残されるため、そのままパスを許しやすい。
+
+  - id: single-leg-x-fol-01
+    axis: followup
+    type: free_recall
+    front: シングルレッグXからの代表的な展開を挙げよ
+    back: |
+      相手を倒して上のポジションを取るスイープ、
+      あるいは足関節技への移行。
+    note: |
+      足関節技（特に膝の回旋を伴うもの）の可否・危険性・帯別の扱いは
+      safety および rules カテゴリで人間の記述と IBJJF v6.0 を典拠に別途扱う。
+      このカードでは技名の言及に留め、掛け方・禁忌は扱わない。

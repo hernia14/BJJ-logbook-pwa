@@ -1,0 +1,74 @@
+id: knee-on-belly
+name_ja: ニーオンザベリー
+name_en: Knee-on-Belly
+aliases: [ニーオンベリー, KOB, 膝十字押さえ]
+category: positions
+tags:
+  positions: [knee-on-belly]
+  concepts: [base, pressure, angle, posture]
+
+status: draft
+source_type: ai_research
+sources:
+  - https://bjjnc.com/2019/02/22/most-common-positions-in-brazilian-jiu-jitsu/
+reviewed_by: null
+reviewed_date: null
+safety_level: none
+
+created: 2026-08-09
+updated: 2026-08-09
+
+cards:
+  - id: knee-on-belly-def-01
+    axis: definition
+    type: free_recall
+    front: ニーオンザベリーとはどのような状態を指すか
+    back: |
+      上の者が片膝を相手の腹部や胸に乗せ、もう一方の脚を立てて床を踏み、
+      上体を起こして相手を制している状態。
+
+  - id: knee-on-belly-req-01
+    axis: requirement
+    type: free_recall
+    front: ニーオンザベリーを維持するために、上の者が立てている脚はどう使うか
+    back: |
+      床を踏んで体重の配分を調整し、相手の動きに合わせて位置を移動できる状態を保つ。
+      立てた脚が土台となることで、相手が動いた瞬間に体重をかけ直したり、
+      別のポジションへ即座に移れる。
+
+  - id: knee-on-belly-prin-01
+    axis: principle
+    type: free_recall
+    front: ニーオンザベリーが与える圧が強い原理を説明せよ
+    back: |
+      体重が膝という狭い一点に集中するため、
+      同じ体重でも接触面積の広い押さえ込みより単位面積あたりの圧力が大きくなる。
+      加えて腹部への圧迫は呼吸を苦しくさせ、相手の消耗を早める。
+
+  - id: knee-on-belly-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: knee-on-belly-causal-01
+    front: ニーオンザベリーでよくある失敗を1つ挙げよ
+    back: |
+      体重を膝に乗せすぎて重心を相手の上に預けきってしまい、
+      立てている脚が床から浮いた状態になること。
+
+  - id: knee-on-belly-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: knee-on-belly-causal-01
+    front: ニーオンザベリーで重心を相手に預けきると、結果として何が起きるか
+    back: |
+      相手が腰を回して膝を押し外す動きに対して踏ん張る土台がなく、
+      崩されてポジションを失う。相手のガードリカバリーを許しやすくなる。
+
+  - id: knee-on-belly-fol-01
+    axis: followup
+    type: free_recall
+    front: ニーオンザベリーからの代表的な移行先を挙げよ
+    back: |
+      相手が押し返してくればマウントへ、相手が背を向ければバックへ、
+      相手が耐えればサイドコントロールへ戻る。
+      移動の自由度が高いことがこのポジションの利点。
+    note: 競技上のポイントの有無は IBJJF v6.0 を典拠に rules カテゴリで別途扱う。

@@ -165,7 +165,7 @@
 
 | カテゴリ | 件数（暫定） |
 |---|---|
-| positions | 16 |
+| positions | 17 |
 | guard-passing | 9 |
 | sweeps | 8 |
 | submissions/chokes | 13 |
@@ -174,7 +174,7 @@
 | takedowns | 8 |
 | transitions | 4 |
 | concepts | 8 |
-| **合計** | **82** |
+| **合計** | **83** |
 
 ※ これはあくまで「広く認知された技」の第一弾リスト。レビュー後、必要に応じて追加調査・追加項目を行う。
 

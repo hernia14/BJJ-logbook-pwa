@@ -1,0 +1,86 @@
+id: closed-guard
+name_ja: クローズドガード
+name_en: Closed Guard
+aliases: [フルガード, Full Guard, クローズド]
+category: positions
+tags:
+  positions: [closed-guard]
+  concepts: [posture, base, angle, grip-fighting]
+
+status: draft
+source_type: ai_research
+sources:
+  - https://en.wikipedia.org/wiki/Guard_(grappling)
+  - https://www.infighting.ca/bjj-basics-the-guard-glossary/
+  - http://www.grapplearts.com/A-Glossary-Of-Guards.pdf
+reviewed_by: null
+reviewed_date: null
+safety_level: none
+
+created: 2026-08-09
+updated: 2026-08-09
+
+cards:
+  - id: closed-guard-def-01
+    axis: definition
+    type: free_recall
+    front: クローズドガードとはどのような状態を指すか
+    back: |
+      下の者が仰向け（または半身）になり、両脚を相手の胴に巻きつけ、
+      相手の背中側で両足首を組んでロックした状態。
+      脚のロックによって相手の腰を拘束し、離脱・前進を制限する。
+
+  - id: closed-guard-req-01
+    axis: requirement
+    type: free_recall
+    front: クローズドガードを機能させるために、下の者が最優先で行うべきことは何か
+    back: |
+      相手のポスチャー（上体の姿勢）を崩し、上体を起こさせないこと。
+      相手が上体を起こしたままだと、こちらの攻撃が届かず、
+      相手側から脚を開かれてパスへ移行されやすくなる。
+
+  - id: closed-guard-grip-01
+    axis: grip
+    type: free_recall
+    front: クローズドガードにおける代表的なグリップの組み合わせを1つ挙げ、その目的を述べよ
+    back: |
+      襟（カラー）と袖（スリーブ）のクロスグリップが代表例。
+      襟でポスチャーを崩し、袖で相手の腕の動きを制限することで、
+      崩し・スイープ・サブミッションへの入口を同時に確保する。
+    note: Gi前提のグリップ。ノーギでは首と手首のコントロールに置き換わる。
+
+  - id: closed-guard-prin-01
+    axis: principle
+    type: free_recall
+    front: クローズドガードで「ポスチャーを崩す」ことがなぜ有効なのか、原理として説明せよ
+    back: |
+      相手が上体を起こした姿勢は、体重を自分の脚に乗せて安定した土台（ベース）を作れる
+      状態であり、かつ距離が取れるため下からの攻撃が届かない。
+      上体を前に崩すと、相手の重心が前方に移動して土台が不安定になり、
+      同時に首と腕がこちらの攻撃範囲に入る。
+
+  - id: closed-guard-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: closed-guard-causal-01
+    front: クローズドガードでよくある失敗を1つ挙げよ（角度に関するもの）
+    back: |
+      相手の正面に真っ直ぐ寝たまま、脚を締めるだけで攻撃しようとすること。
+      角度を作らず正対したままでは、相手の左右のバランスを崩せない。
+
+  - id: closed-guard-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: closed-guard-causal-01
+    front: クローズドガードで角度を作らず正対したままだと、結果として何が起きるか
+    back: |
+      相手は左右どちらにも崩されないため安定して姿勢を保て、
+      ポスチャーを立て直す時間を得る。結果的に脚を開かれ、パスガードを許しやすくなる。
+
+  - id: closed-guard-cnt-01
+    axis: counter
+    type: free_recall
+    front: 上の者はクローズドガードに対してまず何をするか
+    back: |
+      ポスチャーを立てて上体を起こし、相手の腰・脚のコントロールを外す。
+      その上で脚のロックを開かせ（オープンさせ）、パスガードの体勢へ移行する。

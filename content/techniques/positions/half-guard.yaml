@@ -1,0 +1,77 @@
+id: half-guard
+name_ja: ハーフガード
+name_en: Half Guard
+aliases: [ハーフ, Half Mount, ハーフマウント]
+category: positions
+tags:
+  positions: [half-guard]
+  concepts: [frame, underhook, angle, pressure]
+
+status: draft
+source_type: ai_research
+sources:
+  - https://en.wikipedia.org/wiki/Half_guard
+  - https://www.infighting.ca/bjj-basics-the-guard-glossary/
+  - https://bjjfanatics.com/blogs/news/types-of-guard-in-bjj
+reviewed_by: null
+reviewed_date: null
+safety_level: none
+
+created: 2026-08-09
+updated: 2026-08-09
+
+cards:
+  - id: half-guard-def-01
+    axis: definition
+    type: free_recall
+    front: ハーフガードとはどのような状態を指すか
+    back: |
+      下の者が両脚で相手の片脚のみを挟み込んで制している状態。
+      クローズドガードと異なり相手の胴ではなく片脚を拘束するため、
+      相手は上体を自由に使えるが、完全に前進することもできない。
+
+  - id: half-guard-req-01
+    axis: requirement
+    type: free_recall
+    front: ハーフガードの下から攻めるために不可欠な上半身のコントロールは何か
+    back: |
+      アンダーフック（相手の腋の下に腕を差し込むこと）。
+      アンダーフックを取ることで相手を自分の上に乗せず横に流せるようになり、
+      スイープや背後を取る動きへ繋げられる。
+
+  - id: half-guard-prin-01
+    axis: principle
+    type: free_recall
+    front: ハーフガードが「ブリッジ（橋渡し）のポジション」と呼ばれるのはなぜか
+    back: |
+      完全に押さえ込まれた状態（サイドコントロールやマウント）と、
+      完全なガードとの中間に位置し、双方向へ移行しうるため。
+      下から見ればガードへ復帰する足がかりであり、
+      上から見ればパスを完成させる一歩手前にあたる。
+
+  - id: half-guard-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: half-guard-causal-01
+    front: ハーフガードの下でよくある失敗を1つ挙げよ（体の向きに関するもの）
+    back: |
+      仰向けのまま平らに寝てしまい、横向き（サイド）の姿勢を作らないこと。
+      アンダーフックも取らず、相手に上体を被せられたまま我慢してしまう。
+
+  - id: half-guard-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: half-guard-causal-01
+    front: ハーフガードの下で仰向けのまま平らに寝てしまうと、結果として何が起きるか
+    back: |
+      相手の体重を胸で正面から受けることになり、圧力で動けなくなる。
+      さらに上体を制されて挟んだ脚を抜かれ、サイドコントロールやマウントへ
+      パスを許しやすくなる。
+
+  - id: half-guard-cnt-01
+    axis: counter
+    type: free_recall
+    front: 上の者がハーフガードから前進するための基本方針は何か
+    back: |
+      相手のアンダーフックを封じ、自分がアンダーフックまたは上体のコントロールを取ること。
+      その上で挟まれている脚を抜き、サイドコントロール等の押さえ込みへ移行する。

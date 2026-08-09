@@ -1,0 +1,74 @@
+id: lasso-guard
+name_ja: ラッソーガード
+name_en: Lasso Guard
+aliases: [ラッソー, ラソーガード]
+category: positions
+tags:
+  positions: [lasso-guard, open-guard, spider-guard]
+  concepts: [grip-fighting, angle, frame]
+
+status: draft
+source_type: ai_research
+sources:
+  - http://www.grapplearts.com/A-Glossary-Of-Guards.pdf
+  - https://www.infighting.ca/bjj-basics-the-guard-glossary/
+reviewed_by: null
+reviewed_date: null
+safety_level: none
+
+created: 2026-08-09
+updated: 2026-08-09
+
+cards:
+  - id: lasso-guard-def-01
+    axis: definition
+    type: free_recall
+    front: ラッソーガードとはどのような状態を指すか
+    back: |
+      下の者が片脚を相手の腕の外側から内側へ回し込むように絡め、
+      袖のグリップと合わせて相手の腕を固定する状態。
+
+  - id: lasso-guard-def-02
+    axis: definition
+    type: free_recall
+    front: ラッソーガードとスパイダーガードのコントロールの違いは何か
+    back: |
+      スパイダーは足の裏を相手の腕に当てて「押す」ことで距離を作るのに対し、
+      ラッソーは脚を腕に「絡める」ことで固定する。
+      ラッソーの方が拘束が強く外されにくい一方、脚を絡めている分こちらの機動性も下がる。
+
+  - id: lasso-guard-req-01
+    axis: requirement
+    type: free_recall
+    front: ラッソーガードを機能させるための要件は何か
+    back: |
+      絡めた側の袖のグリップを保持し続けること。
+      グリップと脚の絡みが組み合わさって初めて相手の腕を固定でき、
+      グリップが切れると脚を抜かれる。
+
+  - id: lasso-guard-prin-01
+    axis: principle
+    type: free_recall
+    front: ラッソーガードが相手のパスを妨げる原理を説明せよ
+    back: |
+      相手の片腕を体から離れた位置に固定することで、
+      その腕でこちらの脚を捌く動作も、床を支えに前進する動作も封じる。
+      片側の腕が使えない相手は、パスに必要な左右のバランスを取りにくくなる。
+
+  - id: lasso-guard-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: lasso-guard-causal-01
+    front: ラッソーガードでよくある失敗を1つ挙げよ
+    back: |
+      脚を絡めることに満足し、もう一方の脚や手で相手の残りの側を制していないこと。
+
+  - id: lasso-guard-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: lasso-guard-causal-01
+    front: ラッソーガードで絡めていない側を制していないと、結果として何が起きるか
+    back: |
+      相手は自由な側へ回り込んで角度を変えられる。
+      絡めた脚は特定の方向にしか効かないため、
+      回り込まれた時点でその拘束は意味を失いパスを許す。

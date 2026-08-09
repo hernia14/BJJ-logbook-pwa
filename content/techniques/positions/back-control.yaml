@@ -1,0 +1,78 @@
+id: back-control
+name_ja: バックコントロール
+name_en: Back Control
+aliases: [バックマウント, Back Mount, バック, 背後]
+category: positions
+tags:
+  positions: [back-control]
+  concepts: [posture, angle, pressure, frame]
+
+status: draft
+source_type: ai_research
+sources:
+  - https://bjjnc.com/2019/02/22/most-common-positions-in-brazilian-jiu-jitsu/
+  - https://evolve-mma.com/blog/3-back-mount-escapes-you-need-to-know-in-bjj/
+reviewed_by: null
+reviewed_date: null
+safety_level: none
+
+created: 2026-08-09
+updated: 2026-08-09
+
+cards:
+  - id: back-control-def-01
+    axis: definition
+    type: free_recall
+    front: バックコントロールとはどのような状態を指すか
+    back: |
+      相手の背後に位置し、胸を相手の背中に密着させて制している状態。
+      脚は両足のフック（かかとを相手の腿の内側に掛ける）か、
+      ボディトライアングル（片脚をもう一方の膝裏に掛けて三角に組む）で固定する。
+
+  - id: back-control-req-01
+    axis: requirement
+    type: free_recall
+    front: バックコントロールを維持するために、脚のフックはどこに掛けるべきで、どこに掛けてはいけないか
+    back: |
+      かかとを相手の腿の内側に掛ける。
+      両足首を相手の胴の前で組んでしまうと、足関節を取られる危険があり、
+      また体格差のある相手に対しては脚を割られて外されやすくなる。
+
+  - id: back-control-prin-01
+    axis: principle
+    type: free_recall
+    front: バックコントロールが最も優位とされる原理を説明せよ
+    back: |
+      相手は自分の背後にいる者に対して視認も正対もできず、
+      腕・脚による防御構造を背中側へ向けて作ることが難しい。
+      一方でこちらは相手の首という決定的な急所へ、
+      相手からの直接的な反撃を受けずに到達できる。
+
+  - id: back-control-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: back-control-causal-01
+    front: バックコントロールでよくある失敗を1つ挙げよ（体の位置に関するもの）
+    back: |
+      相手の背中の真上に乗ってしまうこと（相手を下敷きにして真後ろから覆いかぶさる）。
+      本来は相手の背中側の「肩と床の間」に自分の上体を落とし、
+      横向きの角度を保つ必要がある。
+
+  - id: back-control-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: back-control-causal-01
+    front: バックコントロールで相手の背中の真上に乗ってしまうと、結果として何が起きるか
+    back: |
+      相手が床を使って背中を押し付けながら回転できるため、
+      こちらの体との間に空間が生まれ、背中を床に着けられて
+      バックポジションを失う（マウントやガードに戻される）。
+
+  - id: back-control-cnt-01
+    axis: counter
+    type: free_recall
+    front: バックコントロールを取られた側が脱出時にまず優先すべきことは何か
+    back: |
+      首の防御。相手の絞めに来る腕の侵入を手で防ぎ、顎を引いて首元の空間を消す。
+      絞めの脅威を無効化してから、肩を床方向へ落として背中を着ける動きに移る。
+    note: 「まず絞めを防いでから脱出」の順序が重要。逆順は絞められながら動くことになる。

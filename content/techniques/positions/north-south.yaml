@@ -1,0 +1,71 @@
+id: north-south
+name_ja: ノースサウス
+name_en: North-South
+aliases: [ノースアンドサウス, 上四方固め, North and South]
+category: positions
+tags:
+  positions: [north-south]
+  concepts: [pressure, base, frame]
+
+status: draft
+source_type: ai_research
+sources:
+  - https://en.wikipedia.org/wiki/North%E2%80%93south_position
+reviewed_by: null
+reviewed_date: null
+safety_level: none
+
+created: 2026-08-09
+updated: 2026-08-09
+
+cards:
+  - id: north-south-def-01
+    axis: definition
+    type: free_recall
+    front: ノースサウスとはどのような状態を指すか
+    back: |
+      上の者が相手の頭側に位置し、自分の頭と相手の頭が互いに逆方向を向く形で
+      上から押さえ込んでいる状態。柔道の上四方固めに相当する。
+
+  - id: north-south-req-01
+    axis: requirement
+    type: free_recall
+    front: ノースサウスを維持するために、上の者は体重をどこへ向けるべきか
+    back: |
+      相手の胸部・肩へ向けて体重を落とす。
+      腰を高く上げすぎず、相手が腰を回して逃げる動きに追随できる位置を保つ。
+
+  - id: north-south-prin-01
+    axis: principle
+    type: free_recall
+    front: ノースサウスが下の者にとって苦しい原理を説明せよ
+    back: |
+      下の者は相手が頭側にいるため、腕でフレームを作っても押し返す方向が
+      自分の頭上方向となり、力を出しにくい。
+      また相手の脚が遠いため、脚を絡めてガードへ戻す手段も取りづらい。
+
+  - id: north-south-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: north-south-causal-01
+    front: ノースサウスでよくある失敗を1つ挙げよ
+    back: |
+      腰を高く上げたまま押さえ、相手の頭上に自分の体重を通していないこと。
+
+  - id: north-south-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: north-south-causal-01
+    front: ノースサウスで腰が高いまま押さえると、結果として何が起きるか
+    back: |
+      相手の上体との間に空間が残り、相手が腰を回して横方向へ抜け出す余地を与える。
+      ガードリカバリーやタートルへの復帰を許しやすくなる。
+
+  - id: north-south-fol-01
+    axis: followup
+    type: free_recall
+    front: ノースサウスからの代表的な移行先・攻撃の方向性を挙げよ
+    back: |
+      左右いずれかのサイドコントロールへ回り込む、
+      あるいは相手の腕を制して腕関節や絞めへ移行する。
+      相手が腰を回して逃げようとする動きに合わせて位置を入れ替えていく。

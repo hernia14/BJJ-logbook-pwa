@@ -1,0 +1,74 @@
+id: open-guard
+name_ja: オープンガード
+name_en: Open Guard
+aliases: [オープン, 開いたガード]
+category: positions
+tags:
+  positions: [open-guard]
+  concepts: [frame, angle, grip-fighting, posture]
+
+status: draft
+source_type: ai_research
+sources:
+  - https://en.wikipedia.org/wiki/Guard_(grappling)
+  - http://www.grapplearts.com/A-Glossary-Of-Guards.pdf
+  - https://www.infighting.ca/bjj-basics-the-guard-glossary/
+reviewed_by: null
+reviewed_date: null
+safety_level: none
+
+created: 2026-08-09
+updated: 2026-08-09
+
+cards:
+  - id: open-guard-def-01
+    axis: definition
+    type: free_recall
+    front: オープンガードとはどのような状態を指すか
+    back: |
+      下の者が両足首を組まずに、脚を自由に使って相手を制している状態の総称。
+      デラヒーバ、スパイダー、バタフライ、Xガードなど多数の派生を含む上位概念。
+
+  - id: open-guard-def-02
+    axis: definition
+    type: free_recall
+    front: オープンガードとクローズドガードの本質的な違いは何か
+    back: |
+      クローズドガードは足首を組んで相手を機械的にロックするのに対し、
+      オープンガードはロックせず、グリップと脚の当て方・角度によって
+      継続的に相手のバランスを崩し続けることで制する。
+
+  - id: open-guard-req-01
+    axis: requirement
+    type: free_recall
+    front: オープンガードで最も重要な要件は何か
+    back: |
+      相手との距離と角度を管理し続けること。
+      ロックがないため、一度距離を詰められて脚を越えられるとすぐにパスされる。
+      常にグリップと脚の接点で相手の前進を妨げる必要がある。
+
+  - id: open-guard-prin-01
+    axis: principle
+    type: free_recall
+    front: オープンガードが「崩し続けなければならない」原理を説明せよ
+    back: |
+      物理的なロックがないため、相手が安定した状態にある限り自由に前進できる。
+      相手を常に不安定な状態に置くことで、
+      前進に使うはずの力をバランス回復に使わせるのがオープンガードの働き。
+
+  - id: open-guard-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: open-guard-causal-01
+    front: オープンガードでよくある失敗を1つ挙げよ
+    back: |
+      脚だけで相手を押し返そうとし、グリップ（手による制御）を確保しないこと。
+
+  - id: open-guard-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: open-guard-causal-01
+    front: オープンガードでグリップを確保しないと、結果として何が起きるか
+    back: |
+      相手は自由に左右へ動けるため、脚の外側へ回り込まれる。
+      脚は一方向にしか押せないため、角度をずらされた瞬間に無力化されパスを許す。

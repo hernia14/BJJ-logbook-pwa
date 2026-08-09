@@ -1,0 +1,72 @@
+id: rubber-guard
+name_ja: ラバーガード
+name_en: Rubber Guard
+aliases: [ラバー]
+category: positions
+tags:
+  positions: [rubber-guard, closed-guard]
+  concepts: [posture, angle, frame]
+
+status: draft
+source_type: ai_research
+sources:
+  - https://en.wikipedia.org/wiki/Rubber_guard
+  - http://www.grapplearts.com/A-Glossary-Of-Guards.pdf
+reviewed_by: null
+reviewed_date: null
+safety_level: caution
+
+created: 2026-08-09
+updated: 2026-08-09
+
+cards:
+  - id: rubber-guard-def-01
+    axis: definition
+    type: free_recall
+    front: ラバーガードとはどのような状態を指すか
+    back: |
+      下の者が自分の脚を高く上げて相手の上体（背中や肩の上）に掛け、
+      同じ側の手で自分の足首や脛を保持することで、
+      相手のポスチャーを崩したまま固定する状態。
+
+  - id: rubber-guard-req-01
+    axis: requirement
+    type: free_recall
+    front: ラバーガードを成立させるための身体的な前提条件は何か
+    back: |
+      股関節を中心とした高い柔軟性。
+      自分の脚を相手の上体の高さまで持ち上げ、
+      その位置で維持し続けられる可動域が必要になる。
+
+  - id: rubber-guard-prin-01
+    axis: principle
+    type: free_recall
+    front: ラバーガードがポスチャーを崩し続けられる原理を説明せよ
+    back: |
+      腕の力だけで相手の上体を引き付けるのではなく、
+      脚という体幹に近い大きな筋群を使って相手の上体を押さえ込む。
+      さらに手で自分の脚を保持することで構造として固定されるため、
+      腕力の消耗を抑えたまま相手のポスチャー回復を封じられる。
+
+  - id: rubber-guard-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: rubber-guard-causal-01
+    front: ラバーガードでよくある失敗を1つ挙げよ
+    back: |
+      柔軟性が足りないまま無理に形を作ろうとし、
+      脚の位置が浅く相手の上体を十分に押さえられていないこと。
+
+  - id: rubber-guard-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: rubber-guard-causal-01
+    front: ラバーガードで脚の位置が浅いと、結果として何が起きるか
+    back: |
+      相手はポスチャーを立て直せるうえ、
+      こちらは片手を自分の脚の保持に使っているため防御に使える手が減っている。
+      結果として通常のクローズドガードより不利な状態で
+      パスを許すことになりかねない。
+    note: |
+      無理な可動域での実施に伴う身体的リスクについては safety カテゴリで
+      人間の記述に基づいて別途扱う。このカードでは扱わない。

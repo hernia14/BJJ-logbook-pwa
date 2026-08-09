@@ -1,0 +1,75 @@
+id: turtle
+name_ja: タートル
+name_en: Turtle
+aliases: [タートルポジション, 亀, 亀になる]
+category: positions
+tags:
+  positions: [turtle]
+  concepts: [frame, base, posture]
+
+status: draft
+source_type: ai_research
+sources:
+  - https://bjjnc.com/2019/02/22/most-common-positions-in-brazilian-jiu-jitsu/
+  - https://thebjjatlas.com/escapes/
+reviewed_by: null
+reviewed_date: null
+safety_level: none
+
+created: 2026-08-09
+updated: 2026-08-09
+
+cards:
+  - id: turtle-def-01
+    axis: definition
+    type: free_recall
+    front: タートルとはどのような状態を指すか
+    back: |
+      両膝と両肘（または両手）を床につけ、体を丸めて防御的に縮こまった状態。
+      首と腕を体の内側に収めることで、相手からの侵入点を減らす姿勢。
+
+  - id: turtle-req-01
+    axis: requirement
+    type: free_recall
+    front: タートルの姿勢で守るべき要件は何か
+    back: |
+      肘を体側に密着させて脇を締め、首を守ること。
+      脇や首元に空間があると、そこから腕を差し込まれてコントロールされ、
+      背後を取られたり絞めを許したりする。
+
+  - id: turtle-prin-01
+    axis: principle
+    type: free_recall
+    front: タートルが「安全な防御姿勢」であると同時に危険でもある理由を説明せよ
+    back: |
+      体を丸めることで一時的に侵入点を減らせるが、
+      相手に背中側を向けているため、そのまま留まれば背後を取られる方向にしか展開しない。
+      あくまで通過点であり、留まり続ける姿勢ではない。
+
+  - id: turtle-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: turtle-causal-01
+    front: タートルでよくある失敗を1つ挙げよ
+    back: |
+      その姿勢のまま静止して耐えようとし、次の動きへ移らないこと。
+      また、脇が開いて相手の腕の侵入を許すこと。
+
+  - id: turtle-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: turtle-causal-01
+    front: タートルのまま静止して耐えると、結果として何が起きるか
+    back: |
+      相手にフックを入れる時間と、グリップを整える時間を与えることになり、
+      バックコントロールを完成させられる。
+      そこから首を狙われる展開に繋がる。
+
+  - id: turtle-fol-01
+    axis: followup
+    type: free_recall
+    front: タートルから下の者が目指すべき展開の方向性を挙げよ
+    back: |
+      前転や横方向への回転でガードへ復帰する、
+      相手の脚をとらえて下から返す、あるいは立ち上がって距離を取る。
+      いずれも「留まらず動く」ことが共通の方針。

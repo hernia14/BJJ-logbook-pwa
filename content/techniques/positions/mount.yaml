@@ -1,0 +1,76 @@
+id: mount
+name_ja: マウント
+name_en: Mount
+aliases: [マウントポジション, Full Mount, 縦四方固め系]
+category: positions
+tags:
+  positions: [mount]
+  concepts: [base, pressure, posture, frame]
+
+status: draft
+source_type: ai_research
+sources:
+  - https://bjjnc.com/2019/02/22/most-common-positions-in-brazilian-jiu-jitsu/
+  - https://en.wikipedia.org/wiki/Guard_(grappling)
+reviewed_by: null
+reviewed_date: null
+safety_level: none
+
+created: 2026-08-09
+updated: 2026-08-09
+
+cards:
+  - id: mount-def-01
+    axis: definition
+    type: free_recall
+    front: マウントとはどのような状態を指すか
+    back: |
+      上の者が相手の胴体の上に跨り、両脚を相手の胴の左右に置いて上から制している状態。
+      相手の脚による拘束を一切受けていない点が、ガード内にいる状態との決定的な違い。
+
+  - id: mount-req-01
+    axis: requirement
+    type: free_recall
+    front: マウントを維持するために上の者が守るべき要件は何か
+    back: |
+      安定したベースを保ち、相手のブリッジやエビ（腰の横移動）に対して
+      重心が浮かないようにすること。
+      上体を高く起こしすぎると重心が上がって返されやすく、
+      逆に相手に密着しすぎると相手の腕にフレームを作られる余地を与える。
+
+  - id: mount-prin-01
+    axis: principle
+    type: free_recall
+    front: マウントが有利なポジションとされる原理を説明せよ
+    back: |
+      下の者は自分の脚を相手に対して使えず、
+      押し返す・距離を取るという最も強い手段を封じられる。
+      一方で上の者は重力を味方につけて体重を相手の胴に乗せられ、
+      両手を攻撃に自由に使える。
+
+  - id: mount-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: mount-causal-01
+    front: マウントを取った側のよくある失敗を1つ挙げよ（重心に関するもの）
+    back: |
+      サブミッションを急いで上体を高く起こし、重心を上げてしまうこと。
+      また、腕を相手の体の片側に大きく伸ばして体重を預けること。
+
+  - id: mount-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: mount-causal-01
+    front: マウントで重心を高く上げてしまうと、結果として何が起きるか
+    back: |
+      相手のブリッジに対して支点が高くなり、少ない力で上体を跳ね上げられてしまう。
+      結果としてブリッジ返し（ウパ）で下になり、一気に不利なポジションへ転落しうる。
+
+  - id: mount-cnt-01
+    axis: counter
+    type: free_recall
+    front: 下の者がマウントから脱出する際の基本的な2つの方向性は何か
+    back: |
+      1つはブリッジして相手を頭側へ跳ね上げ、横に転がして返す方向（ウパ／ブリッジ返し）。
+      もう1つは肘と膝でフレームを作り、腰をずらして相手の脚との間に空間を作り、
+      ハーフガードやガードへ戻す方向（エルボー・ニーエスケープ）。

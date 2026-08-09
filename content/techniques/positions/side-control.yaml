@@ -1,0 +1,85 @@
+id: side-control
+name_ja: サイドコントロール
+name_en: Side Control
+aliases: [サイド, 横四方固め, Side Mount, クロスサイド]
+category: positions
+tags:
+  positions: [side-control]
+  concepts: [pressure, frame, base, angle]
+
+status: draft
+source_type: ai_research
+sources:
+  - https://en.wikipedia.org/wiki/Side_control
+  - https://bjjnc.com/2019/02/22/most-common-positions-in-brazilian-jiu-jitsu/
+reviewed_by: null
+reviewed_date: null
+safety_level: none
+
+created: 2026-08-09
+updated: 2026-08-09
+
+cards:
+  - id: side-control-def-01
+    axis: definition
+    type: free_recall
+    front: サイドコントロールとはどのような状態を指すか
+    back: |
+      上の者が相手の体に対して横向きに位置し、
+      自分の胸で相手の胸を制して押さえ込んでいる状態。
+      相手の脚による拘束は受けていない。柔道の横四方固めに相当する。
+
+  - id: side-control-req-01
+    axis: requirement
+    type: free_recall
+    front: サイドコントロールを維持するうえで、上の者が相手に与えてはならないものは何か
+    back: |
+      相手の肘や膝が自分の体との間に入り込む「空間」。
+      空間ができるとフレームを作られ、そこから腰をずらされてガードへ戻される。
+
+  - id: side-control-prin-01
+    axis: principle
+    type: free_recall
+    front: サイドコントロールにおける「圧（プレッシャー）」の原理を説明せよ
+    back: |
+      腕力で押さえつけるのではなく、体重を相手の胸や肩へ伝わる角度で乗せることで、
+      少ない消耗で相手の動きを止める。
+      つま先を立てて床を押し、体重の向かう方向をコントロールすることが要点になる。
+
+  - id: side-control-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: side-control-causal-01
+    front: サイドコントロールを取った側のよくある失敗を1つ挙げよ
+    back: |
+      サブミッションを狙って腕を相手の体の下や遠くへ伸ばし、
+      胸の密着と体重の乗せ方が緩むこと。
+
+  - id: side-control-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: side-control-causal-01
+    front: サイドコントロールで胸の密着が緩むと、結果として何が起きるか
+    back: |
+      相手との間に空間が生まれ、そこに肘や膝のフレームを差し込まれる。
+      そこから腰をずらされてガードリカバリーを許すか、
+      逆に背中を取られる展開に転じうる。
+
+  - id: side-control-cnt-01
+    axis: counter
+    type: free_recall
+    front: 下の者がサイドコントロールから脱出する際の基本手順の考え方を述べよ
+    back: |
+      まずフレームを作って相手との間に空間を確保し、
+      次にその空間を使って腰をずらし（エビ）、
+      相手と自分の間に膝または脚を入れてガードやハーフガードへ戻す。
+
+  - id: side-control-hier-01
+    axis: hierarchy
+    type: free_recall
+    front: サイドコントロールとマウントの、コントロールの性質上の違いは何か
+    back: |
+      サイドコントロールは横から胸で制するため安定性が高く維持しやすい一方、
+      マウントは上から跨るため相手の脚の自由をより強く奪える。
+      一般にサイドコントロールはマウントやニーオンザベリーへ進む足場として使われる。
+    note: 競技上のポイントの有無・点数は IBJJF v6.0 を典拠に rules カテゴリで別途扱う。

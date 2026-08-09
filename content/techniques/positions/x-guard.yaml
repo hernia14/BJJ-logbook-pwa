@@ -1,0 +1,73 @@
+id: x-guard
+name_ja: Xガード
+name_en: X-Guard
+aliases: [エックスガード, Xガード]
+category: positions
+tags:
+  positions: [x-guard, open-guard]
+  concepts: [base, angle, frame]
+
+status: draft
+source_type: ai_research
+sources:
+  - http://www.grapplearts.com/A-Glossary-Of-Guards.pdf
+  - https://www.infighting.ca/bjj-basics-the-guard-glossary/
+reviewed_by: null
+reviewed_date: null
+safety_level: none
+
+created: 2026-08-09
+updated: 2026-08-09
+
+cards:
+  - id: x-guard-def-01
+    axis: definition
+    type: free_recall
+    front: Xガードとはどのような状態を指すか
+    back: |
+      下の者が相手の脚の下に潜り込み、両脚をX字に組んで
+      相手の片脚を挟み込むように制した状態。相手は立位であることが多い。
+
+  - id: x-guard-req-01
+    axis: requirement
+    type: free_recall
+    front: Xガードを機能させるために、下の者はどこに位置すべきか
+    back: |
+      相手の重心の真下に潜り込むこと。
+      重心の下から支えることで、相手は自分の体重をこちらに預ける形になり、
+      自力でバランスを取り直すことが難しくなる。
+
+  - id: x-guard-prin-01
+    axis: principle
+    type: free_recall
+    front: Xガードが立っている相手を崩せる原理を説明せよ
+    back: |
+      X字に組んだ脚が相手の支持脚を持ち上げ、床から離す方向に働く。
+      片脚を床から浮かされた相手は、残る一本の脚だけで
+      不安定な支持基底面に立つことになり、わずかな力で崩れる。
+
+  - id: x-guard-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: x-guard-causal-01
+    front: Xガードでよくある失敗を1つ挙げよ（位置に関するもの）
+    back: |
+      相手の重心の下まで潜り込めず、体が相手から離れた位置にあること。
+
+  - id: x-guard-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: x-guard-causal-01
+    front: Xガードで相手の重心の下まで潜り込めないと、結果として何が起きるか
+    back: |
+      相手は自分の足で床を踏んで安定を保てるため、
+      持ち上げる力が体重に負けて機能しない。
+      さらに上から潰されて脚のX字を割られ、パスを許しやすくなる。
+
+  - id: x-guard-fol-01
+    axis: followup
+    type: free_recall
+    front: Xガードからの代表的な展開を挙げよ
+    back: |
+      相手を前後左右へ倒すスイープから上のポジションを取る、
+      あるいはシングルレッグXなど別の脚の絡みへ移行する。

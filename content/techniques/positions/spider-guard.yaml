@@ -1,0 +1,74 @@
+id: spider-guard
+name_ja: スパイダーガード
+name_en: Spider Guard
+aliases: [スパイダー]
+category: positions
+tags:
+  positions: [spider-guard, open-guard]
+  concepts: [grip-fighting, frame, angle]
+
+status: draft
+source_type: ai_research
+sources:
+  - https://evolve-mma.com/blog/10-types-of-bjj-guards-grapplers-should-know/
+  - https://www.infighting.ca/bjj-basics-the-guard-glossary/
+reviewed_by: null
+reviewed_date: null
+safety_level: none
+
+created: 2026-08-09
+updated: 2026-08-09
+
+cards:
+  - id: spider-guard-def-01
+    axis: definition
+    type: free_recall
+    front: スパイダーガードとはどのような状態を指すか
+    back: |
+      下の者が相手の両袖を握り、足の裏を相手の上腕（二頭筋のあたり）に当てて
+      押し引きしながら制する状態。道衣の袖を掴む必要があるためGi特有のガード。
+
+  - id: spider-guard-req-01
+    axis: requirement
+    type: free_recall
+    front: スパイダーガードを維持するために不可欠な要件は何か
+    back: |
+      袖のグリップを切られないこと。
+      このガードは袖のグリップと足の圧が一体で機能するため、
+      グリップを外された時点で構造が崩れる。
+
+  - id: spider-guard-prin-01
+    axis: principle
+    type: free_recall
+    front: スパイダーガードが相手の姿勢を制御できる原理を説明せよ
+    back: |
+      袖を引きながら足で腕を押すことで、相手の腕を体から離れた位置に固定できる。
+      腕を伸ばされた相手は上体の力を前方へ伝えられず、
+      パスに必要な圧力をかけることも、手を床について支えることも難しくなる。
+
+  - id: spider-guard-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: spider-guard-causal-01
+    front: スパイダーガードでよくある失敗を1つ挙げよ
+    back: |
+      腕と脚を伸ばしきったまま静止し、相手のグリップ切りに対応しないこと。
+
+  - id: spider-guard-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: spider-guard-causal-01
+    front: スパイダーガードで伸ばしきったまま静止すると、結果として何が起きるか
+    back: |
+      伸びきった腕は力が入らず握力を消耗しやすいうえ、
+      相手にグリップを切る時間を与える。グリップが切れた瞬間に構造が崩壊し、
+      無防備な状態でパスを許す。
+
+  - id: spider-guard-fol-01
+    axis: followup
+    type: free_recall
+    front: スパイダーガードからの代表的な展開を挙げよ
+    back: |
+      相手のバランスを崩してのスイープ、
+      片方の脚をラッソー（相手の腕への絡み）に切り替えての別ガードへの移行、
+      腕を制した状態からの三角絞めやオモプラータなどの攻撃。
