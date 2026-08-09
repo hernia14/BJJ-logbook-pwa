@@ -77,7 +77,7 @@
 | Rear Naked Choke (RNC) | 裸絞め（はだかじめ） | 柔道の「裸絞」に相当。背後からの絞め |
 | Cross Collar Choke | クロスカラーチョーク | 襟を交差して絞める（Gi） |
 | Bow and Arrow Choke | ボウアンドアローチョーク | 背後から襟と脚を使う（Gi） |
-| Ezekiel Choke (Sode Guruma Jime) | エゼキエル絞め | 袖車絞めに相当 |
+| Ezekiel Choke (Sode Guruma Jime) | エゼキエル絞め／袖車（そでぐるま） | 袖車絞めと同一技（2026-08-09 本人確認済み） |
 | Guillotine Choke | ギロチンチョーク | 正面からの首絞め |
 | Triangle Choke (Sankaku Jime) | 三角絞め | 脚で三角を作り絞める |
 | Darce Choke (D'Arce) | ダースチョーク | 逆腕十字絞め系 |
@@ -86,8 +86,7 @@
 | Arm Triangle (Kata Gatame) | 腕がらみ絞め／肩固め系 | 肩固めに近い |
 | Von Flue Choke | フォンフルーチョーク | ギロチン対策から派生する絞め |
 | Loop Choke | ループチョーク | 襟を使った絞め（Gi） |
-| （英名要確認） | カントチョーク | 人間による追加（2026-08-09）。英名・詳細は本人確認待ち → `TODO_QUESTIONS.md` |
-| （英名要確認） | 袖車（そでぐるま） | 人間による追加（2026-08-09）。上のエゼキエル絞めの別名欄と重複の可能性あり → `TODO_QUESTIONS.md` |
+| Canto Choke | カントチョーク | 人間による追加（2026-08-09） |
 
 ---
 
@@ -126,14 +125,13 @@
 | 技名（英） | 通称・別名 | 備考 |
 |---|---|---|
 | Double Leg Takedown (Morote Gari) | もろて刈り／ダブルレッグ | レスリング系の基本テイクダウン |
-| Single Leg Takedown | シングルレッグ | 片脚を抱えて倒す |
+| Single Leg Takedown | シングルレッグ／ワンレッグ | 片脚を抱えて倒す。「ワンレッグ」は同一技の別名（2026-08-09 本人確認済み） |
 | Ankle Pick | アンクルピック | 足首を掴んで崩す |
 | Osoto Gari | 大外刈り | 柔道由来の代表的な足技 |
 | Ouchi Gari | 大内刈り | 柔道由来の内股系刈り技 |
 | Seoi Nage | 背負い投げ | 柔道由来の代表的な投げ技 |
 | Uchi Mata | 内股 | 柔道由来の投げ技 |
 | Sprawl (Takedown Defense) | スプロール | テイクダウン防御の基本動作 |
-| （英名要確認） | ワンレッグ | 人間による追加（2026-08-09）。上のシングルレッグと同一か別物か本人確認待ち → `TODO_QUESTIONS.md` |
 
 ---
 
@@ -170,13 +168,13 @@
 | positions | 16 |
 | guard-passing | 9 |
 | sweeps | 8 |
-| submissions/chokes | 14 |
+| submissions/chokes | 13 |
 | submissions/joint-locks | 9 |
 | escapes | 7 |
-| takedowns | 9 |
+| takedowns | 8 |
 | transitions | 4 |
 | concepts | 8 |
-| **合計** | **84** |
+| **合計** | **82** |
 
 ※ これはあくまで「広く認知された技」の第一弾リスト。レビュー後、必要に応じて追加調査・追加項目を行う。
 
@@ -185,10 +183,10 @@
 2026-08-09時点で、以下4件は本人（黒帯指導者）の指示により追加された。
 AIのWeb調査由来ではないため、**優先度はこちらが上**。
 
-- ダックアンダーパス（guard-passing）
-- カントチョーク（chokes）
-- 袖車（chokes）
-- ワンレッグ（takedowns）
+- ダックアンダーパス（guard-passing）… 新規エントリとして追加
+- カントチョーク / Canto Choke（chokes）… 新規エントリとして追加
+- 袖車（chokes）… エゼキエル絞めと同一技のため、その別名欄へ統合
+- ワンレッグ（takedowns）… シングルレッグと同一技のため、その別名欄へ統合
 
 ---
 
