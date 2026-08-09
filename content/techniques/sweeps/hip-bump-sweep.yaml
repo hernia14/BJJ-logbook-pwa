@@ -1,0 +1,86 @@
+id: hip-bump-sweep
+name_ja: ヒップバンプスイープ
+name_en: Hip Bump Sweep
+aliases: [ヒップバンプ, シットアップスイープ, Sit-up Sweep]
+category: sweeps
+tags:
+  positions: [closed-guard, mount]
+  concepts: [base, angle, posture]
+
+status: draft
+source_type: ai_research
+sources:
+  - https://evolve-mma.com/blog/the-first-3-sweeps-you-should-master-in-bjj/
+  - https://www.elitesports.com/blogs/news/top-5-sweeps-for-bjj-beginners
+reviewed_by: null
+reviewed_date: null
+safety_level: none
+
+created: 2026-08-09
+updated: 2026-08-09
+
+cards:
+  - id: hip-bump-sweep-def-01
+    axis: definition
+    type: free_recall
+    front: ヒップバンプスイープとはどのようなスイープか
+    back: |
+      ガードから上体を起こし、片手を後ろについて体を支えながら、
+      自分の腰を相手の腰へぶつけるように押し込んで相手を後方へ倒すスイープ。
+
+  - id: hip-bump-sweep-req-01
+    axis: requirement
+    type: free_recall
+    front: ヒップバンプスイープを成立させるための要件は何か
+    back: |
+      勢いよく上体を起こして相手との距離を詰めること、
+      後ろについた手で自分の体を支えること、
+      そして相手の上体を制して後方へ倒す方向を作ること。
+
+  - id: hip-bump-sweep-proc-01
+    axis: procedure
+    type: ordering
+    phase: execution
+    front: ヒップバンプスイープの手順を正しい順に並べよ
+    steps:
+      - 上体を勢いよく起こして相手に近づく
+      - 片手を体の後ろについて自分を支える
+      - もう一方の腕で相手の上体を制する
+      - 腰を相手の腰へぶつけながら回転し、相手を後方へ倒す
+
+  - id: hip-bump-sweep-prin-01
+    axis: principle
+    type: free_recall
+    front: ヒップバンプスイープが機能する原理を説明せよ
+    back: |
+      相手の重心より低い位置から腰を当てることで、
+      相手の支持している脚より後方へ重心を押し出す。
+      同時に自分の上体を起こすことで、下から押し上げるのではなく
+      前方へ押し倒す方向の力を作れる。
+
+  - id: hip-bump-sweep-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: hip-bump-sweep-causal-01
+    front: ヒップバンプスイープでよくある失敗を1つ挙げよ
+    back: |
+      上体を起こす動きが弱く、腰が相手に届かないまま腕の力だけで押そうとすること。
+
+  - id: hip-bump-sweep-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: hip-bump-sweep-causal-01
+    front: ヒップバンプスイープで腰が届かないまま仕掛けると、結果として何が起きるか
+    back: |
+      相手は倒れず、こちらは上体を起こして片手を後ろについた
+      無防備な姿勢だけが残る。その体勢を狙われて押し倒されるか、
+      背中側を攻められる危険がある。
+
+  - id: hip-bump-sweep-fol-01
+    axis: followup
+    type: free_recall
+    front: ヒップバンプスイープを相手に防がれた場合、どのような連携が考えられるか
+    back: |
+      相手が押し返して前へ体重を掛けてきた場合、その力を利用して
+      別方向のスイープや腕の関節技（キムラなど）へ移行する。
+      同じ体勢から複数の選択肢が生まれる点がこの技の利点。

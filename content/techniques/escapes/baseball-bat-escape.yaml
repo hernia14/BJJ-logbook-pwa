@@ -1,0 +1,72 @@
+id: baseball-bat-escape
+name_ja: ベースボールバットグリップエスケープ
+name_en: Baseball Bat Grip Escape
+aliases: [ベースボールグリップ, バットグリップ, 両手で一本を握る防御]
+category: escapes
+tags:
+  positions: [back-control]
+  concepts: [frame, grip-fighting, angle]
+
+status: draft
+source_type: ai_research
+sources:
+  - https://evolve-mma.com/blog/3-back-mount-escapes-you-need-to-know-in-bjj/
+reviewed_by: null
+reviewed_date: null
+safety_level: none
+
+created: 2026-08-09
+updated: 2026-08-09
+
+cards:
+  - id: baseball-bat-escape-def-01
+    axis: definition
+    type: free_recall
+    front: ベースボールバットグリップとはどのような防御か
+    back: |
+      バックを取られた状態で、相手の絞めに来る片腕を
+      野球のバットを握るように自分の両手で掴んで制する防御の形。
+
+  - id: baseball-bat-escape-prin-01
+    axis: principle
+    type: free_recall
+    front: 片腕に対して両手を使うことがなぜ有効なのか、原理を説明せよ
+    back: |
+      腕1本に対して腕2本を当てるため、力の面で優位に立てる。
+      絞めは相手の一方の腕が首に回ることで成立するため、
+      その腕を数的優位で止めれば絞めの成立条件そのものを崩せる。
+
+  - id: baseball-bat-escape-req-01
+    axis: requirement
+    type: free_recall
+    front: ベースボールバットグリップを使う際の要件は何か
+    back: |
+      相手の腕を自分の首から離れた位置で掴み、
+      その腕が首へ回り込む経路を塞ぐこと。
+      掴んだまま体の向きを変えて脱出動作に繋げる。
+
+  - id: baseball-bat-escape-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: baseball-bat-escape-causal-01
+    front: ベースボールバットグリップでよくある失敗を1つ挙げよ
+    back: |
+      腕を掴んだまま静止して、防御だけで耐えようとすること。
+
+  - id: baseball-bat-escape-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: baseball-bat-escape-causal-01
+    front: ベースボールバットグリップで掴んだまま静止すると、結果として何が起きるか
+    back: |
+      両手が塞がっている状態が続くため、
+      相手はグリップを変えたり反対の腕で仕掛けたりする時間を得る。
+      防御は一時的にしか持たず、消耗した側から崩れる。
+
+  - id: baseball-bat-escape-fol-01
+    axis: followup
+    type: free_recall
+    front: ベースボールバットグリップで絞めを止めた後、何をすべきか
+    back: |
+      止めている間に肩を床方向へ落とし、背中を床につける動きへ繋げる。
+      防御は脱出の入口であって、それ自体が目的ではない。

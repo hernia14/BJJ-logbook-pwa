@@ -1,0 +1,97 @@
+id: scissor-sweep
+name_ja: シザースイープ
+name_en: Scissor Sweep
+aliases: [シザース, はさみ返し]
+category: sweeps
+tags:
+  positions: [closed-guard, mount]
+  concepts: [angle, grip-fighting, base, posture]
+
+status: draft
+source_type: ai_research
+sources:
+  - https://evolve-mma.com/blog/the-first-3-sweeps-you-should-master-in-bjj/
+  - https://www.elitesports.com/blogs/news/top-5-sweeps-for-bjj-beginners
+  - https://gbjj.org/5-bjj-sweeps-every-beginner-should-learn/
+reviewed_by: null
+reviewed_date: null
+safety_level: none
+
+created: 2026-08-09
+updated: 2026-08-09
+
+cards:
+  - id: scissor-sweep-def-01
+    axis: definition
+    type: free_recall
+    front: シザースイープとはどのようなスイープか
+    back: |
+      クローズドガードから、片膝を相手の腹の前へ横向きに入れ、
+      もう一方の脚を相手の脚の外側へ回して、
+      両脚をはさみのように動かしながら相手を横へ倒すスイープ。
+
+  - id: scissor-sweep-grip-01
+    axis: grip
+    type: free_recall
+    front: シザースイープにおける代表的なグリップを述べよ
+    back: |
+      片手で相手の襟、もう一方の手で相手の反対側の袖を握る。
+      襟でポスチャーを崩し、袖で相手が手をついて支えるのを防ぐ。
+
+  - id: scissor-sweep-req-01
+    axis: requirement
+    type: free_recall
+    front: シザースイープを成立させるための要件は何か
+    back: |
+      相手のポスチャーを崩しておくことと、
+      倒す方向にある相手の手を袖のグリップで封じること。
+      相手が手をつければ支えられてしまう。
+
+  - id: scissor-sweep-proc-01
+    axis: procedure
+    type: ordering
+    phase: setup
+    front: シザースイープの準備段階の手順を正しい順に並べよ
+    steps:
+      - 襟と反対側の袖のグリップを確保する
+      - 襟を引いて相手のポスチャーを崩す
+      - 腰をずらして角度を作り、片膝を相手の腹の前へ横向きに入れる
+
+  - id: scissor-sweep-proc-02
+    axis: procedure
+    type: ordering
+    phase: execution
+    front: シザースイープの実行段階の手順を正しい順に並べよ
+    steps:
+      - もう一方の脚を相手の脚の外側へ回して刈る位置に置く
+      - 上の脚で押し下の脚で刈る、はさみの動きを同時に行う
+      - グリップで引きながら相手を横へ倒す
+      - 相手が倒れたら上体を起こしてマウントを確保する
+
+  - id: scissor-sweep-prin-01
+    axis: principle
+    type: free_recall
+    front: シザースイープの「はさみ」の動きが機能する原理を説明せよ
+    back: |
+      上の脚が相手の上体を一方向へ押し、下の脚が相手の下半身を逆方向へ刈る。
+      互いに逆向きの力が上下に働くことで回転する力が生まれ、
+      押すだけ・刈るだけよりはるかに小さい力で相手を倒せる。
+
+  - id: scissor-sweep-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: scissor-sweep-causal-01
+    front: シザースイープでよくある失敗を1つ挙げよ
+    back: |
+      相手のポスチャーを崩さないまま脚の動きだけで倒そうとすること。
+      また、正対したまま角度を作らずに仕掛けること。
+
+  - id: scissor-sweep-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: scissor-sweep-causal-01
+    front: シザースイープでポスチャーを崩さずに仕掛けると、結果として何が起きるか
+    back: |
+      相手は上体が立っているため手をついて支えられ、倒れない。
+      さらに横向きに入れた膝を押さえられて脚を潰され、
+      逆にパスガードの起点を与えることになる。

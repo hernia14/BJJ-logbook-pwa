@@ -1,0 +1,86 @@
+id: elbow-knee-escape
+name_ja: エルボー・ニーエスケープ
+name_en: Elbow-Knee Escape
+aliases: [肘膝エスケープ, シュリンプエスケープ, エビでの脱出, Shrimp Escape]
+category: escapes
+tags:
+  positions: [mount, half-guard, closed-guard]
+  concepts: [frame, hip-escape, angle]
+
+status: draft
+source_type: ai_research
+sources:
+  - https://evolve-mma.com/blog/10-fundamental-bjj-escapes-all-grapplers-should-know/
+  - https://thebjjatlas.com/escapes/
+reviewed_by: null
+reviewed_date: null
+safety_level: none
+
+created: 2026-08-09
+updated: 2026-08-09
+
+cards:
+  - id: elbow-knee-escape-def-01
+    axis: definition
+    type: free_recall
+    front: エルボー・ニーエスケープとはどのようなエスケープか
+    back: |
+      マウントを取られた状態から、肘と膝を使ってフレームを作り、
+      腰をずらして相手の脚との間に自分の膝を差し込み、
+      ハーフガードやガードへ戻す脱出法。
+
+  - id: elbow-knee-escape-req-01
+    axis: requirement
+    type: free_recall
+    front: エルボー・ニーエスケープで最初に確保すべきものは何か
+    back: |
+      肘を相手の腿や腰に当てるフレーム。
+      これによって相手が腰を落としてくる力を受け止め、
+      腰をずらすための空間を確保する。
+
+  - id: elbow-knee-escape-proc-01
+    axis: procedure
+    type: ordering
+    phase: execution
+    front: エルボー・ニーエスケープの手順を正しい順に並べよ
+    steps:
+      - 肘を相手の腿や腰に当ててフレームを作る
+      - 体を横向きにして腰をずらす（エビ）
+      - できた空間へ膝を差し込む
+      - 差し込んだ脚でハーフガードまたはガードの形を作る
+
+  - id: elbow-knee-escape-prin-01
+    axis: principle
+    type: free_recall
+    front: エルボー・ニーエスケープがウパと補完関係にある原理を説明せよ
+    back: |
+      ウパは相手が前方に重心を寄せて腕を伸ばしている時に有効で、
+      エルボー・ニーエスケープは相手が重心を落として安定している時に有効。
+      相手がどちらかを防げばもう一方の条件が整うため、
+      2つを組み合わせることで相手は同時に両方を防げなくなる。
+
+  - id: elbow-knee-escape-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: elbow-knee-escape-causal-01
+    front: エルボー・ニーエスケープでよくある失敗を1つ挙げよ
+    back: |
+      腕を伸ばして相手を押し返そうとすること。
+      また、肩や上体だけをずらして腰が動いていないこと。
+
+  - id: elbow-knee-escape-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: elbow-knee-escape-causal-01
+    front: エルボー・ニーエスケープで腕を伸ばして押し返すと、結果として何が起きるか
+    back: |
+      伸ばした腕は相手に取られやすく、腕関節技の標的になる。
+      また押し返す力では相手の体重に対抗できず、空間も生まれない。
+
+  - id: elbow-knee-escape-cnt-01
+    axis: counter
+    type: free_recall
+    front: 上の者はエルボー・ニーエスケープに対してどう対処するか
+    back: |
+      相手の肘と膝が繋がらないよう膝を高い位置に保ち、
+      腰をずらされた方向へ追随して空間を潰す。

@@ -1,0 +1,83 @@
+id: back-escape
+name_ja: バックエスケープ
+name_en: Back Escape
+aliases: [バックからの脱出, 背後からの脱出, ヒップヒースト]
+category: escapes
+tags:
+  positions: [back-control, mount, half-guard]
+  concepts: [frame, angle, posture, hip-escape]
+
+status: draft
+source_type: ai_research
+sources:
+  - https://evolve-mma.com/blog/3-back-mount-escapes-you-need-to-know-in-bjj/
+  - https://thebjjatlas.com/escapes/
+reviewed_by: null
+reviewed_date: null
+safety_level: none
+
+created: 2026-08-09
+updated: 2026-08-09
+
+cards:
+  - id: back-escape-def-01
+    axis: definition
+    type: free_recall
+    front: バックエスケープの基本的な考え方を述べよ
+    back: |
+      まず首への攻撃を防いだうえで、
+      自分の背中を床の方向へ落として相手の胸と自分の背中の間に空間を作り、
+      その空間から相手の制御の外側へ体を移す。
+
+  - id: back-escape-req-01
+    axis: requirement
+    type: free_recall
+    front: バックエスケープで脱出動作より先に行うべきことは何か
+    back: |
+      首の防御。相手の絞めに来る腕の侵入を手で止め、顎を引く。
+      絞めの脅威を残したまま動くと、動いた隙に絞めが完成する。
+
+  - id: back-escape-proc-01
+    axis: procedure
+    type: ordering
+    phase: execution
+    front: バックエスケープの手順を正しい順に並べよ
+    steps:
+      - 相手の絞めに来る腕を両手で制し、顎を引いて首を守る
+      - 絞めの腕がある側とは反対側へ肩を落とし、背中を床に近づける
+      - 背中を床につけて相手の胸との密着を切る
+      - 相手のフックを外し、体を相手の正面側へ移してガードなどへ戻す
+
+  - id: back-escape-prin-01
+    axis: principle
+    type: free_recall
+    front: バックエスケープで「絞めの腕と反対側へ逃げる」原理を説明せよ
+    back: |
+      絞めの腕がある側へ回ると、自分の首が相手の腕の懐へ深く入る方向になる。
+      反対側へ抜ければ首は腕から離れる方向に動くため、
+      脱出動作そのものが絞めの防御を兼ねる。
+
+  - id: back-escape-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: back-escape-causal-01
+    front: バックエスケープでよくある失敗を1つ挙げよ
+    back: |
+      首の防御より先にフックを外そうとして、両手を下半身に使ってしまうこと。
+
+  - id: back-escape-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: back-escape-causal-01
+    front: バックエスケープで首の防御より先にフックを外そうとすると、結果として何が起きるか
+    back: |
+      首元が無防備になり、フックを外し終える前に絞めが完成する。
+      脱出の途中でタップに至るという最も避けたい形になる。
+
+  - id: back-escape-cnt-01
+    axis: counter
+    type: free_recall
+    front: バックを取っている側はエスケープに対してどう対処するか
+    back: |
+      相手が背中を床へ落とす動きに合わせて自分も同じ方向へ回り込み、
+      胸と背中の密着を保つ。フックまたはボディトライアングルを維持する。

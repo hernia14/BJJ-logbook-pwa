@@ -1,0 +1,86 @@
+id: side-control-escape
+name_ja: サイドコントロールエスケープ
+name_en: Side Control Escape
+aliases: [サイドエスケープ, 横四方からの脱出, ニーイン・エスケープ]
+category: escapes
+tags:
+  positions: [side-control, half-guard, closed-guard, turtle]
+  concepts: [frame, hip-escape, angle, pressure]
+
+status: draft
+source_type: ai_research
+sources:
+  - https://www.nagafighter.com/mastering-side-control-escape-techniques-with-mauricio-gomes/
+  - https://evolve-mma.com/blog/3-escapes-from-the-side-control-in-bjj/
+  - https://thebjjatlas.com/escapes/
+reviewed_by: null
+reviewed_date: null
+safety_level: none
+
+created: 2026-08-09
+updated: 2026-08-09
+
+cards:
+  - id: side-control-escape-def-01
+    axis: definition
+    type: free_recall
+    front: サイドコントロールエスケープの基本的な考え方を述べよ
+    back: |
+      フレームで相手との間に空間を作り、
+      その空間を使って腰をずらし、脚または膝を相手との間に入れて
+      ガードやハーフガードへ戻す。
+
+  - id: side-control-escape-req-01
+    axis: requirement
+    type: free_recall
+    front: サイドコントロールエスケープで作るフレームはどこに当てるか
+    back: |
+      一方の腕を相手の首や襟に、もう一方の腕を相手の腰に当てるのが基本形。
+      上下2点で支えることで、相手が前後どちらに動いても空間を保てる。
+
+  - id: side-control-escape-proc-01
+    axis: procedure
+    type: ordering
+    phase: execution
+    front: サイドコントロールエスケープの手順を正しい順に並べよ
+    steps:
+      - 相手の首側と腰側にフレームを作る
+      - フレームで押し返しながら腰をずらして空間を作る
+      - できた空間に膝を差し込む
+      - 脚を通してハーフガードまたはガードの形を作る
+
+  - id: side-control-escape-prin-01
+    axis: principle
+    type: free_recall
+    front: サイドコントロールエスケープで「フレームが先、動くのは後」である原理を説明せよ
+    back: |
+      フレームがない状態で動くと、相手は体重を移すだけで動いた分を追随できる。
+      先に構造で空間を確保しておけば、相手は追随するために体勢を変える必要が生じ、
+      その一瞬に腰を移動させられる。
+
+  - id: side-control-escape-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: side-control-escape-causal-01
+    front: サイドコントロールエスケープでよくある失敗を1つ挙げよ
+    back: |
+      相手の背中側に腕を回して抱えてしまうこと（フレームではなく抱きつく形）。
+
+  - id: side-control-escape-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: side-control-escape-causal-01
+    front: サイドコントロールの下で相手の背中に腕を回すと、結果として何が起きるか
+    back: |
+      自分と相手の間に空間を作る構造がなくなり密着を許す。
+      さらに回した腕が相手側の攻撃対象となり、
+      腕を制されてより深い押さえ込みへ移行されやすい。
+
+  - id: side-control-escape-fol-01
+    axis: followup
+    type: free_recall
+    front: サイドコントロールエスケープの主な行き先を2方向挙げよ
+    back: |
+      1つはガードやハーフガードへ戻す方向。
+      もう1つは相手の頭側へ回り込んで膝立ちになり、
+      タートルや立ち上がりを経て上のポジションを狙う方向。

@@ -1,0 +1,73 @@
+id: x-guard-sweep
+name_ja: Xガードスイープ
+name_en: X-Guard Sweep
+aliases: [Xガードからのスイープ, エックスガードスイープ]
+category: sweeps
+tags:
+  positions: [x-guard, single-leg-x, open-guard]
+  concepts: [base, angle, frame]
+
+status: draft
+source_type: ai_research
+sources:
+  - http://www.grapplearts.com/A-Glossary-Of-Guards.pdf
+  - https://metamatwarriors.com/all-bjj-moves
+reviewed_by: null
+reviewed_date: null
+safety_level: none
+
+created: 2026-08-09
+updated: 2026-08-09
+
+cards:
+  - id: x-guard-sweep-def-01
+    axis: definition
+    type: free_recall
+    front: Xガードスイープとはどのようなスイープか
+    back: |
+      Xガードで相手の重心の下に潜り込んだ状態から、
+      X字に組んだ脚で相手の支持脚を持ち上げて倒すスイープの総称。
+
+  - id: x-guard-sweep-req-01
+    axis: requirement
+    type: free_recall
+    front: Xガードスイープを成立させるための要件は何か
+    back: |
+      相手の重心の真下に自分の体が入っていること。
+      重心の下から支えていなければ、脚を持ち上げても相手は自力で立て直せる。
+
+  - id: x-guard-sweep-prin-01
+    axis: principle
+    type: free_recall
+    front: Xガードスイープが小さな力で相手を倒せる原理を説明せよ
+    back: |
+      相手の体重をすでに自分の脚で支えている状態から始まるため、
+      倒すために必要なのは支えている方向を変えることだけである。
+      持ち上げる力ではなく、支持の方向を変える操作で崩せる。
+
+  - id: x-guard-sweep-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: x-guard-sweep-causal-01
+    front: Xガードスイープでよくある失敗を1つ挙げよ
+    back: |
+      相手の重心の下まで入りきらないまま、脚の力だけで持ち上げようとすること。
+
+  - id: x-guard-sweep-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: x-guard-sweep-causal-01
+    front: Xガードスイープで重心の下に入りきらずに仕掛けると、結果として何が起きるか
+    back: |
+      相手は床を踏んで踏ん張れるため倒れない。
+      さらに上から潰されて脚のX字を割られ、
+      仰向けで脚を伸ばした不利な体勢からパスを許す。
+
+  - id: x-guard-sweep-fol-01
+    axis: followup
+    type: free_recall
+    front: Xガードスイープが成功した後、どのような位置を取るのが基本か
+    back: |
+      相手が倒れる方向に合わせて立ち上がるか、
+      相手の脚を制したまま上のポジションへ移行する。
+      倒しただけで終わらせず、上のコントロールまで繋げる。

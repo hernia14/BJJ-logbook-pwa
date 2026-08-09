@@ -1,0 +1,77 @@
+id: butterfly-sweep
+name_ja: バタフライスイープ
+name_en: Butterfly Sweep
+aliases: [フックスイープ, Butterfly Hook Sweep, バタフライフックスイープ]
+category: sweeps
+tags:
+  positions: [butterfly-guard, mount, side-control]
+  concepts: [angle, underhook, base, posture]
+
+status: draft
+source_type: ai_research
+sources:
+  - https://evolve-mma.com/blog/the-first-3-sweeps-you-should-master-in-bjj/
+  - https://www.10thplanetpoway.com/jiu-jitsu-sweeps/
+reviewed_by: null
+reviewed_date: null
+safety_level: none
+
+created: 2026-08-09
+updated: 2026-08-09
+
+cards:
+  - id: butterfly-sweep-def-01
+    axis: definition
+    type: free_recall
+    front: バタフライスイープとはどのようなスイープか
+    back: |
+      バタフライガードから、相手の腿の内側に掛けたフックで片脚を持ち上げ、
+      上体のコントロールと合わせて相手を横へ倒すスイープ。
+
+  - id: butterfly-sweep-req-01
+    axis: requirement
+    type: free_recall
+    front: バタフライスイープを成立させるための上半身の要件は何か
+    back: |
+      アンダーフックまたは上体のグリップで相手と密着し、
+      相手の上体を自分の側へ引き寄せていること。
+      フックだけでは持ち上がらず、上体の引きと同時に働いて初めて倒せる。
+
+  - id: butterfly-sweep-proc-01
+    axis: procedure
+    type: ordering
+    phase: execution
+    front: バタフライスイープの手順を正しい順に並べよ
+    steps:
+      - アンダーフックなど上体のコントロールを確保して密着する
+      - 倒す方向と反対側へ体を傾け、相手の体重を片側へ寄せる
+      - 寄せた側のフックで相手の腿を持ち上げる
+      - 上体の引きと合わせて横へ倒し、上のポジションを取る
+
+  - id: butterfly-sweep-prin-01
+    axis: principle
+    type: free_recall
+    front: バタフライスイープで「先に体重を片側へ寄せる」原理を説明せよ
+    back: |
+      相手の体重が両脚に均等に乗っている状態では、片脚を持ち上げても
+      もう一方の脚で支えられてしまう。
+      先に一方へ体重を寄せておけば、支えていない側の脚は軽く持ち上がり、
+      支えている側の脚は動かせないため崩れる。
+
+  - id: butterfly-sweep-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: butterfly-sweep-causal-01
+    front: バタフライスイープでよくある失敗を1つ挙げよ
+    back: |
+      上体のコントロールを取らずにフックの持ち上げだけで倒そうとすること。
+
+  - id: butterfly-sweep-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: butterfly-sweep-causal-01
+    front: バタフライスイープで上体を制さずフックだけで仕掛けると、結果として何が起きるか
+    back: |
+      相手は上体が自由なため、手をついて支えるか体を後ろへ引いて逃げられる。
+      こちらは仰向けに倒れて上から潰される形になり、
+      フックも外されてパスを許しやすい。

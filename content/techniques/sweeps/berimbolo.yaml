@@ -1,0 +1,77 @@
+id: berimbolo
+name_ja: ベリンボロ
+name_en: Berimbolo
+aliases: [ベリンボロー, ベリ]
+category: sweeps
+tags:
+  positions: [de-la-riva-guard, back-control, open-guard]
+  concepts: [angle, grip-fighting, base]
+
+status: draft
+source_type: ai_research
+sources:
+  - https://metamatwarriors.com/all-bjj-moves
+  - http://www.grapplearts.com/A-Glossary-Of-Guards.pdf
+reviewed_by: null
+reviewed_date: null
+safety_level: caution
+
+created: 2026-08-09
+updated: 2026-08-09
+
+cards:
+  - id: berimbolo-def-01
+    axis: definition
+    type: free_recall
+    front: ベリンボロとはどのような動きか
+    back: |
+      デラヒーバなどのガードから、自分が下方向へ回転しながら
+      相手の下をくぐるように潜り込み、相手の背後を取りにいく一連の動き。
+
+  - id: berimbolo-def-02
+    axis: definition
+    type: free_recall
+    front: ベリンボロが通常のスイープと性質が異なる点は何か
+    back: |
+      多くのスイープが相手を倒して上を取ることを目的とするのに対し、
+      ベリンボロは回転によって相手の背後へ回り込むことを主目的とする。
+      上下の入れ替えではなく前後の位置取りの変更が主眼にある。
+
+  - id: berimbolo-req-01
+    axis: requirement
+    type: free_recall
+    front: ベリンボロを成立させるための要件は何か
+    back: |
+      回転中も相手のコントロールを失わないこと。
+      脚のフックとグリップで相手との接点を保ち続けなければ、
+      自分だけが回転して相手から離れてしまう。
+
+  - id: berimbolo-prin-01
+    axis: principle
+    type: free_recall
+    front: ベリンボロの回転が有効な原理を説明せよ
+    back: |
+      相手が正面のガードに対処している間に、
+      自分が回転して相手の防御が向いていない背後側へ移動する。
+      相手の防御の向きと自分の位置をずらすという点で、角度の概念の応用にあたる。
+
+  - id: berimbolo-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: berimbolo-causal-01
+    front: ベリンボロでよくある失敗を1つ挙げよ
+    back: |
+      回転の勢いだけで動き、グリップとフックによる相手との接点を失うこと。
+
+  - id: berimbolo-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: berimbolo-causal-01
+    front: ベリンボロで相手との接点を失うと、結果として何が起きるか
+    back: |
+      自分だけが回転して背中を相手に向けた状態で床に取り残される。
+      相手にとっては何もせずバックやパスの機会を得たことになり、
+      仕掛けた側が一方的に不利になる。
+    note: |
+      回転を伴う動作であり、首や膝への負荷、および相手の脚の絡みによる
+      危険性については safety カテゴリで人間の記述に基づき別途扱う。

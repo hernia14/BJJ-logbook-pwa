@@ -1,0 +1,94 @@
+id: upa
+name_ja: ウパ（ブリッジ返し）
+name_en: Upa (Bridge and Roll)
+aliases: [ブリッジ返し, トラップアンドロール, Trap and Roll, 海老反り返し]
+category: escapes
+tags:
+  positions: [mount, closed-guard]
+  concepts: [base, frame, angle, posture]
+
+status: draft
+source_type: ai_research
+sources:
+  - https://evolve-mma.com/blog/10-fundamental-bjj-escapes-all-grapplers-should-know/
+  - https://thebjjatlas.com/escapes/
+reviewed_by: null
+reviewed_date: null
+safety_level: none
+
+created: 2026-08-09
+updated: 2026-08-09
+
+cards:
+  - id: upa-def-01
+    axis: definition
+    type: free_recall
+    front: ウパ（ブリッジ返し）とはどのようなエスケープか
+    back: |
+      マウントを取られた状態から、相手の片腕と同じ側の脚を封じたうえで
+      ブリッジして相手を頭方向へ跳ね上げ、封じた側へ転がして上下を入れ替える脱出法。
+
+  - id: upa-req-01
+    axis: requirement
+    type: free_recall
+    front: ウパを成立させるために、返す側で封じなければならないものは何か
+    back: |
+      相手の腕と脚の両方。
+      腕を封じないと相手は手を床について支え、
+      脚を封じないと相手は脚を張って踏ん張るため、どちらか一方では返らない。
+
+  - id: upa-proc-01
+    axis: procedure
+    type: ordering
+    phase: setup
+    front: ウパの準備段階の手順を正しい順に並べよ
+    steps:
+      - 返したい側の相手の腕を両手で抱え、床に手をつけないよう封じる
+      - 同じ側の相手の脚を自分の足で外側から引っ掛けて封じる
+      - 足の裏を床につけて膝を立て、ブリッジできる姿勢を作る
+
+  - id: upa-proc-02
+    axis: procedure
+    type: ordering
+    phase: execution
+    front: ウパの実行段階の手順を正しい順に並べよ
+    steps:
+      - 腰を真上ではなく頭の方向へ突き上げるようにブリッジする
+      - 相手の重心が頭側へ移った瞬間に、封じた側へ体を回転させる
+      - 相手を下にして自分がガードの中に収まる形で着地する
+
+  - id: upa-prin-01
+    axis: principle
+    type: free_recall
+    front: ウパで「頭の方向へ」ブリッジする原理を説明せよ
+    back: |
+      真上に持ち上げても相手は自分の膝と手で支えられる。
+      頭方向へ突き上げると相手の重心が支持範囲の外へ押し出され、
+      前方へ倒れる力が働く。そこへ横方向の回転を加えることで返せる。
+
+  - id: upa-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: upa-causal-01
+    front: ウパでよくある失敗を1つ挙げよ
+    back: |
+      腕だけを封じて脚を封じないままブリッジすること。
+      また、ブリッジと回転が別々の動作になって間が空くこと。
+
+  - id: upa-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: upa-causal-01
+    front: ウパで脚を封じずにブリッジすると、結果として何が起きるか
+    back: |
+      相手は封じられていない側の脚で床を踏んで踏ん張れるため回転しない。
+      こちらは体力を消耗するだけで、
+      浮いた腰を利用されてより深いコントロールを許すこともある。
+
+  - id: upa-cnt-01
+    axis: counter
+    type: free_recall
+    front: 上の者はウパに対してどう対処するか
+    back: |
+      腕を取られないよう手を相手の頭の横などに置き、
+      ブリッジされた際は脚を広げて床を踏み、重心を下げて回転方向へ手をつく。

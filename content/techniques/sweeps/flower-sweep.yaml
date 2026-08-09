@@ -1,0 +1,73 @@
+id: flower-sweep
+name_ja: フラワースイープ
+name_en: Flower Sweep
+aliases: [ペンデュラムスイープ, Pendulum Sweep, 振り子スイープ]
+category: sweeps
+tags:
+  positions: [closed-guard, mount]
+  concepts: [angle, base, grip-fighting]
+
+status: draft
+source_type: ai_research
+sources:
+  - https://www.elitesports.com/blogs/news/top-5-sweeps-for-bjj-beginners
+  - https://gbjj.org/5-bjj-sweeps-every-beginner-should-learn/
+reviewed_by: null
+reviewed_date: null
+safety_level: none
+
+created: 2026-08-09
+updated: 2026-08-09
+
+cards:
+  - id: flower-sweep-def-01
+    axis: definition
+    type: free_recall
+    front: フラワースイープ（ペンデュラムスイープ）とはどのようなスイープか
+    back: |
+      クローズドガードから相手の片腕と片脚を制し、
+      自分の脚を振り子のように大きく振る勢いを使って相手を横へ倒すスイープ。
+
+  - id: flower-sweep-grip-01
+    axis: grip
+    type: free_recall
+    front: フラワースイープで制する2箇所はどこか
+    back: |
+      相手の同じ側の腕（袖など）と、相手の脚（ズボンの裾や膝の裏）。
+      腕を制することで手をついて支えるのを防ぎ、
+      脚を制することで踏ん張る足を封じる。
+
+  - id: flower-sweep-prin-01
+    axis: principle
+    type: free_recall
+    front: フラワースイープで「脚を振る」ことがなぜ有効なのか、原理を説明せよ
+    back: |
+      振り子のように脚を振ると、その運動量が体全体の回転する力に変わる。
+      腕の力で相手を持ち上げるのではなく、
+      自分の体の大きな回転を相手に伝えることで小さな力で倒せる。
+
+  - id: flower-sweep-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: flower-sweep-causal-01
+    front: フラワースイープでよくある失敗を1つ挙げよ
+    back: |
+      相手の腕か脚のどちらか一方しか制さないまま脚を振ること。
+
+  - id: flower-sweep-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: flower-sweep-causal-01
+    front: フラワースイープで腕か脚の一方しか制さないと、結果として何が起きるか
+    back: |
+      制していない側で相手が手をつくか足で踏ん張るため、回転が止まる。
+      振った勢いだけが空回りし、体勢を戻す間に体力を消耗する。
+
+  - id: flower-sweep-fol-01
+    axis: followup
+    type: free_recall
+    front: フラワースイープと連携しやすい攻撃を挙げよ
+    back: |
+      相手の腕を制した状態から仕掛けるため、
+      スイープを防がれた場合は同じ腕への関節技（腕十字など）へ移行しやすい。
+      相手はスイープと関節技の両方を同時に防ぐ必要が生じる。

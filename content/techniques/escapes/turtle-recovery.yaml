@@ -1,0 +1,72 @@
+id: turtle-recovery
+name_ja: タートルリカバリー
+name_en: Turtle Recovery
+aliases: [タートルからの復帰, 亀からのガードリカバリー]
+category: escapes
+tags:
+  positions: [turtle, closed-guard, open-guard, back-control]
+  concepts: [frame, angle, base, posture]
+
+status: draft
+source_type: ai_research
+sources:
+  - https://thebjjatlas.com/escapes/
+  - https://evolve-mma.com/blog/10-fundamental-bjj-escapes-all-grapplers-should-know/
+reviewed_by: null
+reviewed_date: null
+safety_level: none
+
+created: 2026-08-09
+updated: 2026-08-09
+
+cards:
+  - id: turtle-recovery-def-01
+    axis: definition
+    type: free_recall
+    front: タートルリカバリーとはどのような動きか
+    back: |
+      タートル（亀）の姿勢から、回転や立ち上がりによって
+      ガードや上のポジションへ復帰する動きの総称。
+
+  - id: turtle-recovery-req-01
+    axis: requirement
+    type: free_recall
+    front: タートルから復帰する際の要件は何か
+    back: |
+      相手にフックを入れられる前に動き出すこと。
+      脇を締めて腕の侵入を防ぎながら、回転や立ち上がりの方向を確保する。
+
+  - id: turtle-recovery-prin-01
+    axis: principle
+    type: free_recall
+    front: タートルからの復帰で「時間が最大の敵になる」原理を説明せよ
+    back: |
+      タートルは相手に背中側を向けている姿勢であり、
+      静止している時間だけ相手はグリップとフックを整えられる。
+      姿勢そのものが不利なのではなく、その姿勢に留まる時間が不利を確定させる。
+
+  - id: turtle-recovery-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: turtle-recovery-causal-01
+    front: タートルリカバリーでよくある失敗を1つ挙げよ
+    back: |
+      相手の圧に耐えることを優先して縮こまり、動き出しが遅れること。
+
+  - id: turtle-recovery-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: turtle-recovery-causal-01
+    front: タートルで動き出しが遅れると、結果として何が起きるか
+    back: |
+      相手にフックとグリップを完成させる時間を与え、
+      バックコントロールを許す。そこから首を狙われる展開に繋がる。
+
+  - id: turtle-recovery-fol-01
+    axis: followup
+    type: free_recall
+    front: タートルからの復帰の代表的な方向を挙げよ
+    back: |
+      前転して仰向けになりガードを作る方向、
+      相手の脚を捉えて下から返す方向、
+      立ち上がって距離を取る方向。

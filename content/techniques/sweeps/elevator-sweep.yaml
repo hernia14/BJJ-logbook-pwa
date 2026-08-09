@@ -1,0 +1,66 @@
+id: elevator-sweep
+name_ja: エレベータースイープ
+name_en: Elevator Sweep
+aliases: [エレベーター, 持ち上げ返し]
+category: sweeps
+tags:
+  positions: [half-guard, butterfly-guard, closed-guard]
+  concepts: [angle, underhook, base]
+
+status: draft
+source_type: ai_research
+sources:
+  - https://metamatwarriors.com/all-bjj-moves
+  - https://www.10thplanetpoway.com/jiu-jitsu-sweeps/
+reviewed_by: null
+reviewed_date: null
+safety_level: none
+
+created: 2026-08-09
+updated: 2026-08-09
+
+cards:
+  - id: elevator-sweep-def-01
+    axis: definition
+    type: free_recall
+    front: エレベータースイープとはどのようなスイープか
+    back: |
+      自分の脚（フック）を相手の脚の下に入れ、
+      エレベーターのように持ち上げて相手のバランスを奪い、横へ倒すスイープ。
+
+  - id: elevator-sweep-prin-01
+    axis: principle
+    type: free_recall
+    front: エレベータースイープの原理を説明せよ
+    back: |
+      相手が床から得ている支えを、脚を持ち上げることで一時的に奪う。
+      支持点を失った相手は自分でバランスを取れないため、
+      上体を引く小さな力だけで倒れる方向が決まる。
+
+  - id: elevator-sweep-req-01
+    axis: requirement
+    type: free_recall
+    front: エレベータースイープを成立させるための要件は何か
+    back: |
+      持ち上げる脚が相手の重心に近い位置に入っていること、
+      そして上体のコントロールで倒す方向を作れていること。
+
+  - id: elevator-sweep-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: elevator-sweep-causal-01
+    front: エレベータースイープでよくある失敗を1つ挙げよ
+    back: |
+      脚を持ち上げるだけで、上体を引いて倒す方向を作らないこと。
+
+  - id: elevator-sweep-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: elevator-sweep-causal-01
+    front: エレベータースイープで倒す方向を作らないと、結果として何が起きるか
+    back: |
+      相手は持ち上げられても手をついて支えられ、そのまま体重を戻される。
+      持ち上げに使った力だけを消耗する。
+    note: |
+      本技はバタフライスイープと定義が重なる部分がある。
+      両者を別技として扱うか統合するかは TODO_QUESTIONS.md で確認中。

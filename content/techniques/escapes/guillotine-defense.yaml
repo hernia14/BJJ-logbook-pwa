@@ -1,0 +1,77 @@
+id: guillotine-defense
+name_ja: ギロチンディフェンス
+name_en: Guillotine Defense
+aliases: [ギロチン防御, ギロチンエスケープ]
+category: escapes
+tags:
+  positions: [closed-guard, turtle, side-control]
+  concepts: [posture, frame, angle, pressure]
+
+status: draft
+source_type: ai_research
+sources:
+  - https://thebjjatlas.com/escapes/
+  - https://www.elitesports.com/blogs/news/what-are-the-most-common-bjj-choke-submissions-in-ufc
+reviewed_by: null
+reviewed_date: null
+safety_level: caution
+
+created: 2026-08-09
+updated: 2026-08-09
+
+cards:
+  - id: guillotine-defense-def-01
+    axis: definition
+    type: free_recall
+    front: ギロチンディフェンスの基本的な考え方を述べよ
+    back: |
+      首に回された腕の締め付けを緩める、または
+      自分の体を相手の絞めが効かない位置へ移動させることで
+      ギロチンチョークの成立条件を崩す。
+
+  - id: guillotine-defense-req-01
+    axis: requirement
+    type: free_recall
+    front: ギロチンを掛けられた際にまず行うべきことは何か
+    back: |
+      首と相手の腕の間に自分の手を差し入れて空間を確保し、
+      顎を引いて首元を守ること。
+      同時に体の位置を絞めが効きにくい側へ移す。
+
+  - id: guillotine-defense-prin-01
+    axis: principle
+    type: free_recall
+    front: ギロチンディフェンスで「体の位置を変える」ことが有効な原理を説明せよ
+    back: |
+      ギロチンは相手の腕と体幹の間に自分の首が挟まることで力が伝わる。
+      自分の体を相手の側方へ移せば、締め付けに必要な力の方向が失われ、
+      腕を外さなくても絞めが効かなくなる。
+
+  - id: guillotine-defense-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: guillotine-defense-causal-01
+    front: ギロチンディフェンスでよくある失敗を1つ挙げよ
+    back: |
+      首を引き抜こうとして真後ろへ体を引くこと。
+
+  - id: guillotine-defense-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: guillotine-defense-causal-01
+    front: ギロチンから真後ろへ引き抜こうとすると、結果として何が起きるか
+    back: |
+      相手の腕が引かれる方向と自分の首が動く方向が一致するため、
+      かえって締め付けが強まる。抜けないまま消耗し、絞めが完成に近づく。
+    note: |
+      絞め技への対処は危険を伴う。掛けられた際の限界の見極めやタップの判断基準は
+      safety カテゴリで人間の記述に基づき別途扱う。このカードでは扱わない。
+
+  - id: guillotine-defense-prin-02
+    axis: principle
+    type: free_recall
+    front: 「早く反応するほど防御が容易になる」のはなぜか説明せよ
+    back: |
+      絞めは相手のグリップが完成し、体全体が締め付けに参加した段階で最も強くなる。
+      腕が首に回った直後であればグリップも体勢も未完成のため、
+      少ない力で構造を崩せる。時間経過とともに必要な力は増大する。

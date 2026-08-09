@@ -62,11 +62,10 @@
 | Scissor Sweep | シザースイープ | クローズドガードからの基本スイープ |
 | Hip Bump Sweep | ヒップバンプスイープ | オープンガードから座り込んで返す |
 | Flower Sweep (Pendulum Sweep) | フラワースイープ／ペンデュラムスイープ | 振り子状の脚の動きを使う |
-| Butterfly Sweep | バタフライスイープ | バタフライガードからのフック使用 |
+| Butterfly Sweep | バタフライスイープ／フックスイープ | バタフライガードからのフック使用。「フックスイープ」は同一技の別名として統合（要確認 → `TODO_QUESTIONS.md` Q4） |
 | Elevator Sweep | エレベータースイープ | フックで持ち上げて返す |
 | Berimbolo | ベリンボロ | デラヒーバ系からの回転してバックを取る一連の動き |
 | X-Guard Sweep | Xガードスイープ | Xガードからの返し技総称 |
-| Butterfly Hook Sweep | フックスイープ | バタフライ系の派生 |
 
 ---
 
@@ -167,14 +166,14 @@
 |---|---|
 | positions | 17 |
 | guard-passing | 9 |
-| sweeps | 8 |
+| sweeps | 7 |
 | submissions/chokes | 13 |
 | submissions/joint-locks | 9 |
 | escapes | 7 |
 | takedowns | 8 |
 | transitions | 4 |
 | concepts | 8 |
-| **合計** | **83** |
+| **合計** | **82** |
 
 ※ これはあくまで「広く認知された技」の第一弾リスト。レビュー後、必要に応じて追加調査・追加項目を行う。
 
