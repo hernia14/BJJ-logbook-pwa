@@ -1,0 +1,94 @@
+id: toreando-pass
+name_ja: トレアンドパス
+name_en: Toreando Pass
+aliases: [闘牛士パス, Bullfighter Pass, トレアンド, トレアンダ]
+category: guard-passing
+tags:
+  positions: [open-guard, side-control, knee-on-belly]
+  concepts: [angle, base, grip-fighting, pressure]
+
+status: draft
+source_type: ai_research
+sources:
+  - https://evolve-mma.com/blog/4-bjj-passes-all-beginners-should-know/
+  - https://thebjjatlas.com/guard-passing/
+  - https://www.bjjresources.com/guides/effective-strategies-for-guard-passing-in-bjj
+reviewed_by: null
+reviewed_date: null
+safety_level: none
+
+created: 2026-08-09
+updated: 2026-08-09
+
+cards:
+  - id: toreando-pass-def-01
+    axis: definition
+    type: free_recall
+    front: トレアンドパスとはどのようなパスか
+    back: |
+      立った状態から相手の両脚を左右いずれかへ振り捌き、
+      脚が向いていない側へ素早く回り込んで通過するパス。
+      闘牛士が牛をかわす動きになぞらえて名付けられた。
+
+  - id: toreando-pass-grip-01
+    axis: grip
+    type: free_recall
+    front: トレアンドパスにおける代表的なグリップとその目的を述べよ
+    back: |
+      相手の両膝またはズボンの裾を掴む。
+      脚を左右へ押し向けて、こちらが通る側から相手の脚を退けることが目的。
+
+  - id: toreando-pass-ang-01
+    axis: angle_weight
+    type: free_recall
+    front: トレアンドパスで体重をどう扱うべきか述べよ
+    back: |
+      立位でのパスであるため、体重を相手に預けず自分の足に保ち、
+      素早く移動できる状態を維持する。
+      相手に体重を預けた瞬間に、下から崩される支点を与えることになる。
+
+  - id: toreando-pass-proc-01
+    axis: procedure
+    type: ordering
+    phase: execution
+    front: トレアンドパスの実行手順を正しい順に並べよ
+    steps:
+      - 相手の両膝または裾を掴んで脚をコントロールする
+      - 相手の脚を左右いずれかの方向へ押し捌く
+      - 脚が向いていない側へ素早く回り込む
+      - 相手の腰と上体を制してサイドコントロール等を確保する
+
+  - id: toreando-pass-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: toreando-pass-causal-01
+    front: トレアンドパスでよくある失敗を1つ挙げよ
+    back: |
+      脚を捌いた後に回り込む動作が遅く、
+      通過しきる前に相手の脚が自分の正面へ戻ってくること。
+
+  - id: toreando-pass-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: toreando-pass-causal-01
+    front: トレアンドパスで回り込みが遅れると、結果として何が起きるか
+    back: |
+      相手は脚を戻してガードを再構築でき、こちらは立ったまま距離を詰められず
+      振り出しに戻る。繰り返すうちに脚で崩されてスイープを許すこともある。
+
+  - id: toreando-pass-cnt-01
+    axis: counter
+    type: free_recall
+    front: トレアンドパスに対する下からの基本的な対処を挙げよ
+    back: |
+      掴まれたグリップを切る、腰を回して脚を相手の正面へ戻し続ける、
+      あるいは相手の動きに合わせてデラヒーバなどのフックを掛けて足を止める。
+
+  - id: toreando-pass-prin-01
+    axis: principle
+    type: free_recall
+    front: トレアンドパスが機能する原理を説明せよ
+    back: |
+      ガードは相手の正面に脚が向いている間だけ機能する。
+      脚の向きと自分の位置をずらせば、相手の脚は届かず防御として働かない。
+      力で押し潰すのではなく、脚の射線から外れることで通過する考え方。

@@ -1,0 +1,81 @@
+id: smash-pass
+name_ja: スマッシュパス
+name_en: Smash Pass
+aliases: [スマッシュ, 圧殺パス, プレッシャーパス]
+category: guard-passing
+tags:
+  positions: [half-guard, open-guard, side-control]
+  concepts: [pressure, base, angle, posture]
+
+status: draft
+source_type: ai_research
+sources:
+  - https://thebjjatlas.com/guard-passing/
+  - https://www.attacktheback.com/best-bjj-guard-passing-techniques/
+reviewed_by: null
+reviewed_date: null
+safety_level: none
+
+created: 2026-08-09
+updated: 2026-08-09
+
+cards:
+  - id: smash-pass-def-01
+    axis: definition
+    type: free_recall
+    front: スマッシュパスとはどのようなパスの総称か
+    back: |
+      相手の脚を自分の体重で潰し、片側へ寄せて動きを封じながら
+      圧をかけ続けて通過する系統のパスの総称。
+
+  - id: smash-pass-def-02
+    axis: definition
+    type: free_recall
+    front: スマッシュパス系とトレアンドパス系の考え方の違いを述べよ
+    back: |
+      トレアンド系は相手の脚の射線から素早く外れて通過する「回避」の発想。
+      スマッシュ系は相手の脚を潰して機能を奪う「制圧」の発想。
+      前者は速度、後者は圧と持続が武器になる。
+
+  - id: smash-pass-ang-01
+    axis: angle_weight
+    type: free_recall
+    front: スマッシュパスにおける体重の使い方を述べよ
+    back: |
+      相手の脚を通して床方向へ体重を伝え、脚を潰した状態を維持する。
+      つま先で床を踏み、体重の方向を相手の逃げ道を塞ぐ側へ向ける。
+
+  - id: smash-pass-prin-01
+    axis: principle
+    type: free_recall
+    front: スマッシュパスの原理を説明せよ
+    back: |
+      ガードは脚を自由に動かせることで機能する。
+      脚を潰して床との間に固定すれば、脚は防御の構造として働けなくなる。
+      速く動くのではなく、相手の選択肢を減らしてから進む考え方。
+
+  - id: smash-pass-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: smash-pass-causal-01
+    front: スマッシュパスでよくある失敗を1つ挙げよ
+    back: |
+      圧をかけたまま前へ進もうと焦り、体重が浮いて相手の脚が復活すること。
+
+  - id: smash-pass-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: smash-pass-causal-01
+    front: スマッシュパスで体重が浮くと、結果として何が起きるか
+    back: |
+      潰していた脚が自由になり、フレームやフックを作り直される。
+      それまでの圧の蓄積が失われ、相手にガード再構築の機会を与える。
+
+  - id: smash-pass-cnt-01
+    axis: counter
+    type: free_recall
+    front: スマッシュパスに対する下からの基本的な対処を挙げよ
+    back: |
+      潰される前に腰を回して角度を変える、
+      フレームで相手の圧の方向を逸らす、
+      あるいは潰された側の脚を抜いてハーフガードなどへ移行する。

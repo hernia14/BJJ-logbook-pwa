@@ -1,0 +1,73 @@
+id: over-under-pass
+name_ja: オーバーアンダーパス
+name_en: Over-Under Pass
+aliases: [オーバーアンダー, オバアン]
+category: guard-passing
+tags:
+  positions: [open-guard, half-guard, side-control]
+  concepts: [pressure, base, underhook, angle]
+
+status: draft
+source_type: ai_research
+sources:
+  - https://thebjjatlas.com/guard-passing/
+  - https://www.attacktheback.com/best-bjj-guard-passing-techniques/
+reviewed_by: null
+reviewed_date: null
+safety_level: none
+
+created: 2026-08-09
+updated: 2026-08-09
+
+cards:
+  - id: over-under-pass-def-01
+    axis: definition
+    type: free_recall
+    front: オーバーアンダーパスとはどのようなパスか
+    back: |
+      片腕を相手の一方の脚の上から回し、もう一方の腕を反対側の脚の下へ通して
+      相手の下半身を抱え込み、圧力をかけながら通過するパス。
+
+  - id: over-under-pass-ang-01
+    axis: angle_weight
+    type: free_recall
+    front: オーバーアンダーパスで体重をどこへ向けるべきか
+    back: |
+      抱え込んだ相手の下半身を通して、相手の上体側へ体重を送り込む。
+      頭の位置を相手の体の片側に置き、胸で圧を伝える。
+
+  - id: over-under-pass-prin-01
+    axis: principle
+    type: free_recall
+    front: オーバーアンダーパスの原理を説明せよ
+    back: |
+      相手の両脚を上下から挟んで拘束することで、
+      脚を独立して動かす自由を奪う。
+      速さではなく、拘束と体重によって時間をかけて通過する性質のパス。
+
+  - id: over-under-pass-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: over-under-pass-causal-01
+    front: オーバーアンダーパスでよくある失敗を1つ挙げよ
+    back: |
+      抱え込みが浅く、相手の脚を体に密着させないまま圧をかけようとすること。
+
+  - id: over-under-pass-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: over-under-pass-causal-01
+    front: オーバーアンダーパスで抱え込みが浅いと、結果として何が起きるか
+    back: |
+      相手は脚を抜いてガードを再構築できる。
+      さらに、こちらは両腕が塞がっているため、
+      脚を抜かれた際に上体の防御が遅れて逆に崩されうる。
+
+  - id: over-under-pass-cnt-01
+    axis: counter
+    type: free_recall
+    front: オーバーアンダーパスに対する下からの基本的な対処を挙げよ
+    back: |
+      抱え込まれる前に腰を回して角度を変える、
+      アンダーの側の脚を抜いてハーフガードへ移行する、
+      あるいはフレームで相手の頭の位置をずらして圧の方向を逸らす。

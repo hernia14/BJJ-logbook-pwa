@@ -1,0 +1,91 @@
+id: leg-drag-pass
+name_ja: レッグドラッグ
+name_en: Leg Drag Pass
+aliases: [レッグドラッグパス, 脚を流す]
+category: guard-passing
+tags:
+  positions: [open-guard, de-la-riva-guard, side-control]
+  concepts: [angle, pressure, grip-fighting, base]
+
+status: draft
+source_type: ai_research
+sources:
+  - https://www.attacktheback.com/best-bjj-guard-passing-techniques/
+  - https://thebjjatlas.com/guard-passing/
+reviewed_by: null
+reviewed_date: null
+safety_level: none
+
+created: 2026-08-09
+updated: 2026-08-09
+
+cards:
+  - id: leg-drag-pass-def-01
+    axis: definition
+    type: free_recall
+    front: レッグドラッグとはどのようなパスか
+    back: |
+      相手の片脚を自分の体の横を横切るように引き込み、
+      相手の腰を横向きにさせたうえで、その脚の外側から圧をかけて通過するパス。
+
+  - id: leg-drag-pass-ang-01
+    axis: angle_weight
+    type: free_recall
+    front: レッグドラッグで相手の腰をどのような向きにするのが目的か
+    back: |
+      相手の腰を横向き（うつ伏せ方向）に向けさせること。
+      腰が横を向くと、脚をこちらの正面へ戻す動作が構造的に難しくなる。
+
+  - id: leg-drag-pass-grip-01
+    axis: grip
+    type: free_recall
+    front: レッグドラッグで必要なコントロールを挙げよ
+    back: |
+      引き込んだ脚のコントロールと、相手の上体（襟や腰帯、または上腕）のコントロール。
+      脚だけを流しても上体が自由だと、腰を戻されて逃げられる。
+
+  - id: leg-drag-pass-proc-01
+    axis: procedure
+    type: ordering
+    phase: execution
+    front: レッグドラッグの実行手順を正しい順に並べよ
+    steps:
+      - 相手の片脚を掴む
+      - その脚を自分の体の前を横切らせるように引き込む
+      - 引き込んだ脚に体を密着させ、相手の腰を横向きに固定する
+      - 上体のコントロールを取り、脚の外側から圧をかけて通過する
+
+  - id: leg-drag-pass-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: leg-drag-pass-causal-01
+    front: レッグドラッグでよくある失敗を1つ挙げよ
+    back: |
+      脚を引き込んだ後に体を密着させず、相手との間に空間を残したまま進もうとすること。
+
+  - id: leg-drag-pass-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: leg-drag-pass-causal-01
+    front: レッグドラッグで密着せず空間を残すと、結果として何が起きるか
+    back: |
+      相手は腰を回して脚を引き戻せるため、ガードを再構築される。
+      場合によっては背中側の空間を突かれ、逆に不利な位置に回られる。
+
+  - id: leg-drag-pass-prin-01
+    axis: principle
+    type: free_recall
+    front: レッグドラッグが低リスクなパスとされる原理を説明せよ
+    back: |
+      相手の脚を自分の体の外側へ固定した状態を保ちながら進むため、
+      パスの過程で相手に脚を絡ませる隙を与えにくい。
+      崩れた場合も相手の脚をコントロールしたまま仕切り直せる。
+
+  - id: leg-drag-pass-cnt-01
+    axis: counter
+    type: free_recall
+    front: レッグドラッグに対する下からの基本的な対処を挙げよ
+    back: |
+      流された脚をすぐに引き戻して腰を正面へ向け直す、
+      あるいは相手が密着してくる前にフレームで距離を作り、
+      背中を向けないように体の向きを保つ。

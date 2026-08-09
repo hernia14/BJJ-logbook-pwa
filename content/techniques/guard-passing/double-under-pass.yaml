@@ -1,0 +1,72 @@
+id: double-under-pass
+name_ja: ダブルアンダーパス
+name_en: Double Under Pass
+aliases: [ダブルアンダー, 両差しパス]
+category: guard-passing
+tags:
+  positions: [open-guard, closed-guard, side-control]
+  concepts: [pressure, base, angle, posture]
+
+status: draft
+source_type: ai_research
+sources:
+  - https://thebjjatlas.com/guard-passing/
+  - https://sensobjj.com/blogs/graciemag-1/5-fundamental-guard-passes-every-grappler-should-know
+reviewed_by: null
+reviewed_date: null
+safety_level: none
+
+created: 2026-08-09
+updated: 2026-08-09
+
+cards:
+  - id: double-under-pass-def-01
+    axis: definition
+    type: free_recall
+    front: ダブルアンダーパスとはどのようなパスか
+    back: |
+      両腕を相手の両脚の下へ通して腰を抱え上げ、
+      相手の下半身を持ち上げた状態で圧をかけながら通過するパス。
+
+  - id: double-under-pass-ang-01
+    axis: angle_weight
+    type: free_recall
+    front: ダブルアンダーパスで相手の体をどのような状態にするのが狙いか
+    back: |
+      相手の腰を持ち上げて肩で体重を支えさせる状態にすること。
+      腰が浮くと床を使って踏ん張れず、崩す方向を選ぶ主導権がこちらに移る。
+
+  - id: double-under-pass-prin-01
+    axis: principle
+    type: free_recall
+    front: ダブルアンダーパスの原理を説明せよ
+    back: |
+      下の者が床から得ている支えを奪うことで、ガードの再構築に必要な
+      腰の自由な動きを封じる。
+      持ち上げるほど相手の可動範囲が減り、通過に必要な抵抗が小さくなる。
+
+  - id: double-under-pass-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: double-under-pass-causal-01
+    front: ダブルアンダーパスでよくある失敗を1つ挙げよ
+    back: |
+      両腕を差した状態で上体が起き上がり、相手の脚が自分の肩より上に来ること。
+
+  - id: double-under-pass-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: double-under-pass-causal-01
+    front: ダブルアンダーパスで相手の脚が自分の肩より上に来ると、結果として何が起きるか
+    back: |
+      両腕が塞がっている状態で首と腕が相手の脚の内側に入るため、
+      三角絞めやオモプラータなど下からの攻撃の標的になりやすい。
+
+  - id: double-under-pass-cnt-01
+    axis: counter
+    type: free_recall
+    front: ダブルアンダーパスに対する下からの基本的な対処を挙げよ
+    back: |
+      腰を持ち上げられる前に片脚を抜いて差しを外す、
+      相手の頭や肩をフレームで押して密着を防ぐ、
+      あるいは腰を回して横向きになり抱え上げの方向をずらす。

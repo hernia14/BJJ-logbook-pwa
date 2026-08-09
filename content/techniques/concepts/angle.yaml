@@ -1,0 +1,73 @@
+id: angle
+name_ja: アングル
+name_en: Angle
+aliases: [角度, 角度を作る, オフアングル]
+category: concepts
+tags:
+  positions: [closed-guard, open-guard, back-control]
+  concepts: [angle, base, pressure]
+
+status: draft
+source_type: ai_research
+sources:
+  - https://bjjgraph.org/Principles
+  - https://sbgbend.com/fundamentals-in-bjj-what-they-really-mean-and-why-they-matter-at-every-level/
+reviewed_by: null
+reviewed_date: null
+safety_level: none
+
+created: 2026-08-09
+updated: 2026-08-09
+
+cards:
+  - id: angle-def-01
+    axis: definition
+    type: free_recall
+    front: 柔術における「アングル（角度）」とは何か
+    back: |
+      自分と相手の体の向きの関係のこと。
+      相手の正面から外れた位置関係を作ることを「角度を作る」という。
+
+  - id: angle-prin-01
+    axis: principle
+    type: free_recall
+    front: 相手の正面から角度を外すことがなぜ有効なのか、原理を説明せよ
+    back: |
+      人体は正面方向に対して最も強く力を出し、最も安定して支えられる。
+      その軸から外れた位置に立つと、相手はこちらへ力を向け直す必要が生じ、
+      その間は防御も攻撃も弱くなる。
+
+  - id: angle-req-01
+    axis: requirement
+    type: free_recall
+    front: 角度を作るための一般的な手段を挙げよ
+    back: |
+      自分が移動して相手の側方へ回り込む方法と、
+      グリップや脚のコントロールで相手の体を回して向きを変えさせる方法がある。
+      いずれも「正対を崩す」という目的は同じ。
+
+  - id: angle-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: angle-causal-01
+    front: 角度に関するよくある失敗を1つ挙げよ
+    back: |
+      相手と正対したまま、力の強さだけで技をかけようとすること。
+
+  - id: angle-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: angle-causal-01
+    front: 正対したまま力で技をかけようとすると、結果として何が起きるか
+    back: |
+      相手も最も力を出しやすい向きで抵抗できるため、
+      力比べになり体格や筋力で劣る側が負ける。技術としての優位が失われる。
+
+  - id: angle-prin-02
+    axis: principle
+    type: free_recall
+    front: 角度が「防御にも使える」理由を説明せよ
+    back: |
+      相手が力を向けている方向から自分の体をずらせば、
+      その力は空を切るか、こちらの体の最も強い部分で受けられる。
+      正面から受け止めるより少ない力で相手の攻撃を無効化できる。

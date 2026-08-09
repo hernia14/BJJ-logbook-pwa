@@ -1,0 +1,73 @@
+id: pressure
+name_ja: プレッシャー
+name_en: Pressure
+aliases: [圧, 圧力, 効かせる圧]
+category: concepts
+tags:
+  positions: [side-control, mount, knee-on-belly, north-south]
+  concepts: [pressure, base, angle, posture]
+
+status: draft
+source_type: ai_research
+sources:
+  - https://bjjgraph.org/Principles
+  - https://sbgbend.com/fundamentals-in-bjj-what-they-really-mean-and-why-they-matter-at-every-level/
+reviewed_by: null
+reviewed_date: null
+safety_level: none
+
+created: 2026-08-09
+updated: 2026-08-09
+
+cards:
+  - id: pressure-def-01
+    axis: definition
+    type: free_recall
+    front: 柔術における「プレッシャー（圧）」とは何か
+    back: |
+      相手の動きを制限し消耗させるために、
+      自分の体重を適切な部位へ適切な角度で伝えること。
+
+  - id: pressure-prin-01
+    axis: principle
+    type: free_recall
+    front: 圧が「腕力ではない」と言われる原理を説明せよ
+    back: |
+      腕で押す力は筋力に依存するため持続せず、押し返される。
+      一方で体重は常に働いている力であり、伝える角度さえ正しければ
+      消耗せずに加え続けられる。圧の技術とは、体重の伝達経路を作る技術である。
+
+  - id: pressure-req-01
+    axis: requirement
+    type: free_recall
+    front: 圧を効かせるために必要な要素を挙げよ
+    back: |
+      体重が向かう方向（角度）、接触している部位、
+      そして床を踏んで体重を送り込むための土台（ベース）。
+      この3つが揃って初めて体重が相手に伝わる。
+
+  - id: pressure-prin-02
+    axis: principle
+    type: free_recall
+    front: 同じ体重でも「圧が重い人」と「軽い人」がいるのはなぜか説明せよ
+    back: |
+      体重の大きさではなく、その体重がどれだけ相手に伝わっているかが違うため。
+      接触面積が狭いほど単位面積あたりの圧力は大きくなり、
+      また体重の向かう方向が相手の逃げ道を塞ぐ方向であるほど動きを止められる。
+
+  - id: pressure-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: pressure-causal-01
+    front: 圧をかける際のよくある失敗を1つ挙げよ
+    back: |
+      相手を潰そうとして真下方向にだけ体重をかけること。
+
+  - id: pressure-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: pressure-causal-01
+    front: 真下方向にだけ体重をかけると、結果として何が起きるか
+    back: |
+      相手は床という支えを使って押し返せるうえ、逃げる方向が塞がれていないため
+      横方向へ移動して抜け出せる。体重をかけている割に相手の動きを止められない。

@@ -1,0 +1,75 @@
+id: grip-fighting
+name_ja: グリップファイティング
+name_en: Grip Fighting
+aliases: [組手争い, グリップの取り合い, 手の攻防]
+category: concepts
+tags:
+  positions: [closed-guard, open-guard, spider-guard, de-la-riva-guard]
+  concepts: [grip-fighting, posture, angle]
+
+status: draft
+source_type: ai_research
+sources:
+  - https://bjjgraph.org/Principles/Grip-Fighting
+  - https://bjjgraph.org/Principles/Grips
+reviewed_by: null
+reviewed_date: null
+safety_level: none
+
+created: 2026-08-09
+updated: 2026-08-09
+
+cards:
+  - id: grip-fighting-def-01
+    axis: definition
+    type: free_recall
+    front: グリップファイティングとは何か
+    back: |
+      袖・襟・手首・体の各所を、どちらが先に有利な形で掴むかを争う攻防のこと。
+      技を仕掛ける前段階の主導権争いにあたる。
+
+  - id: grip-fighting-prin-01
+    axis: principle
+    type: free_recall
+    front: グリップの取り合いが「その後の展開を決める」と言われる原理を説明せよ
+    back: |
+      グリップは相手の体の一部を自分の意思で動かす接点である。
+      先に有利な接点を確保した側は相手の姿勢と動きを制限でき、
+      相手は自由に技を選べなくなるため、選択肢の数そのものに差が生まれる。
+
+  - id: grip-fighting-req-01
+    axis: requirement
+    type: free_recall
+    front: グリップファイティングにおける基本方針を述べよ
+    back: |
+      自分に有利なグリップを取ることと、相手のグリップを許さない／切ることの両輪。
+      片方だけでは主導権を取れず、特に相手のグリップを放置すると
+      自分のグリップの利点が相殺される。
+
+  - id: grip-fighting-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: grip-fighting-causal-01
+    front: グリップに関するよくある失敗を1つ挙げよ
+    back: |
+      とにかく先に掴むことを優先し、目的のはっきりしないグリップを取ること。
+      また、掴んだグリップを握力だけで保持し続けようとすること。
+
+  - id: grip-fighting-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: grip-fighting-causal-01
+    front: 目的のないグリップを握り続けると、結果として何が起きるか
+    back: |
+      握力を消耗するだけで相手の動きを制限できず、
+      試合や長いスパーの後半で必要な場面に握れなくなる。
+      また掴んだ腕が固定されることで、自分の側の動きも制限される。
+
+  - id: grip-fighting-prin-02
+    axis: principle
+    type: free_recall
+    front: 「グリップは目的とセットで取る」とはどういうことか説明せよ
+    back: |
+      同じ箇所を掴んでも、崩すため・距離を保つため・相手の攻撃を止めるためでは
+      引く方向も保持の強さも変わる。
+      何のために掴むかが決まっていなければ、グリップは有効に働かない。

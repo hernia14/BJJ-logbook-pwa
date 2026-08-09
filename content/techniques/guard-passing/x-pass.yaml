@@ -1,0 +1,71 @@
+id: x-pass
+name_ja: Xパス
+name_en: X-Pass
+aliases: [エックスパス, クロスパス]
+category: guard-passing
+tags:
+  positions: [open-guard, side-control]
+  concepts: [angle, base, grip-fighting]
+
+status: draft
+source_type: ai_research
+sources:
+  - https://thebjjatlas.com/guard-passing/
+  - https://www.bjjresources.com/guides/effective-strategies-for-guard-passing-in-bjj
+reviewed_by: null
+reviewed_date: null
+safety_level: none
+
+created: 2026-08-09
+updated: 2026-08-09
+
+cards:
+  - id: x-pass-def-01
+    axis: definition
+    type: free_recall
+    front: Xパスとはどのようなパスか
+    back: |
+      立った状態から相手の両脚を交差させるように片側へ寄せ、
+      腕を交差させて脚を押さえながら反対側へ抜けるパス。
+
+  - id: x-pass-ang-01
+    axis: angle_weight
+    type: free_recall
+    front: Xパスで体重をどう扱うべきか述べよ
+    back: |
+      立位のパスであるため体重は自分の足に置き、
+      相手に預けずに素早く移動できる状態を保つ。
+
+  - id: x-pass-prin-01
+    axis: principle
+    type: free_recall
+    front: Xパスが機能する原理を説明せよ
+    back: |
+      相手の両脚を一時的に同じ方向へ寄せることで、
+      左右へ独立して反応する能力を奪う。
+      その一瞬に反対側へ抜ければ、脚は追随できない。
+
+  - id: x-pass-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: x-pass-causal-01
+    front: Xパスでよくある失敗を1つ挙げよ
+    back: |
+      脚を寄せる動作と抜ける動作の間に間が空き、動きが分断されること。
+
+  - id: x-pass-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: x-pass-causal-01
+    front: Xパスで動作が分断されると、結果として何が起きるか
+    back: |
+      相手は寄せられた脚を戻す時間を得るため、ガードを再構築される。
+      パスの前提である「一瞬の隙」が消えるため技として成立しない。
+
+  - id: x-pass-cnt-01
+    axis: counter
+    type: free_recall
+    front: Xパスに対する下からの基本的な対処を挙げよ
+    back: |
+      掴まれたグリップを切る、腰を回して脚を正面へ戻し続ける、
+      あるいは相手の抜ける側の脚にフックを掛けて足を止める。

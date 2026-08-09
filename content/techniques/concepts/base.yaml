@@ -1,0 +1,74 @@
+id: base
+name_ja: ベース
+name_en: Base
+aliases: [土台, ベースを作る]
+category: concepts
+tags:
+  positions: []
+  concepts: [base, posture, pressure]
+
+status: draft
+source_type: ai_research
+sources:
+  - https://sbgbend.com/fundamentals-in-bjj-what-they-really-mean-and-why-they-matter-at-every-level/
+  - https://bjjgraph.org/Principles
+reviewed_by: null
+reviewed_date: null
+safety_level: none
+
+created: 2026-08-09
+updated: 2026-08-09
+
+cards:
+  - id: base-def-01
+    axis: definition
+    type: free_recall
+    front: 柔術における「ベース」とは何か
+    back: |
+      相手の力を受けても崩されない、安定した体の土台のこと。
+      床との接点の配置と重心の位置によって作られる。
+
+  - id: base-req-01
+    axis: requirement
+    type: free_recall
+    front: 良いベースを構成する身体的な要素を挙げよ
+    back: |
+      膝を軽く曲げて重心を低く保つこと、
+      つま先で床を捉えて能動的に踏めていること、
+      そして重心が床との接点で囲まれた範囲の内側に収まっていること。
+
+  - id: base-prin-01
+    axis: principle
+    type: free_recall
+    front: ベースが「単なるバランス」ではなく「準備状態」でもあると言われる理由を説明せよ
+    back: |
+      静止して耐えるだけの姿勢は、崩されない代わりに次の動作にも移れない。
+      良いベースは、床を押して即座に方向を変えたり圧を加えたりできる状態を含む。
+      すなわち崩れないことと動けることを同時に満たす姿勢を指す。
+
+  - id: base-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: base-causal-01
+    front: ベースに関するよくある失敗を1つ挙げよ
+    back: |
+      膝を伸ばして棒立ちになる、あるいは足幅が狭く接点の範囲が小さいまま
+      相手に力を加えようとすること。
+
+  - id: base-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: base-causal-01
+    front: ベースが崩れた状態で相手に力を加えると、結果として何が起きるか
+    back: |
+      自分が加えた力の反作用を支えきれず、その力の方向に自分が倒される。
+      相手はこちらの力に逆らわず方向を変えるだけで返せてしまう。
+
+  - id: base-prin-02
+    axis: principle
+    type: free_recall
+    front: ベースとポスチャーの違いを述べよ
+    back: |
+      ベースは床との接点と重心配置による「倒れない土台」を指し、
+      ポスチャーは体幹と頭の位置関係による「上体の構造」を指す。
+      両者は連動するが別の概念であり、ポスチャーが崩れてもベースは残る場合がある。

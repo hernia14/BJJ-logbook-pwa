@@ -1,0 +1,83 @@
+id: frame
+name_ja: フレーム
+name_en: Frame
+aliases: [フレームを作る, 枠, framing]
+category: concepts
+tags:
+  positions: [side-control, mount, half-guard]
+  concepts: [frame, base, angle]
+
+status: draft
+source_type: ai_research
+sources:
+  - https://bjjgraph.org/Principles
+  - https://sbgbend.com/fundamentals-in-bjj-what-they-really-mean-and-why-they-matter-at-every-level/
+reviewed_by: null
+reviewed_date: null
+safety_level: none
+
+created: 2026-08-09
+updated: 2026-08-09
+
+cards:
+  - id: frame-def-01
+    axis: definition
+    type: free_recall
+    front: 柔術における「フレーム」とは何か
+    back: |
+      腕や脚を骨格で支える構造として配置し、
+      相手の圧力を受け止めて空間を確保する仕組みのこと。
+
+  - id: frame-prin-01
+    axis: principle
+    type: free_recall
+    front: フレームが「筋力ではなく骨格で支える」と言われる原理を説明せよ
+    back: |
+      関節を曲げた状態で筋力に頼って押し返すと、相手の体重に対して持続的に
+      力を出し続けることになり短時間で消耗する。
+      骨で支える角度に腕や脚を配置すれば、筋力の消費を抑えたまま
+      同じ体重を受け止められる。
+
+  - id: frame-req-01
+    axis: requirement
+    type: free_recall
+    front: 有効なフレームを作るための条件は何か
+    back: |
+      相手の圧力の方向に対して、腕や脚が押し潰されない角度で配置されていること。
+      加えて、フレームの先が相手の体の適切な部位（腰や首など）に接していること。
+
+  - id: frame-prin-02
+    axis: principle
+    type: free_recall
+    front: 「フレームは支え、ポストは押す」という区別を説明せよ
+    back: |
+      フレームは相手の圧力に対して抵抗し空間を保つ構造であるのに対し、
+      ポストは床や相手に手足を突いて自分のバランスを取るための支点である。
+      前者は相手に向けた防御構造、後者は自分の安定のための支持点という違いがある。
+
+  - id: frame-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: frame-causal-01
+    front: フレームに関するよくある失敗を1つ挙げよ
+    back: |
+      腕を伸ばしきって相手を押し返そうとすること。
+
+  - id: frame-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: frame-causal-01
+    front: フレームで腕を伸ばしきると、結果として何が起きるか
+    back: |
+      伸びた腕は相手にとって掴みやすく、関節技の標的になる。
+      また押し返す動作で自分の体が相手から離れず、
+      空間を作る目的も達成できないまま腕を取られる危険が高まる。
+
+  - id: frame-fol-01
+    axis: followup
+    type: free_recall
+    front: フレームで空間を作った後、次に行うべきことは何か
+    back: |
+      作った空間を使って自分の体（主に腰）を移動させること。
+      フレームは空間を維持する手段であって目的ではなく、
+      押し返して終わりにすると相手に体勢を立て直す時間を与える。

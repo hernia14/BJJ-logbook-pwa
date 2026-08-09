@@ -1,0 +1,73 @@
+id: hip-escape
+name_ja: ヒップエスケープ
+name_en: Hip Escape (Shrimping)
+aliases: [エビ, シュリンプ, シュリンピング, 海老]
+category: concepts
+tags:
+  positions: [side-control, mount, half-guard]
+  concepts: [frame, angle, hip-escape]
+
+status: draft
+source_type: ai_research
+sources:
+  - https://thebjjatlas.com/escapes/
+  - https://evolve-mma.com/blog/10-fundamental-bjj-escapes-all-grapplers-should-know/
+reviewed_by: null
+reviewed_date: null
+safety_level: none
+
+created: 2026-08-09
+updated: 2026-08-09
+
+cards:
+  - id: hip-escape-def-01
+    axis: definition
+    type: free_recall
+    front: ヒップエスケープ（エビ）とはどのような動作か
+    back: |
+      仰向けの状態から床を足で押し、腰を横または後方へずらして
+      相手との間に空間を作る基本移動動作。
+
+  - id: hip-escape-prin-01
+    axis: principle
+    type: free_recall
+    front: エビが柔術の基本動作とされる原理を説明せよ
+    back: |
+      下になった側が相手との間に空間を作る、最も基本的で汎用的な手段だから。
+      空間がなければ脚を差し込むこともガードへ戻すこともできず、
+      ほぼ全てのエスケープがこの動作を前提にしている。
+
+  - id: hip-escape-req-01
+    axis: requirement
+    type: free_recall
+    front: エビを有効に行うための要件は何か
+    back: |
+      フレームで相手の体を支えて押し返す方向を確保したうえで、
+      床を足で押して腰を動かすこと。
+      腰そのものを動かす意識が必要で、肩や上体だけをずらしても空間は生まれない。
+
+  - id: hip-escape-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: hip-escape-causal-01
+    front: エビに関するよくある失敗を1つ挙げよ
+    back: |
+      フレームを作らないまま腰だけを動かそうとすること、
+      あるいは上体（肩や頭）だけをずらして腰が動いていないこと。
+
+  - id: hip-escape-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: hip-escape-causal-01
+    front: フレームなしにエビをしようとすると、結果として何が起きるか
+    back: |
+      相手の体重を支える構造がないため、腰を動かした分だけ相手に追随されて
+      空間が生まれない。動いた労力だけを消耗し、状況は改善しない。
+
+  - id: hip-escape-fol-01
+    axis: followup
+    type: free_recall
+    front: エビで空間を作った直後に行うべきことは何か
+    back: |
+      作った空間に膝または脚を差し込むこと。
+      空間は相手にすぐ詰められるため、作ることと使うことは連続した1つの動作として行う。

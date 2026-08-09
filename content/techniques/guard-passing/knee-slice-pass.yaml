@@ -1,0 +1,104 @@
+id: knee-slice-pass
+name_ja: ニースライスパス
+name_en: Knee Slice Pass
+aliases: [ニーカット, ニースライス, Knee Cut Pass, ニーカットパス]
+category: guard-passing
+tags:
+  positions: [half-guard, open-guard, side-control]
+  concepts: [pressure, angle, underhook, posture, base]
+
+status: draft
+source_type: ai_research
+sources:
+  - https://evolve-mma.com/blog/4-bjj-passes-all-beginners-should-know/
+  - https://www.attacktheback.com/best-bjj-guard-passing-techniques/
+  - https://thebjjatlas.com/guard-passing/
+reviewed_by: null
+reviewed_date: null
+safety_level: none
+
+created: 2026-08-09
+updated: 2026-08-09
+
+cards:
+  - id: knee-slice-pass-def-01
+    axis: definition
+    type: free_recall
+    front: ニースライスパスとはどのようなパスか
+    back: |
+      自分の膝を相手の両脚の間に通し、
+      相手の太腿を切り裂くように斜めに滑らせながら体を通してパスする方法。
+
+  - id: knee-slice-pass-grip-01
+    axis: grip
+    type: free_recall
+    front: ニースライスパスで確保したい上半身のコントロールは何か
+    back: |
+      進行方向側のアンダーフック、または相手の襟・肩のコントロール。
+      上体を制さずに脚だけ通そうとすると、相手に上体を起こされて防がれる。
+
+  - id: knee-slice-pass-ang-01
+    axis: angle_weight
+    type: free_recall
+    front: ニースライスパスにおける体重配分の要点を述べよ
+    back: |
+      体重を通す膝と上体を通して相手へ向け、
+      後ろに残した脚で床を踏んで前方への圧を支える。
+      体重が後ろに残ると膝が進まず、前に行き過ぎるとバランスを崩して返される。
+
+  - id: knee-slice-pass-proc-01
+    axis: procedure
+    type: ordering
+    phase: setup
+    front: ニースライスパスの準備段階の手順を正しい順に並べよ
+    steps:
+      - 相手の脚のコントロールを外し、膝を通す隙間を作る
+      - 自分の膝を相手の両脚の間へ差し入れる
+      - 進行方向側の上体のコントロール（アンダーフックや襟）を確保する
+
+  - id: knee-slice-pass-proc-02
+    axis: procedure
+    type: ordering
+    phase: execution
+    front: ニースライスパスの実行段階の手順を正しい順に並べよ
+    steps:
+      - 差し入れた膝を相手の太腿の上へ斜めに滑らせる
+      - 上体の圧で相手の肩を床に押さえ、起き上がりを防ぐ
+      - 後ろの脚を引き抜き、体を相手の横へ通す
+      - サイドコントロールを確保する
+
+  - id: knee-slice-pass-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: knee-slice-pass-causal-01
+    front: ニースライスパスでよくある失敗を1つ挙げよ
+    back: |
+      上体のコントロールを取らないまま、膝を滑らせることだけを急ぐこと。
+
+  - id: knee-slice-pass-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: knee-slice-pass-causal-01
+    front: ニースライスパスで上体を制さずに膝だけ通すと、結果として何が起きるか
+    back: |
+      相手は上体を起こして自分の側へ向き直れるため、
+      アンダーフックを取られて逆に背中を狙われるか、
+      ハーフガードで膝を挟み込まれてパスが止まる。
+
+  - id: knee-slice-pass-cnt-01
+    axis: counter
+    type: free_recall
+    front: ニースライスパスに対する下からの基本的な対処を挙げよ
+    back: |
+      通されようとしている側の膝や肘でフレームを作って侵入を止める、
+      アンダーフックを先に取って上体を起こす、
+      あるいは通ってくる膝を脚で挟んでハーフガードに留める。
+
+  - id: knee-slice-pass-prin-01
+    axis: principle
+    type: free_recall
+    front: ニースライスパスが高い成功率を持つ原理を説明せよ
+    back: |
+      膝を通す動作が、脚のコントロールを外すことと体重を前へ移すことを同時に行うため。
+      さらに上体の圧と下半身の前進が同じ方向に働くので、
+      相手は上下どちらか一方だけを防いでも止められない。

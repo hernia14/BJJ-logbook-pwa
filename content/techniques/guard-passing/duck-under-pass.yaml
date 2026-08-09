@@ -1,0 +1,84 @@
+id: duck-under-pass
+name_ja: ダックアンダーパス
+name_en: Duck Under Pass
+aliases: [ダックアンダー, Duck Under]
+category: guard-passing
+tags:
+  positions: [open-guard, de-la-riva-guard, lasso-guard, side-control]
+  concepts: [angle, grip-fighting, pressure, underhook]
+
+status: draft
+source_type: ai_research
+sources:
+  - https://discover.hubpages.com/sports/3-Ways-to-Use-a-Duckunder-in-BJJ
+  - https://artofjiujitsu.com/pages/duck-under-masterclass
+reviewed_by: null
+reviewed_date: null
+safety_level: none
+
+created: 2026-08-09
+updated: 2026-08-09
+
+cards:
+  - id: duck-under-pass-def-01
+    axis: definition
+    type: free_recall
+    front: ダックアンダーパスとはどのようなパスか
+    back: |
+      頭を相手の脚の下をくぐらせるように通し、
+      相手の脚の反対側へ頭と体を移動させて通過するパス。
+      くぐった後は脚を流す形（レッグドラッグ系）へ合流することが多い。
+
+  - id: duck-under-pass-prin-01
+    axis: principle
+    type: free_recall
+    front: ダックアンダーパスが有効な原理を説明せよ
+    back: |
+      相手の脚の内側に留まらず、頭を脚の外側へ抜くことで
+      ガードの射線から自分の体を外す。
+      脚の内側にいる限り受け続ける崩しやフックの影響を、位置取りによって無効化する。
+
+  - id: duck-under-pass-req-01
+    axis: requirement
+    type: free_recall
+    front: ダックアンダーパスで頭を通す際に必要なことは何か
+    back: |
+      相手の体に密着したまま頭を移動させること。
+      体が離れた状態でくぐると、頭が相手の脚の内側に取り残される。
+
+  - id: duck-under-pass-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: duck-under-pass-causal-01
+    front: ダックアンダーパスでよくある失敗を1つ挙げよ
+    back: |
+      相手との密着が甘いまま頭をくぐらせようとすること。
+
+  - id: duck-under-pass-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: duck-under-pass-causal-01
+    front: ダックアンダーパスで密着が甘いまま頭をくぐらせると、結果として何が起きるか
+    back: |
+      頭と首が相手の脚の内側に入った状態で空間が残るため、
+      三角絞めなど脚による首への攻撃を受ける危険が生じる。
+
+  - id: duck-under-pass-fol-01
+    axis: followup
+    type: free_recall
+    front: ダックアンダーで頭を抜いた後の展開として代表的なものは何か
+    back: |
+      相手の脚を流してレッグドラッグの形へ移行し、そこから通過を完成させる。
+
+  - id: duck-under-pass-todo-note
+    axis: requirement
+    type: free_recall
+    front: 【要レビュー】ダックアンダーパスの具体的なグリップと入り口の状況について
+    back: |
+      本カード群はWeb調査に基づく暫定内容であり、
+      具体的なグリップの位置、どのガードからの入り口を主とするか、
+      頭を通す側の判断基準については一次情報による確定が必要。
+    note: |
+      この技は人間（黒帯指導者）の指定で追加されたもの。
+      指導内容と細部が異なる可能性が高いため、レビュー時に優先的に確認すること。
+      確定後、このカード自体は削除して差し支えない。

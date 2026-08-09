@@ -1,0 +1,76 @@
+id: stack-pass
+name_ja: スタックパス
+name_en: Stack Pass
+aliases: [スタック, 折り畳みパス]
+category: guard-passing
+tags:
+  positions: [closed-guard, open-guard, side-control]
+  concepts: [pressure, base, posture, angle]
+
+status: draft
+source_type: ai_research
+sources:
+  - https://thebjjatlas.com/guard-passing/
+  - https://sensobjj.com/blogs/graciemag-1/5-fundamental-guard-passes-every-grappler-should-know
+reviewed_by: null
+reviewed_date: null
+safety_level: caution
+
+created: 2026-08-09
+updated: 2026-08-09
+
+cards:
+  - id: stack-pass-def-01
+    axis: definition
+    type: free_recall
+    front: スタックパスとはどのようなパスか
+    back: |
+      相手の脚を相手自身の頭の方向へ押し込んで体を折り畳ませ、
+      その体勢を保ちながら脚の下または横を通過するパス。
+
+  - id: stack-pass-ang-01
+    axis: angle_weight
+    type: free_recall
+    front: スタックパスにおける体重の使い方を述べよ
+    back: |
+      腕力で押すのではなく、自分の体重を相手の脚を通して相手の上体へ伝える。
+      重心を相手の上に乗せ、肩や胸で押し込む方向を作る。
+
+  - id: stack-pass-prin-01
+    axis: principle
+    type: free_recall
+    front: スタックパスが有効な原理を説明せよ
+    back: |
+      体を折り畳まれた相手は、脚を伸ばして押し返す力も、
+      腰を回して角度を変える動きも制限される。
+      ガードの機能そのものを姿勢の拘束によって奪う考え方。
+
+  - id: stack-pass-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: stack-pass-causal-01
+    front: スタックパスでよくある失敗を1つ挙げよ
+    back: |
+      腕の力だけで相手の脚を押そうとし、自分の体重が相手に乗っていないこと。
+
+  - id: stack-pass-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: stack-pass-causal-01
+    front: スタックパスで体重が乗らず腕力だけで押すと、結果として何が起きるか
+    back: |
+      相手は脚を伸ばして押し返せるため折り畳めず、
+      こちらは腕を伸ばして前傾した不安定な姿勢になり、
+      下から崩されてスイープや三角絞めの標的になる。
+
+  - id: stack-pass-cnt-01
+    axis: counter
+    type: free_recall
+    front: スタックパスに対する下からの基本的な対処を挙げよ
+    back: |
+      折り畳まれる前に腰を横へずらして角度を変える、
+      あるいはフレームで相手の前進を止めて体を伸ばす方向を確保する。
+    note: |
+      スタック状態は首や腰への負荷が生じうる体勢であり、
+      具体的な危険性・禁忌・許容範囲は safety カテゴリで人間の記述に基づき別途扱う。
+      このカードでは扱わない。

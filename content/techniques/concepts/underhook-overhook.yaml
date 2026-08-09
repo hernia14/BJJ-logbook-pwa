@@ -1,0 +1,74 @@
+id: underhook-overhook
+name_ja: アンダーフックとオーバーフック
+name_en: Underhook / Overhook
+aliases: [アンダーフック, オーバーフック, 差す, 差し手, ウィザー]
+category: concepts
+tags:
+  positions: [half-guard, butterfly-guard, turtle]
+  concepts: [underhook, grip-fighting, angle, frame]
+
+status: draft
+source_type: ai_research
+sources:
+  - https://bjjgraph.org/Principles
+  - https://bjjfanatics.com/blogs/news/types-of-guard-in-bjj
+reviewed_by: null
+reviewed_date: null
+safety_level: none
+
+created: 2026-08-09
+updated: 2026-08-09
+
+cards:
+  - id: underhook-overhook-def-01
+    axis: definition
+    type: free_recall
+    front: アンダーフックとオーバーフックの違いを述べよ
+    back: |
+      アンダーフックは自分の腕を相手の腋の下へ内側から差し込んだ状態。
+      オーバーフックは相手の腕の上から自分の腕を被せて絡めた状態。
+
+  - id: underhook-overhook-prin-01
+    axis: principle
+    type: free_recall
+    front: アンダーフックが有利とされる原理を説明せよ
+    back: |
+      腋の下に腕が入ると、相手の上体を持ち上げたり回したりする力を直接伝えられる。
+      相手の体幹を自分の側へ動かせる接点になるため、
+      崩し・スイープ・背後を取る動きの起点になる。
+
+  - id: underhook-overhook-req-01
+    axis: requirement
+    type: free_recall
+    front: アンダーフックを効かせるための要件は何か
+    back: |
+      腕を差し込むだけでなく、肩や上体を相手に密着させて隙間をなくすこと。
+      差した腕が浅いままだと、相手に腕を抱え込まれて逆に固定される。
+
+  - id: underhook-overhook-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: underhook-overhook-causal-01
+    front: アンダーフックに関するよくある失敗を1つ挙げよ
+    back: |
+      腕を差すことだけを目的にして、浅い位置で止まったまま体が離れていること。
+
+  - id: underhook-overhook-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: underhook-overhook-causal-01
+    front: 浅いアンダーフックで体が離れていると、結果として何が起きるか
+    back: |
+      相手に差した腕を抱え込まれ（ウィザー等）、
+      むしろこちらの腕が固定されて動きを封じられる。
+      有利を取るはずの動作が不利を招くことになる。
+
+  - id: underhook-overhook-prin-02
+    axis: principle
+    type: free_recall
+    front: オーバーフックはどのような目的で使われるか説明せよ
+    back: |
+      相手のアンダーフックを封じたり、相手の腕を体に固定して
+      その腕を使った防御や前進を妨げるために使う。
+      アンダーフックが攻めの接点であるのに対し、
+      オーバーフックは相手の攻めを止める性質が強い。

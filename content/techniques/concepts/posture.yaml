@@ -1,0 +1,73 @@
+id: posture
+name_ja: ポスチャー
+name_en: Posture
+aliases: [姿勢, 上体の姿勢, ポスチャーを立てる]
+category: concepts
+tags:
+  positions: [closed-guard, back-control]
+  concepts: [posture, base, frame]
+
+status: draft
+source_type: ai_research
+sources:
+  - https://sbgbend.com/fundamentals-in-bjj-what-they-really-mean-and-why-they-matter-at-every-level/
+  - https://bjjgraph.org/Principles
+reviewed_by: null
+reviewed_date: null
+safety_level: none
+
+created: 2026-08-09
+updated: 2026-08-09
+
+cards:
+  - id: posture-def-01
+    axis: definition
+    type: free_recall
+    front: 柔術における「ポスチャー」とは何か
+    back: |
+      背骨と頭の位置関係によって作られる上体の構造のこと。
+      背中が丸まらず、頭が体幹の上に乗った状態を「ポスチャーが立っている」という。
+
+  - id: posture-prin-01
+    axis: principle
+    type: free_recall
+    front: ポスチャーを崩されると力が出せなくなる原理を説明せよ
+    back: |
+      背中が丸まり頭が前に落ちると、体幹を通して脚の力を腕へ伝える経路が失われる。
+      また頭が体幹の支持範囲から外へ出るため、その重さが崩れる方向へ働き、
+      姿勢を戻すこと自体に力を使わされる。
+
+  - id: posture-req-01
+    axis: requirement
+    type: free_recall
+    front: ガード内でポスチャーを保つために意識すべきことを挙げよ
+    back: |
+      背筋を伸ばして頭を体幹の真上に置くこと、
+      顎を軽く引いて首を守ること、
+      相手に襟や首を掴ませて引き崩されないようグリップを管理すること。
+
+  - id: posture-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: posture-causal-01
+    front: ポスチャーに関するよくある失敗を1つ挙げよ
+    back: |
+      相手のガード内で前かがみになり、頭を相手の胸に近づけてしまうこと。
+
+  - id: posture-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: posture-causal-01
+    front: ガード内で前かがみになり頭を相手に近づけると、結果として何が起きるか
+    back: |
+      首と腕が相手の攻撃範囲に入り、絞めや腕関節、三角絞めなどの
+      入口を与えることになる。同時に自分は力を伝えられず、パスも進まない。
+
+  - id: posture-prin-02
+    axis: principle
+    type: free_recall
+    front: 「ポスチャーは防御であり同時に攻撃の前提でもある」と言われる理由を説明せよ
+    back: |
+      ポスチャーが立っていれば相手の攻撃の射程外に首と腕を置けるため防御になり、
+      同時に体幹から力を伝えられる状態が保たれるためパスや圧の前提にもなる。
+      崩された時点で守りと攻めの両方を同時に失う。
