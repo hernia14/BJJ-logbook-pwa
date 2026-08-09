@@ -51,6 +51,7 @@
 | X-Pass | Xパス | 立ち技系のパス |
 | Smash Pass | スマッシュパス | 圧力で潰しながら通す系統の総称 |
 | Double Under Pass | ダブルアンダーパス | 両腕を相手の脚の下に入れる |
+| Duck Under Pass | ダックアンダーパス | 人間による追加（2026-08-09） |
 
 ---
 
@@ -85,6 +86,8 @@
 | Arm Triangle (Kata Gatame) | 腕がらみ絞め／肩固め系 | 肩固めに近い |
 | Von Flue Choke | フォンフルーチョーク | ギロチン対策から派生する絞め |
 | Loop Choke | ループチョーク | 襟を使った絞め（Gi） |
+| （英名要確認） | カントチョーク | 人間による追加（2026-08-09）。英名・詳細は本人確認待ち → `TODO_QUESTIONS.md` |
+| （英名要確認） | 袖車（そでぐるま） | 人間による追加（2026-08-09）。上のエゼキエル絞めの別名欄と重複の可能性あり → `TODO_QUESTIONS.md` |
 
 ---
 
@@ -130,6 +133,7 @@
 | Seoi Nage | 背負い投げ | 柔道由来の代表的な投げ技 |
 | Uchi Mata | 内股 | 柔道由来の投げ技 |
 | Sprawl (Takedown Defense) | スプロール | テイクダウン防御の基本動作 |
+| （英名要確認） | ワンレッグ | 人間による追加（2026-08-09）。上のシングルレッグと同一か別物か本人確認待ち → `TODO_QUESTIONS.md` |
 
 ---
 
@@ -164,17 +168,27 @@
 | カテゴリ | 件数（暫定） |
 |---|---|
 | positions | 16 |
-| guard-passing | 8 |
+| guard-passing | 9 |
 | sweeps | 8 |
-| submissions/chokes | 12 |
+| submissions/chokes | 14 |
 | submissions/joint-locks | 9 |
 | escapes | 7 |
-| takedowns | 8 |
+| takedowns | 9 |
 | transitions | 4 |
 | concepts | 8 |
-| **合計** | **80** |
+| **合計** | **84** |
 
 ※ これはあくまで「広く認知された技」の第一弾リスト。レビュー後、必要に応じて追加調査・追加項目を行う。
+
+### 人間による追加分（AIリサーチ由来ではない）
+
+2026-08-09時点で、以下4件は本人（黒帯指導者）の指示により追加された。
+AIのWeb調査由来ではないため、**優先度はこちらが上**。
+
+- ダックアンダーパス（guard-passing）
+- カントチョーク（chokes）
+- 袖車（chokes）
+- ワンレッグ（takedowns）
 
 ---
 
