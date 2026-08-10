@@ -55,12 +55,22 @@ Node.js 20 以上（開発は v24 で確認）。
 | `npm run build:content` | `content/` の YAML を `src/generated/cards.json` へ変換（`dev`/`build` が自動実行する） |
 | `npm run stats` | カテゴリ別カード数、未レビュー枚数、出題比率の目標との乖離、`axis` 別分布を確認 |
 | `npm run apply-review -- <file.json>` | アプリでエクスポートしたレビュー判定を `content/` のYAMLへ書き戻す（`--dry-run` で確認のみ） |
-| `npm test` | `src/domain/` のロジック（判定・SRS・セッション選定・インポート検証）の単体テスト |
+| `npm test` | `src/domain/` のロジック（判定・SRS・セッション選定・レビュー適用など）の単体テスト |
+| `npm run test:e2e` | Playwright。オフライン動作とエクスポート/インポートの整合性を実ブラウザで確認 |
 | `npm run typecheck` | コミット前 |
 | `npm run build` | 本番ビルド（`dist/`） |
 | `npm run icons` | PWAアイコンPNGを再生成（図柄を変えたときだけ） |
 
 `npm run validate` と `npm run stats` はほぼ毎回セットで使う。
+
+これらは `.github/workflows/ci.yml` で push / PR ごとに自動実行される。
+手で実行することに依存した仕組みは形骸化するため、機械的に強制している。
+
+初回だけ E2E 用のブラウザ取得が要る。
+
+```bash
+npx playwright install chromium
+```
 
 **未実装（今後追加予定）**
 
@@ -68,7 +78,6 @@ Node.js 20 以上（開発は v24 で確認）。
 |---|---|
 | `npm run find-orphans` | `ingest/raw/` にあるがカード化されていない技術要素を検出（`ingest/raw/` 投入後に実装） |
 | `npm run find-outdated` | ルール改訂後に古い `rulebook_version` のカードを列挙（`content/rules/` 着手後に実装） |
-| `npm run test:e2e` | Playwright。オフライン動作・エクスポート/インポートの整合性 |
 | `npm run lint` | ESLint |
 
 ---
@@ -80,6 +89,7 @@ bjj-drill/
 ├── ingest/raw/          自分の指導ノート・口述メモ（一次情報、原本）
 ├── docs/sources/        IBJJF Rule Book v6.0 / Rules Update Guide v6.0（一次資料）
 ├── content/             生成済みの問題データ（YAML、Gitで管理・レビュー対象）
+│   ├── targets.yaml     出題比率の目標（直下のYAMLは設定。技ファイルではない）
 │   ├── techniques/      技術カード（8割）
 │   ├── rules/           IBJJF v6.0 ルールカード
 │   ├── safety/          禁忌・怪我予防（要人間レビュー）
@@ -94,7 +104,8 @@ bjj-drill/
 ├── src/db/              IndexedDB(Dexie) の保存・エクスポート/インポート
 ├── src/ui/              画面
 ├── src/generated/       ビルド生成物（Git管理外）
-├── scripts/             build-content / stats / make-icons / validate_content.py
+├── e2e/                 Playwright（オフライン動作・エクスポート/インポート）
+├── scripts/             build-content / stats / apply-review / make-icons
 └── docs/                要件定義・設計・運用手順（README には書かない詳細はここ）
 ```
 

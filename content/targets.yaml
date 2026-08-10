@@ -1,0 +1,49 @@
+# 出題比率の目標（CLAUDE.md「出題比率の目標」の機械可読版）
+#
+# npm run stats がこのファイルを読み、目標から外れていれば警告する。
+# 警告であってエラーではない。カテゴリの着手順によって一時的に比率が偏るのは
+# 想定内であり、そこでCIを落とすと未着手カテゴリがある間ずっと失敗し続けてしまう。
+#
+# 比率は「カード枚数」に対する割合（%）。
+
+groups:
+  - label: 技術
+    min: 88
+    max: 92
+    categories:
+      - positions
+      - concepts
+      - guard-passing
+      - sweeps
+      - chokes
+      - joint-locks
+      - escapes
+      - takedowns
+      - transitions
+
+  - label: 安全・禁忌
+    min: 3
+    max: 6
+    categories:
+      - safety
+
+  - label: IBJJFルール
+    min: 2
+    max: 4
+    categories:
+      - rules
+
+  - label: 用語・歴史
+    min: 2
+    max: 4
+    categories:
+      - terminology
+      - history
+
+# 未着手のカテゴリ。これらが空の間は比率の乖離を「想定内」として注記する。
+# 着手したらこの一覧から削除すること。
+not_started_yet:
+  - safety
+  - rules
+  - terminology
+  - history

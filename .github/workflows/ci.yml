@@ -1,0 +1,70 @@
+name: CI
+
+# 誤った知識を定着させないための検査を機械的に強制する。
+# 手で実行することに依存した仕組みは必ず形骸化するため（docs/requirements.md §H）。
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      # カードデータの検証。CLAUDE.md 絶対規則2（安全criticalのAI生成禁止）、
+      # 絶対規則3（ルールカードの典拠必須）、因果ペアの整合などをここで弾く
+      - name: カードデータを検証
+        run: npm run validate
+
+      - name: 型チェック
+        run: npm run typecheck
+
+      - name: ユニットテスト
+        run: npm test
+
+      # 比率は警告のみ。未着手カテゴリがある間の乖離は想定内なので落とさない
+      - name: 出題比率を確認
+        run: npm run stats
+
+      - name: 本番ビルド
+        run: npm run build
+
+  e2e:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: ブラウザを用意
+        run: npx playwright install --with-deps chromium
+
+      # オフライン動作とエクスポート/インポートの整合性。
+      # 前者はService Workerの実挙動、後者は失敗すると学習履歴を失うため、
+      # 単体テストではなく実ブラウザで確認する
+      - name: E2Eテスト
+        run: npm run test:e2e
+
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: playwright-report
+          path: playwright-report/
+          retention-days: 7

@@ -25,7 +25,13 @@ const OUT_FILE = join(OUT_DIR, "cards.json");
 
 const checkOnly = process.argv.includes("--check");
 
-function walkYaml(dir: string): string[] {
+/**
+ * 技ファイルを列挙する。
+ *
+ * content/ 直下のYAMLは設定ファイル（targets.yaml など）であり技ではない。
+ * サブディレクトリ配下のYAMLだけを技として扱う。
+ */
+function walkYaml(dir: string, depth = 0): string[] {
   const out: string[] = [];
   let entries: string[];
   try {
@@ -36,8 +42,8 @@ function walkYaml(dir: string): string[] {
   for (const entry of entries) {
     const full = join(dir, entry);
     if (statSync(full).isDirectory()) {
-      out.push(...walkYaml(full));
-    } else if (extname(entry) === ".yaml" || extname(entry) === ".yml") {
+      out.push(...walkYaml(full, depth + 1));
+    } else if (depth > 0 && (extname(entry) === ".yaml" || extname(entry) === ".yml")) {
       out.push(full);
     }
   }

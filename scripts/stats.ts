@@ -14,29 +14,18 @@ import { techniqueSchema, type TechniqueInput } from "../src/domain/schema.js";
 const ROOT = fileURLToPath(new URL("..", import.meta.url));
 const CONTENT_DIR = join(ROOT, "content");
 
-/** CLAUDE.md「出題比率の目標」。カテゴリをこの4群に畳んで比率を見る */
-const TARGETS: Record<string, { min: number; max: number; categories: string[] }> = {
-  技術: {
-    min: 88,
-    max: 92,
-    categories: [
-      "positions",
-      "concepts",
-      "guard-passing",
-      "sweeps",
-      "chokes",
-      "joint-locks",
-      "escapes",
-      "takedowns",
-      "transitions",
-    ],
-  },
-  "安全・禁忌": { min: 3, max: 6, categories: ["safety"] },
-  "IBJJFルール": { min: 2, max: 4, categories: ["rules"] },
-  "用語・歴史": { min: 2, max: 4, categories: ["terminology", "history"] },
-};
+/** 出題比率の目標は content/targets.yaml が真実源（CLAUDE.md「出題比率の目標」） */
+interface TargetsFile {
+  groups: { label: string; min: number; max: number; categories: string[] }[];
+  not_started_yet?: string[];
+}
 
-function walk(dir: string): string[] {
+const targets = yaml.load(
+  readFileSync(join(CONTENT_DIR, "targets.yaml"), "utf8"),
+) as TargetsFile;
+
+/** content/ 直下のYAMLは設定ファイル。サブディレクトリ配下だけを技として扱う */
+function walk(dir: string, depth = 0): string[] {
   const out: string[] = [];
   let entries: string[];
   try {
@@ -46,8 +35,8 @@ function walk(dir: string): string[] {
   }
   for (const e of entries) {
     const full = join(dir, e);
-    if (statSync(full).isDirectory()) out.push(...walk(full));
-    else if (extname(e) === ".yaml" || extname(e) === ".yml") out.push(full);
+    if (statSync(full).isDirectory()) out.push(...walk(full, depth + 1));
+    else if (depth > 0 && (extname(e) === ".yaml" || extname(e) === ".yml")) out.push(full);
   }
   return out;
 }
@@ -80,17 +69,22 @@ const bucket = <T extends string>(key: (c: (typeof allCards)[number]) => T) => {
 
 console.log(`技 ${techniques.length} / カード ${total}\n`);
 
-console.log("■ 出題比率（CLAUDE.md の目標との対比）");
+console.log("■ 出題比率（content/targets.yaml の目標との対比）");
+const notStarted = new Set(targets.not_started_yet ?? []);
 const warnings: string[] = [];
-for (const [label, target] of Object.entries(TARGETS)) {
+for (const target of targets.groups) {
   const n = count((c) => target.categories.includes(c.category));
   const p = pct(n);
   const ok = p >= target.min && p <= target.max;
-  if (!ok) {
-    warnings.push(`${label}: ${p.toFixed(1)}% （目標 ${target.min}〜${target.max}%）`);
+  // 未着手カテゴリが1つでも残っている間、比率の比較は情報を持たない。
+  // 他の群が0枚なら残りの群は必ず100%になるため、そこで警告しても意味がない。
+  const pending = target.categories.every((c) => notStarted.has(c));
+  if (!ok && !pending && notStarted.size === 0) {
+    warnings.push(`${target.label}: ${p.toFixed(1)}% （目標 ${target.min}〜${target.max}%）`);
   }
+  const mark = ok ? "○" : notStarted.size > 0 ? "－" : "×";
   console.log(
-    `  ${ok ? "○" : "×"} ${label.padEnd(12)} ${String(n).padStart(4)}枚  ${p.toFixed(1).padStart(5)}%  目標 ${target.min}〜${target.max}%`,
+    `  ${mark} ${target.label.padEnd(12)} ${String(n).padStart(4)}枚  ${p.toFixed(1).padStart(5)}%  目標 ${target.min}〜${target.max}%${pending ? "（未着手）" : ""}`,
   );
 }
 
@@ -120,10 +114,14 @@ console.log(`  レビュー済み（出題可能） ${reviewed}枚`);
 console.log(`  未レビュー（draft）      ${total - reviewed}枚`);
 console.log(`  うちAI下書き             ${count((c) => c.sourceType === "ai_research")}枚`);
 
+if (notStarted.size > 0) {
+  console.log(
+    `\n注: 未着手カテゴリ（${[...notStarted].join(", ")}）があるため比率は暫定値です。`,
+  );
+  console.log("  着手したら content/targets.yaml の not_started_yet から削除してください。");
+}
+
 if (warnings.length > 0) {
   console.log("\n⚠ 目標比率から外れています:");
   for (const w of warnings) console.log(`  - ${w}`);
-  console.log(
-    "  （safety / rules / terminology / history が未着手のため、現時点では想定内の乖離）",
-  );
 }
