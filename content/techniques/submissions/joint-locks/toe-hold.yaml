@@ -1,0 +1,74 @@
+id: toe-hold
+name_ja: トーホールド
+name_en: Toe Hold
+aliases: [トゥーホールド, 足指固め, アンクルツイスト]
+category: joint-locks
+tags:
+  positions: [open-guard, side-control, fifty-fifty-guard]
+  concepts: [angle, grip-fighting]
+
+status: draft
+source_type: ai_research
+sources:
+  - https://submissionsearcher.com/technique-type/joint-locks/
+  - https://www.whitebeltclub.com/articles/complete-list-of-bjj-submissions
+reviewed_by: null
+reviewed_date: null
+safety_level: caution
+
+created: 2026-08-09
+updated: 2026-08-09
+
+cards:
+  - id: toe-hold-def-01
+    axis: definition
+    type: free_recall
+    front: トーホールドとはどのような関節技か
+    back: |
+      相手の足の甲側を掴み、もう一方の手で足首を支えて
+      フィギュアフォアの形を作り、足を捻る関節技。
+
+  - id: toe-hold-prin-01
+    axis: principle
+    type: free_recall
+    front: トーホールドとキムラの構造上の共通点を述べよ
+    back: |
+      いずれもフィギュアフォアのグリップで対象を挟み、
+      回旋させる構造を持つ。
+      キムラが肩に作用するのに対し、トーホールドは足首から下に作用する。
+
+  - id: toe-hold-req-01
+    axis: requirement
+    type: free_recall
+    front: トーホールドを成立させるための要件は何か
+    back: |
+      相手の脚全体を固定し、体ごと回転して逃げられないようにすること。
+      グリップだけでは相手が回転して力を逃がす。
+
+  - id: toe-hold-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: toe-hold-causal-01
+    front: トーホールドでよくある失敗を1つ挙げよ
+    back: |
+      グリップを組むことに集中し、相手の脚と体の固定が疎かになること。
+
+  - id: toe-hold-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: toe-hold-causal-01
+    front: トーホールドで相手の体の固定が疎かだと、結果として何が起きるか
+    back: |
+      相手は体を回転させて足の向きを変え、捻りの力を逃がす。
+      その動きの中で足を引き抜かれ、ポジションも失う。
+
+  - id: toe-hold-cnt-01
+    axis: counter
+    type: free_recall
+    front: トーホールドに対する基本的な防御の方向性を述べよ
+    back: |
+      掴まれる前に足の位置を変えること、
+      掴まれた場合は捻られる方向と同じ向きに体を回転させて力を逃がすこと。
+    note: |
+      足関節技の練習上の安全管理、および IBJJF v6.0 における帯別の可否は
+      それぞれ safety カテゴリ・rules カテゴリで別途扱う。

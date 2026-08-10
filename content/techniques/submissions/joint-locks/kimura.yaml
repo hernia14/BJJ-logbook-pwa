@@ -1,0 +1,92 @@
+id: kimura
+name_ja: キムラ
+name_en: Kimura
+aliases: [逆腕がらみ, Gyaku Ude Garami, キムラロック, 逆片羽絞めではない]
+category: joint-locks
+tags:
+  positions: [closed-guard, side-control, half-guard, north-south]
+  concepts: [angle, grip-fighting, frame]
+
+status: draft
+source_type: ai_research
+sources:
+  - https://www.kingz.com/blogs/news/the-complete-guide-to-bjj-kimura
+  - https://www.methodjjtulsa.com/learn/bjj-submissions-guide
+  - https://submissionsearcher.com/technique-type/joint-locks/
+reviewed_by: null
+reviewed_date: null
+safety_level: caution
+
+created: 2026-08-09
+updated: 2026-08-09
+
+cards:
+  - id: kimura-def-01
+    axis: definition
+    type: free_recall
+    front: キムラとはどのような関節技か
+    back: |
+      相手の手首を掴み、もう一方の腕を相手の腕の下から回して
+      自分の手首を握る（フィギュアフォアの形を作る）ことで、
+      肩関節を内側へ回旋させる関節技。
+
+  - id: kimura-prin-01
+    axis: principle
+    type: free_recall
+    front: キムラが「二重関節技」と呼ばれる原理を説明せよ
+    back: |
+      腕を回旋させることで肩関節に作用すると同時に、
+      肘を曲げた状態で固定するため肘にも負荷が及ぶ。
+      一つの動作で複数の関節に同時に作用する構造にある。
+
+  - id: kimura-req-01
+    axis: requirement
+    type: free_recall
+    front: キムラを効かせるために必要な相手の腕の状態は何か
+    back: |
+      相手の肘が曲がり、腕が体から離れた位置にあること。
+      腕が体に密着していると回旋させる余地がなく極まらない。
+
+  - id: kimura-fin-01
+    axis: finish
+    type: free_recall
+    front: キムラの仕上げの要点を挙げよ
+    back: |
+      相手の腕を背中の方向へ回すこと、
+      自分の体の位置を相手の肩の可動が制限される角度に置くこと、
+      そして相手が体を回して逃げられないよう体幹を固定すること。
+
+  - id: kimura-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: kimura-causal-01
+    front: キムラでよくある失敗を1つ挙げよ
+    back: |
+      グリップを組んだだけで満足し、
+      相手の体の回転（逃げる方向）を止めていないこと。
+
+  - id: kimura-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: kimura-causal-01
+    front: キムラで相手の体の回転を止めないと、結果として何が起きるか
+    back: |
+      相手は肩の可動域が確保される方向へ体ごと回転して逃げられる。
+      関節への負荷が体の回転に逃げるため、力を加えても極まらない。
+
+  - id: kimura-cnt-01
+    axis: counter
+    type: free_recall
+    front: キムラに対する基本的な防御を挙げよ
+    back: |
+      掴まれた腕を自分の体（帯やズボン）に固定して回旋を防ぐこと、
+      そして肩の可動域が広い方向へ体を回転させて逃げること。
+
+  - id: kimura-fol-01
+    axis: followup
+    type: free_recall
+    front: キムラのグリップが「コントロールとしても使える」理由を説明せよ
+    back: |
+      相手の腕を固定した状態では、相手は体を回す方向が制限される。
+      極まらなくてもグリップを保持したまま
+      スイープや別のポジションへの移行に利用できる。

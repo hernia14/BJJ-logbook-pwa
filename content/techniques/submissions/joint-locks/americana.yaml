@@ -1,0 +1,82 @@
+id: americana
+name_ja: アメリカーナ
+name_en: Americana
+aliases: [腕がらみ, Ude Garami, キーロック, Keylock]
+category: joint-locks
+tags:
+  positions: [mount, side-control]
+  concepts: [pressure, angle, base]
+
+status: draft
+source_type: ai_research
+sources:
+  - https://www.methodjjtulsa.com/learn/bjj-submissions-guide
+  - https://submissionsearcher.com/technique-type/joint-locks/
+reviewed_by: null
+reviewed_date: null
+safety_level: caution
+
+created: 2026-08-09
+updated: 2026-08-09
+
+cards:
+  - id: americana-def-01
+    axis: definition
+    type: free_recall
+    front: アメリカーナとはどのような関節技か
+    back: |
+      相手の腕を床に対して直角に曲げた状態で固定し、
+      肩関節を外側へ回旋させる関節技。上のポジションから仕掛ける。
+
+  - id: americana-def-02
+    axis: definition
+    type: free_recall
+    front: アメリカーナとキムラの違いを述べよ
+    back: |
+      いずれも肩関節の回旋を用いるが、回す方向が逆になる。
+      アメリカーナは相手の手が頭側を向く方向へ、
+      キムラは相手の手が足側を向く方向へ回す。
+
+  - id: americana-req-01
+    axis: requirement
+    type: free_recall
+    front: アメリカーナを成立させるための要件は何か
+    back: |
+      相手の手首を床に押さえつけて浮かせないこと、
+      そして自分の腕を相手の腕の下に通してフィギュアフォアを組むこと。
+
+  - id: americana-fin-01
+    axis: finish
+    type: free_recall
+    front: アメリカーナの仕上げの要点を挙げよ
+    back: |
+      相手の腕全体を床と平行に保ったまま、
+      肘を相手の腰の方向へ滑らせるように動かすこと。
+      手首だけを持ち上げても肩には作用しない。
+
+  - id: americana-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: americana-causal-01
+    front: アメリカーナでよくある失敗を1つ挙げよ
+    back: |
+      相手の手首だけを持ち上げて、肘を動かさないこと。
+      また、押さえ込みが緩んで相手に腕を引き抜かれること。
+
+  - id: americana-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: americana-causal-01
+    front: アメリカーナで手首だけを持ち上げると、結果として何が起きるか
+    back: |
+      肩関節の回旋が起きないため極まらない。
+      その間に相手は腕に力を入れて抵抗する余裕を得て、
+      押さえ込みを崩す動きに転じられる。
+
+  - id: americana-cnt-01
+    axis: counter
+    type: free_recall
+    front: アメリカーナに対する基本的な防御を挙げよ
+    back: |
+      腕を床から浮かせて体の中心線へ引き戻すこと、
+      そして掴まれた手で自分の帯や道衣を握って回旋を防ぐこと。

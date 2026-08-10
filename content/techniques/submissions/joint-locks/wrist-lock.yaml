@@ -1,0 +1,75 @@
+id: wrist-lock
+name_ja: リストロック
+name_en: Wrist Lock
+aliases: [手首固め, 小手返し系, Mao Torcida]
+category: joint-locks
+tags:
+  positions: [closed-guard, mount, side-control, back-control]
+  concepts: [grip-fighting, angle, frame]
+
+status: draft
+source_type: ai_research
+sources:
+  - https://submissionsearcher.com/technique-type/joint-locks/
+  - https://www.whitebeltclub.com/articles/complete-list-of-bjj-submissions
+reviewed_by: null
+reviewed_date: null
+safety_level: caution
+
+created: 2026-08-09
+updated: 2026-08-09
+
+cards:
+  - id: wrist-lock-def-01
+    axis: definition
+    type: free_recall
+    front: リストロックとはどのような関節技か
+    back: |
+      相手の手首の関節を、曲げる・反らす・捻るいずれかの方向へ
+      可動域を超えて動かす関節技の総称。
+
+  - id: wrist-lock-prin-01
+    axis: principle
+    type: free_recall
+    front: リストロックが「多くのポジションから狙える」原理を説明せよ
+    back: |
+      手首は相手がグリップを取ったり床に手をついたりする際に
+      必然的に固定される部位であるため、
+      相手が何らかの動作をしている限り常に対象が存在する。
+
+  - id: wrist-lock-req-01
+    axis: requirement
+    type: free_recall
+    front: リストロックを成立させるための要件は何か
+    back: |
+      相手の肘から先が動かないよう固定すること。
+      手首だけを曲げようとしても、腕全体が逃げれば力が伝わらない。
+
+  - id: wrist-lock-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: wrist-lock-causal-01
+    front: リストロックでよくある失敗を1つ挙げよ
+    back: |
+      相手の腕全体を固定せず、手首だけを握って曲げようとすること。
+
+  - id: wrist-lock-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: wrist-lock-causal-01
+    front: リストロックで腕全体を固定しないと、結果として何が起きるか
+    back: |
+      相手は肘や肩を動かして手首への力を逃がせる。
+      その間に自分は両手を1本の腕に使っているため、
+      ポジションのコントロールが手薄になる。
+
+  - id: wrist-lock-cnt-01
+    axis: counter
+    type: free_recall
+    front: リストロックに対する基本的な防御を挙げよ
+    back: |
+      手を握り込んで手首を固めること、
+      そして腕全体を動かして手首単独に力が集中しないようにすること。
+    note: |
+      手首は可動域が小さく、極まってからタップまでの猶予が短い部位である。
+      練習上の安全管理は safety カテゴリで人間の記述に基づき別途扱う。

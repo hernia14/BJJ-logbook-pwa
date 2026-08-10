@@ -1,0 +1,76 @@
+id: kneebar
+name_ja: 膝十字固め
+name_en: Kneebar
+aliases: [ニーバー, ヒザ十字, 膝十字]
+category: joint-locks
+tags:
+  positions: [open-guard, single-leg-x, fifty-fifty-guard, side-control]
+  concepts: [angle, base, frame]
+
+status: draft
+source_type: ai_research
+sources:
+  - https://submissionsearcher.com/technique-type/joint-locks/
+  - https://bjjequipment.com/bjj-submissions/
+reviewed_by: null
+reviewed_date: null
+safety_level: caution
+
+created: 2026-08-09
+updated: 2026-08-09
+
+cards:
+  - id: kneebar-def-01
+    axis: definition
+    type: free_recall
+    front: 膝十字固めとはどのような関節技か
+    back: |
+      相手の脚を両脚で挟んで固定し、
+      膝関節を伸ばす方向へ力を加える関節技。
+
+  - id: kneebar-def-02
+    axis: definition
+    type: free_recall
+    front: 膝十字固めが「脚の腕十字」と呼ばれる理由を説明せよ
+    back: |
+      構造が腕十字固めと同じだから。
+      腕十字が肘を伸ばす方向に作用するのに対し、
+      膝十字は膝を伸ばす方向に作用する。挟んで固定し支点を作る原理は共通。
+
+  - id: kneebar-req-01
+    axis: requirement
+    type: free_recall
+    front: 膝十字固めを成立させるための要件は何か
+    back: |
+      両膝を締めて相手の脚を固定すること、
+      そして自分の腰を相手の膝関節に密着させて支点を作ること。
+      腕十字と同じく、支点が離れると力が伝わらない。
+
+  - id: kneebar-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: kneebar-causal-01
+    front: 膝十字固めでよくある失敗を1つ挙げよ
+    back: |
+      両膝が開いて相手の脚の固定が緩むこと、
+      あるいは腰が相手の膝から離れていること。
+
+  - id: kneebar-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: kneebar-causal-01
+    front: 膝十字固めで脚の固定が緩むと、結果として何が起きるか
+    back: |
+      相手は脚を回転させて力を逃がすか、引き抜いて脱出する。
+      抜かれた後は自分が背中を向けた不利な体勢に残される。
+
+  - id: kneebar-cnt-01
+    axis: counter
+    type: free_recall
+    front: 膝十字固めに対する基本的な防御の方向性を述べよ
+    back: |
+      膝を曲げて伸展を防ぐこと、
+      そして相手の固定が完成する前に脚を回転させて向きを変えること。
+    note: |
+      膝関節技の練習上の安全管理（掛ける速度、タップの判断）は
+      safety カテゴリで人間の記述に基づき別途扱う。

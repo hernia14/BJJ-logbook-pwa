@@ -1,0 +1,88 @@
+id: armbar
+name_ja: 腕十字固め
+name_en: Armbar
+aliases: [アームバー, 腕ひしぎ十字固め, Juji Gatame, 十字]
+category: joint-locks
+tags:
+  positions: [closed-guard, mount, side-control, back-control]
+  concepts: [angle, posture, base, frame]
+
+status: draft
+source_type: ai_research
+sources:
+  - https://www.methodjjtulsa.com/learn/bjj-submissions-guide
+  - https://submissionsearcher.com/technique-type/joint-locks/
+  - https://www.whitebeltclub.com/articles/complete-list-of-bjj-submissions
+reviewed_by: null
+reviewed_date: null
+safety_level: caution
+
+created: 2026-08-09
+updated: 2026-08-09
+
+cards:
+  - id: armbar-def-01
+    axis: definition
+    type: free_recall
+    front: 腕十字固めとはどのような関節技か
+    back: |
+      相手の腕を両脚で挟んで固定し、
+      肘関節を伸ばす方向へ力を加える関節技。肘の伸展方向に作用する。
+
+  - id: armbar-req-01
+    axis: requirement
+    type: free_recall
+    front: 腕十字固めを成立させるために、脚と腰はどう使うか
+    back: |
+      両膝を締めて相手の腕が抜けないよう固定し、
+      腰を相手の肘に密着させて支点を作る。
+      腰が離れていると力が伝わらない。
+
+  - id: armbar-fin-01
+    axis: finish
+    type: free_recall
+    front: 腕十字固めの仕上げの要点を挙げよ
+    back: |
+      相手の親指が上を向く方向に腕を保つこと、
+      両膝を締めること、
+      そして腰を持ち上げるようにして肘に力を伝えること。
+
+  - id: armbar-prin-01
+    axis: principle
+    type: free_recall
+    front: 腕十字固めで「腰が支点になる」原理を説明せよ
+    back: |
+      相手の肘を自分の腰（恥骨あたり）に乗せることで、
+      腕を引く力に対する固定された支点が生まれる。
+      支点が近いほど小さな力で大きな作用が生じ、
+      支点が離れると腕を引くだけで力が逃げる。
+
+  - id: armbar-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: armbar-causal-01
+    front: 腕十字固めでよくある失敗を1つ挙げよ
+    back: |
+      両膝が開いてしまうこと、または腰が相手の肘から離れていること。
+
+  - id: armbar-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: armbar-causal-01
+    front: 腕十字固めで膝が開くと、結果として何が起きるか
+    back: |
+      相手は腕を抜く空間を得て脱出できる。
+      さらに腕を抜かれた後は自分が仰向けで脚を広げた状態になり、
+      そのままパスガードを許しやすい。
+
+  - id: armbar-cnt-01
+    axis: counter
+    type: free_recall
+    front: 腕十字固めに対する基本的な防御の方向性を述べよ
+    back: |
+      肘を曲げて腕を握り込み、伸ばされないようにすること。
+      そのうえで肘を体の中心線へ戻し、
+      相手の脚の締めが緩んだ隙に腕を引き抜く。
+    note: |
+      関節技の練習上の安全管理（掛ける速度、タップの受け方、
+      極める深さの限界）は safety カテゴリで人間の記述に基づき別途扱う。

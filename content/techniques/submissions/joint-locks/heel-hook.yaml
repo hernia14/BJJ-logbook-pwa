@@ -1,0 +1,81 @@
+id: heel-hook
+name_ja: ヒールフック
+name_en: Heel Hook
+aliases: [ヒール, かかと取り]
+category: joint-locks
+tags:
+  positions: [single-leg-x, fifty-fifty-guard, open-guard]
+  concepts: [angle, base]
+
+status: draft
+source_type: ai_research
+sources:
+  - https://submissionsearcher.com/technique-type/joint-locks/
+  - https://bjjequipment.com/bjj-submissions/
+reviewed_by: null
+reviewed_date: null
+safety_level: caution
+
+created: 2026-08-09
+updated: 2026-08-09
+
+cards:
+  - id: heel-hook-def-01
+    axis: definition
+    type: free_recall
+    front: ヒールフックとはどのような関節技か
+    back: |
+      相手のかかとを保持し、脚を絡めて下半身を固定したうえで
+      足を回旋させる関節技。回旋の力が膝関節に伝わる。
+
+  - id: heel-hook-prin-01
+    axis: principle
+    type: free_recall
+    front: ヒールフックで「膝に作用する」原理を説明せよ
+    back: |
+      かかとを回すと、その回旋は足首ではなく脛を通じて膝へ伝わる。
+      脚の付け根が絡みで固定されているため回旋が逃げ場を失い、
+      膝関節そのものにねじれとして加わる。
+
+  - id: heel-hook-req-01
+    axis: requirement
+    type: free_recall
+    front: ヒールフックにおいて、かかとの保持と同等に重要な要素は何か
+    back: |
+      脚の絡みによる下半身の固定。
+      相手が体を回して回旋を逃がせる状態では作用せず、
+      固定が成立して初めて回旋が関節に伝わる。
+
+  - id: heel-hook-prin-02
+    axis: principle
+    type: free_recall
+    front: ヒールフックが他の多くのサブミッションと決定的に異なる点は何か
+    back: |
+      痛みによる警告が極まる前に十分に現れない場合があり、
+      「痛くなってからタップする」という他の技で通用する判断が
+      通用しないことがある点。
+
+  - id: heel-hook-cnt-01
+    axis: counter
+    type: free_recall
+    front: ヒールフックに対する防御の基本的な考え方を述べよ
+    back: |
+      掛けられてから外すことを前提にせず、
+      脚の絡みが完成する前の段階で対処すること。
+      かかとを取られる前に足の向きを変え、脚を抜く方向を確保する。
+
+  - id: heel-hook-safety-ref-01
+    axis: requirement
+    type: free_recall
+    front: 【要人間執筆】ヒールフックの練習上の扱いについて、このカード群が意図的に扱っていない事項は何か
+    back: |
+      掛ける速度、極める深さの限界、タップの判断基準、帯やレベルによる許可の可否、
+      競技ルール上の扱い。
+      これらは誤った知識が重大な怪我に直結するため、
+      AIが記述してはならない領域として意図的に空けてある。
+    note: |
+      本ファイルは技の構造と原理のみを扱う。
+      安全に関わる記述は content/safety/ に人間（黒帯指導者）が執筆し、
+      safety_level: critical・reviewed_by 記入済みのカードとして別途作成すること。
+      IBJJF v6.0 上の帯別可否は docs/sources/ のルールブックを典拠に rules カテゴリで扱う。
+      レビュー時、本技は最優先で確認すべき対象である。

@@ -1,0 +1,77 @@
+id: straight-ankle-lock
+name_ja: 足首固め
+name_en: Straight Ankle Lock
+aliases: [アキレス腱固め, ストレートアンクルロック, アンクルロック, Ashi Garami]
+category: joint-locks
+tags:
+  positions: [single-leg-x, fifty-fifty-guard, open-guard]
+  concepts: [angle, base, frame]
+
+status: draft
+source_type: ai_research
+sources:
+  - https://submissionsearcher.com/technique-type/joint-locks/
+  - https://www.methodjjtulsa.com/learn/bjj-submissions-guide
+reviewed_by: null
+reviewed_date: null
+safety_level: caution
+
+created: 2026-08-09
+updated: 2026-08-09
+
+cards:
+  - id: straight-ankle-lock-def-01
+    axis: definition
+    type: free_recall
+    front: 足首固め（ストレートアンクルロック）とはどのような関節技か
+    back: |
+      相手の足を自分の腋に抱え込み、
+      足首を伸ばす方向へ力を加える関節技。最も基本的な足関節技とされる。
+
+  - id: straight-ankle-lock-req-01
+    axis: requirement
+    type: free_recall
+    front: 足首固めを成立させるために、相手の脚をどう制御する必要があるか
+    back: |
+      相手の脚全体を自分の体で固定し、
+      膝から下だけでなく脚の付け根から動きを止めること。
+      脚全体が動けると、足首への力が体の移動に逃げる。
+
+  - id: straight-ankle-lock-prin-01
+    axis: principle
+    type: free_recall
+    front: 足首固めが「回旋を伴わない足関節技」である点の意味を説明せよ
+    back: |
+      足首を伸ばす方向のみに作用し、膝の回旋を伴わない。
+      そのため作用する部位が限定的で、
+      回旋を伴う足関節技とは性質もリスクの種類も異なる。
+
+  - id: straight-ankle-lock-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: straight-ankle-lock-causal-01
+    front: 足首固めでよくある失敗を1つ挙げよ
+    back: |
+      相手の脚全体を固定せず、足首だけを抱えて反ろうとすること。
+
+  - id: straight-ankle-lock-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: straight-ankle-lock-causal-01
+    front: 足首固めで脚全体を固定しないと、結果として何が起きるか
+    back: |
+      相手は脚を引き抜くか、体ごと回転して力を逃がせる。
+      さらに自分は仰向けで相手の脚を抱えた体勢のため、
+      抜かれた後に上を取られやすい。
+
+  - id: straight-ankle-lock-cnt-01
+    axis: counter
+    type: free_recall
+    front: 足首固めに対する基本的な防御の方向性を述べよ
+    back: |
+      早い段階で足を引き抜くこと、
+      そして相手の抱え込みが完成する前に体の向きを変えて力の方向をずらすこと。
+    note: |
+      足関節技は掛かってからの猶予が短い技術である。
+      具体的なタップの判断基準、掛ける速度、練習時の安全管理は
+      safety カテゴリで人間の記述に基づき別途扱う。このカードでは扱わない。
