@@ -123,6 +123,18 @@ export default function App() {
   };
 
   /**
+   * セッションを途中で終了しホームへ戻る。
+   * 解答は1枚ごとに保存済みのため、ここで失われるのは残りのキューだけ。
+   * 取り消し履歴は持ち越すと別セッションの解答を巻き戻せてしまうため破棄する。
+   */
+  const handleExit = () => {
+    setQueue([]);
+    setHistory([]);
+    setPosition(0);
+    setScreen("home");
+  };
+
+  /**
    * 採点せずに次へ進む。SRSには一切記録しないため、
    * そのカードは期限到来のまま残り、次のセッションでも出題される。
    */
@@ -189,6 +201,7 @@ export default function App() {
           onAnswer={(q, u) => void handleAnswer(q, u)}
           onUndo={() => void handleUndo()}
           onSkip={handleSkip}
+          onExit={handleExit}
           onReportError={(note) => void handleReportError(note)}
         />
       </div>

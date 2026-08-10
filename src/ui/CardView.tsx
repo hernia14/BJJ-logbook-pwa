@@ -15,6 +15,7 @@ interface Props {
   onAnswer: (quality: Quality, unverifiedOnMat: boolean) => void;
   onUndo: () => void;
   onSkip: () => void;
+  onExit: () => void;
   onReportError: (note: string) => void;
 }
 
@@ -35,6 +36,7 @@ export function CardView({
   onAnswer,
   onUndo,
   onSkip,
+  onExit,
   onReportError,
 }: Props) {
   const [revealed, setRevealed] = useState(false);
@@ -85,18 +87,27 @@ export function CardView({
 
   return (
     <div className="flex min-h-full flex-col gap-4 p-4">
-      <header className="flex flex-wrap items-center gap-2 text-sm text-fg-dim">
-        <span className="tabular-nums">
+      <header className="flex items-center gap-2 text-sm text-fg-dim">
+        <span className="shrink-0 tabular-nums">
           {index + 1} / {total}
         </span>
-        <span className="rounded bg-ink-soft px-2 py-0.5">
-          {CATEGORY_LABELS[card.category] ?? card.category}
-        </span>
-        <span className="rounded bg-ink-soft px-2 py-0.5">{AXIS_LABELS[card.axis] ?? card.axis}</span>
-        <span className="ml-auto truncate">{card.techniqueNameJa}</span>
+        <span className="truncate">{card.techniqueNameJa}</span>
+        <button
+          type="button"
+          onClick={onExit}
+          className="ml-auto shrink-0 rounded border border-line px-3 py-1.5 text-xs"
+        >
+          終了
+        </button>
       </header>
 
-      <div className="flex flex-wrap gap-2">
+      <div className="flex flex-wrap gap-2 text-sm">
+        <span className="rounded bg-ink-soft px-2 py-0.5 text-fg-dim">
+          {CATEGORY_LABELS[card.category] ?? card.category}
+        </span>
+        <span className="rounded bg-ink-soft px-2 py-0.5 text-fg-dim">
+          {AXIS_LABELS[card.axis] ?? card.axis}
+        </span>
         <SafetyBadge level={card.safetyLevel} />
         {card.status === "draft" && <DraftBadge />}
       </div>
