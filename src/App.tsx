@@ -6,21 +6,26 @@ import { initialState, review, type Quality, type SrsState } from "./domain/srs"
 import type { QuizCard } from "./domain/schema";
 import {
   appendReviewLog,
+  approveCard,
   deleteReviewLog,
   deleteSrsState,
   getAllSrsStates,
   getReportedCardIds,
+  getReviewDecisions,
   getSetting,
   reportError,
   saveSrsState,
   setSetting,
+  unapproveCard,
+  db,
 } from "./db/db";
 import { CardView } from "./ui/CardView";
 import { DeckSelector } from "./ui/DeckSelector";
 import { Home } from "./ui/Home";
+import { ReviewScreen } from "./ui/ReviewScreen";
 import { Settings } from "./ui/Settings";
 
-type Screen = "home" | "quiz" | "settings" | "deck" | "done";
+type Screen = "home" | "quiz" | "settings" | "deck" | "review" | "done";
 
 /**
  * 「1つ戻る」で解答を取り消すために必要な情報。
@@ -42,25 +47,53 @@ export default function App() {
   const [reviewMode, setReviewMode] = useState(false);
   const [sessionSize, setSessionSize] = useState(20);
   const [selection, setSelection] = useState<DeckSelection>(EMPTY_SELECTION);
+  const [approved, setApproved] = useState<Set<string>>(new Set());
+  const [reviewer, setReviewer] = useState("");
   const [queue, setQueue] = useState<QuizCard[]>([]);
   const [position, setPosition] = useState(0);
   const [history, setHistory] = useState<AnswerHistoryEntry[]>([]);
 
   const refresh = useCallback(async () => {
-    const [s, r, rm, ss, excluded] = await Promise.all([
+    const [s, r, rm, ss, excluded, decisions, rev] = await Promise.all([
       getAllSrsStates(),
       getReportedCardIds(),
       getSetting("reviewMode", false),
       getSetting("sessionSize", 20),
       getSetting<string[]>("excludedCardIds", []),
+      getReviewDecisions(),
+      getSetting("reviewer", ""),
     ]);
     setStates(s);
     setReported(r);
     setReviewMode(rm);
     setSessionSize(ss);
     setSelection({ excludedCardIds: excluded });
+    setApproved(new Set(decisions.keys()));
+    setReviewer(rev);
     setLoading(false);
   }, []);
+
+  /** 判定結果を、YAMLへ書き戻すためのJSONとして出力する */
+  const exportReview = async () => {
+    const [decisions, reports] = await Promise.all([
+      getReviewDecisions(),
+      db.errorReports.toArray(),
+    ]);
+    const payload = {
+      format: "bjj-drill-review" as const,
+      version: 1 as const,
+      exportedAt: new Date().toISOString(),
+      approved: [...decisions.values()],
+      needsFix: reports.map((r) => ({ cardId: r.cardId, note: r.note, reportedAt: r.reportedAt })),
+    };
+    const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = `bjj-drill-review-${new Date().toISOString().slice(0, 10)}.json`;
+    a.click();
+    URL.revokeObjectURL(url);
+  };
 
   const updateSelection = (next: DeckSelection) => {
     setSelection(next);
@@ -196,6 +229,38 @@ export default function App() {
     );
   }
 
+  if (screen === "review") {
+    return (
+      <ReviewScreen
+        reviewer={reviewer}
+        onReviewerChange={(v) => {
+          setReviewer(v);
+          void setSetting("reviewer", v);
+        }}
+        approved={approved}
+        reported={reported}
+        onApprove={(cardId) => {
+          void approveCard(cardId, reviewer.trim());
+          setApproved((prev) => new Set(prev).add(cardId));
+        }}
+        onUnapprove={(cardId) => {
+          void unapproveCard(cardId);
+          setApproved((prev) => {
+            const next = new Set(prev);
+            next.delete(cardId);
+            return next;
+          });
+        }}
+        onReport={(cardId, note) => {
+          void reportError(cardId, note);
+          setReported((prev) => new Set(prev).add(cardId));
+        }}
+        onExport={() => void exportReview()}
+        onClose={() => setScreen("home")}
+      />
+    );
+  }
+
   if (screen === "settings") {
     return (
       <Settings
@@ -267,9 +332,11 @@ export default function App() {
       reviewMode={reviewMode}
       sessionSize={sessionSize}
       selection={selection}
+      approvedCount={approved.size}
       onStart={startSession}
       onOpenSettings={() => setScreen("settings")}
       onOpenDeck={() => setScreen("deck")}
+      onOpenReview={() => setScreen("review")}
     />
   );
 }

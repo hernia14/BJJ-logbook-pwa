@@ -54,6 +54,7 @@ Node.js 20 以上（開発は v24 で確認）。
 | `npm run validate` | `content/` を編集/生成した直後に必ず実行。エラーが1件でも出たらPRを出さない |
 | `npm run build:content` | `content/` の YAML を `src/generated/cards.json` へ変換（`dev`/`build` が自動実行する） |
 | `npm run stats` | カテゴリ別カード数、未レビュー枚数、出題比率の目標との乖離、`axis` 別分布を確認 |
+| `npm run apply-review -- <file.json>` | アプリでエクスポートしたレビュー判定を `content/` のYAMLへ書き戻す（`--dry-run` で確認のみ） |
 | `npm test` | `src/domain/` のロジック（判定・SRS・セッション選定・インポート検証）の単体テスト |
 | `npm run typecheck` | コミット前 |
 | `npm run build` | 本番ビルド（`dist/`） |
@@ -119,6 +120,41 @@ bjj-drill/
 
 カードの分解方針（1技を何枚に割るか等）は `docs/requirements.md` §A、
 YAMLの書式は `docs/card-schema.md`。
+
+---
+
+## 4-2. カードをレビューして出題プールへ入れる手順
+
+未レビュー（`status: draft`）のカードは出題されない。出題対象にするには
+**アプリで判定 → YAMLへ書き戻し → Gitへコミット** の3段階を通す。
+アプリ内の承認は端末上の下書きにすぎず、真実源はあくまで `content/` のYAML。
+
+1. **スマホで判定する**
+   ホーム →「カードをレビューする」。レビュー者名を入れ、
+   1枚ずつ内容を確認して「承認する」または「要修正」を選ぶ。
+   カテゴリ絞り込みと未判定/承認済み/要修正の切り替えができる。
+2. **判定結果をエクスポート**
+   同画面の「判定結果をエクスポート」でJSONを保存し、PCへ移す。
+3. **YAMLへ書き戻す**
+
+   ```bash
+   npm run apply-review -- ~/Downloads/bjj-drill-review-2026-08-10.json --dry-run
+   ```
+
+   変更内容を確認してから `--dry-run` を外して実行する。
+   承認したカードの `- id:` 直下に `status: reviewed` / `reviewed_by` / `reviewed_date` が挿入される。
+   既存の記述は書き換えないため差分は最小になり、同じファイルを再適用しても重複しない。
+4. **検証してコミット**
+
+   ```bash
+   npm run validate
+   ```
+
+   「出題可能（reviewed）」の枚数が増えていることを確認し、`content/` の変更をコミットする。
+
+「要修正」と判定したカードは自動修正されない。内容を直したうえで改めて承認する。
+なお `safety_level: critical` のカードは、AIが本文を書いていないこと（`CLAUDE.md` 絶対規則2）を
+`npm run validate` が機械的に確認する。
 
 ---
 

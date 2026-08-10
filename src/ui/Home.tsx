@@ -9,9 +9,11 @@ interface Props {
   reviewMode: boolean;
   sessionSize: number;
   selection: DeckSelection;
+  approvedCount: number;
   onStart: () => void;
   onOpenSettings: () => void;
   onOpenDeck: () => void;
+  onOpenReview: () => void;
 }
 
 export function Home({
@@ -20,9 +22,11 @@ export function Home({
   reviewMode,
   sessionSize,
   selection,
+  approvedCount,
   onStart,
   onOpenSettings,
   onOpenDeck,
+  onOpenReview,
 }: Props) {
   const available = ALL_CARDS.filter((c) => isEligible(c, reviewMode) && !reported.has(c.id));
   const eligible = filterSelected(selection, available);
@@ -33,6 +37,7 @@ export function Home({
     includeDrafts: reviewMode,
   });
   const learned = eligible.filter((c) => states.get(c.id)?.lastReviewedAt != null);
+  const draftCount = ALL_CARDS.filter((c) => c.status === "draft").length;
 
   const byCategory = new Map<string, { selected: number; total: number }>();
   for (const c of available) {
@@ -103,6 +108,24 @@ export function Home({
           <span className="block font-bold">出題する内容を選ぶ</span>
           <span className="mt-0.5 block text-xs text-fg-dim">
             カテゴリ・技・問題ごとに選択、出題数の変更
+          </span>
+        </span>
+        <span aria-hidden="true" className="shrink-0 text-fg-dim">
+          ›
+        </span>
+      </button>
+
+      <button
+        type="button"
+        onClick={onOpenReview}
+        className="flex items-center justify-between rounded-lg border border-line bg-ink-soft px-4 py-3 text-left"
+      >
+        <span>
+          <span className="block font-bold">カードをレビューする</span>
+          <span className="mt-0.5 block text-xs text-fg-dim">
+            {draftCount > 0
+              ? `未レビュー ${draftCount} 枚（うち判定済み ${approvedCount} 枚）`
+              : "未レビューのカードはありません"}
           </span>
         </span>
         <span aria-hidden="true" className="shrink-0 text-fg-dim">

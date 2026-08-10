@@ -34,11 +34,25 @@ export interface Setting {
   value: unknown;
 }
 
+/**
+ * カード内容のレビュー判定（承認）。
+ *
+ * これはあくまで端末上の下書きであり、真実源は content/ のYAML。
+ * `npm run apply-review` でエクスポートしたJSONをYAMLへ書き戻し、
+ * Gitにコミットして初めて確定する（CLAUDE.md / requirements §H）。
+ */
+export interface ReviewDecision {
+  cardId: string;
+  reviewer: string;
+  decidedAt: number;
+}
+
 const db = new Dexie("bjj-drill") as Dexie & {
   srs: EntityTable<SrsRecord, "cardId">;
   reviewLog: EntityTable<ReviewLogEntry, "id">;
   errorReports: EntityTable<ErrorReport, "cardId">;
   settings: EntityTable<Setting, "key">;
+  reviewDecisions: EntityTable<ReviewDecision, "cardId">;
 };
 
 db.version(1).stores({
@@ -46,6 +60,10 @@ db.version(1).stores({
   reviewLog: "++id, cardId, at",
   errorReports: "cardId, resolved",
   settings: "key",
+});
+
+db.version(2).stores({
+  reviewDecisions: "cardId, decidedAt",
 });
 
 export { db };
@@ -90,6 +108,19 @@ export async function resolveErrorReport(cardId: string): Promise<void> {
   await db.errorReports.delete(cardId);
 }
 
+export async function getReviewDecisions(): Promise<Map<string, ReviewDecision>> {
+  const rows = await db.reviewDecisions.toArray();
+  return new Map(rows.map((r) => [r.cardId, r]));
+}
+
+export async function approveCard(cardId: string, reviewer: string): Promise<void> {
+  await db.reviewDecisions.put({ cardId, reviewer, decidedAt: Date.now() });
+}
+
+export async function unapproveCard(cardId: string): Promise<void> {
+  await db.reviewDecisions.delete(cardId);
+}
+
 export async function getSetting<T>(key: string, fallback: T): Promise<T> {
   const row = await db.settings.get(key);
   return row === undefined ? fallback : (row.value as T);
@@ -108,14 +139,16 @@ export interface ExportPayload {
   reviewLog: ReviewLogEntry[];
   errorReports: ErrorReport[];
   settings: Setting[];
+  reviewDecisions?: ReviewDecision[];
 }
 
 export async function exportAll(): Promise<ExportPayload> {
-  const [srs, reviewLog, errorReports, settings] = await Promise.all([
+  const [srs, reviewLog, errorReports, settings, reviewDecisions] = await Promise.all([
     db.srs.toArray(),
     db.reviewLog.toArray(),
     db.errorReports.toArray(),
     db.settings.toArray(),
+    db.reviewDecisions.toArray(),
   ]);
   return {
     format: "bjj-drill-export",
@@ -125,6 +158,7 @@ export async function exportAll(): Promise<ExportPayload> {
     reviewLog,
     errorReports,
     settings,
+    reviewDecisions,
   };
 }
 
@@ -141,12 +175,20 @@ export async function importAll(raw: unknown): Promise<{ srs: number; log: numbe
   }
   const payload = raw as ExportPayload;
 
-  await db.transaction("rw", db.srs, db.reviewLog, db.errorReports, db.settings, async () => {
+  await db.transaction(
+    "rw",
+    db.srs,
+    db.reviewLog,
+    db.errorReports,
+    db.settings,
+    db.reviewDecisions,
+    async () => {
     await Promise.all([
       db.srs.clear(),
       db.reviewLog.clear(),
       db.errorReports.clear(),
       db.settings.clear(),
+      db.reviewDecisions.clear(),
     ]);
     await db.srs.bulkPut(payload.srs as SrsRecord[]);
     // id はインポート先で振り直す
@@ -156,21 +198,34 @@ export async function importAll(raw: unknown): Promise<{ srs: number; log: numbe
     if (Array.isArray(payload.errorReports)) {
       await db.errorReports.bulkPut(payload.errorReports);
     }
-    if (Array.isArray(payload.settings)) {
-      await db.settings.bulkPut(payload.settings);
-    }
-  });
+      if (Array.isArray(payload.settings)) {
+        await db.settings.bulkPut(payload.settings);
+      }
+      if (Array.isArray(payload.reviewDecisions)) {
+        await db.reviewDecisions.bulkPut(payload.reviewDecisions);
+      }
+    },
+  );
 
   return { srs: payload.srs.length, log: payload.reviewLog.length };
 }
 
 export async function resetAll(): Promise<void> {
-  await db.transaction("rw", db.srs, db.reviewLog, db.errorReports, db.settings, async () => {
-    await Promise.all([
-      db.srs.clear(),
-      db.reviewLog.clear(),
-      db.errorReports.clear(),
-      db.settings.clear(),
-    ]);
-  });
+  await db.transaction(
+    "rw",
+    db.srs,
+    db.reviewLog,
+    db.errorReports,
+    db.settings,
+    db.reviewDecisions,
+    async () => {
+      await Promise.all([
+        db.srs.clear(),
+        db.reviewLog.clear(),
+        db.errorReports.clear(),
+        db.settings.clear(),
+        db.reviewDecisions.clear(),
+      ]);
+    },
+  );
 }

@@ -11,6 +11,7 @@
     "icons": "node scripts/make-icons.mjs",
     "validate": "tsx scripts/build-content.ts --check",
     "stats": "tsx scripts/stats.ts",
+    "apply-review": "tsx scripts/apply-review.ts",
     "test": "vitest run",
     "test:watch": "vitest",
     "test:e2e": "playwright test",

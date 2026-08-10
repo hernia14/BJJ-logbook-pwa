@@ -11,7 +11,12 @@ import { readFileSync, writeFileSync, mkdirSync, readdirSync, statSync } from "n
 import { join, relative, basename, extname, sep } from "node:path";
 import { fileURLToPath } from "node:url";
 import yaml from "js-yaml";
-import { techniqueSchema, type QuizCard, type TechniqueInput } from "../src/domain/schema.js";
+import {
+  resolveCardReview,
+  techniqueSchema,
+  type QuizCard,
+  type TechniqueInput,
+} from "../src/domain/schema.js";
 
 const ROOT = fileURLToPath(new URL("..", import.meta.url));
 const CONTENT_DIR = join(ROOT, "content");
@@ -102,20 +107,24 @@ for (const [pairId, axes] of causalPairs) {
 }
 
 const cards: QuizCard[] = techniques.flatMap((t) =>
-  t.cards.map((card) => ({
-    id: card.id,
-    techniqueId: t.id,
-    techniqueNameJa: t.name_ja,
-    category: t.category,
-    axis: card.axis,
-    safetyLevel: t.safety_level,
-    status: t.status,
-    reviewedBy: t.reviewed_by,
-    sources: t.sources,
-    tags: t.tags,
-    techniqueAliases: t.aliases,
-    payload: card,
-  })),
+  t.cards.map((card) => {
+    // カード側の指定を技の値より優先する（1枚ずつ承認できるようにするため）
+    const review = resolveCardReview(t, card);
+    return {
+      id: card.id,
+      techniqueId: t.id,
+      techniqueNameJa: t.name_ja,
+      category: t.category,
+      axis: card.axis,
+      safetyLevel: t.safety_level,
+      status: review.status,
+      reviewedBy: review.reviewedBy,
+      sources: t.sources,
+      tags: t.tags,
+      techniqueAliases: t.aliases,
+      payload: card,
+    };
+  }),
 );
 
 const byCategory: Record<string, number> = {};

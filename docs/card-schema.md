@@ -130,6 +130,27 @@ cards:
 
 ---
 
+## カード単位のレビュー状態（任意）
+
+`status` / `reviewed_by` / `reviewed_date` は技（ファイル）だけでなく
+**カードごとにも指定できる**。指定があればカード側が優先され、なければ技の値を継承する。
+
+```yaml
+cards:
+  - id: mount-def-01
+    status: reviewed          # このカードだけ承認済みにする
+    reviewed_by: hernia14
+    reviewed_date: "2026-08-10"
+    axis: definition
+    ...
+```
+
+1枚ずつレビューして順次出題プールへ入れられるようにするための仕組み。
+これらの行はアプリのレビュー画面 → `npm run apply-review` が自動で挿入する（手書きも可）。
+
+`reviewed_by: null` を明示した場合は「継承しない未レビュー」として扱い、
+未指定（項目そのものがない）と区別する。
+
 ## 検証ルール（`npm run validate` で機械強制する）
 
 1. `id` は全体で一意。ファイル名（拡張子除く）と技 `id` が一致すること

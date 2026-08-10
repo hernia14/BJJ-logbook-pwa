@@ -44,6 +44,13 @@ const baseCard = {
   axis: z.enum(AXES),
   note: z.string().optional(),
   causal_pair_id: z.string().optional(),
+
+  // カード単位のレビュー状態。省略時は技（ファイル）の値を継承する。
+  // 1枚ずつレビューしたいが、技全体をまとめて承認する運用も残したいため、
+  // 上書き可能な任意項目にしてある。
+  status: z.enum(STATUSES).optional(),
+  reviewed_by: z.string().nullable().optional(),
+  reviewed_date: z.union([z.string(), z.date()]).nullable().optional(),
 };
 
 /** 自由想起。自己採点。既定形式 */
@@ -162,6 +169,35 @@ export const techniqueSchema = z
   );
 
 export type TechniqueInput = z.infer<typeof techniqueSchema>;
+
+export interface ResolvedReview {
+  status: (typeof STATUSES)[number];
+  reviewedBy: string | null;
+  reviewedDate: string | null;
+}
+
+/**
+ * カードの実効レビュー状態を解決する。
+ *
+ * カード側に指定があればそれを優先し、なければ技（ファイル）の値を継承する。
+ * `reviewed_by` は null を「明示的に未レビュー」として扱うため、
+ * undefined（未指定）とは区別する。
+ */
+export function resolveCardReview(
+  technique: Pick<TechniqueInput, "status" | "reviewed_by" | "reviewed_date">,
+  card: Pick<CardInput, "status" | "reviewed_by" | "reviewed_date">,
+): ResolvedReview {
+  const toIso = (v: string | Date | null | undefined): string | null => {
+    if (v === null || v === undefined) return null;
+    return v instanceof Date ? v.toISOString().slice(0, 10) : v;
+  };
+  return {
+    status: card.status ?? technique.status,
+    reviewedBy: card.reviewed_by !== undefined ? card.reviewed_by : technique.reviewed_by,
+    reviewedDate:
+      card.reviewed_date !== undefined ? toIso(card.reviewed_date) : toIso(technique.reviewed_date),
+  };
+}
 
 /** ビルド後にアプリが読む、技メタデータを畳み込んだ出題単位 */
 export interface QuizCard {
