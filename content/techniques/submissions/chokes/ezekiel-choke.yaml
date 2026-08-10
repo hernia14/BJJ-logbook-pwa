@@ -1,0 +1,74 @@
+id: ezekiel-choke
+name_ja: エゼキエル絞め
+name_en: Ezekiel Choke
+aliases: [袖車, 袖車絞め, Sode Guruma Jime, エゼキエル]
+category: chokes
+tags:
+  positions: [mount, closed-guard, side-control]
+  concepts: [grip-fighting, pressure, angle]
+
+status: draft
+source_type: ai_research
+sources:
+  - https://thebjjjournal.com/bjj-chokes/
+  - https://www.jiujitsubrotherhood.com/blogs/blog/a-glossary-of-bjj-terms
+reviewed_by: null
+reviewed_date: null
+safety_level: caution
+
+created: 2026-08-09
+updated: 2026-08-09
+
+cards:
+  - id: ezekiel-choke-def-01
+    axis: definition
+    type: free_recall
+    front: エゼキエル絞め（袖車絞め）とはどのような絞めか
+    back: |
+      自分の道衣の袖口を反対の手で掴み、
+      その腕を相手の首に回して締める絞め。
+      相手の道衣ではなく自分の袖を使う点が特徴。
+
+  - id: ezekiel-choke-prin-01
+    axis: principle
+    type: free_recall
+    front: エゼキエル絞めが「相手の道衣を必要としない」ことの利点を説明せよ
+    back: |
+      相手のグリップ防御に依存せず、自分の袖さえあれば成立する。
+      そのため相手が襟を守っている状況でも仕掛けられ、
+      マウントなど密着したポジションから予告なく入れる。
+
+  - id: ezekiel-choke-req-01
+    axis: requirement
+    type: free_recall
+    front: エゼキエル絞めを効かせるための要件は何か
+    back: |
+      相手の首の下に腕を通し、前腕を首の適切な位置に当てること。
+      加えて自分の上体を相手に密着させ、腕だけでなく体重を締めに参加させる。
+
+  - id: ezekiel-choke-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: ezekiel-choke-causal-01
+    front: エゼキエル絞めでよくある失敗を1つ挙げよ
+    back: |
+      首の下に通す腕が浅く、前腕が首まで届いていないこと。
+
+  - id: ezekiel-choke-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: ezekiel-choke-causal-01
+    front: エゼキエル絞めで腕が浅いと、結果として何が起きるか
+    back: |
+      締めが効かないまま両腕を使った状態が続く。
+      両腕が塞がっているため、
+      マウントなどのポジションを維持する手が減り、返される危険が高まる。
+
+  - id: ezekiel-choke-cnt-01
+    axis: counter
+    type: free_recall
+    front: エゼキエル絞めに対する基本的な防御を挙げよ
+    back: |
+      顎を引いて首の下に腕を通させないこと、
+      通されそうな段階で手を差し入れて空間を確保すること、
+      そして相手の両腕が塞がっている状況を利用して体勢を変えること。

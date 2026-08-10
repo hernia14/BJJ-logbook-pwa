@@ -1,0 +1,75 @@
+id: bow-and-arrow-choke
+name_ja: ボウアンドアローチョーク
+name_en: Bow and Arrow Choke
+aliases: [弓矢絞め, ボウアンドアロー, 弓引き絞め]
+category: chokes
+tags:
+  positions: [back-control]
+  concepts: [angle, grip-fighting, base]
+
+status: draft
+source_type: ai_research
+sources:
+  - https://thebjjjournal.com/bjj-chokes/
+  - https://www.jiujitsubrotherhood.com/blogs/blog/a-glossary-of-bjj-terms
+reviewed_by: null
+reviewed_date: null
+safety_level: caution
+
+created: 2026-08-09
+updated: 2026-08-09
+
+cards:
+  - id: bow-and-arrow-choke-def-01
+    axis: definition
+    type: free_recall
+    front: ボウアンドアローチョークとはどのような絞めか
+    back: |
+      背後から相手の襟を掴み、
+      もう一方の手で相手の脚（またはズボン）を掴んで反対方向へ引く絞め。
+      弓を引く動作に似た形になることから名付けられた。
+
+  - id: bow-and-arrow-choke-prin-01
+    axis: principle
+    type: free_recall
+    front: ボウアンドアローチョークが強力とされる原理を説明せよ
+    back: |
+      襟を引く力と脚を引く力が互いに逆方向に働くため、
+      腕力だけでなく体全体の伸びる力を締めに変換できる。
+      さらに脚を引くことで相手は体を回して逃げる動きも封じられる。
+
+  - id: bow-and-arrow-choke-req-01
+    axis: requirement
+    type: free_recall
+    front: ボウアンドアローチョークを効かせるための要件は何か
+    back: |
+      襟のグリップが十分に深いこと、
+      そして自分の体を相手の背中側から横方向へずらして
+      引く方向を作れていること。
+
+  - id: bow-and-arrow-choke-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: bow-and-arrow-choke-causal-01
+    front: ボウアンドアローチョークでよくある失敗を1つ挙げよ
+    back: |
+      襟だけを引き、脚を掴んで逆方向へ引く動作を伴わないこと。
+
+  - id: bow-and-arrow-choke-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: bow-and-arrow-choke-causal-01
+    front: ボウアンドアローチョークで脚を引かずに襟だけを引くと、結果として何が起きるか
+    back: |
+      引く力が腕だけに限られるため締めが弱く、
+      相手は体を回して襟のグリップを緩められる。
+      逆方向の力がないため、この技の最大の利点が失われる。
+
+  - id: bow-and-arrow-choke-cnt-01
+    axis: counter
+    type: free_recall
+    front: ボウアンドアローチョークに対する基本的な防御を挙げよ
+    back: |
+      襟を深く掴まれる前に手を守ること、
+      顎を引いて首元の空間を消すこと、
+      そして掴まれる側の脚を引き寄せて掴ませないこと。

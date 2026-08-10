@@ -1,0 +1,82 @@
+id: arm-triangle-choke
+name_ja: アームトライアングルチョーク
+name_en: Arm Triangle Choke
+aliases: [肩固め, Kata Gatame, カタガタメ, ヘッドアンドアームチョーク]
+category: chokes
+tags:
+  positions: [mount, side-control]
+  concepts: [pressure, angle, base]
+
+status: draft
+source_type: ai_research
+sources:
+  - https://thebjjjournal.com/bjj-chokes/
+  - https://www.methodjjtulsa.com/learn/bjj-submissions-guide
+reviewed_by: null
+reviewed_date: null
+safety_level: caution
+
+created: 2026-08-09
+updated: 2026-08-09
+
+cards:
+  - id: arm-triangle-choke-def-01
+    axis: definition
+    type: free_recall
+    front: アームトライアングルチョーク（肩固め）とはどのような絞めか
+    back: |
+      相手の首と片腕を自分の腕と胸で挟み込み、
+      上から体重をかけて締める絞め。三角絞めを腕で作る形にあたる。
+
+  - id: arm-triangle-choke-prin-01
+    axis: principle
+    type: free_recall
+    front: アームトライアングルチョークが効く原理を説明せよ
+    back: |
+      相手自身の肩が首の一方を圧迫し、
+      自分の腕と胸が反対側を圧迫する。
+      腕力ではなく上体の体重で圧を加えられる点が特徴。
+
+  - id: arm-triangle-choke-req-01
+    axis: requirement
+    type: free_recall
+    front: アームトライアングルチョークを効かせるために体をどこに置くべきか
+    back: |
+      相手の真上ではなく、囲っていない側へ体をずらすこと。
+      上に乗ったままでは圧が首の側面に向かわない。
+
+  - id: arm-triangle-choke-fin-01
+    axis: finish
+    type: free_recall
+    front: アームトライアングルチョークの仕上げの要点を挙げよ
+    back: |
+      頭を下げて相手の頭と自分の腕の間の空間を消すこと、
+      両肘を締めること、
+      そして体を横へずらして体重を締めの方向へ乗せること。
+
+  - id: arm-triangle-choke-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: arm-triangle-choke-causal-01
+    front: アームトライアングルチョークでよくある失敗を1つ挙げよ
+    back: |
+      相手の真上に乗ったまま腕の力だけで締めようとすること。
+
+  - id: arm-triangle-choke-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: arm-triangle-choke-causal-01
+    front: アームトライアングルで真上に乗ったまま締めると、結果として何が起きるか
+    back: |
+      圧が首の側面ではなく真下へ向かうため締まらない。
+      さらに自分の重心が高く不安定なため、
+      ブリッジで返される危険が生じる。
+
+  - id: arm-triangle-choke-cnt-01
+    axis: counter
+    type: free_recall
+    front: アームトライアングルチョークに対する基本的な防御を挙げよ
+    back: |
+      囲われそうな腕を早い段階で引き抜くこと、
+      相手が横へずれる動きに合わせて自分も向きを変えること、
+      そして囲われた側へ体を回して圧の方向をずらすこと。

@@ -1,0 +1,83 @@
+id: canto-choke
+name_ja: カントチョーク
+name_en: Canto Choke
+aliases: [カント絞め, Canto]
+category: chokes
+tags:
+  positions: [side-control, north-south]
+  concepts: [grip-fighting, pressure, angle]
+
+status: draft
+source_type: ai_research
+sources:
+  - https://evolve-university.com/blog/introduction-to-the-canto-choke-in-bjj/
+  - https://www.lowkickmma.com/canto-choke/
+  - https://bjj-world.com/bjj-gi-chokes-canto-choke/
+reviewed_by: null
+reviewed_date: null
+safety_level: caution
+
+created: 2026-08-09
+updated: 2026-08-09
+
+cards:
+  - id: canto-choke-def-01
+    axis: definition
+    type: free_recall
+    front: カントチョークとはどのような絞めか
+    back: |
+      相手の襟（ラペル）を相手の腕の下から通して首に回し、
+      遠い側の手で掴んで締めるGiの絞め。
+      サイドコントロールやノースサウスなど上のポジションから仕掛ける。
+
+  - id: canto-choke-hist-01
+    axis: definition
+    type: short_answer
+    front: カントチョークの名前の由来となった人物は誰か
+    answer: フラビオ・カント
+    accept: [フラヴィオ・カント, Flavio Canto, カント, Flávio Canto]
+    note: ブラジルの柔道家。2004年アテネ五輪の柔道でメダルを獲得している。
+
+  - id: canto-choke-prin-01
+    axis: principle
+    type: free_recall
+    front: カントチョークが効く原理を説明せよ
+    back: |
+      相手自身の道衣の襟を首に巻き付けて頸動脈を圧迫する。
+      腕で首を締めるのではなく、相手の道衣を絞めの道具として使う構造にある。
+
+  - id: canto-choke-req-01
+    axis: requirement
+    type: free_recall
+    front: カントチョークを効かせるための要件は何か
+    back: |
+      襟を相手の腕の下を通して首の向こう側まで送り込み、
+      遠い側の手でしっかり掴むこと。
+      そのうえで襟を引く方向と自分の体重の方向を一致させる。
+
+  - id: canto-choke-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: canto-choke-causal-01
+    front: カントチョークでよくある失敗を1つ挙げよ
+    back: |
+      襟を送り込む位置が浅く、首に巻き付く長さを確保できていないこと。
+
+  - id: canto-choke-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: canto-choke-causal-01
+    front: カントチョークで襟の送り込みが浅いと、結果として何が起きるか
+    back: |
+      引いても襟が首に締まらない。
+      さらに襟を扱うために手を使っている間、押さえ込みが緩みやすく、
+      相手に脱出の機会を与える。
+
+  - id: canto-choke-prin-02
+    axis: principle
+    type: free_recall
+    front: カントチョークが「防御されにくい」と言われる理由を説明せよ
+    back: |
+      相手の腕の下から襟を通すため、
+      首元を守っている相手にも仕掛けられる経路が残る。
+      また比較的知名度が低く、対処の形が身についていない相手が多い。

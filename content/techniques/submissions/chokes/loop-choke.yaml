@@ -1,0 +1,74 @@
+id: loop-choke
+name_ja: ループチョーク
+name_en: Loop Choke
+aliases: [ループ, 巻き込み絞め]
+category: chokes
+tags:
+  positions: [closed-guard, open-guard, turtle]
+  concepts: [grip-fighting, angle, posture]
+
+status: draft
+source_type: ai_research
+sources:
+  - https://thebjjjournal.com/bjj-chokes/
+  - https://www.jiujitsubrotherhood.com/blogs/blog/a-glossary-of-bjj-terms
+reviewed_by: null
+reviewed_date: null
+safety_level: caution
+
+created: 2026-08-09
+updated: 2026-08-09
+
+cards:
+  - id: loop-choke-def-01
+    axis: definition
+    type: free_recall
+    front: ループチョークとはどのような絞めか
+    back: |
+      相手の襟を掴んだ手を支点に、
+      自分の腕を相手の首に巻き付けるように回して締めるGiの絞め。
+
+  - id: loop-choke-req-01
+    axis: requirement
+    type: free_recall
+    front: ループチョークが仕掛けやすい相手の状態はどのようなときか
+    back: |
+      相手が頭を下げて前傾している状態。
+      首が下を向くと襟を巻き付ける経路が生まれ、
+      腕を回す動作が短い距離で完了する。
+
+  - id: loop-choke-prin-01
+    axis: principle
+    type: free_recall
+    front: ループチョークが効く原理を説明せよ
+    back: |
+      襟を掴んだ手を軸として腕を回すことで、
+      道衣が相手の首に巻き付き締め付ける。
+      腕力で締めるのではなく、回転によって襟の輪を縮める構造にある。
+
+  - id: loop-choke-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: loop-choke-causal-01
+    front: ループチョークでよくある失敗を1つ挙げよ
+    back: |
+      相手のポスチャーが立っている状態で仕掛けようとすること。
+
+  - id: loop-choke-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: loop-choke-causal-01
+    front: ループチョークをポスチャーが立った相手に仕掛けると、結果として何が起きるか
+    back: |
+      首に巻き付ける経路が確保できず、腕を回しても締まらない。
+      その間に自分の腕が伸びた状態になり、
+      相手に腕を取られる危険が生じる。
+
+  - id: loop-choke-cnt-01
+    axis: counter
+    type: free_recall
+    front: ループチョークに対する基本的な防御を挙げよ
+    back: |
+      ポスチャーを立てて頭を下げないこと、
+      襟のグリップを早い段階で切ること、
+      そして相手の腕が回ってくる方向とは逆へ体を回すこと。

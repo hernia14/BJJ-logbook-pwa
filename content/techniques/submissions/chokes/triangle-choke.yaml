@@ -1,0 +1,84 @@
+id: triangle-choke
+name_ja: 三角絞め
+name_en: Triangle Choke
+aliases: [トライアングルチョーク, サンカクジメ, Sankaku Jime, 三角]
+category: chokes
+tags:
+  positions: [closed-guard, open-guard, mount]
+  concepts: [angle, posture, frame]
+
+status: draft
+source_type: ai_research
+sources:
+  - https://thebjjjournal.com/bjj-chokes/
+  - https://www.methodjjtulsa.com/learn/bjj-submissions-guide
+reviewed_by: null
+reviewed_date: null
+safety_level: caution
+
+created: 2026-08-09
+updated: 2026-08-09
+
+cards:
+  - id: triangle-choke-def-01
+    axis: definition
+    type: free_recall
+    front: 三角絞めとはどのような絞めか
+    back: |
+      両脚で三角形を作り、その中に相手の頭と片腕を入れて締める絞め。
+      相手の肩と自分の脚が首の両側を挟む形になる。
+
+  - id: triangle-choke-prin-01
+    axis: principle
+    type: free_recall
+    front: 三角絞めで「相手の腕を1本だけ中に入れる」ことがなぜ必須なのか説明せよ
+    back: |
+      入れた腕が相手自身の首の一方を圧迫する役割を果たすため。
+      両腕が中にあると首の側面に圧が集中せず、
+      両腕とも外にあると脚だけで両側を締めることになり効率が落ちる。
+
+  - id: triangle-choke-req-01
+    axis: requirement
+    type: free_recall
+    front: 三角絞めを効かせるために必要な体の向きの要件は何か
+    back: |
+      相手に正対したままではなく、角度を作ること。
+      自分の体を横へずらして脚の締める方向を相手の首の側面へ向ける。
+
+  - id: triangle-choke-fin-01
+    axis: finish
+    type: free_recall
+    front: 三角絞めの仕上げの要点を挙げよ
+    back: |
+      相手の頭を引き下げてポスチャーを潰すこと、
+      角度を作って脚の締めが首の側面に向かうようにすること、
+      そして脚を組んだうえで膝を締めること。
+
+  - id: triangle-choke-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: triangle-choke-causal-01
+    front: 三角絞めでよくある失敗を1つ挙げよ
+    back: |
+      相手に正対したまま、脚を組んで締める力だけで極めようとすること。
+
+  - id: triangle-choke-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: triangle-choke-causal-01
+    front: 三角絞めで角度を作らず正対したまま締めると、結果として何が起きるか
+    back: |
+      締めの力が首の側面ではなく後頭部や肩に分散するため効かない。
+      その間に相手はポスチャーを立てて姿勢を戻し、
+      脚を割られて逆にパスガードされる。
+
+  - id: triangle-choke-cnt-01
+    axis: counter
+    type: free_recall
+    front: 三角絞めに対する基本的な防御を挙げよ
+    back: |
+      早い段階でポスチャーを立てて頭を引き下げられないようにすること、
+      中に入れられそうな腕を引き抜くこと、
+      角度を作らせないよう相手の腰の位置を正面に保つこと。
+    note: |
+      絞め技の練習上の安全管理は safety カテゴリで人間の記述に基づき別途扱う。

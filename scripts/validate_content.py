@@ -89,13 +89,38 @@ def main() -> int:
             # 検証ルール5
             if card.get("axis") == "contraindication" and doc.get("safety_level") != "critical":
                 err(f"{cid}: contraindication は safety_level:critical が必須（検証ルール5）")
-            # 検証ルール7
-            if card.get("type") == "ordering":
+            # 型ごとの必須フィールド（docs/card-schema.md「型ごとの追加フィールド」）
+            ctype = card.get("type")
+            if ctype == "ordering":
+                # 検証ルール7
                 steps = card.get("steps") or []
                 if not 2 <= len(steps) <= 5:
                     err(f"{cid}: ordering の steps は2〜5要素（現在{len(steps)}、検証ルール7）")
                 if card.get("phase") not in ("setup", "execution", "finish"):
                     err(f"{cid}: ordering の phase が不正: {card.get('phase')}")
+                if not card.get("front"):
+                    err(f"{cid}: front が空")
+            elif ctype == "short_answer":
+                if not (card.get("front") and card.get("answer")):
+                    err(f"{cid}: short_answer は front と answer が必須")
+            elif ctype == "true_false":
+                if card.get("answer") not in (True, False):
+                    err(f"{cid}: true_false の answer は真偽値が必須")
+                if not (card.get("front") and card.get("explanation")):
+                    err(f"{cid}: true_false は front と explanation が必須")
+            elif ctype == "multiple_choice":
+                choices = card.get("choices") or []
+                if len(choices) < 2:
+                    err(f"{cid}: multiple_choice は choices が2件以上必要")
+                if not isinstance(card.get("answer_index"), int) or not 0 <= card.get("answer_index", -1) < len(choices):
+                    err(f"{cid}: multiple_choice の answer_index が範囲外")
+                if not card.get("front"):
+                    err(f"{cid}: front が空")
+            elif ctype == "cloze":
+                if not (card.get("text") and card.get("answer")):
+                    err(f"{cid}: cloze は text と answer が必須")
+                if card.get("text") and "【" not in card["text"]:
+                    err(f"{cid}: cloze の text に空欄記号【 】がない")
             elif not (card.get("front") and card.get("back")):
                 err(f"{cid}: front または back が空")
 

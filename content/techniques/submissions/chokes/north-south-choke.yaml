@@ -1,0 +1,73 @@
+id: north-south-choke
+name_ja: ノースサウスチョーク
+name_en: North-South Choke
+aliases: [ノースサウス絞め, NSチョーク]
+category: chokes
+tags:
+  positions: [north-south, side-control]
+  concepts: [pressure, angle, base]
+
+status: draft
+source_type: ai_research
+sources:
+  - https://www.elitesports.com/blogs/news/what-are-the-most-common-bjj-choke-submissions-in-ufc
+  - https://thebjjjournal.com/bjj-chokes/
+reviewed_by: null
+reviewed_date: null
+safety_level: caution
+
+created: 2026-08-09
+updated: 2026-08-09
+
+cards:
+  - id: north-south-choke-def-01
+    axis: definition
+    type: free_recall
+    front: ノースサウスチョークとはどのような絞めか
+    back: |
+      相手の頭側に位置した状態から、
+      片腕を相手の首の下に通し、自分の上体と腕で首の側面を挟んで締める絞め。
+
+  - id: north-south-choke-prin-01
+    axis: principle
+    type: free_recall
+    front: ノースサウスチョークが効く原理を説明せよ
+    back: |
+      自分の腕と胸（あるいは肩）が相手の首の両側を挟み、
+      上体の体重をそこへ落とすことで頸動脈を圧迫する。
+      腕を締める力ではなく、体重の落とし方が主たる力源になる。
+
+  - id: north-south-choke-req-01
+    axis: requirement
+    type: free_recall
+    front: ノースサウスチョークを効かせるための要件は何か
+    back: |
+      腕を首の下へ十分に通し、相手の肩と自分の体の間に隙間がないこと。
+      そのうえで上体を沈めて体重を締めの方向へ落とす。
+
+  - id: north-south-choke-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: north-south-choke-causal-01
+    front: ノースサウスチョークでよくある失敗を1つ挙げよ
+    back: |
+      腕で締めることに集中し、上体が浮いて体重が乗っていないこと。
+
+  - id: north-south-choke-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: north-south-choke-causal-01
+    front: ノースサウスチョークで体重が乗らないと、結果として何が起きるか
+    back: |
+      締めが効かないまま腕を消耗する。
+      さらに上体が浮いていることで押さえ込みも緩み、
+      相手に腰を回して脱出される。
+
+  - id: north-south-choke-cnt-01
+    axis: counter
+    type: free_recall
+    front: ノースサウスチョークに対する基本的な防御を挙げよ
+    back: |
+      首の下に腕を通させないこと、
+      通された場合は肩をすくめて隙間を消すこと、
+      そして腰を回して相手の体重が乗る方向からずれること。

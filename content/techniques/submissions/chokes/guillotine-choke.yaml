@@ -1,0 +1,76 @@
+id: guillotine-choke
+name_ja: ギロチンチョーク
+name_en: Guillotine Choke
+aliases: [ギロチン, 首刈り, フロントチョーク]
+category: chokes
+tags:
+  positions: [closed-guard, turtle, open-guard]
+  concepts: [angle, posture, pressure]
+
+status: draft
+source_type: ai_research
+sources:
+  - https://www.elitesports.com/blogs/news/what-are-the-most-common-bjj-choke-submissions-in-ufc
+  - https://thebjjjournal.com/bjj-chokes/
+  - https://bjj-world.com/blood-vs-air-jiu-jitsu-chokes/
+reviewed_by: null
+reviewed_date: null
+safety_level: caution
+
+created: 2026-08-09
+updated: 2026-08-09
+
+cards:
+  - id: guillotine-choke-def-01
+    axis: definition
+    type: free_recall
+    front: ギロチンチョークとはどのような絞めか
+    back: |
+      相手の正面から片腕を首に回し、その腕を自分の体で引き上げるようにして締める絞め。
+      相手が頭を下げてきた場面で成立しやすい。
+
+  - id: guillotine-choke-prin-01
+    axis: principle
+    type: free_recall
+    front: ギロチンチョークが効く原理を、腕の位置による違いを含めて説明せよ
+    back: |
+      腕が首の側面に当たれば頸動脈を圧迫する血流の絞めとして働き、
+      正面の気道に当たれば呼吸を妨げる絞めとして働く。
+      一般に前者の方が短時間で効き、力に依存しにくい。
+
+  - id: guillotine-choke-req-01
+    axis: requirement
+    type: free_recall
+    front: ギロチンチョークを効かせるための要件は何か
+    back: |
+      相手の頭が自分の脇の下に深く入っていること、
+      そして自分の上体を反らすなどして引き上げる方向を作れていること。
+      腕だけで締めても体全体の力が伝わらない。
+
+  - id: guillotine-choke-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: guillotine-choke-causal-01
+    front: ギロチンチョークでよくある失敗を1つ挙げよ
+    back: |
+      腕の力だけで首を締めようとし、体幹や姿勢を使わないこと。
+
+  - id: guillotine-choke-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: guillotine-choke-causal-01
+    front: ギロチンチョークで腕力だけに頼ると、結果として何が起きるか
+    back: |
+      締める力が足りず極まらないまま腕を消耗する。
+      さらに相手に体を横へ移動されると、
+      上から押さえ込まれて逆に不利なポジションになる。
+
+  - id: guillotine-choke-cnt-01
+    axis: counter
+    type: free_recall
+    front: ギロチンチョークに対する基本的な防御の方向性を述べよ
+    back: |
+      首と相手の腕の間に手を差し入れて空間を作ること、
+      そして体を相手の側方へ移動させて締める力の方向を崩すこと。
+      真後ろへ引き抜こうとするのは逆効果になる。
+    note: 詳細は escapes カテゴリの guillotine-defense を参照。
