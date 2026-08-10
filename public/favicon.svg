@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="BJJ Drill">
+  <rect width="64" height="64" fill="#0f172a" />
+  <rect y="22.5" width="64" height="1.6" fill="#38bdf8" />
+  <rect y="24" width="64" height="16" fill="#111114" />
+  <rect x="40" y="24" width="15" height="16" fill="#dc2626" />
+  <rect y="40" width="64" height="1.6" fill="#38bdf8" />
+</svg>

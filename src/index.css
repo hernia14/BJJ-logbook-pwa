@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #0f172a;
+  --color-ink-soft: #1e293b;
+  --color-line: #334155;
+  --color-fg: #e2e8f0;
+  --color-fg-dim: #94a3b8;
+  --color-accent: #38bdf8;
+  --color-caution: #fbbf24;
+  --color-critical: #f87171;
+  --color-ok: #4ade80;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  background-color: var(--color-ink);
+  color: var(--color-fg);
+  /* iOS のセーフエリアを避ける */
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom)
+    env(safe-area-inset-left);
+  -webkit-text-size-adjust: 100%;
+}
+
+/* 端末の文字サイズ設定に追随させる（アクセシビリティ, requirements §I） */
+:root {
+  font-size: 100%;
+  font-family:
+    system-ui,
+    -apple-system,
+    "Hiragino Kaku Gothic ProN",
+    "Noto Sans JP",
+    sans-serif;
+}
+
+/* タップ領域を最低 44px 確保する */
+button {
+  min-height: 2.75rem;
+  cursor: pointer;
+}

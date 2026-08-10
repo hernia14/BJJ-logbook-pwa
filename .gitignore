@@ -1,0 +1,26 @@
+node_modules/
+dist/
+dist-ssr/
+.DS_Store
+
+# 音声の生メモは容量が大きいためGit管理しない。文字起こし結果(.md)のみコミットする
+ingest/raw/audio/*.m4a
+ingest/raw/audio/*.mp3
+ingest/raw/audio/*.wav
+
+# ビルド生成物（content/ のYAMLが真実源）
+src/generated/
+tsconfig.tsbuildinfo
+
+# PWAビルド生成物
+dev-dist/
+
+# テスト
+coverage/
+playwright-report/
+test-results/
+
+*.local
+.env
+.env.*
+!.env.example
