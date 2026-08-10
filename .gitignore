@@ -9,7 +9,7 @@ ingest/raw/audio/*.mp3
 ingest/raw/audio/*.wav
 
 # ビルド生成物（content/ のYAMLが真実源）
-src/generated/
+public/cards.json
 tsconfig.tsbuildinfo
 
 # PWAビルド生成物

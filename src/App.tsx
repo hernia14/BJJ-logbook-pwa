@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
-import { ALL_CARDS } from "./cards";
+import { loadCards } from "./cards";
 import { selectSession } from "./domain/session";
 import { EMPTY_SELECTION, filterSelected, type DeckSelection } from "./domain/selection";
 import { initialState, review, type Quality, type SrsState } from "./domain/srs";
@@ -48,13 +48,17 @@ export default function App() {
   const [sessionSize, setSessionSize] = useState(20);
   const [selection, setSelection] = useState<DeckSelection>(EMPTY_SELECTION);
   const [approved, setApproved] = useState<Set<string>>(new Set());
+  const [cards, setCards] = useState<readonly QuizCard[]>([]);
+  const [generatedAt, setGeneratedAt] = useState("");
+  const [loadError, setLoadError] = useState<string | null>(null);
   const [reviewer, setReviewer] = useState("");
   const [queue, setQueue] = useState<QuizCard[]>([]);
   const [position, setPosition] = useState(0);
   const [history, setHistory] = useState<AnswerHistoryEntry[]>([]);
 
   const refresh = useCallback(async () => {
-    const [s, r, rm, ss, excluded, decisions, rev] = await Promise.all([
+    const [payload, s, r, rm, ss, excluded, decisions, rev] = await Promise.all([
+      loadCards(),
       getAllSrsStates(),
       getReportedCardIds(),
       getSetting("reviewMode", false),
@@ -63,6 +67,8 @@ export default function App() {
       getReviewDecisions(),
       getSetting("reviewer", ""),
     ]);
+    setCards(payload.cards);
+    setGeneratedAt(payload.generatedAt);
     setStates(s);
     setReported(r);
     setReviewMode(rm);
@@ -101,13 +107,16 @@ export default function App() {
   };
 
   useEffect(() => {
-    void refresh();
+    refresh().catch((e: unknown) => {
+      setLoadError(e instanceof Error ? e.message : "カードデータを読み込めませんでした");
+      setLoading(false);
+    });
   }, [refresh]);
 
   const startSession = () => {
     const available = filterSelected(
       selection,
-      ALL_CARDS.filter((c) => !reported.has(c.id)),
+      cards.filter((c) => !reported.has(c.id)),
     );
     const selected = selectSession(available, states, {
       limit: sessionSize,
@@ -208,6 +217,22 @@ export default function App() {
     }
   };
 
+  if (loadError) {
+    return (
+      <div className="mx-auto max-w-md p-8 text-center">
+        <p className="font-bold text-critical">カードデータを読み込めませんでした</p>
+        <p className="mt-2 text-sm text-fg-dim">{loadError}</p>
+        <button
+          type="button"
+          onClick={() => window.location.reload()}
+          className="mt-4 rounded-lg bg-accent px-4 py-3 font-bold text-ink"
+        >
+          再読み込み
+        </button>
+      </div>
+    );
+  }
+
   if (loading) {
     return <div className="p-8 text-center text-fg-dim">読み込み中…</div>;
   }
@@ -215,6 +240,7 @@ export default function App() {
   if (screen === "deck") {
     return (
       <DeckSelector
+        cards={cards}
         selection={selection}
         onSelectionChange={updateSelection}
         sessionSize={sessionSize}
@@ -232,6 +258,7 @@ export default function App() {
   if (screen === "review") {
     return (
       <ReviewScreen
+        cards={cards}
         reviewer={reviewer}
         onReviewerChange={(v) => {
           setReviewer(v);
@@ -264,6 +291,8 @@ export default function App() {
   if (screen === "settings") {
     return (
       <Settings
+        cardCount={cards.length}
+        generatedAt={generatedAt}
         reviewMode={reviewMode}
         onReviewModeChange={(v) => {
           setReviewMode(v);
@@ -327,6 +356,7 @@ export default function App() {
 
   return (
     <Home
+      cards={cards}
       states={states}
       reported={reported}
       reviewMode={reviewMode}

@@ -52,11 +52,11 @@ Node.js 20 以上（開発は v24 で確認）。
 |---|---|
 | `npm run dev` | 学習・動作確認 |
 | `npm run validate` | `content/` を編集/生成した直後に必ず実行。エラーが1件でも出たらPRを出さない |
-| `npm run build:content` | `content/` の YAML を `src/generated/cards.json` へ変換（`dev`/`build` が自動実行する） |
+| `npm run build:content` | `content/` の YAML を `public/cards.json` へ変換（`dev`/`build`/`typecheck` が自動実行する） |
 | `npm run stats` | カテゴリ別カード数、未レビュー枚数、出題比率の目標との乖離、`axis` 別分布を確認 |
 | `npm run apply-review -- <file.json>` | アプリでエクスポートしたレビュー判定を `content/` のYAMLへ書き戻す（`--dry-run` で確認のみ） |
 | `npm test` | `src/domain/` のロジック（判定・SRS・セッション選定・レビュー適用など）の単体テスト |
-| `npm run test:e2e` | Playwright。オフライン動作とエクスポート/インポートの整合性を実ブラウザで確認 |
+| `npm run test:e2e` | Playwright。オフライン動作・エクスポート/インポートの整合性・起動性能を実ブラウザで確認 |
 | `npm run typecheck` | コミット前 |
 | `npm run build` | 本番ビルド（`dist/`） |
 | `npm run icons` | PWAアイコンPNGを再生成（図柄を変えたときだけ） |
@@ -103,8 +103,8 @@ bjj-drill/
 │   └── importGuard.ts   エクスポートファイルの形式検証
 ├── src/db/              IndexedDB(Dexie) の保存・エクスポート/インポート
 ├── src/ui/              画面
-├── src/generated/       ビルド生成物（Git管理外）
-├── e2e/                 Playwright（オフライン動作・エクスポート/インポート）
+├── public/cards.json    ビルド生成物（Git管理外）。JSに埋め込まず別アセットとして配信する
+├── e2e/                 Playwright（オフライン動作・エクスポート/インポート・起動性能）
 ├── scripts/             build-content / stats / apply-review / make-icons
 └── docs/                要件定義・設計・運用手順（README には書かない詳細はここ）
 ```

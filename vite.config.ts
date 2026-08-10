@@ -28,7 +28,9 @@ export default defineConfig({
       },
       workbox: {
         // カードデータを含む全アセットを事前キャッシュしオフライン動作させる
-        globPatterns: ["**/*.{js,css,html,svg,png,woff2}"],
+        globPatterns: ["**/*.{js,css,html,svg,png,woff2,json}"],
+        // カードデータはJSに埋め込まないため、事前キャッシュ対象の上限を上げる
+        maximumFileSizeToCacheInBytes: 10 * 1024 * 1024,
       },
     }),
   ],

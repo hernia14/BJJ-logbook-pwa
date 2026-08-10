@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import { ALL_CARDS, GENERATED_AT } from "../cards";
+
 import {
   exportAll,
   importAll,
@@ -10,13 +10,22 @@ import {
 } from "../db/db";
 
 interface Props {
+  cardCount: number;
+  generatedAt: string;
   reviewMode: boolean;
   onReviewModeChange: (v: boolean) => void;
   onClose: () => void;
   onDataChanged: () => void;
 }
 
-export function Settings({ reviewMode, onReviewModeChange, onClose, onDataChanged }: Props) {
+export function Settings({
+  cardCount,
+  generatedAt,
+  reviewMode,
+  onReviewModeChange,
+  onClose,
+  onDataChanged,
+}: Props) {
   const [message, setMessage] = useState<{ tone: "ok" | "error"; text: string } | null>(null);
   const [reports, setReports] = useState<{ cardId: string; note: string }[] | null>(null);
   const fileRef = useRef<HTMLInputElement>(null);
@@ -180,8 +189,8 @@ export function Settings({ reviewMode, onReviewModeChange, onClose, onDataChange
 
       <section className="rounded-lg border border-line bg-ink-soft p-4 text-sm text-fg-dim">
         <h2 className="mb-2 font-bold text-fg">このアプリについて</h2>
-        <p>収録カード: {ALL_CARDS.length} 枚</p>
-        <p>カードデータ生成: {new Date(GENERATED_AT).toLocaleString("ja-JP")}</p>
+        <p>収録カード: {cardCount} 枚</p>
+        <p>カードデータ生成: {new Date(generatedAt).toLocaleString("ja-JP")}</p>
         <p className="mt-2">
           技術内容の多くはAIによる下書き（未レビュー）です。指導・実践の判断には
           必ず有資格の指導者の確認を経てください。

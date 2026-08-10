@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react";
-import { ALL_CARDS, AXIS_LABELS, CATEGORY_LABELS } from "../cards";
+import { AXIS_LABELS, CATEGORY_LABELS } from "../cards";
 import type { QuizCard } from "../domain/schema";
 import {
   buildTree,
@@ -12,6 +12,7 @@ import {
 import { isEligible } from "../domain/session";
 
 interface Props {
+  cards: readonly QuizCard[];
   selection: DeckSelection;
   onSelectionChange: (next: DeckSelection) => void;
   sessionSize: number;
@@ -37,6 +38,7 @@ function Check({ state }: { state: TriState }) {
 }
 
 export function DeckSelector({
+  cards,
   selection,
   onSelectionChange,
   sessionSize,
@@ -51,8 +53,8 @@ export function DeckSelector({
   // 出題資格のあるカードだけを選択対象にする。
   // 資格のないカードを並べても選べないため、混乱を避けて最初から除く。
   const availableCards = useMemo(
-    () => ALL_CARDS.filter((c) => isEligible(c, reviewMode) && !reported.has(c.id)),
-    [reviewMode, reported],
+    () => cards.filter((c) => isEligible(c, reviewMode) && !reported.has(c.id)),
+    [cards, reviewMode, reported],
   );
   const tree = useMemo(() => buildTree(availableCards), [availableCards]);
 

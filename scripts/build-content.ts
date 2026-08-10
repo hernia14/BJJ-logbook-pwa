@@ -20,7 +20,10 @@ import {
 
 const ROOT = fileURLToPath(new URL("..", import.meta.url));
 const CONTENT_DIR = join(ROOT, "content");
-const OUT_DIR = join(ROOT, "src", "generated");
+// public/ に出力して静的アセットとして配信する。
+// JSへ import するとバンドルに埋め込まれ、枚数に比例して起動時の解析時間が伸びる
+// （docs/requirements.md §I「起動時間」「5000カード規模での性能」）。
+const OUT_DIR = join(ROOT, "public");
 const OUT_FILE = join(OUT_DIR, "cards.json");
 
 const checkOnly = process.argv.includes("--check");

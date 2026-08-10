@@ -1,10 +1,11 @@
 import { useMemo, useState } from "react";
-import { ALL_CARDS, AXIS_LABELS, CATEGORY_LABELS } from "../cards";
+import { AXIS_LABELS, CATEGORY_LABELS } from "../cards";
 import type { QuizCard } from "../domain/schema";
 import { buildTree } from "../domain/selection";
 import { DraftBadge, SafetyBadge } from "./SafetyBadge";
 
 interface Props {
+  cards: readonly QuizCard[];
   reviewer: string;
   onReviewerChange: (v: string) => void;
   approved: ReadonlySet<string>;
@@ -26,6 +27,7 @@ const FILTER_LABELS: Record<Filter, string> = {
 };
 
 export function ReviewScreen({
+  cards,
   reviewer,
   onReviewerChange,
   approved,
@@ -42,7 +44,7 @@ export function ReviewScreen({
   const [reportNote, setReportNote] = useState("");
 
   // 既にYAML側で承認済みのカードは対象外。判定が必要なのは draft のみ
-  const target = useMemo(() => ALL_CARDS.filter((c) => c.status === "draft"), []);
+  const target = useMemo(() => cards.filter((c) => c.status === "draft"), [cards]);
 
   const categories = useMemo(
     () => buildTree(target).map((n) => ({ key: n.category, count: n.cards.length })),

@@ -1,16 +1,46 @@
 /**
- * ビルド時に生成されたカードデータの読み込み口。
+ * カードデータの読み込み。
  *
- * 生成物は scripts/build-content.ts が出力する src/generated/cards.json。
- * 実行時のYAMLパースを避けて起動を速くするため、静的JSONをバンドルする。
+ * 生成物は scripts/build-content.ts が出力する public/cards.json。
+ * JSへ import するとバンドルに埋め込まれ、枚数に比例して起動時の
+ * JS解析時間が伸びるため、静的アセットとして取得して JSON.parse する
+ * （docs/requirements.md §I）。
+ *
+ * Service Worker が事前キャッシュするためオフラインでも読める。
  */
-import generated from "./generated/cards.json";
 import type { QuizCard } from "./domain/schema";
 
-const data = generated as { generatedAt: string; cards: QuizCard[] };
+interface CardsPayload {
+  generatedAt: string;
+  cards: QuizCard[];
+}
 
-export const ALL_CARDS: readonly QuizCard[] = data.cards;
-export const GENERATED_AT = data.generatedAt;
+let cache: CardsPayload | null = null;
+let inflight: Promise<CardsPayload> | null = null;
+
+/** カードデータを取得する。二重取得はしない */
+export function loadCards(): Promise<CardsPayload> {
+  if (cache) return Promise.resolve(cache);
+  if (inflight) return inflight;
+
+  const url = `${import.meta.env.BASE_URL}cards.json`;
+  inflight = fetch(url)
+    .then((res) => {
+      if (!res.ok) throw new Error(`カードデータを読み込めません (${res.status})`);
+      return res.json() as Promise<CardsPayload>;
+    })
+    .then((payload) => {
+      cache = payload;
+      inflight = null;
+      return payload;
+    })
+    .catch((e: unknown) => {
+      inflight = null;
+      throw e;
+    });
+
+  return inflight;
+}
 
 export const CATEGORY_LABELS: Record<string, string> = {
   positions: "ポジション",

@@ -1,9 +1,11 @@
-import { ALL_CARDS, CATEGORY_LABELS } from "../cards";
+import { CATEGORY_LABELS } from "../cards";
 import { filterSelected, isSelected, type DeckSelection } from "../domain/selection";
+import type { QuizCard } from "../domain/schema";
 import { isEligible, selectSession } from "../domain/session";
 import { type SrsState } from "../domain/srs";
 
 interface Props {
+  cards: readonly QuizCard[];
   states: Map<string, SrsState>;
   reported: Set<string>;
   reviewMode: boolean;
@@ -17,6 +19,7 @@ interface Props {
 }
 
 export function Home({
+  cards,
   states,
   reported,
   reviewMode,
@@ -28,7 +31,7 @@ export function Home({
   onOpenDeck,
   onOpenReview,
 }: Props) {
-  const available = ALL_CARDS.filter((c) => isEligible(c, reviewMode) && !reported.has(c.id));
+  const available = cards.filter((c) => isEligible(c, reviewMode) && !reported.has(c.id));
   const eligible = filterSelected(selection, available);
   const excludedByChoice = available.length - eligible.length;
   // 実際の出題と同じ関数で数える。表示枚数と実出題数が食い違わないようにする
@@ -37,7 +40,7 @@ export function Home({
     includeDrafts: reviewMode,
   });
   const learned = eligible.filter((c) => states.get(c.id)?.lastReviewedAt != null);
-  const draftCount = ALL_CARDS.filter((c) => c.status === "draft").length;
+  const draftCount = cards.filter((c) => c.status === "draft").length;
 
   const byCategory = new Map<string, { selected: number; total: number }>();
   for (const c of available) {
@@ -79,7 +82,7 @@ export function Home({
         <div className="rounded-lg border border-line bg-ink-soft p-4 text-sm leading-relaxed">
           <p className="font-bold">出題できるカードがありません。</p>
           <p className="mt-2 text-fg-dim">
-            全 {ALL_CARDS.length} 枚は未レビュー（draft）のため出題プールに入っていません。これは仕様です。
+            全 {cards.length} 枚は未レビュー（draft）のため出題プールに入っていません。これは仕様です。
             内容を確認するには、設定からレビューモードを有効にしてください。
           </p>
         </div>
