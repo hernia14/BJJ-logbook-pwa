@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useState } from "react";
 import { ALL_CARDS } from "./cards";
 import { selectSession } from "./domain/session";
+import { EMPTY_SELECTION, filterSelected, type DeckSelection } from "./domain/selection";
 import { initialState, review, type Quality, type SrsState } from "./domain/srs";
 import type { QuizCard } from "./domain/schema";
 import {
@@ -15,10 +16,11 @@ import {
   setSetting,
 } from "./db/db";
 import { CardView } from "./ui/CardView";
+import { DeckSelector } from "./ui/DeckSelector";
 import { Home } from "./ui/Home";
 import { Settings } from "./ui/Settings";
 
-type Screen = "home" | "quiz" | "settings" | "done";
+type Screen = "home" | "quiz" | "settings" | "deck" | "done";
 
 /**
  * 「1つ戻る」で解答を取り消すために必要な情報。
@@ -39,30 +41,41 @@ export default function App() {
   const [reported, setReported] = useState<Set<string>>(new Set());
   const [reviewMode, setReviewMode] = useState(false);
   const [sessionSize, setSessionSize] = useState(20);
+  const [selection, setSelection] = useState<DeckSelection>(EMPTY_SELECTION);
   const [queue, setQueue] = useState<QuizCard[]>([]);
   const [position, setPosition] = useState(0);
   const [history, setHistory] = useState<AnswerHistoryEntry[]>([]);
 
   const refresh = useCallback(async () => {
-    const [s, r, rm, ss] = await Promise.all([
+    const [s, r, rm, ss, excluded] = await Promise.all([
       getAllSrsStates(),
       getReportedCardIds(),
       getSetting("reviewMode", false),
       getSetting("sessionSize", 20),
+      getSetting<string[]>("excludedCardIds", []),
     ]);
     setStates(s);
     setReported(r);
     setReviewMode(rm);
     setSessionSize(ss);
+    setSelection({ excludedCardIds: excluded });
     setLoading(false);
   }, []);
+
+  const updateSelection = (next: DeckSelection) => {
+    setSelection(next);
+    void setSetting("excludedCardIds", next.excludedCardIds);
+  };
 
   useEffect(() => {
     void refresh();
   }, [refresh]);
 
   const startSession = () => {
-    const available = ALL_CARDS.filter((c) => !reported.has(c.id));
+    const available = filterSelected(
+      selection,
+      ALL_CARDS.filter((c) => !reported.has(c.id)),
+    );
     const selected = selectSession(available, states, {
       limit: sessionSize,
       includeDrafts: reviewMode,
@@ -166,6 +179,23 @@ export default function App() {
     return <div className="p-8 text-center text-fg-dim">読み込み中…</div>;
   }
 
+  if (screen === "deck") {
+    return (
+      <DeckSelector
+        selection={selection}
+        onSelectionChange={updateSelection}
+        sessionSize={sessionSize}
+        onSessionSizeChange={(v) => {
+          setSessionSize(v);
+          void setSetting("sessionSize", v);
+        }}
+        reviewMode={reviewMode}
+        reported={reported}
+        onClose={() => setScreen("home")}
+      />
+    );
+  }
+
   if (screen === "settings") {
     return (
       <Settings
@@ -173,11 +203,6 @@ export default function App() {
         onReviewModeChange={(v) => {
           setReviewMode(v);
           void setSetting("reviewMode", v);
-        }}
-        sessionSize={sessionSize}
-        onSessionSizeChange={(v) => {
-          setSessionSize(v);
-          void setSetting("sessionSize", v);
         }}
         onClose={() => setScreen("home")}
         onDataChanged={() => void refresh()}
@@ -241,8 +266,10 @@ export default function App() {
       reported={reported}
       reviewMode={reviewMode}
       sessionSize={sessionSize}
+      selection={selection}
       onStart={startSession}
       onOpenSettings={() => setScreen("settings")}
+      onOpenDeck={() => setScreen("deck")}
     />
   );
 }

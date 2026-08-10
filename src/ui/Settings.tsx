@@ -12,20 +12,11 @@ import {
 interface Props {
   reviewMode: boolean;
   onReviewModeChange: (v: boolean) => void;
-  sessionSize: number;
-  onSessionSizeChange: (v: number) => void;
   onClose: () => void;
   onDataChanged: () => void;
 }
 
-export function Settings({
-  reviewMode,
-  onReviewModeChange,
-  sessionSize,
-  onSessionSizeChange,
-  onClose,
-  onDataChanged,
-}: Props) {
+export function Settings({ reviewMode, onReviewModeChange, onClose, onDataChanged }: Props) {
   const [message, setMessage] = useState<{ tone: "ok" | "error"; text: string } | null>(null);
   const [reports, setReports] = useState<{ cardId: string; note: string }[] | null>(null);
   const fileRef = useRef<HTMLInputElement>(null);
@@ -113,18 +104,9 @@ export function Settings({
           </span>
         </label>
 
-        <label className="flex flex-col gap-1">
-          <span className="font-medium">1セッションの枚数: {sessionSize}</span>
-          <input
-            type="range"
-            min={5}
-            max={50}
-            step={5}
-            value={sessionSize}
-            onChange={(e) => onSessionSizeChange(Number(e.target.value))}
-          />
-          <span className="text-sm text-fg-dim">1日10分の目安は20枚前後。</span>
-        </label>
+        <p className="text-sm text-fg-dim">
+          出題数と、カテゴリ・技・問題ごとの選択は、ホームの「出題する内容を選ぶ」から行います。
+        </p>
       </section>
 
       <section className="flex flex-col gap-3 rounded-lg border border-line bg-ink-soft p-4">

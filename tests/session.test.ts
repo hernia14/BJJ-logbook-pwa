@@ -53,13 +53,46 @@ describe("isEligible: 出題プールへの参加条件", () => {
 describe("selectSession", () => {
   const opts = { limit: 20, includeDrafts: true, now: NOW };
 
-  it("同一技からの出題を上限で打ち切る（requirements §A-6）", () => {
-    const cards = Array.from({ length: 10 }, (_, i) => makeCard(`c${i}`, "same-technique"));
-    const selected = selectSession(cards, new Map(), { ...opts, maxPerTechnique: 3 });
-    expect(selected).toHaveLength(3);
+  it("候補が潤沢なら同一技の出題を上限までに抑える（requirements §A-6）", () => {
+    // 5技×4枚=20枚あり、limit 6 なら上限3を守っても枠が埋まる
+    const cards = Array.from({ length: 5 }, (_, t) =>
+      Array.from({ length: 4 }, (_, i) => makeCard(`t${t}-c${i}`, `t${t}`)),
+    ).flat();
+    const selected = selectSession(cards, new Map(), { ...opts, limit: 6, maxPerTechnique: 3 });
+
+    const counts = new Map<string, number>();
+    for (const c of selected) counts.set(c.techniqueId, (counts.get(c.techniqueId) ?? 0) + 1);
+    expect(selected).toHaveLength(6);
+    expect(Math.max(...counts.values())).toBeLessThanOrEqual(3);
   });
 
-  it("技が分かれていれば上限に達しない", () => {
+  it("1技しか選ばれていなければ上限を超えて補充する", () => {
+    // 利用者が1つの技だけを集中反復したい場合、上限で取りこぼしてはならない
+    const cards = Array.from({ length: 10 }, (_, i) => makeCard(`c${i}`, "same-technique"));
+    const selected = selectSession(cards, new Map(), { ...opts, limit: 8, maxPerTechnique: 3 });
+    expect(selected).toHaveLength(8);
+  });
+
+  it("補充してもカードが足りなければある分だけ返す", () => {
+    const cards = Array.from({ length: 5 }, (_, i) => makeCard(`c${i}`, "same-technique"));
+    const selected = selectSession(cards, new Map(), { ...opts, limit: 20, maxPerTechnique: 3 });
+    expect(selected).toHaveLength(5);
+  });
+
+  it("補充分もカードを重複させない", () => {
+    const cards = Array.from({ length: 10 }, (_, i) => makeCard(`c${i}`, "same-technique"));
+    const selected = selectSession(cards, new Map(), { ...opts, limit: 10, maxPerTechnique: 3 });
+    expect(new Set(selected.map((c) => c.id)).size).toBe(selected.length);
+  });
+
+  it("上限を守った分を先に出し、補充分は後ろに回す", () => {
+    // 先頭3枚は上限内、残りが補充分。順序が入れ替わらないこと
+    const cards = Array.from({ length: 6 }, (_, i) => makeCard(`c${i}`, "same-technique"));
+    const selected = selectSession(cards, new Map(), { ...opts, limit: 6, maxPerTechnique: 3 });
+    expect(selected.map((c) => c.id)).toEqual(["c0", "c1", "c2", "c3", "c4", "c5"]);
+  });
+
+  it("技が分かれていれば全て出題される", () => {
     const cards = Array.from({ length: 10 }, (_, i) => makeCard(`c${i}`, `t${i}`));
     const selected = selectSession(cards, new Map(), { ...opts, maxPerTechnique: 3 });
     expect(selected).toHaveLength(10);

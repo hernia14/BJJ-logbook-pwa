@@ -33,8 +33,13 @@ export function isEligible(card: QuizCard, includeDrafts: boolean): boolean {
  *
  * 1. 出題資格のないカードを除外
  * 2. 期限到来分を優先度順に、続けて未学習分
- * 3. 同一技からの出題を上限で打ち切る
- * 4. limit 枚で切る
+ * 3. 同一技の連続を避けるため、まず技ごとの上限を守って詰める
+ * 4. それでも limit に満たなければ、上限を無視して残りから補充する
+ *
+ * 4段目が必要な理由: 利用者が1つの技だけを選んで集中的に反復したい場合、
+ * 上限をそのまま適用すると選んだカードの大半が出題されない。
+ * 上限は「候補が潤沢なときに偏りを避ける」ためのものであって、
+ * 出題可能なカードを取りこぼすためのものではない。
  */
 export function selectSession(
   cards: readonly QuizCard[],
@@ -60,12 +65,22 @@ export function selectSession(
 
   const perTechnique = new Map<string, number>();
   const selected: QuizCard[] = [];
+  const deferred: QuizCard[] = [];
 
   for (const { card } of candidates) {
     if (selected.length >= options.limit) break;
     const used = perTechnique.get(card.techniqueId) ?? 0;
-    if (used >= maxPerTechnique) continue;
+    if (used >= maxPerTechnique) {
+      deferred.push(card);
+      continue;
+    }
     perTechnique.set(card.techniqueId, used + 1);
+    selected.push(card);
+  }
+
+  // 枠が余っているなら、上限で見送ったカードで埋める
+  for (const card of deferred) {
+    if (selected.length >= options.limit) break;
     selected.push(card);
   }
 
