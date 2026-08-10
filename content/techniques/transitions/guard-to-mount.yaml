@@ -1,0 +1,72 @@
+id: guard-to-mount
+name_ja: パス後のマウントへの移行
+name_en: Guard to Mount Transition
+aliases: [マウントへの移行, サイドからマウント]
+category: transitions
+tags:
+  positions: [side-control, mount, half-guard]
+  concepts: [pressure, base, angle]
+
+status: draft
+source_type: ai_research
+sources:
+  - https://bjjnc.com/2019/02/22/most-common-positions-in-brazilian-jiu-jitsu/
+  - https://thebjjatlas.com/guard-passing/
+reviewed_by: null
+reviewed_date: null
+safety_level: none
+
+created: 2026-08-09
+updated: 2026-08-09
+
+cards:
+  - id: guard-to-mount-def-01
+    axis: definition
+    type: free_recall
+    front: サイドコントロールからマウントへの移行とはどのような動きか
+    back: |
+      押さえ込みを保ったまま脚を相手の体の反対側へ運び、
+      跨いだ状態へ移る動き。
+
+  - id: guard-to-mount-req-01
+    axis: requirement
+    type: free_recall
+    front: マウントへ移行する際に守るべき要件は何か
+    back: |
+      脚を運ぶ間も上体の圧を保ち続けること。
+      移行の瞬間は接点が減るため、上体が浮くと脱出の機会を与える。
+
+  - id: guard-to-mount-prin-01
+    axis: principle
+    type: free_recall
+    front: ポジション移行が「最も脱出されやすい瞬間」である原理を説明せよ
+    back: |
+      移行中はどちらのポジションも完成しておらず、
+      相手を制する接点が一時的に最小になる。
+      安定した状態と安定した状態の間には、必ず不安定な区間が存在する。
+
+  - id: guard-to-mount-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: guard-to-mount-causal-01
+    front: マウントへの移行でよくある失敗を1つ挙げよ
+    back: |
+      脚を大きく高く上げて跨ごうとすること。
+
+  - id: guard-to-mount-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: guard-to-mount-causal-01
+    front: マウントへの移行で脚を高く上げると、結果として何が起きるか
+    back: |
+      脚と相手の体の間に空間が生まれ、
+      その隙に膝を差し込まれてハーフガードに戻されるか、
+      浮いた重心を突かれて返される。
+
+  - id: guard-to-mount-cnt-01
+    axis: counter
+    type: free_recall
+    front: 下の者は相手のマウントへの移行に対してどう対処するか
+    back: |
+      相手の脚が越えてくる瞬間に膝や肘を差し込んで空間を確保し、
+      ハーフガードやガードへ戻す。移行の途中こそ最大の機会になる。

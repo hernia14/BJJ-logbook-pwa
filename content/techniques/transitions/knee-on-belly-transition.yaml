@@ -1,0 +1,65 @@
+id: knee-on-belly-transition
+name_ja: ニーオンザベリーからの移行
+name_en: Knee-on-Belly Transition
+aliases: [ニーオンベリーからの展開, KOBトランジション]
+category: transitions
+tags:
+  positions: [knee-on-belly, mount, side-control, back-control]
+  concepts: [pressure, base, angle]
+
+status: draft
+source_type: ai_research
+sources:
+  - https://bjjnc.com/2019/02/22/most-common-positions-in-brazilian-jiu-jitsu/
+reviewed_by: null
+reviewed_date: null
+safety_level: none
+
+created: 2026-08-09
+updated: 2026-08-09
+
+cards:
+  - id: knee-on-belly-transition-def-01
+    axis: definition
+    type: free_recall
+    front: ニーオンザベリーが「移行のためのポジション」とされる理由を述べよ
+    back: |
+      上体を起こして立てた脚で床を踏んでいるため、
+      相手の反応に応じてマウント・サイド・バックのいずれへも
+      素早く動ける状態にあるから。
+
+  - id: knee-on-belly-transition-prin-01
+    axis: principle
+    type: free_recall
+    front: ニーオンザベリーからの移行が「相手の反応で決まる」原理を説明せよ
+    back: |
+      強い圧をかけられた相手は必ず何らかの反応で逃げようとする。
+      押し返せばその力を利用してマウントへ、
+      背を向ければバックへと、相手が作った隙に応じて行き先が決まる。
+      こちらから行き先を決めるのではなく、相手に選ばせる構造にある。
+
+  - id: knee-on-belly-transition-req-01
+    axis: requirement
+    type: free_recall
+    front: ニーオンザベリーから素早く移行するための要件は何か
+    back: |
+      立てている脚で床を踏み続け、重心を相手に預けきらないこと。
+      体重を預けると移動する自由を失う。
+
+  - id: knee-on-belly-transition-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: knee-on-belly-transition-causal-01
+    front: ニーオンザベリーからの移行でよくある失敗を1つ挙げよ
+    back: |
+      圧をかけることに満足して同じ位置に留まり、
+      相手の反応に対して動かないこと。
+
+  - id: knee-on-belly-transition-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: knee-on-belly-transition-causal-01
+    front: ニーオンザベリーで動かず留まり続けると、結果として何が起きるか
+    back: |
+      相手は圧に慣れて脱出の手順を組み立てる時間を得る。
+      このポジションの最大の利点である機動性を自ら捨てることになる。

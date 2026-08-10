@@ -1,0 +1,65 @@
+id: ankle-pick
+name_ja: アンクルピック
+name_en: Ankle Pick
+aliases: [足首取り, アンクル]
+category: takedowns
+tags:
+  positions: [side-control, open-guard]
+  concepts: [angle, base, grip-fighting]
+
+status: draft
+source_type: ai_research
+sources:
+  - https://evolve-mma.com/blog/try-these-5-chain-wrestling-techniques-to-takedown-your-opponents/
+  - https://taipeibjj.com/takedowns-for-bjj-single-leg-double-leg-trips/
+reviewed_by: null
+reviewed_date: null
+safety_level: none
+
+created: 2026-08-09
+updated: 2026-08-09
+
+cards:
+  - id: ankle-pick-def-01
+    axis: definition
+    type: free_recall
+    front: アンクルピックとはどのようなテイクダウンか
+    back: |
+      相手の足首を手で掴み、
+      上体を反対方向へ崩しながら足を引いて倒すテイクダウン。
+
+  - id: ankle-pick-req-01
+    axis: requirement
+    type: free_recall
+    front: アンクルピックを成立させるための要件は何か
+    back: |
+      掴む足に相手の体重が乗っていないタイミングを捉えること。
+      体重が乗った足は動かせない。
+
+  - id: ankle-pick-prin-01
+    axis: principle
+    type: free_recall
+    front: アンクルピックが「上体と下半身を逆方向へ動かす」原理を説明せよ
+    back: |
+      上体を一方向へ崩しながら足を逆方向へ引くことで、
+      相手の体に回転する力が生じる。
+      片方だけでは相手は足を踏み替えて立て直せる。
+
+  - id: ankle-pick-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: ankle-pick-causal-01
+    front: アンクルピックでよくある失敗を1つ挙げよ
+    back: |
+      上体の崩しを伴わず、足首を引くことだけを行うこと。
+      また、体重が乗っている足を掴もうとすること。
+
+  - id: ankle-pick-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: ankle-pick-causal-01
+    front: アンクルピックで上体を崩さずに足を引くと、結果として何が起きるか
+    back: |
+      相手は足を踏み替えてバランスを保てる。
+      こちらは前傾して手を下げた姿勢になるため、
+      その体勢を狙われて首や上体を制される。

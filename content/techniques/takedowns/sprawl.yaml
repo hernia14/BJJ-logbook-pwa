@@ -1,0 +1,73 @@
+id: sprawl
+name_ja: スプロール
+name_en: Sprawl
+aliases: [スプロウル, タックル防御]
+category: takedowns
+tags:
+  positions: [turtle, side-control]
+  concepts: [base, pressure, posture, angle]
+
+status: draft
+source_type: ai_research
+sources:
+  - https://evolve-mma.com/blog/try-these-5-chain-wrestling-techniques-to-takedown-your-opponents/
+  - https://taipeibjj.com/takedowns-for-bjj-single-leg-double-leg-trips/
+reviewed_by: null
+reviewed_date: null
+safety_level: none
+
+created: 2026-08-09
+updated: 2026-08-09
+
+cards:
+  - id: sprawl-def-01
+    axis: definition
+    type: free_recall
+    front: スプロールとはどのような動作か
+    back: |
+      相手のタックルに対し、両脚を後方へ跳ね出して腰を落とし、
+      自分の体重を相手の上体に乗せる防御動作。
+
+  - id: sprawl-prin-01
+    axis: principle
+    type: free_recall
+    front: スプロールが機能する原理を説明せよ
+    back: |
+      脚を後方へ逃がすことで相手が抱えようとした対象を遠ざけ、
+      同時に腰を落として体重を相手の背中や肩に乗せる。
+      相手は前進する力を自分の体重で潰される。
+
+  - id: sprawl-req-01
+    axis: requirement
+    type: free_recall
+    front: スプロールで体重をどこへ乗せるべきか
+    back: |
+      相手の肩や背中など上体へ乗せる。
+      脚を引くだけで体重を乗せないと、相手は姿勢を立て直して再び前進できる。
+
+  - id: sprawl-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: sprawl-causal-01
+    front: スプロールでよくある失敗を1つ挙げよ
+    back: |
+      脚を後ろへ引くだけで、上体の体重を相手に乗せないこと。
+      また、反応が遅れて脚を抱えられてから動くこと。
+
+  - id: sprawl-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: sprawl-causal-01
+    front: スプロールで体重を乗せないと、結果として何が起きるか
+    back: |
+      相手は前進を続けられるため、脚を抱え直されてテイクダウンされる。
+      脚を引いた分だけ自分の姿勢が崩れており、対応も遅れる。
+
+  - id: sprawl-fol-01
+    axis: followup
+    type: free_recall
+    front: スプロールが成功した後の代表的な展開を挙げよ
+    back: |
+      相手の背後へ回ってバックを取る、
+      フロントヘッドロックの体勢から絞めを狙う、
+      あるいは横へ回り込んで上のポジションを取る。

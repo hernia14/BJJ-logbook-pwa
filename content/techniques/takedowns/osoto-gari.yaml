@@ -1,0 +1,91 @@
+id: osoto-gari
+name_ja: 大外刈り
+name_en: Osoto Gari
+aliases: [オオソトガリ, オオソト, Major Outer Reap]
+category: takedowns
+tags:
+  positions: [side-control, mount]
+  concepts: [base, angle, grip-fighting, posture]
+
+status: draft
+source_type: ai_research
+sources:
+  - https://thebjjatlas.com/standing/osoto-gari/
+  - https://www.nagafighter.com/what-is-the-osoto-gari-outside-leg-reap-in-bjj/
+  - https://bjjgraph.org/Transitions/Osoto-Gari
+reviewed_by: null
+reviewed_date: null
+safety_level: caution
+
+created: 2026-08-09
+updated: 2026-08-09
+
+cards:
+  - id: osoto-gari-def-01
+    axis: definition
+    type: free_recall
+    front: 大外刈りとはどのような投げ技か
+    back: |
+      相手の外側から自分の脚を相手の脚の後ろへ入れ、
+      上体を崩しながら脚を刈って後方へ倒す柔道由来の投げ技。
+
+  - id: osoto-gari-req-01
+    axis: requirement
+    type: free_recall
+    front: 大外刈りを成立させるために、刈る前に何をしなければならないか
+    back: |
+      相手の体重を刈る側の脚に乗せること（崩し）。
+      体重が乗っていない脚を刈っても、相手はもう一方の脚で立て直せる。
+
+  - id: osoto-gari-proc-01
+    axis: procedure
+    type: ordering
+    phase: execution
+    front: 大外刈りの手順を正しい順に並べよ
+    steps:
+      - グリップで相手の上体を崩し、刈る側の脚へ体重を寄せる
+      - 相手の外側へ踏み込んで自分の体を近づける
+      - 自分の脚を相手の刈る側の脚の後ろへ振り入れる
+      - 上体を押し下げながら脚を刈り、後方へ倒す
+
+  - id: osoto-gari-prin-01
+    axis: principle
+    type: free_recall
+    front: 大外刈りで「崩しが先、刈りは後」である原理を説明せよ
+    back: |
+      両脚に均等に体重が乗っている相手は、片脚を刈られても
+      もう一方の脚で支えられる。
+      先に一方へ体重を集めれば、その脚は動かせないうえ
+      支えを失った瞬間に倒れる方向が確定する。
+
+  - id: osoto-gari-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: osoto-gari-causal-01
+    front: 大外刈りでよくある失敗を1つ挙げよ
+    back: |
+      崩しをせずに脚を刈る動作だけを行うこと。
+      また、踏み込みが浅く自分の体が相手から離れていること。
+
+  - id: osoto-gari-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: osoto-gari-causal-01
+    front: 大外刈りで崩さずに刈ると、結果として何が起きるか
+    back: |
+      相手は支えている脚で踏ん張れるため倒れない。
+      さらに自分は片脚を上げた不安定な状態になるため、
+      その脚を狙われて逆に倒される。
+
+  - id: osoto-gari-cnt-01
+    axis: counter
+    type: free_recall
+    front: 大外刈りに対する基本的な防御を挙げよ
+    back: |
+      刈られる側の脚を後方へ引いて刈りの対象から外すこと、
+      体重を刈られる脚から抜くこと、
+      そしてグリップで上体を崩されないよう姿勢を保つこと。
+    note: |
+      後方への投げは受け身が不十分だと後頭部を打つ危険がある。
+      安全な練習方法や受け身については safety カテゴリで
+      人間の記述に基づき別途扱う。

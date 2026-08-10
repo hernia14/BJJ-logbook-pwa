@@ -1,0 +1,72 @@
+id: guard-recovery
+name_ja: ガードリカバリー
+name_en: Guard Recovery
+aliases: [ガードへの復帰, リカバリー]
+category: transitions
+tags:
+  positions: [side-control, mount, half-guard, closed-guard, open-guard]
+  concepts: [frame, hip-escape, angle]
+
+status: draft
+source_type: ai_research
+sources:
+  - https://thebjjatlas.com/escapes/
+  - https://evolve-mma.com/blog/10-fundamental-bjj-escapes-all-grapplers-should-know/
+reviewed_by: null
+reviewed_date: null
+safety_level: none
+
+created: 2026-08-09
+updated: 2026-08-09
+
+cards:
+  - id: guard-recovery-def-01
+    axis: definition
+    type: free_recall
+    front: ガードリカバリーとは何か
+    back: |
+      押さえ込まれた不利なポジションから、
+      自分の脚を相手との間に入れてガードの形に戻すこと。
+
+  - id: guard-recovery-req-01
+    axis: requirement
+    type: free_recall
+    front: ガードリカバリーに共通して必要な2つの要素を挙げよ
+    back: |
+      フレームによる空間の確保と、腰の移動（エビ）。
+      この2つはどのポジションからの復帰にも共通する。
+
+  - id: guard-recovery-prin-01
+    axis: principle
+    type: free_recall
+    front: ガードリカバリーで「脚を入れることが目的」である原理を説明せよ
+    back: |
+      ガードとは相手との間に自分の脚が介在している状態を指す。
+      脚が入れば相手は前進を妨げられ、こちらは攻撃の起点を得る。
+      空間を作ることは手段であり、脚を通すことが目的になる。
+
+  - id: guard-recovery-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: guard-recovery-causal-01
+    front: ガードリカバリーでよくある失敗を1つ挙げよ
+    back: |
+      空間を作ることで満足し、すぐに脚を差し込まないこと。
+
+  - id: guard-recovery-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: guard-recovery-causal-01
+    front: ガードリカバリーで作った空間をすぐ使わないと、結果として何が起きるか
+    back: |
+      相手は体重を移して空間を詰め直せる。
+      作るのに要した労力が無駄になり、消耗だけが蓄積する。
+
+  - id: guard-recovery-fol-01
+    axis: followup
+    type: free_recall
+    front: ガードリカバリーで完全なガードに戻れない場合、次善の選択は何か
+    back: |
+      ハーフガードなど、相手の前進を部分的にでも妨げる形を確保すること。
+      完全な復帰にこだわって何も入らないより、
+      片脚でも介在させた方が状況は改善する。

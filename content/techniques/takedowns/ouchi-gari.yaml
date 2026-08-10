@@ -1,0 +1,73 @@
+id: ouchi-gari
+name_ja: 大内刈り
+name_en: Ouchi Gari
+aliases: [オオウチガリ, オオウチ, 内側刈り, Inside Trip]
+category: takedowns
+tags:
+  positions: [side-control, closed-guard]
+  concepts: [base, angle, grip-fighting]
+
+status: draft
+source_type: ai_research
+sources:
+  - https://taipeibjj.com/takedowns-for-bjj-single-leg-double-leg-trips/
+  - https://evolve-mma.com/blog/try-these-5-chain-wrestling-techniques-to-takedown-your-opponents/
+reviewed_by: null
+reviewed_date: null
+safety_level: caution
+
+created: 2026-08-09
+updated: 2026-08-09
+
+cards:
+  - id: ouchi-gari-def-01
+    axis: definition
+    type: free_recall
+    front: 大内刈りとはどのような投げ技か
+    back: |
+      自分の脚を相手の脚の内側から入れて刈り、
+      後方へ倒す柔道由来の投げ技。
+
+  - id: ouchi-gari-def-02
+    axis: definition
+    type: free_recall
+    front: 大内刈りと大外刈りの違いを述べよ
+    back: |
+      刈る脚を入れる方向が異なる。
+      大外刈りは相手の脚の外側から、大内刈りは内側から刈る。
+      そのため有効になる相手の足の位置や体勢が異なる。
+
+  - id: ouchi-gari-req-01
+    axis: requirement
+    type: free_recall
+    front: 大内刈りを成立させるための要件は何か
+    back: |
+      大外刈りと同様、刈る側の脚に相手の体重を乗せておくこと。
+      加えてグリップで上体を後方へ崩す方向を作ること。
+
+  - id: ouchi-gari-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: ouchi-gari-causal-01
+    front: 大内刈りでよくある失敗を1つ挙げよ
+    back: |
+      脚を内側へ入れることだけを行い、上体を崩す方向を作らないこと。
+
+  - id: ouchi-gari-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: ouchi-gari-causal-01
+    front: 大内刈りで上体を崩さずに刈ると、結果として何が起きるか
+    back: |
+      相手は姿勢を保ったまま脚を引いて刈りを外せる。
+      その際こちらは片脚を相手の内側に入れた不安定な状態になり、
+      その脚を取られて倒される危険がある。
+
+  - id: ouchi-gari-fol-01
+    axis: followup
+    type: free_recall
+    front: 大内刈りが「連携技として使われやすい」理由を説明せよ
+    back: |
+      相手が大内刈りを防ごうとして体重を前方や別方向へ移すと、
+      その動きが別の投げ（前方への技など）の条件を作る。
+      単独で決まらなくても相手の反応を引き出す価値がある。

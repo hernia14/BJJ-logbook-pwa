@@ -1,0 +1,73 @@
+id: uchi-mata
+name_ja: 内股
+name_en: Uchi Mata
+aliases: [ウチマタ, Inner Thigh Throw]
+category: takedowns
+tags:
+  positions: [side-control, mount]
+  concepts: [base, angle, grip-fighting]
+
+status: draft
+source_type: ai_research
+sources:
+  - https://taipeibjj.com/takedowns-for-bjj-single-leg-double-leg-trips/
+  - https://evolve-mma.com/blog/try-these-5-chain-wrestling-techniques-to-takedown-your-opponents/
+reviewed_by: null
+reviewed_date: null
+safety_level: caution
+
+created: 2026-08-09
+updated: 2026-08-09
+
+cards:
+  - id: uchi-mata-def-01
+    axis: definition
+    type: free_recall
+    front: 内股とはどのような投げ技か
+    back: |
+      自分の脚を相手の内腿の間へ入れ、
+      その脚を跳ね上げながら上体を回して投げる柔道由来の投げ技。
+
+  - id: uchi-mata-req-01
+    axis: requirement
+    type: free_recall
+    front: 内股を成立させるための要件は何か
+    back: |
+      グリップで相手の上体を前方へ崩しておくこと、
+      そして自分の体を回転させながら相手の重心の下へ入ること。
+
+  - id: uchi-mata-prin-01
+    axis: principle
+    type: free_recall
+    front: 内股が機能する原理を説明せよ
+    back: |
+      跳ね上げる脚が相手の支持脚を床から離し、
+      同時に上体の回転が相手を投げる方向へ導く。
+      持ち上げる力と回す力が同時に働くことで大きな投げになる。
+
+  - id: uchi-mata-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: uchi-mata-causal-01
+    front: 内股でよくある失敗を1つ挙げよ
+    back: |
+      崩しが不十分なまま脚を跳ね上げようとすること。
+
+  - id: uchi-mata-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: uchi-mata-causal-01
+    front: 内股で崩しが不十分なまま仕掛けると、結果として何が起きるか
+    back: |
+      相手は床を踏んで踏ん張れるため投げられない。
+      こちらは片脚立ちで背を向けた状態になり、
+      倒されるかバックを取られる。
+
+  - id: uchi-mata-cnt-01
+    axis: counter
+    type: free_recall
+    front: 内股に対する基本的な防御を挙げよ
+    back: |
+      脚を入れられる前に腰を引いて距離を取ること、
+      体重を落として重心を下げること、
+      そしてグリップを切って崩しの起点を断つこと。

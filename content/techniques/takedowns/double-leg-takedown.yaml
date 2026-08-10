@@ -1,0 +1,89 @@
+id: double-leg-takedown
+name_ja: ダブルレッグ
+name_en: Double Leg Takedown
+aliases: [もろて刈り, Morote Gari, 両足タックル, ダブルレッグテイクダウン]
+category: takedowns
+tags:
+  positions: [side-control, closed-guard]
+  concepts: [base, angle, posture, pressure]
+
+status: draft
+source_type: ai_research
+sources:
+  - https://taipeibjj.com/takedowns-for-bjj-single-leg-double-leg-trips/
+  - https://www.bjjee.com/articles/the-various-forms-of-judos-double-leg-takedowns/
+  - https://evolve-mma.com/blog/try-these-5-chain-wrestling-techniques-to-takedown-your-opponents/
+reviewed_by: null
+reviewed_date: null
+safety_level: caution
+
+created: 2026-08-09
+updated: 2026-08-09
+
+cards:
+  - id: double-leg-takedown-def-01
+    axis: definition
+    type: free_recall
+    front: ダブルレッグとはどのようなテイクダウンか
+    back: |
+      相手の両脚を同時に抱え込み、
+      前進する力で相手を後方または横方向へ倒すテイクダウン。
+
+  - id: double-leg-takedown-req-01
+    axis: requirement
+    type: free_recall
+    front: ダブルレッグで潜り込む際の姿勢の要件は何か
+    back: |
+      背筋を伸ばして頭を上げた姿勢を保つこと。
+      膝を曲げて低く入るのであって、腰を折って頭を下げるのではない。
+
+  - id: double-leg-takedown-proc-01
+    axis: procedure
+    type: ordering
+    phase: execution
+    front: ダブルレッグの手順を正しい順に並べよ
+    steps:
+      - 距離を詰めながら膝を曲げて低い姿勢を作る
+      - 前脚を相手の脚の間に踏み込む
+      - 両腕で相手の両膝の裏を抱える
+      - 前進する力と腕の引きで相手を倒す
+
+  - id: double-leg-takedown-prin-01
+    axis: principle
+    type: free_recall
+    front: ダブルレッグで「頭を上げる」ことがなぜ重要なのか、原理を説明せよ
+    back: |
+      頭を下げると背中が丸まり、脚の力を前方へ伝えられない。
+      加えて下がった頭は相手にとって掴みやすく、
+      ギロチンチョークなど首への攻撃を許す位置になる。
+
+  - id: double-leg-takedown-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: double-leg-takedown-causal-01
+    front: ダブルレッグでよくある失敗を1つ挙げよ
+    back: |
+      腰を折って頭から突っ込むように入ること。
+      また、踏み込みが浅く相手との距離が残ったまま腕だけを伸ばすこと。
+
+  - id: double-leg-takedown-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: double-leg-takedown-causal-01
+    front: ダブルレッグで頭を下げて突っ込むと、結果として何が起きるか
+    back: |
+      首を差し出す形になり、ギロチンチョークを合わせられる。
+      また力が前方へ伝わらないため、スプロールで潰されて
+      逆に上を取られる。
+
+  - id: double-leg-takedown-cnt-01
+    axis: counter
+    type: free_recall
+    front: ダブルレッグに対する基本的な防御を挙げよ
+    back: |
+      スプロール（脚を後方へ跳ね出して腰を落とす動作）で
+      抱えられる前に脚を遠ざけ、相手の上体に体重を乗せること。
+    note: |
+      投げ・テイクダウンは受け身の技術を前提とする。
+      安全な練習方法や受け身については safety カテゴリで
+      人間の記述に基づき別途扱う。

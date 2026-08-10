@@ -1,0 +1,71 @@
+id: back-take-from-turtle
+name_ja: タートルからのバックテイク
+name_en: Back Take from Turtle
+aliases: [亀からのバック, バックテイク]
+category: transitions
+tags:
+  positions: [turtle, back-control]
+  concepts: [angle, pressure, grip-fighting]
+
+status: draft
+source_type: ai_research
+sources:
+  - https://bjjnc.com/2019/02/22/most-common-positions-in-brazilian-jiu-jitsu/
+  - https://thebjjatlas.com/escapes/
+reviewed_by: null
+reviewed_date: null
+safety_level: none
+
+created: 2026-08-09
+updated: 2026-08-09
+
+cards:
+  - id: back-take-from-turtle-def-01
+    axis: definition
+    type: free_recall
+    front: タートルからのバックテイクとはどのような動きか
+    back: |
+      タートルになっている相手に対し、
+      フックを入れて背後のコントロールを確立する動き。
+
+  - id: back-take-from-turtle-req-01
+    axis: requirement
+    type: free_recall
+    front: タートルの相手からバックを取る際に必要なことは何か
+    back: |
+      まず上体のコントロール（シートベルトなど）を確保すること。
+      フックを先に入れようとすると、相手に回転して逃げられる。
+
+  - id: back-take-from-turtle-prin-01
+    axis: principle
+    type: free_recall
+    front: 「上体のコントロールが先、フックは後」である原理を説明せよ
+    back: |
+      上体を制されていない相手は自由に回転できるため、
+      フックを入れようとした脚を外されるか、正面へ向き直られる。
+      上体を固定して回転を封じてから脚を入れる方が確実になる。
+
+  - id: back-take-from-turtle-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: back-take-from-turtle-causal-01
+    front: タートルからのバックテイクでよくある失敗を1つ挙げよ
+    back: |
+      上体のコントロールを取らないままフックを入れようとすること。
+
+  - id: back-take-from-turtle-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: back-take-from-turtle-causal-01
+    front: 上体を制さずにフックを入れようとすると、結果として何が起きるか
+    back: |
+      相手は回転してこちらの脚を外し、正面を向いてガードを作る。
+      場合によっては入れようとした脚を取られて逆に攻められる。
+
+  - id: back-take-from-turtle-fol-01
+    axis: followup
+    type: free_recall
+    front: バックコントロールを確立した後、最初に狙うものは何か
+    back: |
+      首へのコントロール。バックの優位は首への到達によって初めて
+      決定的な脅威に変わる。

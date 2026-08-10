@@ -1,0 +1,74 @@
+id: seoi-nage
+name_ja: 背負い投げ
+name_en: Seoi Nage
+aliases: [セオイナゲ, 背負い, Shoulder Throw]
+category: takedowns
+tags:
+  positions: [side-control, mount]
+  concepts: [base, angle, grip-fighting, posture]
+
+status: draft
+source_type: ai_research
+sources:
+  - https://evolve-mma.com/blog/try-these-5-chain-wrestling-techniques-to-takedown-your-opponents/
+  - https://taipeibjj.com/takedowns-for-bjj-single-leg-double-leg-trips/
+reviewed_by: null
+reviewed_date: null
+safety_level: caution
+
+created: 2026-08-09
+updated: 2026-08-09
+
+cards:
+  - id: seoi-nage-def-01
+    axis: definition
+    type: free_recall
+    front: 背負い投げとはどのような投げ技か
+    back: |
+      相手に背を向けて自分の体を相手の下に入れ、
+      相手を自分の背中に乗せるようにして前方へ投げる柔道由来の投げ技。
+
+  - id: seoi-nage-req-01
+    axis: requirement
+    type: free_recall
+    front: 背負い投げを成立させるための要件は何か
+    back: |
+      相手の体重を前方へ引き出して崩しておくこと、
+      そして自分の腰を相手の重心より低い位置に入れること。
+
+  - id: seoi-nage-prin-01
+    axis: principle
+    type: free_recall
+    front: 背負い投げで「腰を相手より低く入れる」原理を説明せよ
+    back: |
+      相手の重心より低い位置に自分の体を入れることで、
+      相手の体を自分の背中を支点としたてこの原理で持ち上げられる。
+      腰が高いと相手を持ち上げる形にならず、腕力で引くだけになる。
+
+  - id: seoi-nage-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: seoi-nage-causal-01
+    front: 背負い投げでよくある失敗を1つ挙げよ
+    back: |
+      崩さずに背を向けて入ること、
+      あるいは腰が高いまま腕の力だけで投げようとすること。
+
+  - id: seoi-nage-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: seoi-nage-causal-01
+    front: 背負い投げで崩さずに背を向けて入ると、結果として何が起きるか
+    back: |
+      投げが失敗するだけでなく、
+      相手に背中を完全に晒した状態になるためバックを取られる。
+      柔術においてはこれが最も避けたい結果になる。
+
+  - id: seoi-nage-cnt-01
+    axis: counter
+    type: free_recall
+    front: 柔術で背負い投げを使う際の固有のリスクは何か
+    back: |
+      失敗すると背中を相手に向けた状態になり、
+      バックコントロールを与えてしまうこと。
+      投げが決まらなかった場合の帰結が、柔道より重い。

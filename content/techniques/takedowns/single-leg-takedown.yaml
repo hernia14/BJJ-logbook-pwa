@@ -1,0 +1,75 @@
+id: single-leg-takedown
+name_ja: シングルレッグ
+name_en: Single Leg Takedown
+aliases: [ワンレッグ, 片足タックル, シングル]
+category: takedowns
+tags:
+  positions: [side-control, open-guard]
+  concepts: [base, angle, posture, grip-fighting]
+
+status: draft
+source_type: ai_research
+sources:
+  - https://bjjfanatics.com/blogs/news/single-leg-takedown-bjj
+  - https://taipeibjj.com/takedowns-for-bjj-single-leg-double-leg-trips/
+reviewed_by: null
+reviewed_date: null
+safety_level: caution
+
+created: 2026-08-09
+updated: 2026-08-09
+
+cards:
+  - id: single-leg-takedown-def-01
+    axis: definition
+    type: free_recall
+    front: シングルレッグとはどのようなテイクダウンか
+    back: |
+      相手の片脚を抱え込み、その脚を持ち上げるか
+      相手のバランスを崩して倒すテイクダウン。
+
+  - id: single-leg-takedown-req-01
+    axis: requirement
+    type: free_recall
+    front: シングルレッグで脚を抱えた後に重要なことは何か
+    back: |
+      抱えた脚を自分の体に密着させて固定すること、
+      そして頭の位置を相手の体の内側または外側のどちらかに明確に置くこと。
+      脚が体から離れると引き抜かれる。
+
+  - id: single-leg-takedown-prin-01
+    axis: principle
+    type: free_recall
+    front: シングルレッグがダブルレッグより「粘れる」と言われる原理を説明せよ
+    back: |
+      片脚を抱えている間は相手が二本足で立てないため、
+      すぐに倒せなくても優位が持続する。
+      両脚を抱えるダブルレッグが一度で決めきる性質なのに対し、
+      シングルレッグは保持したまま複数の崩し方を試せる。
+
+  - id: single-leg-takedown-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: single-leg-takedown-causal-01
+    front: シングルレッグでよくある失敗を1つ挙げよ
+    back: |
+      抱えた脚が自分の体から離れ、腕だけで保持している状態になること。
+
+  - id: single-leg-takedown-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: single-leg-takedown-causal-01
+    front: シングルレッグで抱えた脚が体から離れると、結果として何が起きるか
+    back: |
+      相手は脚を引き抜いて逃げられる。
+      また、腕だけで保持している間は自分の上体が前傾するため、
+      首を取られてギロチンなどを合わせられる危険がある。
+
+  - id: single-leg-takedown-cnt-01
+    axis: counter
+    type: free_recall
+    front: シングルレッグに対する基本的な防御を挙げよ
+    back: |
+      抱えられた脚を後方へ引き抜くこと、
+      相手の上体に体重を乗せて前進を止めること、
+      そして抱えられた側と反対方向へ体重を移してバランスを保つこと。
