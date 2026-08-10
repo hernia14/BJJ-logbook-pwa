@@ -10,7 +10,11 @@ interface Props {
   card: QuizCard;
   index: number;
   total: number;
+  /** 1つ戻れるか（直前に解答した記録があるか） */
+  canUndo: boolean;
   onAnswer: (quality: Quality, unverifiedOnMat: boolean) => void;
+  onUndo: () => void;
+  onSkip: () => void;
   onReportError: (note: string) => void;
 }
 
@@ -23,7 +27,16 @@ const SELF_GRADES: { quality: Quality; label: string; hint: string; tone: string
   { quality: QUALITY.PERFECT, label: "即答", hint: "大きく延長", tone: "bg-ok/20 ring-ok text-ok" },
 ];
 
-export function CardView({ card, index, total, onAnswer, onReportError }: Props) {
+export function CardView({
+  card,
+  index,
+  total,
+  canUndo,
+  onAnswer,
+  onUndo,
+  onSkip,
+  onReportError,
+}: Props) {
   const [revealed, setRevealed] = useState(false);
   const [input, setInput] = useState("");
   const [autoResult, setAutoResult] = useState<boolean | null>(null);
@@ -87,6 +100,24 @@ export function CardView({ card, index, total, onAnswer, onReportError }: Props)
         <SafetyBadge level={card.safetyLevel} />
         {card.status === "draft" && <DraftBadge />}
       </div>
+
+      <nav className="flex gap-2" aria-label="問題の移動">
+        <button
+          type="button"
+          onClick={onUndo}
+          disabled={!canUndo}
+          className="flex-1 rounded border border-line px-3 py-2 text-sm disabled:opacity-30"
+        >
+          ← 1つ戻る
+        </button>
+        <button
+          type="button"
+          onClick={onSkip}
+          className="flex-1 rounded border border-line px-3 py-2 text-sm"
+        >
+          採点せず次へ →
+        </button>
+      </nav>
 
       <section className="rounded-lg border border-line bg-ink-soft p-4">
         <h2 className="text-lg leading-relaxed font-medium whitespace-pre-wrap">

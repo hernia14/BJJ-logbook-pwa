@@ -63,8 +63,18 @@ export async function saveSrsState(cardId: string, state: SrsState): Promise<voi
   await db.srs.put({ cardId, ...state });
 }
 
-export async function appendReviewLog(entry: Omit<ReviewLogEntry, "id">): Promise<void> {
-  await db.reviewLog.add(entry);
+/** 追記した履歴のidを返す。取り消し（1つ戻る）で削除するために使う */
+export async function appendReviewLog(entry: Omit<ReviewLogEntry, "id">): Promise<number> {
+  return (await db.reviewLog.add(entry as ReviewLogEntry)) as number;
+}
+
+export async function deleteReviewLog(id: number): Promise<void> {
+  await db.reviewLog.delete(id);
+}
+
+/** 未学習の状態へ戻す。取り消しで、初回解答前の状態に復元する場合に使う */
+export async function deleteSrsState(cardId: string): Promise<void> {
+  await db.srs.delete(cardId);
 }
 
 export async function getReportedCardIds(): Promise<Set<string>> {
