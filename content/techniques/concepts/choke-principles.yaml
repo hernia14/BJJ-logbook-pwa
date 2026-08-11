@@ -1,0 +1,92 @@
+id: choke-principles
+name_ja: 絞めの原理（4つの条件）
+name_en: Principles of Choking
+aliases: [絞めの原理原則, 絞めを極めるための4つの条件]
+category: concepts
+tags:
+  positions: [back-control, mount, closed-guard, side-control]
+  concepts: [pressure, angle, frame]
+
+status: draft
+source_type: book
+sources:
+  - 大賀幹夫『大賀幹夫の寝技の学校（新装改訂版）』下巻 p.4「絞めを極めるための4つの条件」（日貿出版社）
+reviewed_by: null
+reviewed_date: null
+safety_level: caution
+
+created: 2026-08-11
+updated: 2026-08-11
+
+cards:
+  - id: choke-principles-def-01
+    axis: principle
+    type: free_recall
+    front: 絞め技に共通して必要とされる4つの条件を挙げよ
+    back: |
+      1. 首に密着していること
+      2. 閉じた円を作っていること
+      3. 力を有効にかけていること
+      4. 首と胴体のつけ根を狙っていること
+    note: |
+      大賀幹夫の整理による。個々の絞め技を別々に覚えるのではなく、
+      共通の原理から理解するための枠組み。
+
+  - id: choke-principles-req-01
+    axis: requirement
+    type: free_recall
+    front: 【密着】頸動脈の位置を押さえているのに絞まらないことがあるのはなぜか
+    back: |
+      後頭部付近に隙間があると、そこから圧力が逃げてしまうため。
+      首の一部を押さえるのではなく、首の全周に何かを密着させて
+      四方八方から圧を掛ける必要がある。
+
+  - id: choke-principles-req-02
+    axis: requirement
+    type: free_recall
+    front: 【円】首の全面に密着していても絞まらない形とは、どのような形か
+    back: |
+      密着していても、らせん状になっていて輪が閉じていない形。
+      閉じた円になっていないと血流は止まらない。
+      首吊りのように引っ張るのではなく、首の断面積が小さくなるよう、
+      中心軸に向かって垂直に力をかける。
+
+  - id: choke-principles-req-03
+    axis: requirement
+    type: free_recall
+    front: 【力の有効化】道衣の襟を使った絞めが、紐で絞めるより難しいのはなぜか
+    back: |
+      襟には絞めに関係のない余計な生地が付いており、それが邪魔をするため。
+      力を入れても、絞めと無関係な部分が引っ張られたり圧迫されたりしていると、
+      その力は無駄になる。
+
+  - id: choke-principles-req-04
+    axis: requirement
+    type: free_recall
+    front: 【狙う位置】手や襟を入れる位置として、顎の近くと首の付け根ではどちらを狙うべきか。理由も述べよ
+    back: |
+      首の付け根を狙う。
+      顎の近くから入れようとすると相手に顎を引かれて入らないが、
+      付け根を狙えば相手が顎を引いても入りやすく、絞める力も効果的にかかる。
+
+  - id: choke-principles-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: choke-principles-causal-01
+    front: 絞めが効かないときに陥りがちな対処を1つ挙げよ
+    back: |
+      効かないからといって、さらに強く力を入れること。
+
+  - id: choke-principles-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: choke-principles-causal-01
+    front: 4つの条件が満たされていない状態で力だけを強めると、結果として何が起きるか
+    back: |
+      圧力が隙間から逃げる、輪が閉じていない、関係のない部分を圧迫している
+      といった原因は力を強めても解消しないため、絞まらないまま消耗する。
+      条件のどれが欠けているかを見て、形を直すほうが先になる。
+    note: |
+      安全上の注意: 絞め技は意識消失に至りうる。練習上の安全管理
+      （タップの判断、掛ける側の責任、危険な兆候）は content/safety/ で
+      人間の記述に基づき別途扱う。このカード群では扱わない。

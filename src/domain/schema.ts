@@ -32,7 +32,8 @@ export const CARD_TYPES = [
 ] as const;
 
 export const SAFETY_LEVELS = ["none", "caution", "critical"] as const;
-export const SOURCE_TYPES = ["ai_research", "human_ingest", "rulebook"] as const;
+// book: 出版された教本に基づく。Web調査(ai_research)より信頼度が高いため区別する
+export const SOURCE_TYPES = ["ai_research", "human_ingest", "rulebook", "book"] as const;
 export const STATUSES = ["draft", "reviewed"] as const;
 
 export type Axis = (typeof AXES)[number];
