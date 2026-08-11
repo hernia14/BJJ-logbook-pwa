@@ -8,6 +8,21 @@ ingest/raw/audio/*.m4a
 ingest/raw/audio/*.mp3
 ingest/raw/audio/*.wav
 
+# 一次資料そのものはGit管理しない。ローカルに置いて参照するだけにする。
+#
+# 理由は2つ。
+# 1. 著作物（市販の教本など）をリポジトリへ入れると再配布にあたりうる
+# 2. Gitは一度入れたファイルを履歴に永久保存するため、大きなPDFを入れると
+#    後から削除してもリポジトリは重いままになり、除去には履歴の書き換えが要る
+#
+# 版数・取得日・URL・引用箇所は docs/sources/SOURCES.md に記録し、そちらを追跡する。
+docs/sources/*.pdf
+docs/sources/*.epub
+docs/sources/*.mobi
+docs/sources/*.djvu
+docs/sources/*.zip
+docs/sources/images/
+
 # ビルド生成物（content/ のYAMLが真実源）
 public/cards.json
 tsconfig.tsbuildinfo
