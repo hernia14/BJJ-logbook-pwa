@@ -75,7 +75,8 @@
 |---|---|---|
 | Rear Naked Choke (Wrist) | 手首で絞める裸絞め | 相手のアゴが入らないため柔道で多用される（『寝技の学校』下巻 p.75） |
 | Rear Naked Choke (Forearm) | 前腕で絞める裸絞め | 道衣なしで多用。アゴごと絞めてよいルール向き（同 p.76-77） |
-| Cross Collar Choke | クロスカラーチョーク | 襟を交差して絞める（Gi） |
+| Juji Jime | 十字絞め | 並十字/片十字/逆十字の3分類。柔道の呼び名（『寝技の学校』下巻 p.30-31） |
+| Juji Jime from Mount | マウントからの十字絞め | 片十字と並十字の使い分け。順手/逆手の選択原則（同 p.34-35） |
 | Okuri Eri Jime (Shallow) | 浅い送り襟絞め | 襟を首に巻きつける。柔術で多用（『寝技の学校』下巻 p.12-13） |
 | Okuri Eri Jime (Deep) | 深い送り襟絞め | 手首で絞める。柔道で主に使われる（同 p.24-25） |
 | Zubon Choke | ズボンチョーク | 送り襟が取れないときズボンを取って絞める（同 p.26-27） |
@@ -176,13 +177,13 @@
 | positions | 17 |
 | guard-passing | 9 |
 | sweeps | 7 |
-| submissions/chokes | 20 |
+| submissions/chokes | 21 |
 | submissions/joint-locks | 9 |
 | escapes | 7 |
 | takedowns | 8 |
 | transitions | 4 |
 | concepts | 10 |
-| **合計** | **91** |
+| **合計** | **92** |
 
 ※ これはあくまで「広く認知された技」の第一弾リスト。レビュー後、必要に応じて追加調査・追加項目を行う。
 

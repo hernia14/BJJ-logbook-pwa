@@ -1,0 +1,171 @@
+id: juji-jime
+name_ja: 十字絞め
+name_en: Juji Jime (Cross Collar Choke)
+aliases: [クロスカラーチョーク, クロスチョーク, Cross Collar Choke]
+category: chokes
+tags:
+  positions: [closed-guard, mount, side-control]
+  concepts: [choke-principles, choke-defense-timing, grip-fighting, posture, angle]
+
+status: draft
+source_type: book
+sources:
+  - 大賀幹夫『大賀幹夫の寝技の学校（新装改訂版）』下巻 2章「十字絞め」p.30-31（日貿出版社）
+reviewed_by: null
+reviewed_date: null
+safety_level: caution
+
+created: 2026-08-09
+updated: 2026-08-11
+
+cards:
+  - id: juji-jime-def-01
+    axis: definition
+    type: free_recall
+    front: 「十字絞め」という名前は何に由来するか
+    back: |
+      絞める腕が十字にクロスすることに由来する。柔道の呼び名。
+    source_ref: 下巻 p.30
+
+  - id: juji-jime-def-02
+    axis: definition
+    type: free_recall
+    front: 十字絞めは握りの組み合わせで3つに分類される。それぞれの名称を挙げよ
+    back: |
+      両手とも順手 … 並十字（なみじゅうじ）
+      順手と逆手の組み合わせ … 片十字（かたじゅうじ）
+      両手とも逆手 … 逆十字（ぎゃくじゅうじ）
+    source_ref: 下巻 p.30
+
+  - id: juji-jime-hier-01
+    axis: hierarchy
+    type: free_recall
+    front: 並十字・片十字・逆十字はそれぞれどのような特徴を持つか
+    back: |
+      並十字は上から使う形。
+      片十字は一般的で、様々な場面で使われる。
+      逆十字は取りづらいが、絞める力は強い。
+    source_ref: 下巻 p.30
+
+  - id: juji-jime-fol-01
+    axis: followup
+    type: free_recall
+    front: 十字絞めを発展させ、裾を使う形にした技は何か
+    back: |
+      ブラボーチョーク。
+      握力・腕力・体重の兼ね合いから、
+      軽量級ではブラボーチョークが、重量級では十字絞めが使われることが多い。
+    source_ref: 下巻 p.30
+
+  - id: juji-jime-grip-01
+    axis: grip
+    type: free_recall
+    front: 十字絞めで最初の手を首に入れるとき、手はどのような状態から入れるか
+    back: |
+      親指を立てた状態で、指を反らせて相手の首に沿わせながら深くまで入れる。
+      薬指の付け根が相手の正中線まで来るとよい。
+      もう一方の手は軽く襟を引き続け、たるませない。
+    source_ref: 下巻 p.30
+
+  - id: juji-jime-fin-01
+    axis: finish
+    type: free_recall
+    front: 十字絞めで襟を掴んだ後、手首をどう使うか。目的も述べよ
+    back: |
+      手首を返して手の平が相手の頭へ向くようにする。
+      普通に掴んだままだと襟や手と相手の首の間に空間ができるため、
+      手首を返して空間を無くし、手首の親指側をつけ根に食い込ませる。
+    source_ref: 下巻 p.30
+
+  - id: juji-jime-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: juji-jime-causal-01
+    front: 十字絞めで奥襟が取れないとき、自分はどこに位置していることが多いか
+    back: |
+      相手の正面。
+    source_ref: 下巻 p.30
+
+  - id: juji-jime-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: juji-jime-causal-01
+    front: 十字絞めで相手の正面にいると、なぜ奥襟が取れないのか
+    back: |
+      手は肘を中心に動くため、手の位置は肘の位置で決まる。
+      奥襟を取るには、肘が相手の同じ側の半身の前にあることが必須になる。
+    source_ref: 下巻 p.30
+
+  - id: juji-jime-proc-01
+    axis: procedure
+    type: ordering
+    phase: execution
+    front: 十字絞めで片手を取ってから、もう片方で奥襟を取るまでの手順を正しい順に並べよ
+    steps:
+      - 最初の手で襟を取ったら、その側へ移動を開始する
+      - 相手の膝の前まで移動し、取った側の手首は返しておく
+      - 肩が天井へ近づくように胴体を捻りながら、もう一方の手を伸ばす
+      - 親指と人差し指で道衣をつまみ、その隙間へ手首をねじ込む
+    source_ref: 下巻 p.31
+
+  - id: juji-jime-grip-02
+    axis: grip
+    type: free_recall
+    front: 十字絞めで奥襟を五指で掴んだあと、どの指に力を込めるか
+    back: |
+      小指と薬指。親指と人差し指の力はゆるめて構わない。
+    source_ref: 下巻 p.31
+
+  - id: juji-jime-mis-02
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: juji-jime-causal-02
+    front: 十字絞めで奥襟を取りにいく手の肘が曲がってしまうのは、何が原因か
+    back: |
+      相手との角度が悪いか、距離が近すぎること。
+    source_ref: 下巻 p.31
+
+  - id: juji-jime-con-02
+    axis: consequence
+    type: free_recall
+    causal_pair_id: juji-jime-causal-02
+    front: 十字絞めで奥襟を取る側の肘が曲がると、結果として何が起きるか
+    back: |
+      奥襟を取れなくなる。
+    source_ref: 下巻 p.31
+
+  - id: juji-jime-fin-02
+    axis: finish
+    type: free_recall
+    front: 十字絞めで絞めに入るとき、相手と自分のどちらを動かすか
+    back: |
+      自分から相手へ近づく。相手は動かさない。
+      相手の正面へ移動してから密着して絞めに入り、
+      両手首とも首のつけ根に密着させる。
+    source_ref: 下巻 p.31
+
+  - id: juji-jime-fin-03
+    axis: finish
+    type: free_recall
+    front: 十字絞めで、絞める直前に後ろ首と襟の空間を無くす手順を述べよ
+    back: |
+      両手首を少しだけ動かして、いったん手首と首の密着を外す。
+      その状態で両手首を引くと襟が相手の後ろ首に密着し、首を絞める円が形成される。
+      その後あらためて手首を密着させて絞める。
+    source_ref: 下巻 p.31
+    note: |
+      本書は「実戦ではこの動きは一瞬で行うが、慣れるまではゆっくりやる」としている。
+      4条件のうち「閉じた円を作る」に対応する手順。
+
+  - id: juji-jime-cnt-01
+    axis: counter
+    type: free_recall
+    front: 十字絞めに対する基本的な防御を挙げよ
+    back: |
+      相手の最初の手が深く入る前に襟を守ること、
+      絞めが入る前の段階で顎を引いて襟が首に回る空間を消すこと、
+      そして相手が奥襟を取るために回り込む動きに合わせて自分も向きを変え、
+      相手を正面に置き続けること。
+    note: |
+      防御の記述は本書に直接の記載がない部分を含む。レビュー時に確認したい。
+      絞め技の練習上の安全管理は content/safety/ で人間の記述に基づき別途扱う。

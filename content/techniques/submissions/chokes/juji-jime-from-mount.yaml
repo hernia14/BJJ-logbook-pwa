@@ -1,0 +1,138 @@
+id: juji-jime-from-mount
+name_ja: マウントからの十字絞め（片十字・並十字）
+name_en: Juji Jime from Mount
+aliases: [マウント十字, マウントからの片十字絞め, マウントからの並十字絞め]
+category: chokes
+tags:
+  positions: [mount]
+  concepts: [choke-principles, choke-defense-timing, grip-fighting, angle, pressure]
+
+status: draft
+source_type: book
+sources:
+  - 大賀幹夫『大賀幹夫の寝技の学校（新装改訂版）』下巻 2章「マウントからの片十字絞め」「マウントからの並十字絞め」p.34-35（日貿出版社）
+reviewed_by: null
+reviewed_date: null
+safety_level: caution
+
+created: 2026-08-11
+updated: 2026-08-11
+
+cards:
+  - id: juji-jime-from-mount-prin-01
+    axis: principle
+    type: free_recall
+    front: 【人体の大原則】脇を開けるときと締めるときで、どちらの握りが適するか
+    back: |
+      脇を開けるときは順手、脇を締めるときは逆手。
+    source_ref: 下巻 p.35
+    note: |
+      本書が「人体の大原則」として示している一般則。
+      十字絞めの握りを選ぶ根拠として説明されている。
+
+  - id: juji-jime-from-mount-grip-01
+    axis: grip
+    type: free_recall
+    front: 並十字絞めで両手とも順手で取るのはなぜか
+    back: |
+      順手で取ると前腕が隙間なく相手の首に密着するため。
+      逆手で取ると隙間ができ、首を絞め切れない。
+    source_ref: 下巻 p.35
+
+  - id: juji-jime-from-mount-req-01
+    axis: requirement
+    type: free_recall
+    front: 並十字絞めで襟を掴むとき、拳と手首はどのような状態にするか
+    back: |
+      拳は床につけ、手首の小指側が相手の首に密着するように掴む。
+    source_ref: 下巻 p.35
+
+  - id: juji-jime-from-mount-hier-01
+    axis: hierarchy
+    type: free_recall
+    front: マウントで並十字（順手）を使うと、片十字と比べてどのような利点があるか
+    back: |
+      上半身を起こしてバランスを取れる。
+      前腕で相手を圧することもでき、相手が押してきた場合は腕十字も狙える。
+    source_ref: 下巻 p.35
+
+  - id: juji-jime-from-mount-fin-01
+    axis: finish
+    type: free_recall
+    front: 並十字絞めで、自分の腕を何にたとえて絞めるか。その要点も述べよ
+    back: |
+      断頭台。手首の間の空間に相手の首が入っている状態から、
+      その空間を無くせば絞まる。
+      体重をかけて肘を床につければ空間がなくなる。
+    source_ref: 下巻 p.35
+
+  - id: juji-jime-from-mount-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: juji-jime-from-mount-causal-01
+    front: 並十字絞めで、拳と体重の扱いに関する誤りを挙げよ
+    back: |
+      拳を床から浮かせる方向に力をかけてしまうこと。
+      また前腕を交差させるイメージで組んでしまうこと。
+    source_ref: 下巻 p.35
+
+  - id: juji-jime-from-mount-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: juji-jime-from-mount-causal-01
+    front: 並十字絞めで前腕を交差させると、結果として何が起きるか
+    back: |
+      片方の前腕が床に密着しなくなり、左右のうち片側からしか
+      首を絞める力がかからず絞めづらくなる。
+    source_ref: 下巻 p.35
+
+  - id: juji-jime-from-mount-ang-01
+    axis: angle_weight
+    type: free_recall
+    front: 並十字絞めで体重を肘に乗せるには、肩をどこに置くか
+    back: |
+      肘の真上。
+      ただし実戦では抵抗があるため、さらに上へ登って絞める。
+      顔の下に手首がある位置関係だと体重が膝に乗り、肘にかからない。
+    source_ref: 下巻 p.35
+
+  - id: juji-jime-from-mount-proc-01
+    axis: procedure
+    type: ordering
+    phase: setup
+    front: マウントからの片十字絞めで、最初の手を奥まで入れる手順を正しい順に並べよ
+    steps:
+      - 一方の手で相手の襟を引いて襟をゆるめる
+      - できた隙間へもう一方の手を滑らせ、逆手で深く襟を取る
+      - ブリッジに強い体勢を作る
+      - 両手を使って、取った手でさらに奥襟を取りに行く
+    source_ref: 下巻 p.34
+
+  - id: juji-jime-from-mount-ang-02
+    axis: angle_weight
+    type: free_recall
+    front: マウントからの片十字絞めで、2本目の手を取りやすくするために何をするか
+    back: |
+      相手に対して90度の角度を作るくらいまで移動する。
+      移動すればするほど2本目が取りやすくなる。
+      移動の際は両足で相手の胴体をはさみ、肘でみぞおちを強く圧する。
+    source_ref: 下巻 p.34
+
+  - id: juji-jime-from-mount-fin-02
+    axis: finish
+    type: free_recall
+    front: 片十字絞めで絞める際、相手と完全に一直線になるとどうなるか
+    back: |
+      絞めやすくなるが、返されやすくもなる。
+      そのため実戦では少しずらす。
+    source_ref: 下巻 p.34
+
+  - id: juji-jime-from-mount-cnt-01
+    axis: counter
+    type: free_recall
+    front: 相手が顎を引いていて2本目の襟が取れないとき、どう対処するか
+    back: |
+      前腕を床につけ、肘を相手の襟元からみぞおちへ向けて移動させながら、
+      前腕を相手の顎に当ててそむけさせる。
+      焦らず体重をかけ、相手のほうが疲れる状況を作る。
+    source_ref: 下巻 p.34
