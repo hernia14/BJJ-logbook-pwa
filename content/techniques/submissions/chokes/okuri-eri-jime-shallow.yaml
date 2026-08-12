@@ -1,0 +1,147 @@
+id: okuri-eri-jime-shallow
+name_ja: 浅い送り襟絞め
+name_en: Okuri Eri Jime (Shallow)
+aliases: [送り襟絞め, おくりえりじめ, 浅い送り襟]
+category: chokes
+tags:
+  positions: [back-control]
+  concepts: [choke-principles, choke-defense-timing, grip-fighting, angle]
+
+status: draft
+source_type: book
+sources:
+  - 大賀幹夫『大賀幹夫の寝技の学校（新装改訂版）』下巻 1章「浅い送り襟絞め」p.12-13（日貿出版社）
+reviewed_by: null
+reviewed_date: null
+safety_level: caution
+
+created: 2026-08-11
+updated: 2026-08-11
+
+cards:
+  - id: okuri-eri-jime-shallow-def-01
+    axis: definition
+    type: free_recall
+    front: 「送り襟絞め」という名前は何に由来するか
+    back: |
+      絞める側とは逆の襟を「送って」絞めることに由来する。
+      技の名前が「引っ張り襟絞め」ではない点に注意する。
+    source_ref: 下巻 p.12
+
+  - id: okuri-eri-jime-shallow-prin-01
+    axis: principle
+    type: free_recall
+    front: 送り襟絞めで、襟を握っていない側の腕は何をしているか
+    back: |
+      相手の後頭部付近に残る襟のたるみを、相手の胸の方へ送っている。
+      絞め腕だけで首を絞め切る力をかけるのは難しく、
+      たるみを送ることで楽に絞められるようになる。
+    source_ref: 下巻 p.12
+
+  - id: okuri-eri-jime-shallow-grip-01
+    axis: grip
+    type: free_recall
+    front: 浅い送り襟絞めでは、相手の襟をどのように取るか
+    back: |
+      浅く（ゆるく）取る。
+    source_ref: 下巻 p.12
+
+  - id: okuri-eri-jime-shallow-ang-01
+    axis: angle_weight
+    type: free_recall
+    front: 送り襟絞めで絞める側に対し、自分はどの位置に回るべきか
+    back: |
+      天井から見て、相手の身体に対して絞め手の側とは逆回りの方向へ回った位置。
+      そこに位置すると襟が自然に相手の首へ食い込む。
+    source_ref: 下巻 p.12
+
+  - id: okuri-eri-jime-shallow-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: okuri-eri-jime-shallow-causal-01
+    front: 送り襟絞めで位置取りを誤ると、身体はどちら側に来てしまうか
+    back: |
+      絞め手と同じ側に身体が来てしまう。
+    source_ref: 下巻 p.12
+
+  - id: okuri-eri-jime-shallow-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: okuri-eri-jime-shallow-causal-01
+    front: 送り襟絞めで絞め手と同じ側に身体があると、結果として何が起きるか
+    back: |
+      絞めるための襟がゆるんでしまい、力が伝わらない。
+    source_ref: 下巻 p.12
+
+  - id: okuri-eri-jime-shallow-mis-02
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: okuri-eri-jime-shallow-causal-02
+    front: 送り襟絞めで、自分の背中の扱いに関する誤りを挙げよ
+    back: |
+      自分の背中を床につけて、相手の下になってしまうこと。
+    source_ref: 下巻 p.12
+
+  - id: okuri-eri-jime-shallow-con-02
+    axis: consequence
+    type: free_recall
+    causal_pair_id: okuri-eri-jime-shallow-causal-02
+    front: 送り襟絞めで相手の下になると、結果として何が起きるか
+    back: |
+      相手が重い場合に体重をかけられ、絞めるのに余計な力が必要になる。
+      背中は起こしておき、絞めるときに寝るようにする。
+    source_ref: 下巻 p.12
+
+  - id: okuri-eri-jime-shallow-proc-01
+    axis: procedure
+    type: ordering
+    phase: setup
+    front: 送り襟絞めで襟を巻き付けるまでの手順を正しい順に並べよ
+    steps:
+      - 相手の脇に入れた手で相手の襟を開き、握りやすくする
+      - もう一方の手で相手の襟を取る
+      - 襟のたるみを無くすため、握った手を指先方向へ一度動かす
+      - 肘や肩を大きく回して、相手の首に襟を巻き付ける
+    source_ref: 下巻 p.13
+
+  - id: okuri-eri-jime-shallow-proc-02
+    axis: procedure
+    type: ordering
+    phase: finish
+    front: 送り襟絞めで襟を巻き付けた後、絞める体勢を作る手順を正しい順に並べよ
+    steps:
+      - 足裏で相手の太腿を押し下げ、自分の足がまたげる状態を作る
+      - 足の甲を相手の太腿の外側に密着させる
+      - 両足を一気に大きく広げ、相手の背中が床につくスペースを作る
+      - 襟を送る側の腕で相手を床に押し付ける
+    source_ref: 下巻 p.13
+
+  - id: okuri-eri-jime-shallow-fin-01
+    axis: finish
+    type: free_recall
+    front: 送り襟絞めの最大のコツとされる、脚の使い方は何か
+    back: |
+      絞め腕と同じ側の脚の膝裏を、相手の肩にかけること。
+    source_ref: 下巻 p.13
+
+  - id: okuri-eri-jime-shallow-fin-02
+    axis: finish
+    type: free_recall
+    front: 送り襟絞めの仕上げで、どこの力を相手の首に集めるか
+    back: |
+      両手・両足・背筋の力。これらを相手の首にかけると楽に絞められる。
+      相手を床に押し付ける力も、そのまま絞める力になる。
+    source_ref: 下巻 p.13
+
+  - id: okuri-eri-jime-shallow-cnt-01
+    axis: counter
+    type: free_recall
+    front: 送り襟絞めに対する基本的な防御を挙げよ
+    back: |
+      襟を取らせないこと、
+      絞めが入る前の段階で顎を引いて襟が首に回る空間を消すこと、
+      そして相手を絞め手と同じ側へ来させるように体を回すこと。
+    note: |
+      防御の記述はこのカード群のうち本書に直接の記載がない部分を含む。
+      レビュー時に確認したい。
+      絞め技の練習上の安全管理は content/safety/ で人間の記述に基づき別途扱う。

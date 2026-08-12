@@ -1,0 +1,162 @@
+id: okuri-eri-jime-deep
+name_ja: 深い送り襟絞め
+name_en: Okuri Eri Jime (Deep)
+aliases: [深い送り襟, 深い送り襟絞]
+category: chokes
+tags:
+  positions: [back-control]
+  concepts: [choke-principles, choke-defense-timing, grip-fighting, angle, pressure]
+
+status: draft
+source_type: book
+sources:
+  - 大賀幹夫『大賀幹夫の寝技の学校（新装改訂版）』下巻 1章「深い送り襟絞め」p.24-25（日貿出版社）
+reviewed_by: null
+reviewed_date: null
+safety_level: caution
+
+created: 2026-08-11
+updated: 2026-08-11
+
+cards:
+  - id: okuri-eri-jime-deep-def-01
+    axis: definition
+    type: free_recall
+    front: 深い送り襟絞めは、浅い送り襟絞めと何が違うか
+    back: |
+      浅い送り襟絞めが襟を相手の首に巻きつけて絞めるのに対し、
+      深い送り襟絞めは手首で絞める。
+      襟を深く（きつく）取り、脚を相手の肩にかけず、
+      互いの胴体が平行のまま絞める。
+    source_ref: 下巻 p.24
+
+  - id: okuri-eri-jime-deep-hier-01
+    axis: hierarchy
+    type: free_recall
+    front: 柔道で深い送り襟絞めが主に使われ、柔術で浅い送り襟絞めがよく使われるのはなぜか
+    back: |
+      柔道では絞めるときに襟がアゴにかかると「マテ」になってしまうため、
+      深い送り襟絞めが主に使われる。
+      柔術ではアゴを絞めてもよいので、入りやすい浅い送り襟絞めがよく使われる。
+    source_ref: 下巻 p.24
+
+  - id: okuri-eri-jime-deep-fin-01
+    axis: finish
+    type: free_recall
+    front: 深い送り襟絞めで、相手の首を包み込む部位を挙げよ
+    back: |
+      絞め手の手首・肩・胸の上部・自分の首・アゴ。
+      これらで相手の首を包み込んで密着させたうえで、
+      全方向から相手の首の中心部へ向かう力をかける。
+    source_ref: 下巻 p.24
+
+  - id: okuri-eri-jime-deep-fin-02
+    axis: finish
+    type: free_recall
+    front: 深い送り襟絞めの仕上げで、呼吸と背中をどう使うか
+    back: |
+      息を一杯に吸って、背中で肩甲骨を寄せる。
+    source_ref: 下巻 p.24
+
+  - id: okuri-eri-jime-deep-ang-01
+    axis: angle_weight
+    type: free_recall
+    front: 深い送り襟絞めで、自分と相手の上体の傾きはそれぞれどうあるべきか
+    back: |
+      相手は後傾させ、自分は前傾する。
+      前傾することで肩が相手の首を押す形になる。
+    source_ref: 下巻 p.24
+
+  - id: okuri-eri-jime-deep-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: okuri-eri-jime-deep-causal-01
+    front: 深い送り襟絞めで、腰の位置に関する誤りを挙げよ
+    back: |
+      自分の腰と相手の腰が近すぎること。
+    source_ref: 下巻 p.24
+
+  - id: okuri-eri-jime-deep-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: okuri-eri-jime-deep-causal-01
+    front: 深い送り襟絞めで互いの腰が近いと、なぜ技に入れないのか
+    back: |
+      構造的に、相手の首の後ろへ自分の肩が当たらなくなるため。
+    source_ref: 下巻 p.24
+
+  - id: okuri-eri-jime-deep-mis-02
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: okuri-eri-jime-deep-causal-02
+    front: 深い送り襟絞めで、自分の上体が後傾すると何が起きるか（原因側）
+    back: |
+      肩で相手の首を挟めなくなる。
+    source_ref: 下巻 p.24
+
+  - id: okuri-eri-jime-deep-con-02
+    axis: consequence
+    type: free_recall
+    causal_pair_id: okuri-eri-jime-deep-causal-02
+    front: 深い送り襟絞めで肩が相手の後ろ首に当たらないと、結果としてどうなるか
+    back: |
+      首が抜けてしまい、効率的に絞めることが難しくなる。
+    source_ref: 下巻 p.24
+
+  - id: okuri-eri-jime-deep-fol-01
+    axis: followup
+    type: free_recall
+    front: 浅い送り襟絞めを防がれた場合、どのような変化が有効か
+    back: |
+      深い送り襟絞めへ変化する。
+    source_ref: 下巻 p.25
+
+  - id: okuri-eri-jime-deep-proc-01
+    axis: procedure
+    type: ordering
+    phase: execution
+    front: 浅い送り襟絞めを防がれてから深い送り襟絞めへ変化する手順を、正しい順に並べよ
+    steps:
+      - 肘を引いて肘の角度を鋭角にし、相手から引きつけられないようにする
+      - 空いている手を相手の反対側の襟へ持ち替えて力をかける
+      - 同時に襟を握る手のつかみをゆるめ、少しずつ奥の襟を取る
+      - 十分に奥まで入ったら襟を持ち直して絞めに入る
+    source_ref: 下巻 p.25
+
+  - id: okuri-eri-jime-deep-mis-03
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: okuri-eri-jime-deep-causal-03
+    front: 深い送り襟絞めで、肘の角度に関する誤りを挙げよ
+    back: |
+      肘の角度が鈍角のまま、肘が前に出ていること。
+    source_ref: 下巻 p.25
+
+  - id: okuri-eri-jime-deep-con-03
+    axis: consequence
+    type: free_recall
+    causal_pair_id: okuri-eri-jime-deep-causal-03
+    front: 深い送り襟絞めで肘の角度が鈍角だと、結果として何が起きるか
+    back: |
+      肘に体重が乗らないため、相手に引きつけられてしまう。
+      肘を後ろへ引くときは、反対の前腕で相手に体重をかけて肘を軽くしてから、
+      脇を締める力や身体全体を反らす力で引く。
+    source_ref: 下巻 p.25
+
+  - id: okuri-eri-jime-deep-fin-03
+    axis: finish
+    type: free_recall
+    front: 肘を床について絞める場合、肩とアゴが使えない分どう補うか
+    back: |
+      手首と胸で前後から挟む力で絞める。
+      バランスの関係で肩とアゴが使えなくなるため。
+    source_ref: 下巻 p.25
+
+  - id: okuri-eri-jime-deep-cnt-01
+    axis: counter
+    type: free_recall
+    front: 相手の襟絞めを防ぐうえで、相手の腕をどうすると効果的か
+    back: |
+      絞め腕を引きつけて、相手の肩を床につかせる。
+      そうなると襟絞めを続けることは難しくなる。
+    source_ref: 下巻 p.25

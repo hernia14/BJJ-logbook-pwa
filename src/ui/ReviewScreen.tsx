@@ -260,6 +260,12 @@ function ReviewCard({
         <Answer card={card} />
       </div>
 
+      {/* 原典と突き合わせられるよう、カード単位の出典位置を出す */}
+      {p.source_ref && (
+        <p className="mt-2 text-xs text-accent">出典: {p.source_ref}</p>
+      )}
+      {p.note && <p className="mt-1 text-xs text-fg-dim">{p.note}</p>}
+
       {reporting ? (
         <div className="mt-3 flex flex-col gap-2">
           <textarea
