@@ -1,0 +1,101 @@
+id: kadowaki-choke
+name_ja: 門脇チョーク
+name_en: Kadowaki Choke
+aliases: [カドワキチョーク, 門脇]
+category: chokes
+tags:
+  positions: [turtle, side-control]
+  concepts: [choke-principles, pressure, angle, frame]
+
+status: draft
+source_type: book
+sources:
+  - 大賀幹夫『大賀幹夫の寝技の学校（新装改訂版）』下巻 3章「門脇チョーク」p.80-81（日貿出版社）
+reviewed_by: null
+reviewed_date: null
+safety_level: caution
+
+created: 2026-08-11
+updated: 2026-08-11
+
+cards:
+  - id: kadowaki-choke-def-01
+    axis: definition
+    type: free_recall
+    front: 門脇チョークとはどのような技か。どの関節技の発展形か
+    back: |
+      腹固めという関節技の発展技。
+      相手の両腕を使えない形にしたうえで、空いた首を狙って絞める。
+      タックルのカウンターとして、道衣なしでもよく使われる。
+
+  - id: kadowaki-choke-prin-01
+    axis: principle
+    type: free_recall
+    front: 門脇チョークが「理にかなった技」とされるのはなぜか
+    back: |
+      腹固めは体型的にやや腹が出ていないと極まりづらい。
+      そこで関節を極めることに固執せず、
+      相手の両腕を封じた結果として空く首を狙う、という組み立てになっているため。
+
+  - id: kadowaki-choke-req-01
+    axis: requirement
+    type: free_recall
+    front: 門脇チョークで、相手のタックルを潰したあとに作りたい形は何か
+    back: |
+      相手の頭が自分の体の外側にある形。
+      その状態から相手の首に腕を密着させて深く入れ、反対の肩を掴む。
+
+  - id: kadowaki-choke-fin-01
+    axis: finish
+    type: free_recall
+    front: 門脇チョークの仕上げで、首をどのように挟むか
+    back: |
+      腕を相手の首に密着させたまま深く入れて反対側の肩を掴み、
+      自分の肩で相手の後頭部に体重をかけて、肩と腕で相手の首を挟む。
+
+  - id: kadowaki-choke-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: kadowaki-choke-causal-01
+    front: 門脇チョークで、相手の腕を制する位置に関する誤りを挙げよ
+    back: |
+      相手の手首の近くに力をかけてしまうこと。
+
+  - id: kadowaki-choke-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: kadowaki-choke-causal-01
+    front: 門脇チョークで相手の手首近くに力をかけると、結果として何が起きるか
+    back: |
+      腕が伸びづらく、抜かれやすくなる。
+      膝裏を相手の肘に当てて腕を伸ばす力をかけ、
+      腰をやや捻る方向へ力を向けると抜かれにくい。
+
+  - id: kadowaki-choke-req-02
+    axis: requirement
+    type: free_recall
+    front: 門脇チョークで足は相手のどこを止めるか
+    back: |
+      肘ではなく手首を止める。
+      手首を内腿で止めれば腕が抜けることはなく、
+      機を見て肘関節を極めることもできる。
+
+  - id: kadowaki-choke-fol-01
+    axis: followup
+    type: free_recall
+    front: 門脇チョークで相手を潰せなかった場合、どう変化するか
+    back: |
+      前転して下から極める形へ移行する。
+      回転が終わる直前に腕を相手の首から回してクラッチを組む。
+
+  - id: kadowaki-choke-fol-02
+    axis: followup
+    type: free_recall
+    front: 門脇チョークは道衣がある場合、どのような選択肢が増えるか
+    back: |
+      襟を使って絞めることもできる。
+      両手を使った深い送り襟絞めの形でも、片手だけで絞める形でもよい。
+    note: |
+      本書は腹の上にいる相手への対応（前腕絞め）にも触れているが、
+      首への負荷に注意する旨が記されている。
+      安全に関わる判断は content/safety/ で人間の記述に基づき別途扱う。

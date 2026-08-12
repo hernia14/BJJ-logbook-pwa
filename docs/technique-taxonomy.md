@@ -80,10 +80,12 @@
 | Ezekiel Choke (Sode Guruma Jime) | エゼキエル絞め／袖車（そでぐるま） | 袖車絞めと同一技（2026-08-09 本人確認済み） |
 | Guillotine Choke | ギロチンチョーク | 正面からの首絞め |
 | Front Triangle Choke | 前三角絞め | 3工程(キャッチ→密着→絞め)で整理。3つの三角を小さくする（『寝技の学校』下巻 p.66-71） |
+| Side Triangle Choke | 横三角絞め | 柔道で多用。タックルのカウンターにもなる（同 p.86-87） |
+| Kadowaki Choke | 門脇チョーク | 腹固めの発展技。両腕を封じて空いた首を絞める（同 p.80-81） |
 | Darce Choke (D'Arce) | ダースチョーク | 逆腕十字絞め系 |
 | Anaconda Choke | アナコンダチョーク | ダースと類似のフロントヘッドロック系 |
 | North-South Choke | ノースサウスチョーク | 上四方の体勢からの絞め |
-| Arm Triangle (Kata Gatame) | 腕がらみ絞め／肩固め系 | 肩固めに近い |
+| Arm Triangle (Kata Gatame) | 肩固め | 2つの三角を小さくし、脇を締める力との合力で絞める（同 p.83） |
 | Von Flue Choke | フォンフルーチョーク | ギロチン対策から派生する絞め |
 | Loop Choke | ループチョーク | 襟を使った絞め（Gi） |
 | Canto Choke | カントチョーク | 人間による追加（2026-08-09） |
@@ -170,13 +172,13 @@
 | positions | 17 |
 | guard-passing | 9 |
 | sweeps | 7 |
-| submissions/chokes | 14 |
+| submissions/chokes | 16 |
 | submissions/joint-locks | 9 |
 | escapes | 7 |
 | takedowns | 8 |
 | transitions | 4 |
 | concepts | 10 |
-| **合計** | **85** |
+| **合計** | **87** |
 
 ※ これはあくまで「広く認知された技」の第一弾リスト。レビュー後、必要に応じて追加調査・追加項目を行う。
 

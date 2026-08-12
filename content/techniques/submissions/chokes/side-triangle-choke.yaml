@@ -1,0 +1,102 @@
+id: side-triangle-choke
+name_ja: 横三角絞め
+name_en: Side Triangle Choke
+aliases: [ヨコサンカク, サイドトライアングル]
+category: chokes
+tags:
+  positions: [turtle, side-control, north-south]
+  concepts: [choke-principles, choke-defense-timing, angle, pressure]
+
+status: draft
+source_type: book
+sources:
+  - 大賀幹夫『大賀幹夫の寝技の学校（新装改訂版）』下巻 3章「横三角絞め」p.86-87（日貿出版社）
+reviewed_by: null
+reviewed_date: null
+safety_level: caution
+
+created: 2026-08-11
+updated: 2026-08-11
+
+cards:
+  - id: side-triangle-choke-def-01
+    axis: definition
+    type: short_answer
+    front: 三角絞めは掛ける方向によって3種類に分けられる。前三角と横三角のほか、残る1つは何か
+    answer: 後三角絞め
+    accept: [後三角, 後ろ三角, うしろさんかく, 後三角締め]
+
+  - id: side-triangle-choke-def-02
+    axis: definition
+    type: free_recall
+    front: 横三角絞めとはどのような絞めか
+    back: |
+      相手の脇に足を入れて三角を組み、
+      横方向から相手の首と腕を挟んで絞める三角絞め。
+
+  - id: side-triangle-choke-hier-01
+    axis: hierarchy
+    type: free_recall
+    front: 横三角絞めが柔道で多用される一方、柔術ではあまり知られていないのはなぜか
+    back: |
+      柔道は抑え込まないと勝ちにならないため、
+      亀の相手を返して抑え込む流れの中で横三角がよく使われる。
+      対して、亀の相手の後ろから攻め続ければ勝ちになるルールの競技では
+      その必要が薄く、あまり知られていない。
+    note: |
+      本書は「知られていない技はよくかかる」として、
+      総合でタックルのカウンターに用いる選手がいることにも触れている。
+
+  - id: side-triangle-choke-req-01
+    axis: requirement
+    type: free_recall
+    front: 亀の相手から横三角へ入るとき、返した後に相手を逃がさないための要点は何か
+    back: |
+      足の踵と反対側の膝を密着させておくこと。
+      密着させたまま横に倒すと相手をコントロールしやすい。
+
+  - id: side-triangle-choke-fin-01
+    axis: finish
+    type: free_recall
+    front: 横三角絞めの仕上げで密着させるべき2箇所はどこか
+    back: |
+      腿裏と相手の首、そして膝裏の深い位置と相手の脇。
+      加えて尻を締め、両踵を尻に近づける。
+
+  - id: side-triangle-choke-fol-01
+    axis: followup
+    type: free_recall
+    front: タックルに対するカウンターとして横三角を組んだあと、絞めるために何をするか
+    back: |
+      相手の足を取って動きを止め、全身を反らせながら足の三角を小さくする。
+      自分の下腿で相手の肩に圧力をかけると相手の首が反って絞まる。
+
+  - id: side-triangle-choke-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: side-triangle-choke-causal-01
+    front: 横三角絞めが極まらないとき、相手の姿勢はどうなっていることが多いか
+    back: |
+      相手の身体が丸まっている。
+
+  - id: side-triangle-choke-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: side-triangle-choke-causal-01
+    front: 横三角で相手の身体が丸まっていると、結果として何が起きるか
+    back: |
+      絞まらないうえ、逃げられやすくなる。
+      相手を反らせる方向へ崩す必要がある。
+
+  - id: side-triangle-choke-fol-02
+    axis: followup
+    type: free_recall
+    front: 横三角絞めが極まらない場合、どのような選択肢があるか
+    back: |
+      関節技へ移行する。
+      膝裏で相手の上腕を固定できれば肘関節を、
+      ルールで手首関節技が認められていれば手首を狙える。
+    note: |
+      この形の絞めは難度が高く、柔道では腕を縛って足を解き
+      抑え込みに移行することも多い、と本書は述べている。
+      関節技への移行時の安全管理は content/safety/ で別途扱う。
