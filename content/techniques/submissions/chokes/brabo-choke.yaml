@@ -1,0 +1,127 @@
+id: brabo-choke
+name_ja: ブラボーチョーク
+name_en: Brabo Choke
+aliases: [ブラボー, 裾絞め]
+category: chokes
+tags:
+  positions: [side-control, knee-on-belly, half-guard, mount]
+  concepts: [choke-principles, grip-fighting, pressure, angle]
+
+status: draft
+source_type: book
+sources:
+  - 大賀幹夫『大賀幹夫の寝技の学校（新装改訂版）』下巻 2章「ブラボーチョーク」p.40-41（日貿出版社）
+reviewed_by: null
+reviewed_date: null
+safety_level: caution
+
+created: 2026-08-11
+updated: 2026-08-11
+
+cards:
+  - id: brabo-choke-def-01
+    axis: definition
+    type: free_recall
+    front: ブラボーチョークとはどのような絞めか
+    back: |
+      相手の上衣をはだいて、道衣の裾を使って絞める技。
+      裾を引っ張り出して紐状にし、相手の首を絞める。
+    source_ref: 下巻 p.40
+
+  - id: brabo-choke-prin-01
+    axis: principle
+    type: free_recall
+    front: 襟ではなく裾を使う技が柔術で開発されたのはなぜか
+    back: |
+      紐は引っ張れば相手の首に食い込むが、
+      道衣の襟は引っ張っても首以外のところに張力がかかって力が分散してしまうため。
+      そこで裾を引き出して紐状にする発想が生まれた。
+    source_ref: 下巻 p.40
+    note: 絞めの4条件のうち「力を有効にかけること」に対応する。
+
+  - id: brabo-choke-hier-01
+    axis: hierarchy
+    type: free_recall
+    front: ブラボーチョークが絞め以外に持つ長所は何か
+    back: |
+      脇から裾をはだくことで、相手の動きをより制限できる。
+    source_ref: 下巻 p.40
+
+  - id: brabo-choke-grip-01
+    axis: grip
+    type: free_recall
+    front: ブラボーチョークで裾を掴むとき、どこを掴むか。理由も述べよ
+    back: |
+      固いところだけを掴む。
+      生地の部分も掴むと太くなって手が疲れるため。
+      また力が分散しないよう、固いところが捻れないようにする。
+    source_ref: 下巻 p.40
+
+  - id: brabo-choke-proc-01
+    axis: procedure
+    type: ordering
+    phase: setup
+    front: サイドポジションからブラボーチョークをセットアップする手順を正しい順に並べよ
+    steps:
+      - 抑え込みからいったんニーオンザベリーへ変化する
+      - 相手の胃の上付近の襟を取る
+      - 膝を床につきながら手に体重をかけ、肘を伸ばして襟をはだく
+      - 反対の脇を開けて肘を伸ばし、相手の裾をできるだけ奥で取る
+    source_ref: 下巻 p.40
+    note: 抑え込んだままでは裾をはだきづらいため、いったんベリーを経由する。
+
+  - id: brabo-choke-ang-01
+    axis: angle_weight
+    type: free_recall
+    front: ブラボーチョークのセットアップで、胸をつけないのはなぜか
+    back: |
+      胸をつけないことで手を重くするため。
+      体重を手に乗せて裾をはだく。
+    source_ref: 下巻 p.40
+
+  - id: brabo-choke-fol-01
+    axis: followup
+    type: free_recall
+    front: ハーフガードで脇をすくわれた状況で、ブラボーチョークはどう役立つか
+    back: |
+      脇をはぐって抑えつける形に持ち込める。
+      脇をすくわれた状態はバックを取られたりスイープされる危険があるが、
+      裾を取って相手を起きれなくすることで対処できる。
+    source_ref: 下巻 p.41
+
+  - id: brabo-choke-fin-01
+    axis: finish
+    type: free_recall
+    front: ブラボーチョークの絞め方は、どの技をかける要領と同じか
+    back: |
+      十字絞め。襟を使わず、裾を使って十字絞めをかける要領で絞める。
+      裾の取り方の詳細も十字絞めと同じ。
+    source_ref: 下巻 p.41
+
+  - id: brabo-choke-fin-02
+    axis: finish
+    type: free_recall
+    front: ブラボーチョークで絞めに入るとき、上半身と相手の頭をどうするか
+    back: |
+      再度ニーオンザベリーへ変化し、上半身を高く起こして相手の頭を十分に引き上げる。
+      引き上げるほど奥を取れる。
+    source_ref: 下巻 p.41
+
+  - id: brabo-choke-fin-03
+    axis: finish
+    type: free_recall
+    front: ブラボーチョークの仕上げで、両肘と移動方向をどう使うか
+    back: |
+      両肘を相手の胸に押しつける力をかけ、頭を相手に近づける。
+      そのうえでマウント方向へ移動し、両肘を重くして回転の中心にする。
+    source_ref: 下巻 p.41
+
+  - id: brabo-choke-cnt-01
+    axis: counter
+    type: free_recall
+    front: ブラボーチョークを防ぐうえで、最初に阻止すべきことは何か
+    back: |
+      上衣をはだかれること。裾を引き出されて紐状にされる前に対処する。
+    note: |
+      防御の記述は本書に直接の記載がない部分を含む。レビュー時に確認したい。
+      絞め技の練習上の安全管理は content/safety/ で人間の記述に基づき別途扱う。

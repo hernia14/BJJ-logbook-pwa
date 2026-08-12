@@ -1,7 +1,7 @@
 id: darce-choke
 name_ja: ダースチョーク
 name_en: D'Arce Choke
-aliases: [ダース, ブラボーチョーク, Brabo Choke, D'Arce]
+aliases: [ダース, D'Arce]
 category: chokes
 tags:
   positions: [side-control, half-guard, turtle]
@@ -21,6 +21,20 @@ created: 2026-08-09
 updated: 2026-08-09
 
 cards:
+  - id: darce-choke-def-02
+    axis: definition
+    type: free_recall
+    front: ダースチョークとブラボーチョークは同じ技か
+    back: |
+      別の技として扱う。
+      ブラボーチョークは道衣の裾を紐状にして絞めるGiの技であり、
+      ダースチョークは相手の首と片腕を腕で囲って締める技。
+      英語圏では両者が混同して呼ばれることがあるため注意する。
+    note: |
+      本カード群では『寝技の学校』下巻 p.40 の用法に従い、
+      ブラボーチョーク＝裾を使う絞め（brabo-choke.yaml）として区別している。
+      道場での呼び分けと異なる場合はレビュー時に指示してほしい。
+
   - id: darce-choke-def-01
     axis: definition
     type: free_recall
