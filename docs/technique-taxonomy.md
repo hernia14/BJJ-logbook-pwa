@@ -73,7 +73,8 @@
 
 | 技名（英） | 通称・別名 | 備考 |
 |---|---|---|
-| Rear Naked Choke (RNC) | 裸絞め（はだかじめ） | 柔道の「裸絞」に相当。背後からの絞め |
+| Rear Naked Choke (Wrist) | 手首で絞める裸絞め | 相手のアゴが入らないため柔道で多用される（『寝技の学校』下巻 p.75） |
+| Rear Naked Choke (Forearm) | 前腕で絞める裸絞め | 道衣なしで多用。アゴごと絞めてよいルール向き（同 p.76-77） |
 | Cross Collar Choke | クロスカラーチョーク | 襟を交差して絞める（Gi） |
 | Bow and Arrow Choke | ボウアンドアローチョーク | 背後から襟と脚を使う（Gi） |
 | Ezekiel Choke (Sode Guruma Jime) | エゼキエル絞め／袖車（そでぐるま） | 袖車絞めと同一技（2026-08-09 本人確認済み） |
@@ -157,6 +158,7 @@
 | Grip Fighting | グリップファイティング | 組手争い |
 | Hip Escape (Shrimping) | ヒップエスケープ／シュリンピング | 腰を使った基本移動動作 |
 | Underhook / Overhook | アンダーフック／オーバーフック | 腕の差し方によるコントロールの基本 |
+| Principles of Choking | 絞めの原理（4つの条件） | 密着／閉じた円／力の有効化／首と胴体のつけ根（『寝技の学校』下巻 p.4） |
 
 ---
 
@@ -167,13 +169,13 @@
 | positions | 17 |
 | guard-passing | 9 |
 | sweeps | 7 |
-| submissions/chokes | 13 |
+| submissions/chokes | 14 |
 | submissions/joint-locks | 9 |
 | escapes | 7 |
 | takedowns | 8 |
 | transitions | 4 |
-| concepts | 8 |
-| **合計** | **82** |
+| concepts | 9 |
+| **合計** | **84** |
 
 ※ これはあくまで「広く認知された技」の第一弾リスト。レビュー後、必要に応じて追加調査・追加項目を行う。
 

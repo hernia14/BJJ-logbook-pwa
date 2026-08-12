@@ -1,0 +1,131 @@
+id: rear-naked-choke-forearm
+name_ja: 前腕で絞める裸絞め
+name_en: Rear Naked Choke (Forearm)
+aliases: [裸絞め（前腕）, RNC, リアネイキッドチョーク, Mata Leao]
+category: chokes
+tags:
+  positions: [back-control]
+  concepts: [choke-principles, pressure, angle, posture]
+
+status: draft
+source_type: book
+sources:
+  - 大賀幹夫『大賀幹夫の寝技の学校（新装改訂版）』下巻 3章「前腕で絞める裸絞め」p.76-77（日貿出版社）
+reviewed_by: null
+reviewed_date: null
+safety_level: caution
+
+created: 2026-08-11
+updated: 2026-08-11
+
+cards:
+  - id: rear-naked-choke-forearm-def-01
+    axis: definition
+    type: free_recall
+    front: 前腕で絞める裸絞めとはどのような絞めか。またどの場面で使われやすいか
+    back: |
+      前腕で相手の首を絞める裸絞め。道衣を使わない環境でよく使われる。
+
+  - id: rear-naked-choke-forearm-def-02
+    axis: definition
+    type: free_recall
+    front: 前腕で絞める型が柔道でほとんど使われないのはなぜか
+    back: |
+      相手のアゴが入りやすく、道衣があると防がれやすいうえ密着しづらいため。
+      逆に、アゴごと絞めてよく道衣もないルールであれば最適な絞めになる。
+
+  - id: rear-naked-choke-forearm-req-01
+    axis: requirement
+    type: free_recall
+    front: 前腕で絞める裸絞めで、相手の首をどのような形として捉え、肘をどこに置くか
+    back: |
+      相手の首を三角として捉え、肘がその頂点に当たるように置く。
+      自分の前腕の長さは決まっているため、肘をのど仏に当てるには肩を出す必要がある。
+
+  - id: rear-naked-choke-forearm-fin-01
+    axis: finish
+    type: free_recall
+    front: 前腕で絞める裸絞めで意識する「3つの三角」とは何か
+    back: |
+      1. 胴体と絞め腕の前腕でできる三角（これを潰して首を絞める）
+      2. 前腕と上腕でできる三角
+      3. 左右の前腕でできる三角
+      これらを小さくしていくことで絞まる。
+
+  - id: rear-naked-choke-forearm-fin-02
+    axis: finish
+    type: free_recall
+    front: 前腕で絞める裸絞めで、絞め手でないほうの手のひらはどこに当てるか。理由も述べよ
+    back: |
+      絞め腕の上腕に密着させる。
+      そうすることで相手の首を絞める輪が完成するため。
+
+  - id: rear-naked-choke-forearm-grip-01
+    axis: grip
+    type: free_recall
+    front: 前腕で絞める裸絞めで、前腕の向きによって効かせ方がどう変わるか
+    back: |
+      首と腕が密着している場合は、橈骨（親指側の骨）を張り出して絞める。
+      相手のアゴが少し入っている場合は、橈骨で絞めると痛みが出るため、
+      筋肉の面でアゴを潰す形にする。
+
+  - id: rear-naked-choke-forearm-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: rear-naked-choke-forearm-causal-01
+    front: 前腕で絞める裸絞めで、手のひらの位置に関するよくある誤りを挙げよ
+    back: |
+      空いている手のひらで相手の後頭部を押してしまうこと。
+
+  - id: rear-naked-choke-forearm-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: rear-naked-choke-forearm-causal-01
+    front: 空いている手で後頭部を押すと、なぜ絞まりにくいのか
+    back: |
+      輪が不完全なままになるため。
+      また手のひらで首を押す形も、十分な力がかからず絞めづらいことが多い。
+
+  - id: rear-naked-choke-forearm-mis-02
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: rear-naked-choke-forearm-causal-02
+    front: 前腕で絞める裸絞めで、肘の位置に関する誤りを挙げよ
+    back: |
+      肘が相手の首より前に出てしまうこと。
+
+  - id: rear-naked-choke-forearm-con-02
+    axis: consequence
+    type: free_recall
+    causal_pair_id: rear-naked-choke-forearm-causal-02
+    front: 肘が相手の首より前に出ていると、結果として何が起きるか
+    back: |
+      腕を制されやすくなる。自分の腕同士を掴んだだけの形だと、
+      絞め手を相手の脇の下へ入れられて絞められなくなることがある。
+
+  - id: rear-naked-choke-forearm-ang-01
+    axis: angle_weight
+    type: free_recall
+    front: 前腕で絞める裸絞めで相手を反らせるとき、どこまで反らせるか
+    back: |
+      全身を反らせる。上半身まで反れていないと効果が半減する。
+
+  - id: rear-naked-choke-forearm-prin-01
+    axis: principle
+    type: free_recall
+    front: 前腕で絞める裸絞めが「一見簡単そうで実は難しい」と言われるのはなぜか
+    back: |
+      余程の筋力差がない限り、力だけで絞めるのは難しいため。
+      形（三角を小さくする、輪を完成させる）が伴わないと効かない。
+
+  - id: rear-naked-choke-forearm-cnt-01
+    axis: counter
+    type: free_recall
+    front: 前腕で絞める裸絞めに対する基本的な防御を挙げよ
+    back: |
+      顎を引いて首と腕の間に空間を作らせないこと、
+      絞めに来る腕を両手で制すること、
+      そして背中を床方向へ落として密着を切ること。
+    note: |
+      絞め技は意識消失に至りうる。練習上の安全管理は
+      content/safety/ で人間の記述に基づき別途扱う。

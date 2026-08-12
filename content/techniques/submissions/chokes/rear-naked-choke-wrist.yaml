@@ -1,0 +1,103 @@
+id: rear-naked-choke-wrist
+name_ja: 手首で絞める裸絞め
+name_en: Rear Naked Choke (Wrist)
+aliases: [裸絞め（手首）, 手首の裸絞め, RNC手首型]
+category: chokes
+tags:
+  positions: [back-control]
+  concepts: [choke-principles, pressure, angle, posture]
+
+status: draft
+source_type: book
+sources:
+  - 大賀幹夫『大賀幹夫の寝技の学校（新装改訂版）』下巻 3章「手首で絞める裸絞め」p.75（日貿出版社）
+reviewed_by: null
+reviewed_date: null
+safety_level: caution
+
+created: 2026-08-11
+updated: 2026-08-11
+
+cards:
+  - id: rear-naked-choke-wrist-def-01
+    axis: definition
+    type: free_recall
+    front: 手首で絞める裸絞めとはどのような絞めか。またどの競技で使われやすいか
+    back: |
+      手首で相手の首を絞める裸絞め。
+      相手のアゴが入らない形になるため、柔道でよく使われる。
+    note: 前腕で絞める型との使い分けは rear-naked-choke-forearm を参照。
+
+  - id: rear-naked-choke-wrist-req-01
+    axis: requirement
+    type: free_recall
+    front: 手首で絞める裸絞めで、拳を当てる位置はどこか
+    back: |
+      相手の左右の首の付け根。
+      アゴの近くではなく付け根を狙う（絞めの4条件のうち「首と胴体のつけ根を狙う」）。
+      そのうえで片手を首下に入れ、手首の親指側をのどに当てる。
+
+  - id: rear-naked-choke-wrist-fin-01
+    axis: finish
+    type: free_recall
+    front: 手首で絞める裸絞めの仕上げで、みぞおちと手首をどう使うか
+    back: |
+      肩甲骨を背中で寄せて胸を張り、手首を自分のみぞおちに強く押し当てる。
+      みぞおち側からも手首へ押し付ける。
+      肩は下げ、肘が自分の腰に最も近づいた状態にする。
+
+  - id: rear-naked-choke-wrist-ang-01
+    axis: angle_weight
+    type: free_recall
+    front: 手首で絞める裸絞めで、体重をどう使うか
+    back: |
+      身体を反らせて相手を伸ばし、体重をかけて拳を進める。
+      仕上げでは頭を床に近づける方向へ体重をかける（床につく手前で止める）。
+
+  - id: rear-naked-choke-wrist-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: rear-naked-choke-wrist-causal-01
+    front: 手首で絞める裸絞めで、頭の位置に関するよくある失敗を挙げよ
+    back: |
+      頭を上げたまま背筋の力だけで絞めようとすること。
+
+  - id: rear-naked-choke-wrist-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: rear-naked-choke-wrist-causal-01
+    front: 手首で絞める裸絞めで頭を上げていると、なぜ極まりにくいのか
+    back: |
+      相手の後頭部を止めるものがなくなり、首を絞める輪が完成しないため。
+      頭を下げてみぞおちで相手の後頭部を圧迫し、手首に相手の首を押し付ける。
+
+  - id: rear-naked-choke-wrist-mis-02
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: rear-naked-choke-wrist-causal-02
+    front: 手首で絞める裸絞めで、両手首の使い方に関する誤りを挙げよ
+    back: |
+      両手首とも相手の首に当ててしまうこと。
+
+  - id: rear-naked-choke-wrist-con-02
+    axis: consequence
+    type: free_recall
+    causal_pair_id: rear-naked-choke-wrist-causal-02
+    front: 両手首とも相手の首に当てると、結果としてどうなるか
+    back: |
+      手首を効かせることができず絞まりづらくなる。
+      また仰向けになると体重を使えないため防がれやすい。
+
+  - id: rear-naked-choke-wrist-cnt-01
+    axis: counter
+    type: free_recall
+    front: 手首で絞める裸絞めに対する基本的な防御を挙げよ
+    back: |
+      顎を引いて首元の空間を消すこと、
+      絞めに来る腕を制すること、
+      そして背中を床方向へ落として相手との密着を切ること。
+    note: |
+      絞め技は意識消失に至りうる。練習上の安全管理（タップの判断、
+      掛ける側の責任、危険な兆候）は content/safety/ で人間の記述に基づき別途扱う。
+      なお本書には腰の使い方に関する危険（腰椎を反らせる形）への注意もあるが、
+      安全に関わる記述のため safety カテゴリで扱う。
