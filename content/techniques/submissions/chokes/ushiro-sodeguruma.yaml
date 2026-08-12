@@ -1,0 +1,104 @@
+id: ushiro-sodeguruma
+name_ja: 後ろ袖車
+name_en: Ushiro Sode Guruma
+aliases: [うしろそでぐるま, 後ろ袖車絞め]
+category: chokes
+tags:
+  positions: [back-control]
+  concepts: [choke-principles, choke-defense-timing, grip-fighting, angle]
+
+status: draft
+source_type: book
+sources:
+  - 大賀幹夫『大賀幹夫の寝技の学校（新装改訂版）』下巻 1章「後ろ袖車」p.28（日貿出版社）
+reviewed_by: null
+reviewed_date: null
+safety_level: caution
+
+created: 2026-08-11
+updated: 2026-08-11
+
+cards:
+  - id: ushiro-sodeguruma-def-01
+    axis: definition
+    type: free_recall
+    front: 後ろ袖車はどのような場面で使う絞めか
+    back: |
+      バックから絞め手が首に入らないときに、袖車絞めへ切り替える形。
+      相手は首から入ってくる手を警戒することが多いため、
+      警戒されていない側の手を深く入れる。
+    source_ref: 下巻 p.28
+
+  - id: ushiro-sodeguruma-grip-01
+    axis: grip
+    type: free_recall
+    front: 後ろ袖車で、深く入れた手の指はどこへ入れるか
+    back: |
+      反対の腕の袖口へ入れる。
+    source_ref: 下巻 p.28
+
+  - id: ushiro-sodeguruma-req-01
+    axis: requirement
+    type: free_recall
+    front: 後ろ袖車で、深く入れた手の甲と指先はどこへ向けるか。目的も述べよ
+    back: |
+      手の甲は相手の頭へ向け、指先は自分の反対側の肩に近づける。
+      手首が動きやすい形になる。
+    source_ref: 下巻 p.28
+
+  - id: ushiro-sodeguruma-fin-01
+    axis: finish
+    type: free_recall
+    front: 後ろ袖車で、脇の締め方はいつ変えるか
+    back: |
+      手首の形を作るまでは脇を締めておき、
+      形ができたら脇を広げる。そうすると手が首に回る。
+    source_ref: 下巻 p.28
+
+  - id: ushiro-sodeguruma-fin-02
+    axis: finish
+    type: free_recall
+    front: 後ろ袖車で、最終的に何をすることで絞まるか
+    back: |
+      両腕を伸ばすこと。
+      その前に両足を広げて相手との角度を作り、
+      できたスペースへ両腕を伸ばして相手を寝かせる。
+    source_ref: 下巻 p.28
+
+  - id: ushiro-sodeguruma-ang-01
+    axis: angle_weight
+    type: free_recall
+    front: 後ろ袖車で、自分の身体は相手に対してどのくらいの角度をとるか
+    back: |
+      およそ45度。
+    source_ref: 下巻 p.28
+
+  - id: ushiro-sodeguruma-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: ushiro-sodeguruma-causal-01
+    front: 後ろ袖車で、身体の位置に関する誤りを挙げよ
+    back: |
+      相手の真後ろから絞めようとすること。
+    source_ref: 下巻 p.28
+
+  - id: ushiro-sodeguruma-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: ushiro-sodeguruma-causal-01
+    front: 後ろ袖車を真後ろから絞めると、なぜ絞まらないのか
+    back: |
+      相手が脇を締めた場合に肘が伸びず、絞める力が働かないため。
+    source_ref: 下巻 p.28
+
+  - id: ushiro-sodeguruma-cnt-01
+    axis: counter
+    type: free_recall
+    front: 後ろ袖車に対する防御を2つ挙げ、それぞれの注意点も述べよ
+    back: |
+      1. 肩をすくめて上腕を耳に押し付け、手が入る隙間を無くす。
+         ただし肩固めへ変化されるおそれがある。
+      2. 床を蹴って相手を倒し、その上に自分の胴体を位置させる。
+         上へ伸び上がり続けると相手の腕が伸びず絞めづらくなる。
+      最上の防御は、そもそも手を深く入れさせないこと。
+    source_ref: 下巻 p.28

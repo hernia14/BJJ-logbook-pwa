@@ -1,0 +1,118 @@
+id: zubon-choke
+name_ja: ズボンチョーク
+name_en: Zubon (Pants) Choke
+aliases: [ズボン絞め, パンツチョーク]
+category: chokes
+tags:
+  positions: [back-control]
+  concepts: [choke-principles, choke-defense-timing, grip-fighting, angle]
+
+status: draft
+source_type: book
+sources:
+  - 大賀幹夫『大賀幹夫の寝技の学校（新装改訂版）』下巻 1章「ズボンチョーク」p.26-27（日貿出版社）
+reviewed_by: null
+reviewed_date: null
+safety_level: caution
+
+created: 2026-08-11
+updated: 2026-08-11
+
+cards:
+  - id: zubon-choke-def-01
+    axis: definition
+    type: free_recall
+    front: ズボンチョークはどのような場面で使う絞めか
+    back: |
+      バックから襟を取ったものの、相手が脇を締めるなどして
+      送り襟（反対側の襟）を取れない場合に、
+      代わりにズボンを取って絞める。
+    source_ref: 下巻 p.26
+
+  - id: zubon-choke-grip-01
+    axis: grip
+    type: free_recall
+    front: ズボンチョークで、送り襟の代わりに何を掴むか
+    back: |
+      相手の膝を抱える。抱えられない場合は道衣を掴んでもよい。
+    source_ref: 下巻 p.26
+
+  - id: zubon-choke-prin-01
+    axis: principle
+    type: free_recall
+    front: ズボンチョークで、相手の足を引くとなぜ絞まるのか
+    back: |
+      自分の胴体と相手の足が近づくほど、相手の襟が首に食い込むため。
+      腿で相手の胴体を押し、相手の身体が反って捻れる形になるのが理想。
+    source_ref: 下巻 p.26
+
+  - id: zubon-choke-fin-01
+    axis: finish
+    type: free_recall
+    front: ズボンチョークで、掴めれば一気に絞まりやすくなるのはどちらの足か
+    back: |
+      遠い側の足。取りづらいが、取れると相手の身体が捻れて簡単に絞まる。
+    source_ref: 下巻 p.26
+
+  - id: zubon-choke-req-01
+    axis: requirement
+    type: free_recall
+    front: ズボンチョークで、相手を寝かせる前にやっておくべきことは何か
+    back: |
+      手首を相手の首に巻きつけておくこと。
+      そのうえで自分の頭を相手の膝へ十分近づけてから寝かせる。
+    source_ref: 下巻 p.26
+
+  - id: zubon-choke-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: zubon-choke-causal-01
+    front: ズボンチョークで、前腕の位置に関するよくあるミスを挙げよ
+    back: |
+      前腕が相手の側頭部（耳のあたり）にかかってしまうこと。
+      相手をすぐに寝かせたり、肘が床から離れているとこうなる。
+    source_ref: 下巻 p.27
+
+  - id: zubon-choke-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: zubon-choke-causal-01
+    front: ズボンチョークで前腕が相手の側頭部に当たると、結果として何が起きるか
+    back: |
+      首を抜かれて逃げられやすくなる。
+      前腕は相手の頭と床の間に位置させる。
+    source_ref: 下巻 p.27
+
+  - id: zubon-choke-cnt-01
+    axis: counter
+    type: free_recall
+    front: ズボンチョークに対する防御として、グリップを切る方法の手順を述べよ
+    back: |
+      苦しくなる前に、両手で自分の襟をしっかり持つ。
+      相手が絞めに来て腕が伸びたところで、両手と首を互いに逆方向へ動かすと、
+      相手の手が切れる。早めに対応することが重要。
+    source_ref: 下巻 p.27
+    note: 本書は東京大学柔道部の林佑樹氏から教わった方法として紹介している。
+
+  - id: zubon-choke-mis-02
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: zubon-choke-causal-02
+    front: グリップを切る防御法を、送り襟絞めに対して使うとどうなるか（原因側）
+    back: |
+      この防御法を、絞め腕の肘が伸びていない技にも通用すると考えてしまうこと。
+    source_ref: 下巻 p.27
+
+  - id: zubon-choke-con-02
+    axis: consequence
+    type: free_recall
+    causal_pair_id: zubon-choke-causal-02
+    front: グリップを切る防御法が送り襟絞めに通用しないのはなぜか
+    back: |
+      この方法が有効なのは、絞め腕の肘が完全に伸びるズボンチョークに限られるため。
+      送り襟絞めに対して行うと、深い送り襟絞めへ変化されて絞められる。
+    source_ref: 下巻 p.27
+    note: |
+      安全上の注意: 本書はこの技について、捻りすぎると相手が首や脇腹を
+      負傷しうる旨を記している。具体的な限界やタップの判断は
+      content/safety/ で人間の記述に基づき別途扱う。

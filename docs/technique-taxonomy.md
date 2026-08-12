@@ -78,6 +78,8 @@
 | Cross Collar Choke | クロスカラーチョーク | 襟を交差して絞める（Gi） |
 | Okuri Eri Jime (Shallow) | 浅い送り襟絞め | 襟を首に巻きつける。柔術で多用（『寝技の学校』下巻 p.12-13） |
 | Okuri Eri Jime (Deep) | 深い送り襟絞め | 手首で絞める。柔道で主に使われる（同 p.24-25） |
+| Zubon Choke | ズボンチョーク | 送り襟が取れないときズボンを取って絞める（同 p.26-27） |
+| Ushiro Sode Guruma | 後ろ袖車 | 絞め手が入らないとき袖車へ切り替える（同 p.28） |
 | Bow and Arrow Choke | ボウアンドアローチョーク | 背後から襟と脚を使う（Gi） |
 | Ezekiel Choke (Sode Guruma Jime) | エゼキエル絞め／袖車（そでぐるま） | 袖車絞めと同一技（2026-08-09 本人確認済み） |
 | Guillotine Choke | ギロチンチョーク | 正面からの首絞め |
@@ -174,13 +176,13 @@
 | positions | 17 |
 | guard-passing | 9 |
 | sweeps | 7 |
-| submissions/chokes | 18 |
+| submissions/chokes | 20 |
 | submissions/joint-locks | 9 |
 | escapes | 7 |
 | takedowns | 8 |
 | transitions | 4 |
 | concepts | 10 |
-| **合計** | **89** |
+| **合計** | **91** |
 
 ※ これはあくまで「広く認知された技」の第一弾リスト。レビュー後、必要に応じて追加調査・追加項目を行う。
 
