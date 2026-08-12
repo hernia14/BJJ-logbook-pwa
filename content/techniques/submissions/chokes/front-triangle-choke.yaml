@@ -1,0 +1,143 @@
+id: front-triangle-choke
+name_ja: 前三角絞め
+name_en: Front Triangle Choke
+aliases: [三角絞め, トライアングルチョーク, サンカクジメ, Sankaku Jime, 三角]
+category: chokes
+tags:
+  positions: [closed-guard, open-guard, mount]
+  concepts: [choke-principles, angle, posture, frame]
+
+status: draft
+source_type: book
+sources:
+  - 大賀幹夫『大賀幹夫の寝技の学校（新装改訂版）』下巻 3章「前三角絞め」p.66-71（日貿出版社）
+reviewed_by: null
+reviewed_date: null
+safety_level: caution
+
+created: 2026-08-11
+updated: 2026-08-11
+
+cards:
+  - id: front-triangle-choke-def-01
+    axis: definition
+    type: free_recall
+    front: 前三角絞めとはどのような絞めか
+    back: |
+      両脚で三角形を作り、その中に相手の頭と片腕を入れて絞める技。
+      脚で作った複数の三角形の頂点の角度を小さくし、
+      三角形の面積を狭めることで絞める。
+
+  - id: front-triangle-choke-proc-01
+    axis: procedure
+    type: ordering
+    phase: setup
+    front: 前三角絞めを3つの工程に分けたとき、正しい順に並べよ
+    steps:
+      - キャッチ（相手の頭と腕を脚で捕らえる）
+      - 密着（膝裏を相手の首に密着させる）
+      - 絞め（三角形を小さくして絞める）
+    note: 本書はこの3工程で整理している。工程を意識すると理解しやすい。
+
+  - id: front-triangle-choke-req-01
+    axis: requirement
+    type: free_recall
+    front: 前三角絞めで「密着」の工程が目指す状態は何か
+    back: |
+      相手の首の側面と、自分の膝裏が密着した状態。
+      ここに隙間があると絞めの効果が大幅に落ちる。
+
+  - id: front-triangle-choke-ang-01
+    axis: angle_weight
+    type: free_recall
+    front: 前三角絞めで、膝裏を相手の首に密着させるために何を管理するか
+    back: |
+      自分の腰の位置と角度。
+      脚は腰から生えているため、膝の位置と角度は腰の位置と角度に支配される。
+      密着の工程では股関節を約90度に保ち、腰を相手の肩の間ではなく
+      絞める側の肩の外側に置く。
+
+  - id: front-triangle-choke-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: front-triangle-choke-causal-01
+    front: 前三角絞めで、腰の位置に関するよくある失敗を挙げよ
+    back: |
+      腰が相手の両肩の間に入ってしまうこと。
+
+  - id: front-triangle-choke-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: front-triangle-choke-causal-01
+    front: 前三角絞めで腰が相手の両肩の間にあると、結果として何が起きるか
+    back: |
+      膝裏が相手の首ではなく肩に当たってしまい、密着しない。
+      脚の位置は腰に支配されるため、脚だけを直そうとしても解決しない。
+
+  - id: front-triangle-choke-fin-01
+    axis: finish
+    type: free_recall
+    front: 前三角絞めで、膝裏と首の隙間を潰すために膝をどう使うか
+    back: |
+      膝を一度伸ばして膝裏と首を密着させてから、あらためて曲げる。
+      早い段階で膝を曲げてしまうと隙間が残る。
+
+  - id: front-triangle-choke-fin-02
+    axis: finish
+    type: free_recall
+    front: 前三角絞めの「絞め」の工程で小さくする3つの三角形を、順番に挙げよ
+    back: |
+      1. 両腿で作る正面の三角（膝と膝を近づける）
+      2. 大腿と下腿で作る三角（膝を曲げ、踵を尻に近づける）
+      3. 胴体と大腿で作る三角（膝とすねを手で自分のみぞおちへ引き寄せる）
+      この順に小さくしていく。
+
+  - id: front-triangle-choke-fin-03
+    axis: finish
+    type: free_recall
+    front: 前三角絞めの各工程で、股関節の角度はどう変化するか
+    back: |
+      キャッチでは90度かそれ以上、密着では約90度、極めでは少し曲げる。
+
+  - id: front-triangle-choke-mis-02
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: front-triangle-choke-causal-02
+    front: 前三角絞めで最も多い誤解とされる、胴体の使い方の誤りは何か
+    back: |
+      絞める段階で身体を丸め、膝と肩を近づけようとすること。
+
+  - id: front-triangle-choke-con-02
+    axis: consequence
+    type: free_recall
+    causal_pair_id: front-triangle-choke-causal-02
+    front: 前三角絞めで胴体を丸めると、なぜ絞まらないのか
+    back: |
+      ハサミの片方の刃が丸まっていると物が切れないのと同じ理由で、
+      挟む構造が成立しなくなるため。
+      膝と膝を近づける力もかけづらくなる。
+      股関節は曲げるが、胴体は伸ばして肩甲骨を寄せ胸を張る。
+
+  - id: front-triangle-choke-prin-01
+    axis: principle
+    type: free_recall
+    front: 前三角絞めで「相手の腕を1本だけ中に入れる」ことがなぜ必要なのか
+    back: |
+      入れた腕が相手自身の首の一方を圧迫する役割を果たすため。
+      両腕が中にあると首の側面に圧が集中せず、
+      両腕とも外にあると脚だけで両側を締めることになり効率が落ちる。
+    note: |
+      この項目は本書の記述ではなく、一般に知られた説明にとどまる。
+      レビュー時に指導表現との整合を確認したい。
+
+  - id: front-triangle-choke-cnt-01
+    axis: counter
+    type: free_recall
+    front: 前三角絞めに対する基本的な防御を挙げよ
+    back: |
+      早い段階でポスチャーを立てて頭を引き下げられないようにすること、
+      中に入れられそうな腕を引き抜くこと、
+      そして相手に腰の位置と角度を作らせないこと。
+    note: |
+      絞め技は意識消失に至りうる。練習上の安全管理は
+      content/safety/ で人間の記述に基づき別途扱う。

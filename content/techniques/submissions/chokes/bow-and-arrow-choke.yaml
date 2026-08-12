@@ -5,7 +5,7 @@ aliases: [弓矢絞め, ボウアンドアロー, 弓引き絞め]
 category: chokes
 tags:
   positions: [back-control]
-  concepts: [choke-principles, angle, grip-fighting, base]
+  concepts: [choke-defense-timing, choke-principles, angle, grip-fighting, base]
 
 status: draft
 source_type: ai_research
@@ -71,5 +71,5 @@ cards:
     front: ボウアンドアローチョークに対する基本的な防御を挙げよ
     back: |
       襟を深く掴まれる前に手を守ること、
-      顎を引いて首元の空間を消すこと、
+      絞めが入る前の段階で顎を引き、首元の空間を消すこと、
       そして掴まれる側の脚を引き寄せて掴ませないこと。

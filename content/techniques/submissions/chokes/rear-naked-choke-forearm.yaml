@@ -5,7 +5,7 @@ aliases: [裸絞め（前腕）, RNC, リアネイキッドチョーク, Mata Le
 category: chokes
 tags:
   positions: [back-control]
-  concepts: [choke-principles, pressure, angle, posture]
+  concepts: [choke-defense-timing, choke-principles, pressure, angle, posture]
 
 status: draft
 source_type: book
@@ -123,7 +123,7 @@ cards:
     type: free_recall
     front: 前腕で絞める裸絞めに対する基本的な防御を挙げよ
     back: |
-      顎を引いて首と腕の間に空間を作らせないこと、
+      絞めが入る前の段階で顎を引き、首と腕の間に空間を作らせないこと、
       絞めに来る腕を両手で制すること、
       そして背中を床方向へ落として密着を切ること。
     note: |

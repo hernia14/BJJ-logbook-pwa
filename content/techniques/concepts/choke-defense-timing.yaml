@@ -1,0 +1,88 @@
+id: choke-defense-timing
+name_ja: 絞め防御と顎の使い分け
+name_en: Chin Position in Choke Defense
+aliases: [顎を引く, アゴを引く, 絞め防御のタイミング]
+category: concepts
+tags:
+  positions: [back-control, closed-guard, side-control, turtle]
+  concepts: [choke-principles, posture, frame]
+
+status: draft
+source_type: book
+sources:
+  - 大賀幹夫『大賀幹夫の寝技の学校（新装改訂版）』下巻 3章 技の豆知識「絞められたとき、アゴは引かず首筋に力を入れよ」p.82（日貿出版社）
+reviewed_by: null
+reviewed_date: null
+safety_level: caution
+
+created: 2026-08-11
+updated: 2026-08-11
+
+cards:
+  - id: choke-defense-timing-def-01
+    axis: definition
+    type: free_recall
+    front: 絞めに対して顎を引く防御は、いつ有効でいつ有効でないか
+    back: |
+      絞めが入る前、首を守る段階では有効。
+      しかし相手の腕や道衣が首に密着してしまった後は、有効でないどころか有害になる。
+    note: |
+      広く「顎を引け」と教えられるが、本書は段階によって使い分けるべきだとしている。
+      指導表現と食い違う可能性があるためレビュー時に確認したい。
+
+  - id: choke-defense-timing-prin-01
+    axis: principle
+    type: free_recall
+    front: 密着された後に顎を引くと、なぜかえって絞まりやすくなるのか
+    back: |
+      顎を引くと自分ののどぼとけ周辺が凹み、
+      相手がかけた力がその凹みに集中してしまうため。
+
+  - id: choke-defense-timing-req-01
+    axis: requirement
+    type: free_recall
+    front: 首に密着された後、顎を引く代わりに何をするか
+    back: |
+      首筋に力を入れて首をまっすぐにする。
+      曲げるのでも反らすのでもなく、固くまっすぐな状態にする。
+
+  - id: choke-defense-timing-prin-02
+    axis: principle
+    type: free_recall
+    front: 首をまっすぐ固くすることが防御になる理由を2つ挙げよ
+    back: |
+      1. 絞める手や襟が相手の顎の方向へ滑り、
+         「首の中心軸に対して垂直に力をかける」ことがしづらくなる
+      2. 首周辺の筋肉が固くなることで、奥にある頸動脈が守られる
+
+  - id: choke-defense-timing-prin-03
+    axis: principle
+    type: free_recall
+    front: 絞め防御において「呼吸」がなぜ重要か
+    back: |
+      顎を引くと息を吸えなくなる。
+      首を伸ばして大きく息を吸い、止めておけば、
+      血流をそれ以上妨げられない限りすぐには落ちない。
+      一方で絞める側が全力を掛け続けられる時間には限りがある。
+    note: |
+      本書は具体的な時間にも言及しているが、個人差が大きく
+      安全に関わる数値のため、ここでは時間を書いていない。
+      耐えられる時間の目安やタップの判断は content/safety/ で
+      人間の記述に基づき別途扱う。
+
+  - id: choke-defense-timing-mis-01
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: choke-defense-timing-causal-01
+    front: 絞め防御で段階を考えずに行いがちな失敗は何か
+    back: |
+      密着されたあとも顎を引き続けること。
+
+  - id: choke-defense-timing-con-01
+    axis: consequence
+    type: free_recall
+    causal_pair_id: choke-defense-timing-causal-01
+    front: 密着された後も顎を引き続けると、結果として何が起きるか
+    back: |
+      のどぼとけ周辺の凹みに相手の力が集中し、絞まりやすくなる。
+      加えて息が吸えず、耐えられる時間も短くなる。

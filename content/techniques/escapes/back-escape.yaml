@@ -5,7 +5,7 @@ aliases: [バックからの脱出, 背後からの脱出, ヒップヒースト
 category: escapes
 tags:
   positions: [back-control, mount, half-guard]
-  concepts: [frame, angle, posture, hip-escape]
+  concepts: [choke-defense-timing, frame, angle, posture, hip-escape]
 
 status: draft
 source_type: ai_research
@@ -43,7 +43,7 @@ cards:
     phase: execution
     front: バックエスケープの手順を正しい順に並べよ
     steps:
-      - 相手の絞めに来る腕を両手で制し、顎を引いて首を守る
+      - 相手の絞めに来る腕を両手で制し、絞めが入る前の段階で顎を引いて首を守る
       - 絞めの腕がある側とは反対側へ肩を落とし、背中を床に近づける
       - 背中を床につけて相手の胸との密着を切る
       - 相手のフックを外し、体を相手の正面側へ移してガードなどへ戻す

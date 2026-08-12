@@ -5,7 +5,7 @@ aliases: [十字絞め, クロスチョーク, 送り襟系, Juji Jime]
 category: chokes
 tags:
   positions: [closed-guard, mount]
-  concepts: [choke-principles, grip-fighting, posture, angle]
+  concepts: [choke-defense-timing, choke-principles, grip-fighting, posture, angle]
 
 status: draft
 source_type: ai_research
@@ -78,5 +78,5 @@ cards:
     front: クロスカラーチョークに対する基本的な防御を挙げよ
     back: |
       相手の1本目のグリップが深く入る前に襟を守り手を払うこと、
-      顎を引いて襟が首に回る空間を消すこと、
+      絞めが入る前の段階で顎を引き、襟が首に回る空間を消すこと、
       そしてポスチャーを立てて距離を取ること。

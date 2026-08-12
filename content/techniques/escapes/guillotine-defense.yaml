@@ -5,7 +5,7 @@ aliases: [ギロチン防御, ギロチンエスケープ]
 category: escapes
 tags:
   positions: [closed-guard, turtle, side-control]
-  concepts: [posture, frame, angle, pressure]
+  concepts: [choke-defense-timing, posture, frame, angle, pressure]
 
 status: draft
 source_type: ai_research
@@ -35,7 +35,7 @@ cards:
     front: ギロチンを掛けられた際にまず行うべきことは何か
     back: |
       首と相手の腕の間に自分の手を差し入れて空間を確保し、
-      顎を引いて首元を守ること。
+      絞めが入る前の段階で顎を引き、首元を守ること。
       同時に体の位置を絞めが効きにくい側へ移す。
 
   - id: guillotine-defense-prin-01

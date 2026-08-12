@@ -5,7 +5,7 @@ aliases: [裸絞め（手首）, 手首の裸絞め, RNC手首型]
 category: chokes
 tags:
   positions: [back-control]
-  concepts: [choke-principles, pressure, angle, posture]
+  concepts: [choke-defense-timing, choke-principles, pressure, angle, posture]
 
 status: draft
 source_type: book
@@ -93,7 +93,7 @@ cards:
     type: free_recall
     front: 手首で絞める裸絞めに対する基本的な防御を挙げよ
     back: |
-      顎を引いて首元の空間を消すこと、
+      絞めが入る前の段階で顎を引き、首元の空間を消すこと、
       絞めに来る腕を制すること、
       そして背中を床方向へ落として相手との密着を切ること。
     note: |

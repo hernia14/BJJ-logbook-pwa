@@ -79,7 +79,7 @@
 | Bow and Arrow Choke | ボウアンドアローチョーク | 背後から襟と脚を使う（Gi） |
 | Ezekiel Choke (Sode Guruma Jime) | エゼキエル絞め／袖車（そでぐるま） | 袖車絞めと同一技（2026-08-09 本人確認済み） |
 | Guillotine Choke | ギロチンチョーク | 正面からの首絞め |
-| Triangle Choke (Sankaku Jime) | 三角絞め | 脚で三角を作り絞める |
+| Front Triangle Choke | 前三角絞め | 3工程(キャッチ→密着→絞め)で整理。3つの三角を小さくする（『寝技の学校』下巻 p.66-71） |
 | Darce Choke (D'Arce) | ダースチョーク | 逆腕十字絞め系 |
 | Anaconda Choke | アナコンダチョーク | ダースと類似のフロントヘッドロック系 |
 | North-South Choke | ノースサウスチョーク | 上四方の体勢からの絞め |
@@ -159,6 +159,7 @@
 | Hip Escape (Shrimping) | ヒップエスケープ／シュリンピング | 腰を使った基本移動動作 |
 | Underhook / Overhook | アンダーフック／オーバーフック | 腕の差し方によるコントロールの基本 |
 | Principles of Choking | 絞めの原理（4つの条件） | 密着／閉じた円／力の有効化／首と胴体のつけ根（『寝技の学校』下巻 p.4） |
+| Chin Position in Choke Defense | 絞め防御と顎の使い分け | 密着後に顎を引くのは有害。首筋に力を入れる（同 p.82） |
 
 ---
 
@@ -174,8 +175,8 @@
 | escapes | 7 |
 | takedowns | 8 |
 | transitions | 4 |
-| concepts | 9 |
-| **合計** | **84** |
+| concepts | 10 |
+| **合計** | **85** |
 
 ※ これはあくまで「広く認知された技」の第一弾リスト。レビュー後、必要に応じて追加調査・追加項目を行う。
 

@@ -5,7 +5,7 @@ aliases: [袖車, 袖車絞め, Sode Guruma Jime, エゼキエル]
 category: chokes
 tags:
   positions: [mount, closed-guard, side-control]
-  concepts: [choke-principles, grip-fighting, pressure, angle]
+  concepts: [choke-defense-timing, choke-principles, grip-fighting, pressure, angle]
 
 status: draft
 source_type: ai_research
@@ -69,6 +69,6 @@ cards:
     type: free_recall
     front: エゼキエル絞めに対する基本的な防御を挙げよ
     back: |
-      顎を引いて首の下に腕を通させないこと、
+      絞めが入る前の段階で顎を引き、首の下に腕を通させないこと、
       通されそうな段階で手を差し入れて空間を確保すること、
       そして相手の両腕が塞がっている状況を利用して体勢を変えること。

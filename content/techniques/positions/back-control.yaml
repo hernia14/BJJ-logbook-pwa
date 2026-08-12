@@ -5,7 +5,7 @@ aliases: [バックマウント, Back Mount, バック, 背後]
 category: positions
 tags:
   positions: [back-control]
-  concepts: [posture, angle, pressure, frame]
+  concepts: [choke-defense-timing, posture, angle, pressure, frame]
 
 status: draft
 source_type: ai_research
@@ -73,6 +73,6 @@ cards:
     type: free_recall
     front: バックコントロールを取られた側が脱出時にまず優先すべきことは何か
     back: |
-      首の防御。相手の絞めに来る腕の侵入を手で防ぎ、顎を引いて首元の空間を消す。
+      首の防御。相手の絞めに来る腕の侵入を手で防ぎ、絞めが入る前の段階で顎を引き、首元の空間を消す。
       絞めの脅威を無効化してから、肩を床方向へ落として背中を着ける動きに移る。
     note: 「まず絞めを防いでから脱出」の順序が重要。逆順は絞められながら動くことになる。
