@@ -1,74 +1,168 @@
 id: ezekiel-choke
-name_ja: エゼキエル絞め
-name_en: Ezekiel Choke
-aliases: [袖車, 袖車絞め, Sode Guruma Jime, エゼキエル]
+name_ja: 袖車絞め（エゼキエル絞め）
+name_en: Sode Guruma Jime (Ezekiel Choke)
+aliases: [袖車, 袖車絞め, Sode Guruma Jime, エゼキエル, エゼキエル絞め]
 category: chokes
 tags:
-  positions: [mount, closed-guard, side-control]
+  positions: [mount, half-guard, closed-guard, side-control]
   concepts: [choke-defense-timing, choke-principles, grip-fighting, pressure, angle]
 
 status: draft
-source_type: ai_research
+source_type: book
 sources:
-  - https://thebjjjournal.com/bjj-chokes/
-  - https://www.jiujitsubrotherhood.com/blogs/blog/a-glossary-of-bjj-terms
+  - 大賀幹夫『大賀幹夫の寝技の学校（新装改訂版）』下巻 2章「袖車絞め」p.46-47（日貿出版社）
 reviewed_by: null
 reviewed_date: null
 safety_level: caution
 
 created: 2026-08-09
-updated: 2026-08-09
+updated: 2026-08-12
 
 cards:
   - id: ezekiel-choke-def-01
     axis: definition
     type: free_recall
-    front: エゼキエル絞め（袖車絞め）とはどのような絞めか
+    front: 袖車絞めとはどのような絞めか
     back: |
-      自分の道衣の袖口を反対の手で掴み、
-      その腕を相手の首に回して締める絞め。
-      相手の道衣ではなく自分の袖を使う点が特徴。
+      自分の道衣の袖口に指を入れ、両手首と袖口で相手の首を絞める技。
+      相手の道衣ではなく自分の袖を使う。
+    source_ref: 下巻 p.46
+
+  - id: ezekiel-choke-hier-01
+    axis: hierarchy
+    type: free_recall
+    front: 袖車絞めがクローズドガードとの関係で持つ特異な性質は何か
+    back: |
+      クローズドガードに入れられていても極められる、数少ない技のひとつ。
+    source_ref: 下巻 p.47
 
   - id: ezekiel-choke-prin-01
     axis: principle
     type: free_recall
-    front: エゼキエル絞めが「相手の道衣を必要としない」ことの利点を説明せよ
+    front: 袖車絞めが「腕の力をあまり必要としない」のはなぜか
     back: |
-      相手のグリップ防御に依存せず、自分の袖さえあれば成立する。
-      そのため相手が襟を守っている状況でも仕掛けられ、
-      マウントなど密着したポジションから予告なく入れる。
+      マジックハンドのように、形さえ作れば肩の位置を動かすだけで
+      自動的に手首が動く構造になっているため。
+    source_ref: 下巻 p.46
+
+  - id: ezekiel-choke-grip-01
+    axis: grip
+    type: free_recall
+    front: 袖車絞めで袖口を掴んだあと、前腕をどう向けるか
+    back: |
+      袖口を手首の近くまで引き上げ、前腕を回外させて小指側が天井を向くようにする。
+    source_ref: 下巻 p.46
 
   - id: ezekiel-choke-req-01
     axis: requirement
     type: free_recall
-    front: エゼキエル絞めを効かせるための要件は何か
+    front: マウントからの袖車絞めで、絞め手を首元へ入れるために肘と脇をどうするか
     back: |
-      相手の首の下に腕を通し、前腕を首の適切な位置に当てること。
-      加えて自分の上体を相手に密着させ、腕だけでなく体重を締めに参加させる。
+      指先を自分の肩へ近づけてから、肘を浮かせて脇を直角に開く。
+      そうすると指先が相手の首元に入る。頭も動かして入れる余地を作る。
+    source_ref: 下巻 p.46
+
+  - id: ezekiel-choke-fin-01
+    axis: finish
+    type: free_recall
+    front: マウントからの袖車絞めで、手首が相手の首元に当たったあと何をするか
+    back: |
+      当たった側へ体重をかけて反対の肘を軽くし、引く。
+      これで反対の手首の甲側が相手の首に密着する。
+      そのうえで上半身を動かし、自分の正中線を移動させると
+      手刀が自然に首元へ食い込んでいく。
+    source_ref: 下巻 p.46
+
+  - id: ezekiel-choke-req-02
+    axis: requirement
+    type: free_recall
+    front: ハーフガードから袖車絞めに入るとき、通常と何を変えるか
+    back: |
+      通常と逆の手で首を抱えて入る。
+      その手を枕にして床につけたまま、反対の肘を浮かせる。
+    source_ref: 下巻 p.47
+
+  - id: ezekiel-choke-ang-01
+    axis: angle_weight
+    type: free_recall
+    front: ハーフガードからの袖車絞めで、絞めるときに肩をどう使うか
+    back: |
+      床側の肩を床に近づけ、反対の肩を引く。
+      これで手首が相手の首に食い込む。
+    source_ref: 下巻 p.47
+
+  - id: ezekiel-choke-req-03
+    axis: requirement
+    type: free_recall
+    front: クローズドガードに入れられた状態から袖車絞めを狙うとき、肘をどうするか
+    back: |
+      両肘を伸ばすようにする。
+      両足で床を蹴り、左右のバランスを取りながら前に詰めて形を作る。
+    source_ref: 下巻 p.47
+
+  - id: ezekiel-choke-prin-02
+    axis: principle
+    type: free_recall
+    front: クローズドガードからの袖車絞めで、相手が足で遠ざけようとするとどうなるか
+    back: |
+      遠ざけるほど絞まる。
+      両手首と袖口が相手の首の全方向から密着するように形を作る。
+    source_ref: 下巻 p.47
+
+  - id: ezekiel-choke-cnt-01
+    axis: counter
+    type: free_recall
+    front: 相手の両肘が浮いた袖車絞めに対する防御の手順を述べよ
+    back: |
+      バンザイをするように両腕を大きく振りかぶる（始めは手首が交差するように）。
+      肘を伸ばしたまま、ゆっくり腕を振り下ろす（徐々に肘付近が交差するように）。
+      こちらも若干苦しいが、相手の指が痛くなって絞まらなくなる。
+    source_ref: 下巻 p.47
+    note: |
+      本書は「相手の指の怪我に気をつけること」と注意している。
+      この防御は相手の指に負荷をかけるため、具体的な安全上の判断は
+      content/safety/ で人間の記述に基づき別途扱う。
+
+  - id: ezekiel-choke-cnt-02
+    axis: counter
+    type: free_recall
+    front: 袖車絞めを未然に防ぐには、どの兆候を見て何をするか
+    back: |
+      脇をすくわれた相手が耳元でもぞもぞしていたら袖車に入られている。
+      急いで手を相手の脇から入れて首を守る。
+      入らない場合は反対の手とブリッジで隙間を作る。
+    source_ref: 下巻 p.47
+
+  - id: ezekiel-choke-cnt-03
+    axis: counter
+    type: free_recall
+    front: マウントからの袖車絞めを防ぐとき、相手の身体をどう扱うか
+    back: |
+      相手が絞まる方向へ移動するのを止める。
+      両手を効かせて逆方向へ押し、腕を深く差し入れて
+      相手の腕を脇で抱えられれば絞まらなくなる。
+    source_ref: 下巻 p.47
 
   - id: ezekiel-choke-mis-01
     axis: common_mistake
     type: free_recall
     causal_pair_id: ezekiel-choke-causal-01
-    front: エゼキエル絞めでよくある失敗を1つ挙げよ
+    front: 袖車絞めで、腕の使い方に関する誤解を挙げよ
     back: |
-      首の下に通す腕が浅く、前腕が首まで届いていないこと。
+      腕力で締めようとすること。
+    source_ref: 下巻 p.46
 
   - id: ezekiel-choke-con-01
     axis: consequence
     type: free_recall
     causal_pair_id: ezekiel-choke-causal-01
-    front: エゼキエル絞めで腕が浅いと、結果として何が起きるか
+    front: 袖車絞めを腕力で締めようとすると、なぜうまくいかないのか
     back: |
-      締めが効かないまま両腕を使った状態が続く。
-      両腕が塞がっているため、
-      マウントなどのポジションを維持する手が減り、返される危険が高まる。
-
-  - id: ezekiel-choke-cnt-01
-    axis: counter
-    type: free_recall
-    front: エゼキエル絞めに対する基本的な防御を挙げよ
-    back: |
-      絞めが入る前の段階で顎を引き、首の下に腕を通させないこと、
-      通されそうな段階で手を差し入れて空間を確保すること、
-      そして相手の両腕が塞がっている状況を利用して体勢を変えること。
+      この技は形を作ってから肩の位置を動かすことで手首が動く構造であり、
+      腕の力はあまり必要としない。
+      形が伴わないまま力を入れても、絞める方向へ力が働かない。
+    source_ref: 下巻 p.46
+    note: |
+      本書は本技について「指の怪我には十分に注意して使う」と明記している。
+      指への負荷に関する安全上の判断は content/safety/ で
+      人間の記述に基づき別途扱う。

@@ -4,71 +4,198 @@ name_en: Loop Choke
 aliases: [ループ, 巻き込み絞め]
 category: chokes
 tags:
-  positions: [closed-guard, open-guard, turtle]
-  concepts: [choke-principles, grip-fighting, angle, posture]
+  positions: [closed-guard, open-guard, turtle, half-guard]
+  concepts: [choke-defense-timing, choke-principles, grip-fighting, angle, posture]
 
 status: draft
-source_type: ai_research
+source_type: book
 sources:
-  - https://thebjjjournal.com/bjj-chokes/
-  - https://www.jiujitsubrotherhood.com/blogs/blog/a-glossary-of-bjj-terms
+  - 大賀幹夫『大賀幹夫の寝技の学校（新装改訂版）』下巻 2章「ループチョーク」p.53-55（日貿出版社）
 reviewed_by: null
 reviewed_date: null
 safety_level: caution
 
 created: 2026-08-09
-updated: 2026-08-09
+updated: 2026-08-12
 
 cards:
   - id: loop-choke-def-01
     axis: definition
     type: free_recall
-    front: ループチョークとはどのような絞めか
+    front: ループチョークは、他の「前からかける絞め技」と何が違うか
     back: |
-      相手の襟を掴んだ手を支点に、
-      自分の腕を相手の首に巻き付けるように回して締めるGiの絞め。
+      前からかける絞め技の多くは両手で相手の首を絞めるが、
+      ループチョークは襟を相手の首に巻きつけて片手で絞める。
+      もう片手は絞めを補助することに使う。
+    source_ref: 下巻 p.53
+
+  - id: loop-choke-def-02
+    axis: definition
+    type: free_recall
+    front: ループチョークはどの技の系統に近いといえるか
+    back: |
+      送り襟絞めやズボンチョークに近い。
+      いずれも片手で絞め、もう一方が補助に回る構造を持つ。
+    source_ref: 下巻 p.53
+
+  - id: loop-choke-hier-01
+    axis: hierarchy
+    type: free_recall
+    front: この系統の絞めを「前から」かけることの利点は何か
+    back: |
+      後ろからかける場合は相手も気づきやすいが、
+      前から密かに巧みにセットすると、相手が気づいた時には逃げるのが難しくなる。
+    source_ref: 下巻 p.53
 
   - id: loop-choke-req-01
     axis: requirement
     type: free_recall
-    front: ループチョークが仕掛けやすい相手の状態はどのようなときか
+    front: 座っている相手にループチョークへ入るとき、まず何をするか
     back: |
-      相手が頭を下げて前傾している状態。
-      首が下を向くと襟を巻き付ける経路が生まれ、
-      腕を回す動作が短い距離で完了する。
+      爪先を軽くして手を重くすることで、相手の胸に圧力をかける。
+      機を見て相手の胸を押して隙間を作り、手をくぐらせて襟を首に巻きつける。
+    source_ref: 下巻 p.53
 
-  - id: loop-choke-prin-01
-    axis: principle
+  - id: loop-choke-req-02
+    axis: requirement
     type: free_recall
-    front: ループチョークが効く原理を説明せよ
+    front: ループチョークで前転して入るとき、相手の頭をどこへ入れるか
     back: |
-      襟を掴んだ手を軸として腕を回すことで、
-      道衣が相手の首に巻き付き締め付ける。
-      腕力で締めるのではなく、回転によって襟の輪を縮める構造にある。
+      脇を開けて前傾することで、相手の頭を自分の脇へ入れる。
+      足を後ろに引くとやりやすい。
+    source_ref: 下巻 p.53
+
+  - id: loop-choke-fol-01
+    axis: followup
+    type: free_recall
+    front: タックルをがぶった状態からループチョークへ入る場合、どこを取るか
+    back: |
+      相手の頭が脇にあたったら手で首を巻き、四指を中にして相手の襟を取る。
+      補助する手は相手の脇の下を取る。ここは道衣がたるみづらい場所のひとつで、
+      力が逃げない。
+    source_ref: 下巻 p.53
+
+  - id: loop-choke-fin-01
+    axis: finish
+    type: free_recall
+    front: がぶりからのループチョークで、絞める際に肘と足をどう使うか
+    back: |
+      両肘を張り、足で床を蹴って回転しながら絞める。
+    source_ref: 下巻 p.53
+
+  - id: loop-choke-fol-02
+    axis: followup
+    type: free_recall
+    front: パスガードしてくる相手にループチョークをカウンターで合わせる場合、どう動くか
+    back: |
+      相手を止めたまま足を使って回転し、
+      相手には「もう一息でパス」と思わせ続ける。
+      一直線になったら脇を大きく開けて相手を引き、相手の頭を脇へ入れる。
+    source_ref: 下巻 p.54
+
+  - id: loop-choke-grip-01
+    axis: grip
+    type: free_recall
+    front: ループチョークのカウンターで、補助する手はどこを取るか。理由も述べよ
+    back: |
+      相手の脇から入れて、背中の正中線上のできるだけ首に近いところを取る。
+      首に直接回すと相手に逃げられるため。
+    source_ref: 下巻 p.54
+
+  - id: loop-choke-fin-02
+    axis: finish
+    type: free_recall
+    front: ループチョークで絞める際、手のどの面を使うか。他の絞めとの違いも述べよ
+    back: |
+      手の甲側を使う。
+      多くの絞め技は手首を曲げて親指側か小指側を首に食い込ませるが、
+      本書のこの絞めでは手首の返しを使わない。
+    source_ref: 下巻 p.54
+
+  - id: loop-choke-fin-03
+    axis: finish
+    type: free_recall
+    front: ループチョークで絞める力をさらに強めるには、身体全体をどう使うか
+    back: |
+      両肘を開き、身体全体でブリッジしながら回転する。
+    source_ref: 下巻 p.54
 
   - id: loop-choke-mis-01
     axis: common_mistake
     type: free_recall
     causal_pair_id: loop-choke-causal-01
-    front: ループチョークでよくある失敗を1つ挙げよ
+    front: ループチョークのカウンターで、入りの工程を失敗するとどうなるか（原因側）
     back: |
-      相手のポスチャーが立っている状態で仕掛けようとすること。
+      相手に間合いを詰められ、相手の手で首をすくわれてしまう。
+    source_ref: 下巻 p.54
 
   - id: loop-choke-con-01
     axis: consequence
     type: free_recall
     causal_pair_id: loop-choke-causal-01
-    front: ループチョークをポスチャーが立った相手に仕掛けると、結果として何が起きるか
+    front: ループチョークで相手に首をすくわれると、結果として何が起きるか
     back: |
-      首に巻き付ける経路が確保できず、腕を回しても締まらない。
-      その間に自分の腕が伸びた状態になり、
-      相手に腕を取られる危険が生じる。
+      相手の頭が自分の脇に入りづらくなり、補助の手も効かなくなって
+      絞められない可能性がある。そのまま抑え込まれる。
+    source_ref: 下巻 p.54
 
   - id: loop-choke-cnt-01
     axis: counter
     type: free_recall
-    front: ループチョークに対する基本的な防御を挙げよ
+    front: 座った相手へのループチョークを防ぐには、姿勢をどう保つか
     back: |
-      ポスチャーを立てて頭を下げないこと、
-      襟のグリップを早い段階で切ること、
-      そして相手の腕が回ってくる方向とは逆へ体を回すこと。
+      前傾姿勢を保ち、頬と相手の膝の内側を密着させる。
+      手と足裏を床につき、必要に応じて尻を浮かせて後ろへ下げる。
+      同時に前腕で相手の膝を強く引きつける。
+    source_ref: 下巻 p.55
+
+  - id: loop-choke-mis-02
+    axis: common_mistake
+    type: free_recall
+    causal_pair_id: loop-choke-causal-02
+    front: ループチョークの防御で前傾が弱いと、どこに隙間ができるか
+    back: |
+      自分の頬と相手の膝の内側との間。
+    source_ref: 下巻 p.55
+
+  - id: loop-choke-con-02
+    axis: consequence
+    type: free_recall
+    causal_pair_id: loop-choke-causal-02
+    front: 頬と相手の膝の間に隙間ができると、結果として何が起きるか
+    back: |
+      首の前に相手の手が入ってきて、絞めに来られる。
+    source_ref: 下巻 p.55
+
+  - id: loop-choke-cnt-02
+    axis: counter
+    type: free_recall
+    front: 相手が襟を取って首を巻いてきた場合、どう防ぐか
+    back: |
+      相手の肘と袖口を取って引き、首との間に隙間を作る。
+      そのうえで身体全体を後ろへ下げて首を抜く。
+      相手が飛んでバックを取りに来たら腕を伸ばして防ぐ。
+    source_ref: 下巻 p.55
+
+  - id: loop-choke-cnt-03
+    axis: counter
+    type: free_recall
+    front: 下からのループチョークに対し、絞め手でないほうの腕を制して防ぐ手順を述べよ
+    back: |
+      首に腕を巻かれたら、片手で相手の首をすくう。
+      もう一方で相手の肘を取り、両手の力を効かせて自分の腰を相手の腰へ近づける。
+      その力をかけ続けながら、顎を引くように頭を回すと相手の腕が外れる。
+    source_ref: 下巻 p.55
+
+  - id: loop-choke-cnt-04
+    axis: counter
+    type: free_recall
+    front: 首を巻かれたときに「胸を離して頭を抜く」防御の要点は何か
+    back: |
+      胸をつけると逃げられないため、後ろへ逃げる。
+      一方の手を相手の肩、もう一方を腹部に当て、頭は天井へ近づけるよう力を入れる。
+      急に頭を相手の胸へ近づけて隙間を生み、両手を伸ばして首を抜く。
+    source_ref: 下巻 p.55
+    note: |
+      本書は「相手の反対の手が効く前に逃げること」と時間的な条件を付している。
+      絞め技の練習上の安全管理は content/safety/ で人間の記述に基づき別途扱う。
